@@ -101,6 +101,22 @@
       .centered {
         text-align: center;
       }
+
+      .back-button {
+        background-color: #073d71; /* Similar to your accordion active state */
+        color: #ffffff; /* Similar to your text color */
+        border: 1px solid #ffffff; /* Similar to your accordion border */
+        padding: 10px 20px; /* Arbitrary padding for the button */
+        font-size: 15px; /* Similar to your accordion font size */
+        cursor: pointer; /* Cursor will become a hand when hovering over the button */
+        margin: 10px; /* Similar to your previous button margin */
+        transition: 0.4s; /* Similar to your accordion transition */
+      }
+
+      .back-button:hover {
+        background-color: #00284e; /* Similar to your body background color */
+        color: #ffd700; /* Gold color when hovering, similar to your a:hover color */
+      }
     </style>
   </head>
   <body>
@@ -112,11 +128,13 @@
       var supportEmail = "support@fighterstech.com";
       var enquiryText =
         "Si tienes alguna pregunta o inquietud puedes consultarnos en:";
+      var goBackText = "Volver";
 
       // Use the variables in your HTML
       document.body.innerHTML = `
         <h1>${mainTitle}</h1>
         <img src="../fighterstech.png" alt="${mainTitle} Logo" style="width: 100%; max-width: 150px; margin: 0 auto; display: block" />
+        <button class="back-button" id="goBack" onclick="${goBack()}">${goBackText}</button>
         <div style="margin-top: 90px">
             <h2 class="centered">${privacyPolicyTitle}</h2>      
             <a href="./privacy-policy/">
@@ -129,6 +147,9 @@
             <p style="text-align: center; color: #a9b3bc">${enquiryText} <a href="mailto:${supportEmail}">${supportEmail}</a></p>
         </div>
       `;
+      function goBack() {
+        window.history.back();
+      }
     </script>
   </body>
 </html>

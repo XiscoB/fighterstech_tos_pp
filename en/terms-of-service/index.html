@@ -100,9 +100,27 @@
       .centered {
         text-align: center;
       }
+      .back-button {
+        background-color: #073d71; /* Similar to your accordion active state */
+        color: #ffffff; /* Similar to your text color */
+        border: 1px solid #ffffff; /* Similar to your accordion border */
+        padding: 10px 20px; /* Arbitrary padding for the button */
+        font-size: 15px; /* Similar to your accordion font size */
+        cursor: pointer; /* Cursor will become a hand when hovering over the button */
+        margin: 10px; /* Similar to your previous button margin */
+        transition: 0.4s; /* Similar to your accordion transition */
+      }
+
+      .back-button:hover {
+        background-color: #00284e; /* Similar to your body background color */
+        color: #ffd700; /* Gold color when hovering, similar to your a:hover color */
+      }
     </style>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
+        function goBack() {
+          window.history.back();
+        }
         var languageVars = {
           htmlStuff: {
             title: "FightersTech Terms of Service",
@@ -113,6 +131,7 @@
             ifYouHaveAnyEnquiries:
               "If you have any enquiries, please email us at",
             FIGHTERSTECH_EMAIL_SUPPORT: "support@fighterstech.com",
+            goBackText: "Go back",
           },
         };
 
@@ -167,6 +186,9 @@
           "#enquiries"
         ).innerHTML = `${languageVars.htmlStuff.ifYouHaveAnyEnquiries}: <a href="mailto:${languageVars.htmlStuff.FIGHTERSTECH_EMAIL_SUPPORT}">${languageVars.htmlStuff.FIGHTERSTECH_EMAIL_SUPPORT}</a>`;
 
+        document.querySelector(
+          "#goBack"
+        ).textContent = `${languageVars.htmlStuff.goBackText}`;
         // This section of your script should be moved to the end so that it runs after the accordion elements are generated.
         // setup accordion
         var acc = document.getElementsByClassName("accordion");
@@ -206,6 +228,9 @@
       alt="FightersTech Logo"
       style="width: 100%; max-width: 150px; margin: 0 auto; display: block"
     />
+    <!-- add back button-->
+    <button class="back-button" id="goBack" onclick="goBack()"></button>
+    <!-- above, added back button-->
     <p></p>
     <p id="lastUpdateText" class="centered"></p>
     <div
