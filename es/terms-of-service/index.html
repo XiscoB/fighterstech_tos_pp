@@ -142,7 +142,7 @@
             ifYouHaveAnyEnquiries:
               "Si tienes alguna pregunta o inquietud puedes consultarnos en",
             FIGHTERSTECH_EMAIL_SUPPORT: "support@fighterstech.com",
-            goBackText: "Go back",
+            goBackText: "Volver",
           },
         };
 
@@ -185,7 +185,9 @@
         ).textContent = `${languageVars.htmlStuff.title}`;
         document.querySelector("#lastUpdateText").textContent = `${
           languageVars.htmlStuff.lastUpdateText
-        }: ${new Date(`${languageVars.htmlStuff.lastUpdatedDate}`)}`;
+        }: ${new Date(
+          `${languageVars.htmlStuff.lastUpdatedDate}`
+        ).toLocaleDateString()}`;
 
         document.querySelector("#versionTexts").innerHTML = `${versionTexts(
           requestProcess.data

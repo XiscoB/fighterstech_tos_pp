@@ -186,7 +186,9 @@
         ).textContent = `${languageVars.htmlStuff.title}`;
         document.querySelector("#lastUpdateText").textContent = `${
           languageVars.htmlStuff.lastUpdateText
-        }: ${new Date(`${languageVars.htmlStuff.lastUpdatedDate}`)}`;
+        }: ${new Date(
+          `${languageVars.htmlStuff.lastUpdatedDate}`
+        ).toLocaleDateString()}`;
 
         document.querySelector("#versionTexts").innerHTML = `${versionTexts(
           requestProcess.data
