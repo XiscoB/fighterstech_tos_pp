@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #00284e;
+        color: #ffffff; /* Changed to white for visibility on dark background */
+      }
+
+      h1 {
+        text-align: center;
+        color: #ffffff; /* Changed to white for visibility on dark background */
+      }
+
+      a {
+        color: #ffd700; /* Gold color to stand out on dark background */
+        text-decoration: none; /* Remove underline */
+      }
+
+      a:hover {
+        color: #ffffff; /* Change color on hover */
+      }
+
+      .data-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+
+      .data-table,
+      .data-table th,
+      .data-table td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        color: #ffffff; /* Changed to white for visibility on dark background */
+      }
+
+      .data-table tbody tr:nth-child(odd) {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      .data-table th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #073d71;
+        color: #ffffff; /* Changed to white for visibility on dark background */
+      }
+
+      .table-key {
+        font-weight: bold;
+        color: #ffffff; /* Changed to white for visibility on dark background */
+      }
+
+      .table-value {
+        font-style: italic;
+        color: #ffffff; /* Changed to white for visibility on dark background */
+      }
+
+      .accordion {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #ffffff;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: 1px solid #ffffff; /* Added white border */
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+      }
+
+      .active,
+      .accordion:hover {
+        background-color: #073d71; /* Darkened version of accordion background */
+      }
+
+      .accordion:after {
+        content: "";
+        font-size: 13px;
+        color: #777;
+        float: right;
+        margin-left: 5px;
+      }
+
+      .active:after {
+        content: "";
+      }
+
+      .panel {
+        padding: 0 18px;
+        background-color: rgba(0, 0, 0, 0.5); /* Same as accordion background */
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+      }
+
+      .centered {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>FightersTech</h1>
+    <img
+      src="../fighterstech.png"
+      alt="FightersTech Logo"
+      style="width: 100%; max-width: 150px; margin: 0 auto; display: block"
+    />
+    <div
+      style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      "
+    >
+      <!-- <div
+        style="
+          text-align: center;
+          width: 60%;
+          align-items: center;
+          justify-content: center;
+        "
+      >
+        Privacy Policy Version: 0.99
+      </div> -->
+    </div>
+    <div style="margin-top: 90px">
+         <h2 class="centered">Política de Privacidad</h2>      
+      <a href="./privacy-policy/">
+      <button id="testButton" class="accordion">
+      Política de Privacidad
+      </button>
+      </a>
+      <!-- <div id="test" class="panel" style="max-height: 0; overflow: hidden">
+        <div>
+          <h2 class="centered">Política de Privacidad</h2>
+          <p>lore ipsum dolor sit amet consectetur adipiscing elit v2</p>
+        </div>
+      </div>
+    </div> -->
+    <h2 class="centered">Términos de Servicio</h2>
+    <a href="./terms-of-service/">
+      <button id="testButton" class="accordion">
+        Términos de Servicio
+      </button>
+      </a>
+    <p style="text-align: center; color: #a9b3bc">
+      If you have any enquiries, please email us at:
+      <a href="mailto:support@fighterstech.com">support@fighterstech.com</a>
+    </p>
+    <p style="text-align: center; color: #a9b3bc">
+      Si tienes alguna pregunta o inquietud puedes consultarnos en:
+      <a href="mailto:support@fighterstech.com">support@fighterstech.com</a>
+    </p>
+  </body>
+</html>
