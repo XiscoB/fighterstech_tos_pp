@@ -117,10 +117,11 @@
       }
     </style>
     <script>
+      function goBack() {
+        window.history.back();
+      }
+
       document.addEventListener("DOMContentLoaded", function () {
-        function goBack() {
-          window.history.back();
-        }
         var languageVars = {
           htmlStuff: {
             title: "FightersTech Terms of Service",

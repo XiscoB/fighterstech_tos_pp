@@ -133,7 +133,7 @@
       document.body.innerHTML = `
         <h1>${mainTitle}</h1>
         <img src="../fighterstech.png" alt="${mainTitle} Logo" style="width: 100%; max-width: 150px; margin: 0 auto; display: block" />
-                <button class="back-button" id="goBack" onclick="${goBack()}">${goBackText}</button>
+                <button class="back-button" id="goBack">${goBackText}</button>
         <div style="margin-top: 90px">
             <h2 class="centered">${privacyPolicyTitle}</h2>      
             <a href="./privacy-policy/">
@@ -146,6 +146,8 @@
             <p style="text-align: center; color: #a9b3bc">${enquiryText} <a href="mailto:${supportEmail}">${supportEmail}</a></p>
         </div>
       `;
+      document.getElementById("goBack").addEventListener("click", goBack);
+
       function goBack() {
         window.history.back();
       }
