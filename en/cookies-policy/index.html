@@ -137,8 +137,8 @@
       document.addEventListener("DOMContentLoaded", function () {
         var languageVars = {
           htmlStuff: {
-            title: "FightersTech - Terms of Service",
-            privacyPolicyVersion: "Terms of Service Version",
+            title: "FightersTech Cookies Policy",
+            privacyPolicyVersion: "Cookies Policy Version",
             privacyPolicyVersionNumber: 0.99,
             lastUpdateText: "Last Updated",
             lastUpdatedDate: new Date("2024-08-20"),
@@ -154,14 +154,13 @@
         };
 
         var requestProcess = {
-          data: false,
-          // data: {
-          //   "Content One":
-          //     "lore ipsum dolor sit amet consectetur adipiscing elit",
+          data: {
+            "Content One":
+              "lore ipsum dolor sit amet consectetur adipiscing elit",
 
-          //   "Content Two":
-          //     "lore ipsum dolor sit amet consectetur adipiscing elit v2",
-          // },
+            "Content Two":
+              "lore ipsum dolor sit amet consectetur adipiscing elit v2",
+          },
         };
 
         var versionTexts = function (data) {
@@ -211,7 +210,7 @@
         document.querySelector("iframe").innerHTML = `
     <p>
       ${languageVars.htmlStuff.browserNotSupportingIframePart1}
-      <a href="./tos.pdf">${languageVars.htmlStuff.browserNotSupportingIframePart2}</a>
+      <a href="./cookies-policy.pdf">${languageVars.htmlStuff.browserNotSupportingIframePart2}</a>
       ${languageVars.htmlStuff.browserNotSupportingIframePart3}
     </p>
   `;
@@ -283,10 +282,10 @@
     </div>
     <div id="displayData"></div>
     <div style="text-align: center; margin-top: 20px">
-      <iframe src="./tos.pdf" width="100%" height="600px">
+      <iframe src="./cookies-policy.pdf" width="100%" height="600px">
         <p>
           ${languageVars.htmlStuff.browserNotSupportingIframePart1}
-          <a href="./tos.pdf"
+          <a href="./cookies-policy.pdf"
             >${languageVars.htmlStuff.browserNotSupportingIframePart2}</a
           >
           ${languageVars.htmlStuff.browserNotSupportingIframePart3}

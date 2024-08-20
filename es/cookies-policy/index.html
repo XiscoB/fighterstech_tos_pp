@@ -7,7 +7,6 @@
         font-family: Arial, sans-serif;
         background-color: #00284e;
         color: #ffffff; /* Changed to white for visibility on dark background */
-        align-content: center;
       }
 
       h1 {
@@ -129,37 +128,35 @@
     </style>
     <script>
       function goBack() {
-        //lets add a function to go home instead, like ../../index.html
         //window.location.href = "../index.html";
         window.history.back();
       }
-
       document.addEventListener("DOMContentLoaded", function () {
         var languageVars = {
           htmlStuff: {
-            title: "FightersTech - Terms of Service",
-            privacyPolicyVersion: "Terms of Service Version",
+            title: "FightersTech - Política de Cookies",
+            privacyPolicyVersion: "Versión de la Política de Cookies",
             privacyPolicyVersionNumber: 0.99,
-            lastUpdateText: "Last Updated",
+            lastUpdateText: "Última Actualización",
             lastUpdatedDate: new Date("2024-08-20"),
             ifYouHaveAnyEnquiries:
-              "If you have any enquiries, please email us at",
+              "Si tienes alguna pregunta o inquietud puedes consultarnos en",
             FIGHTERSTECH_EMAIL_SUPPORT: "support@fighterstech.com",
-            goBackText: "Go back",
+            goBackText: "Volver",
             browserNotSupportingIframePart1:
-              "This browser does not support viewing PDFs. Please ",
-            browserNotSupportingIframePart2: "download the PDF",
-            browserNotSupportingIframePart3: " to view it.",
+              "Este navegador no soporta la visualización de PDFs. Por favor, ",
+            browserNotSupportingIframePart2: "descarga el PDF",
+            browserNotSupportingIframePart3: " para verlo.",
           },
         };
 
         var requestProcess = {
           data: false,
           // data: {
-          //   "Content One":
+          //   "Contenido Uno":
           //     "lore ipsum dolor sit amet consectetur adipiscing elit",
 
-          //   "Content Two":
+          //   "Contenido Dos":
           //     "lore ipsum dolor sit amet consectetur adipiscing elit v2",
           // },
         };
@@ -211,7 +208,7 @@
         document.querySelector("iframe").innerHTML = `
     <p>
       ${languageVars.htmlStuff.browserNotSupportingIframePart1}
-      <a href="./tos.pdf">${languageVars.htmlStuff.browserNotSupportingIframePart2}</a>
+      <a href="./privacy-policy.pdf">${languageVars.htmlStuff.browserNotSupportingIframePart2}</a>
       ${languageVars.htmlStuff.browserNotSupportingIframePart3}
     </p>
   `;
@@ -283,10 +280,10 @@
     </div>
     <div id="displayData"></div>
     <div style="text-align: center; margin-top: 20px">
-      <iframe src="./tos.pdf" width="100%" height="600px">
+      <iframe src="./privacy-policy.pdf" width="100%" height="600px">
         <p>
           ${languageVars.htmlStuff.browserNotSupportingIframePart1}
-          <a href="./tos.pdf"
+          <a href="./privacy-policy.pdf"
             >${languageVars.htmlStuff.browserNotSupportingIframePart2}</a
           >
           ${languageVars.htmlStuff.browserNotSupportingIframePart3}

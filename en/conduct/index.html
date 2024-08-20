@@ -137,8 +137,9 @@
       document.addEventListener("DOMContentLoaded", function () {
         var languageVars = {
           htmlStuff: {
-            title: "FightersTech - Terms of Service",
-            privacyPolicyVersion: "Terms of Service Version",
+            title: "FightersTech Code of Conduct and Community Guidelines",
+            privacyPolicyVersion:
+              "Code of Conduct and Community Guidelines Version",
             privacyPolicyVersionNumber: 0.99,
             lastUpdateText: "Last Updated",
             lastUpdatedDate: new Date("2024-08-20"),
@@ -211,7 +212,7 @@
         document.querySelector("iframe").innerHTML = `
     <p>
       ${languageVars.htmlStuff.browserNotSupportingIframePart1}
-      <a href="./tos.pdf">${languageVars.htmlStuff.browserNotSupportingIframePart2}</a>
+      <a href="./code-of-conduct.pdf">${languageVars.htmlStuff.browserNotSupportingIframePart2}</a>
       ${languageVars.htmlStuff.browserNotSupportingIframePart3}
     </p>
   `;
@@ -219,6 +220,7 @@
         document.querySelector(
           "#goBack"
         ).textContent = `${languageVars.htmlStuff.goBackText}`;
+
         // This section of your script should be moved to the end so that it runs after the accordion elements are generated.
         // setup accordion
         var acc = document.getElementsByClassName("accordion");
@@ -283,10 +285,10 @@
     </div>
     <div id="displayData"></div>
     <div style="text-align: center; margin-top: 20px">
-      <iframe src="./tos.pdf" width="100%" height="600px">
+      <iframe src="./code-of-conduct.pdf" width="100%" height="600px">
         <p>
           ${languageVars.htmlStuff.browserNotSupportingIframePart1}
-          <a href="./tos.pdf"
+          <a href="./code-of-conduct.pdf"
             >${languageVars.htmlStuff.browserNotSupportingIframePart2}</a
           >
           ${languageVars.htmlStuff.browserNotSupportingIframePart3}

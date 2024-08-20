@@ -135,26 +135,31 @@
       document.addEventListener("DOMContentLoaded", function () {
         var languageVars = {
           htmlStuff: {
-            title: "FightersTech Privacy Policy",
+            title: "FightersTech - Privacy Policy",
             privacyPolicyVersion: "Privacy Policy Version",
             privacyPolicyVersionNumber: 0.99,
             lastUpdateText: "Last Updated",
-            lastUpdatedDate: new Date("2023-07-26"),
+            lastUpdatedDate: new Date("2024-08-20"),
             ifYouHaveAnyEnquiries:
               "If you have any enquiries, please email us at",
             FIGHTERSTECH_EMAIL_SUPPORT: "support@fighterstech.com",
             goBackText: "Go back",
+            browserNotSupportingIframePart1:
+              "This browser does not support viewing PDFs. Please ",
+            browserNotSupportingIframePart2: "download the PDF",
+            browserNotSupportingIframePart3: " to view it.",
           },
         };
 
         var requestProcess = {
-          data: {
-            "Content One":
-              "lore ipsum dolor sit amet consectetur adipiscing elit",
+          data: false,
+          // data: {
+          //   "Content One":
+          //     "lore ipsum dolor sit amet consectetur adipiscing elit",
 
-            "Content Two":
-              "lore ipsum dolor sit amet consectetur adipiscing elit v2",
-          },
+          //   "Content Two":
+          //     "lore ipsum dolor sit amet consectetur adipiscing elit v2",
+          // },
         };
 
         var versionTexts = function (data) {
@@ -199,6 +204,15 @@
         document.querySelector(
           "#enquiries"
         ).innerHTML = `${languageVars.htmlStuff.ifYouHaveAnyEnquiries}: <a href="mailto:${languageVars.htmlStuff.FIGHTERSTECH_EMAIL_SUPPORT}">${languageVars.htmlStuff.FIGHTERSTECH_EMAIL_SUPPORT}</a>`;
+
+        // Add this part to dynamically set the content inside the iframe
+        document.querySelector("iframe").innerHTML = `
+    <p>
+      ${languageVars.htmlStuff.browserNotSupportingIframePart1}
+      <a href="./privacy-policy.pdf">${languageVars.htmlStuff.browserNotSupportingIframePart2}</a>
+      ${languageVars.htmlStuff.browserNotSupportingIframePart3}
+    </p>
+  `;
 
         document.querySelector(
           "#goBack"
@@ -266,6 +280,17 @@
       ></div>
     </div>
     <div id="displayData"></div>
+    <div style="text-align: center; margin-top: 20px">
+      <iframe src="./privacy-policy.pdf" width="100%" height="600px">
+        <p>
+          ${languageVars.htmlStuff.browserNotSupportingIframePart1}
+          <a href="./privacy-policy.pdf"
+            >${languageVars.htmlStuff.browserNotSupportingIframePart2}</a
+          >
+          ${languageVars.htmlStuff.browserNotSupportingIframePart3}
+        </p>
+      </iframe>
+    </div>
     <p style="text-align: center; color: #a9b3bc" id="enquiries"></p>
   </body>
 </html>
