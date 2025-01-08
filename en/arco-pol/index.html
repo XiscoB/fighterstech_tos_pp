@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #00284e;
+        color: #ffffff;
+        align-content: center;
+      }
+      h1,
+      h2 {
+        text-align: center;
+        color: #ffffff;
+      }
+      a {
+        color: #ffd700;
+        text-decoration: none;
+      }
+      a:hover {
+        color: #ffffff;
+      }
+      .accordion {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #ffffff;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: 1px solid #ffffff;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+      }
+      .active,
+      .accordion:hover {
+        background-color: #073d71;
+      }
+      .accordion:after {
+        content: "➕";
+        font-size: 17px;
+        color: #777;
+        float: right;
+        margin-left: 5px;
+        font-style: bold;
+      }
+      .active:after {
+        content: "➖";
+      }
+      .panel {
+        padding: 0 18px;
+        background-color: rgba(0, 0, 0, 0.5);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+      }
+      .centered {
+        text-align: center;
+      }
+      .back-button {
+        background-color: #073d71;
+        color: #ffffff;
+        border: 1px solid #ffffff;
+        padding: 10px 20px;
+        font-size: 15px;
+        cursor: pointer;
+        margin: 10px;
+        transition: 0.4s;
+      }
+      .back-button:hover {
+        background-color: #00284e;
+        color: #ffd700;
+      }
+      @media screen and (max-width: 768px) {
+        .accordion,
+        .back-button {
+          font-size: 13px;
+          padding: 12px;
+          width: 100%;
+          margin: 0 auto;
+        }
+      }
+    </style>
+    <script>
+      function goBack() {
+        // You can navigate to another page or simply go back one step:
+        window.history.back();
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        var acc = document.getElementsByClassName("accordion");
+        for (var i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+          });
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <h1>How to Delete Your FightersTech Account</h1>
+    <img
+      src="../../fighterstech.png"
+      alt="FightersTech Logo"
+      style="width: 100%; max-width: 150px; margin: 0 auto; display: block"
+    />
+    <button class="back-button" id="goBack" onclick="goBack()">Go back</button>
+
+    <div style="max-width: 800px; margin: 0 auto; padding: 20px">
+      <p>
+        We understand that circumstances can change and you might wish to
+        permanently delete your FightersTech account. Below are the steps you
+        can follow to delete your account along with all associated data:
+      </p>
+
+      <ol>
+        <li>
+          <strong>Open the App:</strong> Launch the FightersTech application on
+          your device and make sure you are logged in.
+        </li>
+        <li>
+          <strong>Navigate to Settings:</strong> Tap on the
+          <em>Settings</em> icon (found in the bottom navigation).
+        </li>
+        <li>
+          <strong>Go to About:</strong> Within the Settings menu, tap on
+          <em>About</em>.
+        </li>
+        <li>
+          <strong>Open Legal:</strong> Under the About section, select
+          <em>Legal</em>.
+        </li>
+        <li>
+          <strong>Find ARCO-POL: Delete my account and data</strong>: Follow the
+          instructions to confirm you want to permanently delete your account.
+          <em>Please keep in mind that this process is irreversible</em> and all
+          your data will be removed.
+        </li>
+      </ol>
+
+      <p>
+        If you prefer direct assistance or cannot access the app, you may also
+        email us at
+        <a href="mailto:dpo@fighterstech.com">dpo@fighterstech.com</a>
+        and request account deletion. Please include the email associated with
+        your FightersTech account so we can verify and process your request.
+      </p>
+    </div>
+
+    <hr style="border: 1px solid #ffffff" />
+
+    <div style="max-width: 800px; margin: 0 auto; padding: 20px">
+      <h2>Managing Your Data (ARCO-POL Options)</h2>
+      <p>
+        In addition to deleting your entire account, we offer options for
+        partial-data deletion and other data rights under ARCO-POL (Access,
+        Rectification, Cancellation, Opposition) as well as Restriction and
+        Portability.
+      </p>
+
+      <p>
+        <strong>Note:</strong> If you are already logged into the app with a
+        verified account, you usually won’t need additional email verification
+        for these requests (except "ARCO-POL: More options"). Submitting
+        ARCO-POL actions directly in-app helps us confirm your identity.
+      </p>
+
+      <!-- "Ask for my data" (Access) -->
+      <button class="accordion">ARCO-POL: Ask for my data</button>
+      <div class="panel">
+        <p>
+          This option allows you to request a summary of the personal data we
+          have stored about you (often called an
+          <strong>Access</strong> request).
+        </p>
+        <ol>
+          <li>
+            Open the FightersTech app and go to
+            <em>Settings → About → Legal</em>.
+          </li>
+          <li>Select <em>ARCO-POL: Ask for my data</em>.</li>
+          <li>
+            Follow the instructions to confirm your request. We’ll compile your
+            data and notify you when it’s ready.
+          </li>
+        </ol>
+      </div>
+
+      <!-- "Suspend my account" -->
+      <button class="accordion">ARCO-POL: Suspend my account</button>
+      <div class="panel">
+        <p>
+          This option allows you to temporarily suspend your account, meaning
+          you won’t be able to use certain services or features until you
+          reactivate it, but your data remains intact.
+        </p>
+        <ol>
+          <li>
+            Open the FightersTech app and go to
+            <em>Settings → About → Legal</em>.
+          </li>
+          <li>Select <em>ARCO-POL: Suspend my account</em>.</li>
+          <li>
+            Follow the on-screen steps to confirm the suspension. You can
+            reactivate your account by logging back for a time before it expires
+            and your account gets deleted.
+          </li>
+        </ol>
+      </div>
+
+      <!-- Existing ARCO-POL options from previous snippet -->
+      <button class="accordion">ARCO-POL: More options</button>
+      <div class="panel">
+        <p>
+          Open the FightersTech app and go to
+          <em>Settings → About → Legal-> ARCO-POL: More options</em>.
+        </p>
+        <p>
+          Here you’ll find additional ARCO-POL rights, such as
+          <strong>Rectification</strong>, <strong>Cancellation</strong>,
+          <strong>Objection</strong>, <strong>Restriction</strong>, and
+          <strong>Portability</strong>. <br />
+          <br />
+
+          <strong
+            >In order to follow up your requests and verify your identity you
+            will need to have your email notifications enabled (email linked to
+            your FightersTech account).</strong
+          >
+        </p>
+      </div>
+
+      <p>
+        If you are unable to access these options in the app or prefer
+        assistance, please email us at
+        <a href="mailto:dpo@fighterstech.com">dpo@fighterstech.com</a> with the
+        subject line <em>ARCO-POL Request</em>, and we will guide you further.
+      </p>
+
+      <p class="centered" style="color: #a9b3bc">
+        <em>Last Updated: 2025-01-08</em>
+      </p>
+    </div>
+  </body>
+</html>

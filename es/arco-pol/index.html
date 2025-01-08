@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #00284e;
+        color: #ffffff;
+        align-content: center;
+      }
+      h1,
+      h2 {
+        text-align: center;
+        color: #ffffff;
+      }
+      a {
+        color: #ffd700;
+        text-decoration: none;
+      }
+      a:hover {
+        color: #ffffff;
+      }
+      .accordion {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #ffffff;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: 1px solid #ffffff;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+      }
+      .active,
+      .accordion:hover {
+        background-color: #073d71;
+      }
+      .accordion:after {
+        content: "➕";
+        font-size: 17px;
+        color: #777;
+        float: right;
+        margin-left: 5px;
+        font-style: bold;
+      }
+      .active:after {
+        content: "➖";
+      }
+      .panel {
+        padding: 0 18px;
+        background-color: rgba(0, 0, 0, 0.5);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+      }
+      .centered {
+        text-align: center;
+      }
+      .back-button {
+        background-color: #073d71;
+        color: #ffffff;
+        border: 1px solid #ffffff;
+        padding: 10px 20px;
+        font-size: 15px;
+        cursor: pointer;
+        margin: 10px;
+        transition: 0.4s;
+      }
+      .back-button:hover {
+        background-color: #00284e;
+        color: #ffd700;
+      }
+      @media screen and (max-width: 768px) {
+        .accordion,
+        .back-button {
+          font-size: 13px;
+          padding: 12px;
+          width: 100%;
+          margin: 0 auto;
+        }
+      }
+    </style>
+    <script>
+      function goBack() {
+        // Puedes navegar a otra página o simplemente retroceder un paso:
+        window.history.back();
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        var acc = document.getElementsByClassName("accordion");
+        for (var i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+          });
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Cómo eliminar tu cuenta de FightersTech</h1>
+    <img
+      src="../../fighterstech.png"
+      alt="Logotipo de FightersTech"
+      style="width: 100%; max-width: 150px; margin: 0 auto; display: block"
+    />
+    <button class="back-button" id="goBack" onclick="goBack()">Volver</button>
+
+    <div style="max-width: 800px; margin: 0 auto; padding: 20px">
+      <p>
+        Entendemos que las circunstancias pueden cambiar y que podrías desear
+        eliminar permanentemente tu cuenta de FightersTech. A continuación,
+        encontrarás los pasos que puedes seguir para eliminar tu cuenta junto
+        con todos los datos asociados:
+      </p>
+
+      <ol>
+        <li>
+          <strong>Abre la aplicación:</strong> Inicia la aplicación de
+          FightersTech en tu dispositivo y asegúrate de haber iniciado sesión.
+        </li>
+        <li>
+          <strong>Navega a Configuración:</strong> Toca el ícono de
+          <em>Configuración</em> (que se encuentra en la barra de navegación
+          inferior).
+        </li>
+        <li>
+          <strong>Ve a Acerca de:</strong> Dentro del menú de Configuración,
+          toca en <em>Acerca de</em>.
+        </li>
+        <li>
+          <strong>Abre Legal:</strong> En la sección Acerca de, selecciona
+          <em>Legal</em>.
+        </li>
+        <li>
+          <strong>Busca ARCO-POL: Borrar mi cuenta y datos</strong>: Sigue las
+          instrucciones para confirmar que deseas eliminar tu cuenta de manera
+          permanente. <em>Ten en cuenta que este proceso es irreversible</em> y
+          se eliminarán todos tus datos.
+        </li>
+      </ol>
+
+      <p>
+        Si prefieres asistencia directa o no puedes acceder a la aplicación,
+        también puedes enviarnos un correo electrónico a
+        <a href="mailto:dpo@fighterstech.com">dpo@fighterstech.com</a>
+        solicitando la eliminación de tu cuenta. Por favor, incluye el correo
+        electrónico asociado a tu cuenta de FightersTech para que podamos
+        verificar y procesar tu solicitud.
+      </p>
+    </div>
+
+    <hr style="border: 1px solid #ffffff" />
+
+    <div style="max-width: 800px; margin: 0 auto; padding: 20px">
+      <h2>Gestionar tus datos (Opciones ARCO-POL)</h2>
+      <p>
+        Además de eliminar tu cuenta completa, ofrecemos opciones de eliminación
+        parcial de datos y otros derechos de datos bajo ARCO-POL (Acceso,
+        Rectificación, Cancelación, Oposición), así como Restricción y
+        Portabilidad.
+      </p>
+
+      <p>
+        <strong>Nota:</strong> Si ya iniciaste sesión en la aplicación con una
+        cuenta verificada, normalmente no necesitarás verificación adicional por
+        correo electrónico para estas solicitudes (excepto "ARCO-POL: Más
+        opciones"). Enviar acciones de ARCO-POL directamente en la aplicación
+        nos ayuda a confirmar tu identidad.
+      </p>
+
+      <!-- "Ask for my data" (Access) -->
+      <button class="accordion">ARCO-POL: Solicitar mis datos</button>
+      <div class="panel">
+        <p>
+          Esta opción te permite solicitar un resumen de los datos personales
+          que tenemos almacenados sobre ti (a menudo denominado una
+          <strong>solicitud de Acceso</strong>).
+        </p>
+        <ol>
+          <li>
+            Abre la aplicación de FightersTech y ve a
+            <em>Configuración → Acerca de → Legal</em>.
+          </li>
+          <li>Selecciona <em>ARCO-POL: Solicitar mis datos</em>.</li>
+          <li>
+            Sigue las instrucciones para confirmar tu solicitud. Reuniremos tus
+            datos y te notificaremos cuando estén listos.
+          </li>
+        </ol>
+      </div>
+
+      <!-- "Suspend my account" -->
+      <button class="accordion">ARCO-POL: Suspender mi cuenta</button>
+      <div class="panel">
+        <p>
+          Esta opción te permite suspender temporalmente tu cuenta, lo que
+          significa que no podrás utilizar ciertos servicios o funciones hasta
+          que la reactives, pero tus datos permanecerán intactos.
+        </p>
+        <ol>
+          <li>
+            Abre la aplicación de FightersTech y ve a
+            <em>Configuración → Acerca de → Legal</em>.
+          </li>
+          <li>Selecciona <em>ARCO-POL: Suspender mi cuenta</em>.</li>
+          <li>
+            Sigue los pasos en pantalla para confirmar la suspensión. Puedes
+            reactivar tu cuenta iniciando sesión nuevamente durante el período
+            establecido, antes de que caduque y se elimine tu cuenta.
+          </li>
+        </ol>
+      </div>
+
+      <!-- ARCO-POL: More options -->
+      <button class="accordion">ARCO-POL: Más opciones</button>
+      <div class="panel">
+        <p>
+          Abre la aplicación de FightersTech y ve a
+          <em>Configuración → Acerca de → Legal → ARCO-POL: Más opciones</em>.
+        </p>
+        <p>
+          Aquí encontrarás derechos adicionales de ARCO-POL, como
+          <strong>Rectificación</strong>, <strong>Cancelación</strong>,
+          <strong>Oposición</strong>, <strong>Restricción</strong> y
+          <strong>Portabilidad</strong>.<br /><br />
+          <strong
+            >Para dar seguimiento a tus solicitudes y verificar tu identidad,
+            necesitarás tener habilitadas tus notificaciones por correo
+            electrónico (el correo vinculado a tu cuenta de
+            FightersTech).</strong
+          >
+        </p>
+      </div>
+
+      <p>
+        Si no puedes acceder a estas opciones en la aplicación o prefieres
+        asistencia, por favor envíanos un correo electrónico a
+        <a href="mailto:dpo@fighterstech.com">dpo@fighterstech.com</a>
+        con el asunto <em>Solicitud ARCO-POL</em>, y te guiaremos
+        posteriormente.
+      </p>
+
+      <p class="centered" style="color: #a9b3bc">
+        <em>Última actualización: 2025-01-08</em>
+      </p>
+    </div>
+  </body>
+</html>
