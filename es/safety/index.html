@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #00284e;
+        color: #ffffff;
+        align-content: center;
+      }
+      h1,
+      h2 {
+        text-align: center;
+        color: #ffffff;
+      }
+      a {
+        color: #ffd700;
+        text-decoration: none;
+      }
+      a:hover {
+        color: #ffffff;
+      }
+      .accordion {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #ffffff;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: 1px solid #ffffff;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+      }
+      .active,
+      .accordion:hover {
+        background-color: #073d71;
+      }
+      .accordion:after {
+        content: "➕";
+        font-size: 17px;
+        color: #777;
+        float: right;
+        margin-left: 5px;
+        font-style: bold;
+      }
+      .active:after {
+        content: "➖";
+      }
+      .panel {
+        padding: 0 18px;
+        background-color: rgba(0, 0, 0, 0.5);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+      }
+      .centered {
+        text-align: center;
+      }
+      .back-button {
+        background-color: #073d71;
+        color: #ffffff;
+        border: 1px solid #ffffff;
+        padding: 10px 20px;
+        font-size: 15px;
+        cursor: pointer;
+        margin: 10px;
+        transition: 0.4s;
+      }
+      .back-button:hover {
+        background-color: #00284e;
+        color: #ffd700;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        margin: 10px 0;
+        /* border: 1px solid #ffffff; */
+        border-radius: 5px;
+      }
+      @media screen and (max-width: 768px) {
+        .accordion,
+        .back-button {
+          font-size: 13px;
+          padding: 12px;
+          width: 100%;
+          margin: 0 auto;
+        }
+      }
+    </style>
+    <script>
+      function goBack() {
+        window.history.back();
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        var acc = document.getElementsByClassName("accordion");
+        for (var i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+          });
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Seguridad</h1>
+    <img
+      src="../../fighterstech.png"
+      alt="Logotipo de FightersTech"
+      style="width: 100%; max-width: 150px; margin: 0 auto; display: block"
+    />
+    <button class="back-button" id="goBack" onclick="goBack()">Volver</button>
+
+    <div style="max-width: 800px; margin: 0 auto; padding: 20px">
+      <p>
+        En FightersTech, nos tomamos la seguridad de nuestra comunidad muy en
+        serio. Aquí encontrarás cómo reportar comportamientos inapropiados,
+        contenido sospechoso o problemas relacionados con la seguridad.
+      </p>
+      <h2>Cómo reportar en FightersTech</h2>
+      <p>
+        Puedes reportar usuarios o problemas directamente desde la aplicación.
+        Aquí te mostramos cómo hacerlo:
+      </p>
+
+      <!-- Report Users -->
+      <button class="accordion">Reportar a un usuario</button>
+      <div class="panel">
+        <p>
+          Si deseas reportar a un usuario que esté infringiendo las normas,
+          sigue estos pasos:
+        </p>
+        <ol>
+          <li>
+            Ve al perfil del usuario que deseas reportar y toca el botón
+            <strong>"Más opciones"</strong>.
+          </li>
+          <li>
+            Selecciona <em>"Reportar usuario"</em> y elige una categoría
+            (ejemplo: "Contenido relacionado con explotación o abuso infantil",
+            "Spam", etc.).
+          </li>
+          <li>
+            Opcional: Rellena el cuadro de texto para proporcionar más detalles
+            sobre el reporte.
+          </li>
+        </ol>
+        <iframe
+          width="100%"
+          height="1000"
+          src="https://www.youtube.com/embed/fz1yqLyMzh4"
+          title="Ejemplo de cómo reportar"
+          frameborder="0"
+          sandbox="allow-scripts allow-same-origin allow-presentation"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <!-- Report Organizers -->
+      <button class="accordion">Reportar a un organizador de torneos</button>
+      <div class="panel">
+        <p>
+          Si encuentras problemas con un organizador de torneos, puedes
+          reportarlo directamente desde la notificación del torneo:
+        </p>
+        <ol>
+          <li>
+            Abre la notificación del torneo y toca el ícono de
+            <strong>"Exclamación (!)"</strong>.
+          </li>
+          <li>
+            Selecciona la categoría más adecuada y proporciona detalles si es
+            necesario.
+          </li>
+        </ol>
+        <iframe
+          width="100%"
+          height="1000"
+          src="https://www.youtube.com/embed/5TtEuA5nTOM"
+          title="Ejemplo de cómo reportar"
+          frameborder="0"
+          sandbox="allow-scripts allow-same-origin allow-presentation"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <!-- Contact -->
+      <button class="accordion">Contactar directamente</button>
+      <div class="panel">
+        <p>
+          Si necesitas asistencia adicional o quieres reportar un problema más
+          urgente, envíanos un correo a
+          <a href="mailto:safety@fighterstech.com">safety@fighterstech.com</a>.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

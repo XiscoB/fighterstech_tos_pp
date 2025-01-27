@@ -141,6 +141,7 @@
         "Si tienes alguna pregunta o inquietud puedes consultarnos en:";
       var goBackText = "Volver";
       var howtodeleteTitle = "Opciones de ARCO-POL";
+      var safetyTitle = "Seguridad";
 
       // Use the variables in your HTML
       document.body.innerHTML = `
@@ -168,6 +169,11 @@
             <a href="./arco-pol/">
               <button id="testButton" class="accordion">${howtodeleteTitle}</button>
             </a>
+            <h2 class="centered">${safetyTitle}</h2>
+            <a href="./safety/">
+              <button id="testButton" class="accordion">${safetyTitle}</button>
+            </a>
+            
 
             <p style="text-align: center; color: #a9b3bc">${enquiryText} <a href="mailto:${supportEmail}">${supportEmail}</a></p>
         </div>
