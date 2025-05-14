@@ -278,6 +278,8 @@
         document.querySelector(
           "#enquiries"
         ).innerHTML = `${languageVars.htmlStuff.ifYouHaveAnyEnquiries}: <a href="mailto:${languageVars.htmlStuff.FIGHTERSTECH_EMAIL_SUPPORT}">${languageVars.htmlStuff.FIGHTERSTECH_EMAIL_SUPPORT}</a>`;
+        document.querySelector("#goBack").textContent =
+          languageVars.htmlStuff.goBackText;
 
         // Inicializa acordeones
         var acc = document.getElementsByClassName("accordion");
