@@ -1,0 +1,2390 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>FightersTech Términos y Condiciones</title>
+    <meta
+      name="description"
+      content="Lee nuestros Términos y Condiciones para conocer las reglas y directrices al usar FightersTech. Esta página explica tus derechos y obligaciones como usuario."
+    />
+    <meta
+      name="keywords"
+      content="FightersTech, Términos y Condiciones, acuerdo de usuario, condiciones, términos del servicio"
+    />
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #00284e;
+        color: #ffffff;
+      }
+
+      h1 {
+        text-align: center;
+        color: #ffffff;
+      }
+
+      a {
+        color: #ffd700;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: #ffffff;
+      }
+
+      .data-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+
+      .data-table,
+      .data-table th,
+      .data-table td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        color: #ffffff;
+      }
+
+      .data-table tbody tr:nth-child(odd) {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      .data-table th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #073d71;
+        color: #ffffff;
+      }
+
+      .table-key {
+        font-weight: bold;
+        color: #ffffff;
+      }
+
+      .table-value {
+        font-style: italic;
+        color: #ffffff;
+      }
+
+      .accordion {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #ffffff;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: 1px solid #ffffff;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+      }
+
+      .active,
+      .accordion:hover {
+        background-color: #073d71;
+      }
+
+      .accordion:after {
+        content: "➕";
+        font-size: 17px;
+        color: #777;
+        float: right;
+        margin-left: 5px;
+        font-style: bold;
+      }
+
+      .active:after {
+        content: "➖";
+      }
+
+      .panel {
+        padding: 0 18px;
+        background-color: rgba(0, 0, 0, 0.5);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+      }
+
+      .centered {
+        text-align: center;
+      }
+      .back-button {
+        background-color: #073d71;
+        color: #ffffff;
+        border: 1px solid #ffffff;
+        padding: 10px 20px;
+        font-size: 15px;
+        cursor: pointer;
+        margin: 10px;
+        transition: 0.4s;
+      }
+
+      .back-button:hover {
+        background-color: #00284e;
+        color: #ffd700;
+      }
+      @media screen and (max-width: 768px) {
+        .accordion,
+        .back-button {
+          font-size: 13px;
+          padding: 12px;
+          width: 100%;
+          margin: 0 auto;
+        }
+      }
+
+      /* DOCX content normalization */
+      #termsDocx {
+        padding: 24px;
+        background-color: rgba(0, 40, 78, 0.8);
+        border-radius: 8px;
+        overflow-x: auto;
+      }
+      /* Apply uniform font and size */
+      #termsDocx *,
+      #termsDocx {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        line-height: 1.6;
+        color: #ffffff;
+        margin: 0;
+        padding: 0;
+      }
+      /* Maintain heading context with bold weight */
+      #termsDocx h1,
+      #termsDocx h2,
+      #termsDocx h3,
+      #termsDocx h4,
+      #termsDocx h5,
+      #termsDocx h6 {
+        font-weight: bold;
+        margin: 1em 0 0.5em;
+        font-size: 14px;
+      }
+      /* Paragraph spacing */
+      #termsDocx p {
+        margin-bottom: 1em;
+      }
+      /* Lists spacing */
+      #termsDocx ul,
+      #termsDocx ol {
+        margin: 0 0 1em 1.5em;
+        padding: 0;
+      }
+      #termsDocx li {
+        margin: 0.5em 0;
+      }
+      /* Links within DOCX */
+      #termsDocx a {
+        color: #ffd700;
+        text-decoration: underline;
+      }
+      #termsDocx a:hover {
+        color: #ffffff;
+      }
+      /* Tables uniform style */
+      #termsDocx table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 1em;
+      }
+      #termsDocx th,
+      #termsDocx td {
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 0.5em;
+        vertical-align: top;
+      }
+
+      @media screen and (min-width: 769px) {
+        .docx-container {
+          max-width: 800px;
+          margin: 40px auto;
+          padding: 24px;
+          border-radius: 8px;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        .docx-content {
+          overflow-x: auto;
+        }
+      }
+      #termsDocx.docx-container {
+        margin: 40px auto 20px;
+      }
+
+      /* 3) Reactivar los enlaces dentro del contenido importado */
+      #termsDocx a {
+        color: #ffd700;
+        text-decoration: underline;
+      }
+      #termsDocx a:hover {
+        color: #ffffff;
+      }
+      #termsDocx a,
+      #termsDocx a * {
+        color: #ffd700 !important;
+      }
+    </style>
+
+    <script>
+      function goBack() {
+        window.history.back();
+      }
+      document.addEventListener("DOMContentLoaded", function () {
+        var languageVars = {
+          htmlStuff: {
+            title: "FightersTech - Términos y Condiciones",
+            privacyPolicyVersion: "Versión de Términos y Condiciones",
+            privacyPolicyVersionNumber: "1.0.0",
+            lastUpdateText: "Última Actualización",
+            lastUpdatedDate: new Date("2025-05-14"),
+            ifYouHaveAnyEnquiries:
+              "Si tienes alguna pregunta o inquietud puedes consultarnos en",
+            FIGHTERSTECH_EMAIL_SUPPORT: "legal@fighterstech.com",
+            goBackText: "Volver",
+          },
+        };
+
+        var requestProcess = { data: false };
+
+        var versionTexts = function (data) {
+          return `${languageVars.htmlStuff.privacyPolicyVersion}: ${languageVars.htmlStuff.privacyPolicyVersionNumber}`;
+        };
+
+        var generateTable = function generateTable(data, title) {
+          return `<div >
+                <h2 class="centered">${title}</h2>
+                <p>${data}</p>
+                </div>`;
+        };
+
+        var displayData = function (data) {
+          let html = "";
+          for (const [key, value] of Object.entries(data)) {
+            html += `
+            <button id="${key}Button" class="accordion">${key}</button>
+            <div id="${key}" class="panel">
+                  ${generateTable(value, key)}
+            </div>`;
+          }
+          return html;
+        };
+
+        document.querySelector(
+          "h1"
+        ).textContent = `${languageVars.htmlStuff.title}`;
+        document.querySelector("#lastUpdateText").textContent = `${
+          languageVars.htmlStuff.lastUpdateText
+        }: ${languageVars.htmlStuff.lastUpdatedDate.toLocaleDateString()}`;
+
+        document.querySelector("#versionTexts").innerHTML = `${versionTexts(
+          requestProcess.data
+        )}`;
+        document.querySelector("#displayData").innerHTML = `${displayData(
+          requestProcess.data
+        )}`;
+        document.querySelector(
+          "#enquiries"
+        ).innerHTML = `${languageVars.htmlStuff.ifYouHaveAnyEnquiries}: <a href="mailto:${languageVars.htmlStuff.FIGHTERSTECH_EMAIL_SUPPORT}">${languageVars.htmlStuff.FIGHTERSTECH_EMAIL_SUPPORT}</a>`;
+
+        //  document.querySelector("iframe").innerHTML = ... (removed for docx version)
+
+        document.querySelector(
+          "#goBack"
+        ).textContent = `${languageVars.htmlStuff.goBackText}`;
+
+        var acc = document.getElementsByClassName("accordion");
+        for (let i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+          });
+        }
+
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            let targetId = this.getAttribute("href").substring(1);
+            let target = document.getElementById(targetId);
+            if (target) {
+              target.click();
+              window.location.hash = targetId;
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1></h1>
+    <img
+      src="../../fighterstech.png"
+      alt="FightersTech Logo"
+      style="width: 100%; max-width: 150px; margin: 0 auto; display: block"
+    />
+    <button class="back-button" id="goBack" onclick="goBack()"></button>
+    <p></p>
+    <p id="lastUpdateText" class="centered"></p>
+    <div
+      style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      "
+    >
+      <div
+        style="
+          text-align: center;
+          width: 60%;
+          align-items: center;
+          justify-content: center;
+        "
+        id="versionTexts"
+      ></div>
+    </div>
+    <div id="displayData"></div>
+    <div style="text-align: center; margin-top: 20px">
+      <h1 class="paragraph-P1">
+        <a id="a__Términos_y_Condiciones"><span /></a>
+        <span class="text-T1">TÉRMINOS Y CONDICIONES</span>
+        <span class="text-T1" />
+      </h1>
+      <div id="termsDocx" class="docx-container">
+        <div class="docx-content">
+          <p class="paragraph-P2"> </p>
+          <p class="paragraph-P3">
+            <span class="text-T3"
+              >Le damos la bienvenida a FightersTech, una plataforma diseñada
+              para ofrecer un punto de encuentro entre jugadores, comunidades y
+              creadores de contenido donde contacten con otros jugadores para
+              encontrar partidas en juegos multijugador online ya sea en modo
+              competitivo o simplemente por disfrutar de la experiencia de jugar
+              con personas nuevas o con tus amigos. Al acceder y utilizar
+              nuestros </span
+            ><span class="text-T4">servicios</span
+            ><span class="text-T3"
+              >, usted acepta estar legalmente vinculado a los siguientes
+              términos y condiciones. Estos términos se aplican a todos los
+              usuarios del sitio, incluidos, entre otros, los visitantes,
+              proveedores, clientes y cualquier otro tipo de usuario.</span
+            >
+          </p>
+
+          <p class="paragraph-P3">
+            <span class="text-T6"
+              >Estos Términos y Condiciones regulan el uso de nuestra
+              plataforma, y al aceptar estos términos, usted también acepta
+              cumplir con las políticas adicionales que podamos implementar,
+              como nuestra Política de Privacidad, que describe cómo
+              recopilamos, utilizamos y protegemos su información personal
+              conforme a las normativas del Reglamento General de Protección de
+              Datos -RGPD- y la Ley Orgánica de Protección de Datos y Garantía
+              de los Derechos Digitales -LOPDGDD- de España.</span
+            ><span class="text-T5" />
+          </p>
+
+          <p class="paragraph-P4">
+            <span class="text-Strong_20_Emphasis"
+              ><span class="text-T8">Terminología I:</span></span
+            ><span class="text-T7" />
+          </p>
+          <ul>
+            <li>
+              <p class="P5" style="margin-left: 0cm">
+                <span
+                  class="ListLabel_20_73"
+                  style="display: block; float: left; min-width: 0.635cm"
+                ></span
+                ><span class="text-T9"
+                  >El término «FightersTech», «nosotros», «nos» y «nuestro-s-»
+                  en estas condiciones, nos referimos a Francisco Bernabé
+                  Martínez, sus representantes, colaboradores, sus subsidiarias
+                  y sus empresas relacionadas, así como a todos los integrantes
+                  o trabajadores del prestador del servicio.</span
+                ><span class="text-T9" /><span class="odfLiEnd" /> 
+              </p>
+            </li>
+            <li>
+              <p class="P5" style="margin-left: 0cm">
+                <span
+                  class="ListLabel_20_73"
+                  style="display: block; float: left; min-width: 0.635cm"
+                ></span
+                ><span class="text-T4"
+                  >Cuando utilizamos el término «servicios» en estas
+                  condiciones, nos referimos a los servicios, aplicaciones,
+                  sitios web y otros productos de FightersTech.</span
+                ><span class="text-T4" /><span class="odfLiEnd" /> 
+              </p>
+            </li>
+            <li>
+              <p class="P5" style="margin-left: 0cm">
+                <span
+                  class="ListLabel_20_73"
+                  style="display: block; float: left; min-width: 0.635cm"
+                ></span
+                ><span class="text-T9"
+                  >Cuando hacemos uso de «tú», «ti» o «tu-s-», nos referimos a
+                  ti. Si accedes a nuestros servicios en nombre de una entidad
+                  legal -como tu empleador-, aceptas que tienes la facultad para
+                  vincular a esa entidad a estas condiciones, y «tú», «ti» y
+                  «tu-s-» se referirán a esa entidad.</span
+                ><span class="text-T9" /><span class="odfLiEnd" /> 
+              </p>
+            </li>
+            <li>
+              <p class="P6" style="margin-left: 0cm">
+                <span
+                  class="ListLabel_20_73"
+                  style="display: block; float: left; min-width: 0.635cm"
+                ></span
+                ><span class="text-T4"
+                  >En estos términos se citan otros documentos vinculantes para
+                  el usuario como la </span
+                ><a
+                  href="https://legal.fighterstech.com/es/privacy-policy/"
+                  class="text-Internet_20_link"
+                  ><span class="text-Internet_20_link"
+                    ><span class="text-T10">Política de Privacidad</span></span
+                  ></a
+                ><span class="text-T4">, las </span
+                ><a
+                  href="https://legal.fighterstech.com/es/conduct/"
+                  class="text-Internet_20_link"
+                  ><span class="text-Internet_20_link"
+                    ><span class="text-T10"
+                      >Directivas de la Comunidad</span
+                    ></span
+                  ></a
+                ><span class="text-T4"> y </span
+                ><a
+                  href="https://legal.fighterstech.com/es/"
+                  class="text-Internet_20_link"
+                  ><span class="text-Internet_20_link"
+                    ><span class="text-T10">otras políticas</span></span
+                  ></a
+                ><span class="text-T4"
+                  > que se aplican al uso de nuestros servicios por tu parte y
+                  se incorporan a estas condiciones. Te recomendamos que las
+                  leas. Nos hemos esforzado para que sean sencillas y claras, y
+                  contienen información importante para ti si quieres usar
+                  nuestros servicios. Si utilizas nuestra API, también se te
+                  aplican las </span
+                ><span class="text-T10"
+                  >Condiciones del Servicio para Desarrolladores</span
+                ><span class="text-T4"> y la </span
+                ><span class="text-T10">Política de Desarrolladores</span
+                ><span class="text-T4"> de FightersTech. </span
+                ><span class="odfLiEnd" /> 
+              </p>
+            </li>
+          </ul>
+          <h2 class="paragraph-P7">
+            <a id="a__Servicios_Prestados_II_"><span /></a
+            ><span class="text-T11">Servicios Prestados II:</span
+            ><span class="text-T11" />
+          </h2>
+
+          <p class="paragraph-P8">
+            <span class="text-T9"
+              >FightersTech es el mejor sitio para encontrar a otros jugadores,
+              pasar el rato y divertirse con amigos en línea. Con este fin,
+              ofrecemos la oportunidad al usuario de la creación de  espacios
+              digitales en los que puede crear un lugar donde otros usuarios
+              puedan encontrarle a la hora de organizar partidas en juegos
+              online. Puedes entrar en contacto con otros usuarios y comunidades
+              de FightersTech donde puedas encontrar otros jugadores con los que
+              competir en línea. Los usuarios de FightersTech interactúan entre
+              sí a través de la creación de búsqueda de partidas entre distintos
+              juegos online, donde el usuario una vez se registra en la
+              aplicación puede encontrar a otros jugadores que estén buscando
+              equipo o simplemente rivales para competir online. No hay una vía
+              para establecer comunicación a través de la plataforma, más que la
+              búsqueda de jugador a jugador o la organización de eventos o
+              torneos y el intercambio del ID de cada plataforma para montar las
+              partidas. Nuestros servicios están en permanente estado de
+              evolución, así que puede que creemos otros tipos de espacios en el
+              futuro. </span
+            ><span class="text-T12"
+              >En tanto, los servicios prestados por la aplicación se pueden
+              resumir en dos grandes clases:</span
+            >
+          </p>
+          <ul>
+            <li>
+              <p class="P9" style="margin-left: 0cm">
+                <span
+                  class="ListLabel_20_91"
+                  style="display: block; float: left; min-width: 0.635cm"
+                ></span
+                ><span class="text-T12"
+                  >La primera consiste en un tipo de red social en la que los
+                  usuarios se crean sus perfiles en distintos juegos -del género
+                  de juegos de lucha en este caso, pero en un futuro ampliable a
+                  otros géneros- y pueden buscar rivales a los que pedirles
+                  partidas para entrenar combates específicos o simplemente
+                  jugar, este buscador tiene una serie de filtros donde se puede
+                  ajustar la búsqueda por juego para facilitar la experiencia
+                  del usuario. Estos perfiles se pueden compartir y son públicos
+                  una vez creados, pero se pueden borrar en cualquier momento y
+                  dejarían de serlo.</span
+                ><span class="text-T9" /><span class="odfLiEnd" /> 
+              </p>
+            </li>
+          </ul>
+          <p class="paragraph-P10"> </p>
+          <ul>
+            <li>
+              <p class="P11" style="margin-left: 1.27cm">
+                <span
+                  class="ListLabel_20_82"
+                  style="display: block; float: left; min-width: 0.635cm"
+                ></span
+                ><span class="text-T13"
+                  >La segunda funcionalidad se encarga de recibir torneos a
+                  través de la API de </span
+                ><a href="https://start.gg" class="text-Internet_20_link"
+                  ><span class="text-Internet_20_link"
+                    ><span class="text-T14">https://start.gg</span></span
+                  ></a
+                ><span class="text-T15"> </span
+                ><span class="text-T13"
+                  >cumpliendo con sus normas, procesarlos y distribuirlos a los
+                  usuarios dependiendo de las</span
+                ><span class="text-T15"> </span
+                ><span class="text-T13"
+                  >preferencias que rellenan en la app. En estas preferencias se
+                  rellenan campos como</span
+                ><span class="text-T15"> </span
+                ><span class="text-T13"
+                  >offline/online, que videojuegos, las coordenadas, el radio y
+                  la unidad de km. La ubicación del usuario no se revela en
+                  momento alguno, y tampoco posee una precisión que permita
+                  ubicar al usuario ni por FightersTech. La ubicación sólo se
+                  utiliza o bien para la organización y participación en eventos
+                  presenciales, o bien para determinar el servidor donde menos
+                  latencia y mejor rendimiento encuentren entre sí los usuarios
+                  de la aplicación.</span
+                ><span class="odfLiEnd" /> 
+              </p>
+            </li>
+          </ul>
+          <p class="paragraph-P12"> </p>
+          <p class="paragraph-P8">
+            <span class="text-T4"
+              >Los usuarios crean anuncios internos donde buscan a otros
+              jugadores para jugar a juegos online, eligen a cuáles quieren
+              unirse. Todos los usuarios deben cumplir nuestras</span
+            ><a
+              href="https://legal.fighterstech.com/es/conduct/"
+              class="text-Internet_20_link"
+              ><span class="text-Internet_20_link"
+                ><span class="text-T10"> Directivas de la Comunidad</span></span
+              ></a
+            ><span class="text-T4"> y</span
+            ><a
+              href="https://legal.fighterstech.com/es/"
+              class="text-Internet_20_link"
+              ><span class="text-Internet_20_link"
+                ><span class="text-T10"> demás políticas</span></span
+              ></a
+            ><span class="text-T4"
+              >, pero, en el caso de los servidores, los propietarios y
+              administradores son los que controlan los permisos y las normas
+              adicionales, incluidos los requisitos de membresía, así como la
+              creación de roles y lo que se puede hacer con ellos -esta función
+              no se encuentra actualmente, pero la incluimos en los presentes
+              términos a efectos de modificaciones futuras. Estos permisos, al
+              igual que el tamaño del servidor, pueden cambiar con el
+              tiempo.</span
+            >
+          </p>
+
+          <p class="paragraph-P8">
+            <span class="text-T9"
+              >FightersTech está diseñado para que sea lo más fácil posible
+              encontrar a la gente con la que quieres competir o jugar. Es
+              posible que desarrollemos funciones que te ayuden a generar
+              contenido y a comunicarte con otras personas, que te faciliten la
+              participación en conversaciones o que destaquen contenido y
+              actividades que haya disponibles en FightersTech y puedan
+              resultarte de interés. </span
+            ><span class="text-T9" />
+          </p>
+
+          <p class="paragraph-P8">
+            <span class="text-T9"
+              >Los servicios de FightersTech se pueden personalizar para cada
+              usuario en función de su actividad, lo que te permite ver
+              contenido y comunidades que te interesan. En los ajustes puedes
+              decidir si FightersTech personaliza tu experiencia y en qué
+              medida.</span
+            ><span class="text-T9" />
+          </p>
+
+          <p class="paragraph-P8">
+            <span class="text-T9"
+              >Siempre estamos tratando de desarrollar nuevos productos y
+              características para mejorar FightersTech. Para ello, es posible
+              que añadamos o eliminemos características, comencemos a ofrecer
+              nuevos servicios o retiremos otros por completo -o solo en algunos
+              sitios y para algunos usuarios- si ya no tienen sentido desde el
+              punto de vista empresarial o entrañan riesgos para FightersTech,
+              nuestros usuarios o terceros. Aunque procuramos evitar los
+              problemas, no podemos garantizar que no haya interrupciones o
+              cambios en los servicios, y siempre existe la posibilidad de que
+              no puedas recuperar tu contenido debido a los mismos. Por ello, no
+              nos hacemos responsables de tales interrupciones o cambios en los
+              servicios.</span
+            ><span class="text-T17"> </span>
+          </p>
+
+          <p class="paragraph-P3">
+            <span class="text-T3"
+              >FightersTech se reserva el derecho de actualizar, cambiar o
+              sustituir cualquier parte de estos Términos y Condiciones mediante
+              la publicación de actualizaciones y cambios en nuestros </span
+            ><span class="text-T4">servicios</span
+            ><span class="text-T3"
+              >. Es su responsabilidad revisar esta página periódicamente para
+              estar al tanto de cualquier modificación. Su uso continuado del
+              sitio después de la publicación de cualquier cambio constituye la
+              aceptación de dichos cambios.</span
+            >
+          </p>
+
+          <p class="paragraph-P3">
+            <span class="text-T3"
+              >Nos esforzamos por mantener la disponibilidad del servicio, sin
+              embargo, FightersTech no garantiza que la plataforma esté siempre
+              disponible, libre de errores o accesible sin interrupciones. Nos
+              reservamos el derecho de suspender, retirar o modificar parte o
+              todo el contenido de nuestros </span
+            ><span class="text-T4">servicios</span
+            ><span class="text-T3"> sin previo aviso. </span
+            ><span class="text-T3"
+              >No seremos responsables si, por alguna razón, nuestros servicios
+              no están disponible en algún momento o durante algún periodo.
+              Estos servicios están sujetos a los términos y condiciones
+              establecidos en este documento, y pueden estar sujetos a políticas
+              y condiciones adicionales que se detallan en otras secciones del
+              servicio o en contratos específicos.</span
+            >
+          </p>
+
+          <p class="paragraph-P3">
+            <span class="text-T6"
+              >Nos reservamos el derecho de modificar, suspender o descontinuar
+              cualquier servicio, con o sin previo aviso, en cualquier momento y
+              sin responsabilidad alguna para con usted.</span
+            ><span class="text-T6" />
+          </p>
+
+          <p class="paragraph-P3">
+            <span class="text-T6"
+              >Nos esforzamos por garantizar que toda la información disponible
+              en FightersTech sea precisa, completa y actualizada. Sin embargo,
+              no podemos garantizar que toda la información esté libre de
+              errores o sea completamente confiable. Usted acepta que es su
+              responsabilidad verificar la exactitud de cualquier información
+              antes de confiar en ella.</span
+            ><span class="text-T6" />
+          </p>
+
+          <p class="paragraph-P3">
+            <span class="text-T3"
+              >FightersTech no se hace responsable de cualquier error o
+              inexactitud en la información proporcionada en el sitio web o
+              app.</span
+            ><span class="text-T3" />
+          </p>
+
+          <p class="paragraph-P3">
+            <span class="text-T6"
+              >Usted se compromete a no utilizar los servicios de FightersTech
+              para ninguna actividad ilegal, fraudulenta o no autorizada. Esto
+              incluye, pero no se limita a, el uso de los servicios para violar
+              derechos de propiedad intelectual, enviar correos electrónicos no
+              solicitados -spam-, difamar a otros usuarios, distribuir malware,
+              o realizar actividades que puedan dañar, deshabilitar, sobrecargar
+              o deteriorar nuestros servidores o redes.</span
+            ><span class="text-T6" />
+          </p>
+
+          <p class="paragraph-P3">
+            <span class="text-T3"
+              >FightersTech se reserva el derecho de investigar y tomar medidas
+              legales contra cualquier persona que viole esta disposición,
+              incluyendo la terminación de su cuenta y la cooperación con las
+              autoridades legales. Nos reservamos el derecho de limitar el
+              acceso a ciertas áreas de nuestros servicios, o a la totalidad del
+              mismo, a nuestra discreción. Usted no deberá intentar eludir o
+              sortear estas restricciones de acceso mediante cualquier forma de
+              tecnología o por cualquier otro medio. Si </span
+            ><span class="text-T19"
+              >crees que hay alguien que no las está cumpliendo, </span
+            ><span class="text-T18">infórmanos</span
+            ><span class="text-T19"> a </span
+            ><a
+              href="mailto:support@fighterstech.com"
+              class="text-Internet_20_link"
+              ><span class="text-Internet_20_link"
+                ><span class="text-T18">support@fighterstech.com</span></span
+              ></a
+            >
+          </p>
+
+          <p class="paragraph-P4">
+            <span class="text-T20"
+              >II.i Restricciones en tu uso de los servicios de
+              FightersTech</span
+            ><span class="text-T20" />
+          </p>
+
+          <p class="paragraph-P8">
+            <span class="text-T4"
+              >Al usar nuestros servicios, debes cumplir con estas condiciones y
+              todas las leyes, normas y reglamentos aplicables, y solo debes
+              utilizar los servicios para fines autorizados y aceptables.
+              También debes cumplir con nuestras </span
+            ><a
+              href="https://legal.fighterstech.com/es/conduct/"
+              class="text-Internet_20_link"
+              ><span class="text-Internet_20_link"
+                ><span class="text-T10">Directivas de la Comunidad</span></span
+              ></a
+            ><span class="text-T4"> y </span
+            ><a
+              href="https://legal.fighterstech.com/es/"
+              class="text-Internet_20_link"
+              ><span class="text-Internet_20_link"
+                ><span class="text-T10">demás políticas</span></span
+              ></a
+            ><span class="text-T4"
+              >, que contienen normas más detalladas sobre tu contenido y
+              conducta al usar FightersTech y cómo las aplicamos. Básicamente,
+              no hagas, intentes hacer, ni animes o ayudes a los demás a hacer
+              cualquiera de las siguientes cosas:</span
+            >
+          </p>
+          <ol>
+            <li>
+              <p class="P13" style="margin-left: 0cm">
+                <span
+                  class="ListLabel_20_46"
+                  style="display: block; float: left; min-width: 0.635cm"
+                ></span
+                ><span class="text-Strong_20_Emphasis"
+                  ><span class="text-T21"
+                    >No utilices los servicios para hacer daño a los demás ni a
+                    ti.</span
+                  ></span
+                ><span class="text-T21"
+                  > Esto incluye, entre otras cosas, tratar de acceder a la
+                  cuenta de otro usuario o a cualquier parte de los servicios
+                  que no sea pública, infringir los derechos de propiedad
+                  intelectual o los derechos de propiedad de otros, explotar,
+                  acosar, hacer bullying, enviar correo electrónico no deseado,
+                  enviar mensajes automáticos o usar sistemas de llamada
+                  automática con otros usuarios utilizando nuestros
+                  servicios.</span
+                ><span class="odfLiEnd" /> 
+              </p>
+            </li>
+            <li>
+              <p class="P13" style="margin-left: 0cm">
+                <span
+                  class="ListLabel_20_46"
+                  style="display: block; float: left; min-width: 0.635cm"
+                ></span
+                ><span class="text-Strong_20_Emphasis"
+                  ><span class="text-T21"
+                    >No uses los servicios para dañar a FightersTech.</span
+                  ></span
+                ><span class="text-T21"
+                  > Entre otras cosas, esto incluye intentar obtener acceso o
+                  atacar a nuestros sistemas, extraer información de nuestros
+                  servicios sin nuestro consentimiento previo por escrito,
+                  transmitir virus u otro código malicioso a nuestros servicios,
+                  explotar o defraudar nuestros sistemas de pago o a nosotros,
+                  copiar nuestro producto o utilizar nuestra propiedad
+                  intelectual sin permiso, y utilizar indebidamente nuestros
+                  mecanismos de denuncia o de servicio de atención al
+                  cliente.</span
+                ><span class="odfLiEnd" /> 
+              </p>
+            </li>
+            <li>
+              <p class="P13" style="margin-left: 0cm">
+                <span
+                  class="ListLabel_20_46"
+                  style="display: block; float: left; min-width: 0.635cm"
+                ></span
+                ><span class="text-Strong_20_Emphasis"
+                  ><span class="text-T21"
+                    >No utilices nuestros servicios para hacer nada que sea
+                    ilegal.</span
+                  ></span
+                ><span class="text-T21"
+                  > Esto incluye el uso de los servicios para planificar o
+                  cometer crímenes o cualquier otra cosa ilegal.</span
+                ><span class="odfLiEnd" /> 
+              </p>
+            </li>
+          </ol>
+          <p class="paragraph-P14"> </p>
+          <p class="paragraph-P8">
+            <span class="text-T4">Te recomendamos que </span
+            ><span class="text-T10">denuncies el contenido</span
+            ><span class="text-T4"
+              > o las conductas que creas que infringen estas restricciones.
+              Puedes consultar más detalles sobre nuestro enfoque sobre
+              seguridad y moderación de contenido en nuestro </span
+            ><a
+              href="https://legal.fighterstech.com/es/safety/"
+              class="text-Internet_20_link"
+              ><span class="text-Internet_20_link"
+                ><span class="text-T10">Centro de seguridad</span></span
+              ></a
+            ><span class="text-T4">.</span>
+          </p>
+
+          <p class="paragraph-P4">
+            <span class="text-T20">II.ii.  Del </span
+            ><span class="text-T22"
+              >Software en los servicios de FightersTech.</span
+            >
+          </p>
+
+          <p class="paragraph-P8">
+            <span class="text-T9"
+              >Licencia de nuestro software. Algunos de nuestros servicios te
+              permiten descargar software de cliente. Mientras cumplas con estas
+              condiciones, te otorgamos una licencia global, no exclusiva,
+              personal y no susceptible de sublicenciado para descargar,
+              instalar y ejecutar dicho software, pero solo para acceder a
+              nuestros servicios.</span
+            ><span class="text-T9" />
+          </p>
+
+          <p class="paragraph-P8">
+            <span class="text-T9"
+              >No puedes copiar, modificar, crear obras derivadas basadas en
+              nuestros software o servicios, ni distribuir, vender, arrendar o
+              sublicenciar ninguno de ellos. Tampoco puedes realizar ingeniería
+              inversa ni descompilar nuestros software o servicios, intentar
+              hacerlo ni ayudar a nadie a hacerlo, a menos que cuentes con
+              nuestro consentimiento por escrito o la legislación aplicable lo
+              permita.</span
+            ><span class="text-T9" />
+          </p>
+
+          <p class="paragraph-P8">
+            <span class="text-T9"
+              >Aunque te otorgamos esta licencia, conservamos cualquier derecho
+              de propiedad intelectual que tengamos con respecto a nuestro
+              software y nuestros servicios.</span
+            ><span class="text-T9" />
+          </p>
+
+          <p class="paragraph-P8">
+            <span class="text-T4"
+              >Servicios de terceros. FightersTech puede permitirte acceder a
+              aplicaciones, bots u otros productos, características o servicios
+              desarrollados por terceros -los «servicios de terceros»-. Tú
+              decides si quieres usarlos o participar en servidores de
+              FightersTech que los incluyen. Debes revisar las condiciones y las
+              políticas de estos terceros antes de utilizar sus servicios, pues
+              rigen el uso de los mismos. Aunque los servicios de terceros deben
+              cumplir con todas las políticas que se les apliquen -que pueden
+              incluir las presentes Condiciones, así como nuestras </span
+            ><a
+              href="https://legal.fighterstech.com/es/conduct/"
+              class="text-Internet_20_link"
+              ><span class="text-Internet_20_link"
+                ><span class="text-T10">Directivas de la Comunidad</span></span
+              ></a
+            ><span class="text-T4"
+              >, Condiciones del Servicio para Desarrolladores y Política de
+              Desarrolladores-, FightersTech no se hace responsable de los
+              productos desarrollados por terceros.</span
+            >
+          </p>
+
+          <p class="paragraph-P15">
+            <span class="text-T24">Condiciones de Uso III:</span
+            ><span class="text-T24" />
+          </p>
+
+          <p class="paragraph-P3">
+            <span class="text-T6"
+              >Al acceder a FightersTech, usted garantiza que tiene al menos 13
+              años </span
+            ><span class="text-T21"
+              >y cumples los requisitos que establece la legislación de tu país
+              en materia de edad mínima </span
+            ><span class="text-T6"
+              > o que cuenta con el permiso legal de un padre o tutor para
+              utilizar el sitio. Usted se compromete a no utilizar la plataforma
+              para ningún propósito ilegal o no autorizado, y que su uso no
+              infringirá ninguna ley aplicable en su jurisdicción, incluyendo,
+              entre otras, las leyes de propiedad intelectual y las leyes de
+              protección de datos.</span
+            >
+          </p>
+
+          <p class="paragraph-P3">
+            <span class="text-T6"
+              >Cualquier incumplimiento de estas condiciones de uso podrá
+              resultar en la inmediata terminación de sus servicios en
+              FightersTech, y nos reservamos el derecho de tomar las medidas
+              legales correspondientes.</span
+            ><span class="text-T6" />
+          </p>
+
+          <p class="paragraph-P8">
+            <span class="text-T9"
+              >Al acceder a nuestros servicios, confirmas que tienes al menos 13
+              años y cumples los requisitos que establece la legislación de tu
+              país en materia de edad mínima. Contamos con una </span
+            ><span class="text-T25">lista de edades mínimas </span
+            ><span class="text-T9"
+              >en diferentes países, pero no podemos garantizar que esté siempre
+              actualizada. Si tienes la edad suficiente para acceder a nuestros
+              servicios en tu país, pero no para dar el consentimiento a
+              nuestras condiciones, debe darlo en tu nombre tu progenitor o
+              tutor. Si eres progenitor o tutor de un menor y permites que este
+              -que debe tener la edad mínima en tu país- use los servicios,
+              estas condiciones también se te aplicarán y serás responsable de
+              la actividad del menor con los servicios, compras incluidas.</span
+            >
+          </p>
+
+          <p class="paragraph-P3">
+            <span class="text-T21"
+              >Para acceder a los servicios de forma continuada, debes crear una
+              cuenta de FightersTech. Puedes proporcionar un nombre de usuario y
+              una contraseña, además de facilitarnos una forma de contactar
+              contigo -como una dirección de correo electrónico o un número de
+              teléfono-. También necesitaremos tu fecha de nacimiento y, en
+              algunos casos, es posible que tengas que verificar la cuenta o
+              incluir más información.</span
+            ><span class="text-T6">
+              .Usted se compromete a proporcionar información veraz, precisa y
+              completa al registrarse y a mantener dicha información
+              actualizada. Usted es responsable de mantener la confidencialidad
+              de su cuenta y contraseña, y acepta asumir la responsabilidad por
+              todas las actividades que ocurran bajo su cuenta.</span
+            >
+          </p>
+
+          <p class="paragraph-P8">
+            <span class="text-T9"
+              >Eres responsable de la seguridad de tu cuenta y, si crees que
+              esta se ha visto comprometida, debes </span
+            ><span class="text-T25">notificárnoslo</span
+            ><span class="text-T9"
+              > de inmediato. Si usas una contraseña, debe ser compleja; además,
+              te recomendamos -encarecidamente- que la utilices solo para la
+              cuenta de FightersTech y que actives la autenticación de dos
+              factores.</span
+            >
+          </p>
+
+          <p class="paragraph-P3">
+            <span class="text-T6"
+              >Nos reservamos el derecho de cancelar o suspender su cuenta en
+              cualquier momento, por cualquier motivo, sin previo aviso,
+              incluyendo, entre otros, si sospechamos que ha proporcionado
+              información falsa o engañosa, o si ha violado estos Términos y
+              Condiciones.</span
+            ><span class="text-T6" />
+          </p>
+
+          <p class="paragraph-P8">
+            <span class="text-T9"
+              >La información que facilites a FightersTech debe ser siempre
+              veraz y precisa, y debes encargarte de que siga siéndolo en todo
+              momento. Es posible que asumamos que cualquier comunicación que
+              recibamos de tu cuenta o asociada a la información de contacto que
+              nos has facilitado nos la has enviado tú y que las compras
+              realizadas mediante tu cuenta son también tuyas.</span
+            ><span class="text-T9" />
+          </p>
+
+          <p class="paragraph-P8">
+            <span class="text-T9"
+              >Si no puedes acceder a tu cuenta, tendremos que ponernos en
+              contacto contigo mediante el correo electrónico o el número de
+              teléfono asociados a tu cuenta. Si esta se ve comprometida o dejas
+              de tener acceso a tu cuenta de correo electrónico o a tu número de
+              teléfono, es posible que no podamos restablecer tu acceso a la
+              cuenta o los servidores que hayas creado.</span
+            ><span class="text-T9" />
+          </p>
+
+          <p class="paragraph-P8">
+            <span class="text-T9"
+              >Aceptas no licenciar, vender, prestar ni transferir tu cuenta,
+              nombre de usuario de FightersTech, URL personalizada ni cualquier
+              otro identificador sin nuestro consentimiento previo por escrito.
+              También nos reservamos el derecho a eliminar, cambiar o reclamar
+              tu nombre de usuario, URL o cualquier otro identificador.</span
+            ><span class="text-T9" />
+          </p>
+
+          <p class="paragraph-P3">
+            <span class="text-T6"
+              >Nos reservamos el derecho de cancelar o suspender su cuenta en
+              cualquier momento, por cualquier motivo, sin previo aviso,
+              incluyendo, entre otros, si sospechamos que ha proporcionado
+              información falsa o engañosa, o si ha violado estos Términos y
+              Condiciones. </span
+            ><span class="text-T6" />
+          </p>
+          <p class="paragraph-P16"> </p>
+          <p class="paragraph-P15">
+            <span class="text-T26">Del Contenido. IV.</span
+            ><span class="text-T26" />
+          </p>
+          <h4 class="paragraph-P17">
+            <a id="a__IV_i_Contenido_de_usuario_"><span /></a
+            ><span class="text-T27">IV.i Contenido de usuario.</span
+            ><span class="text-T27" />
+          </h4>
+
+          <p class="paragraph-P8">
+            <span class="text-T9"
+              >Cuando mencionemos «tu contenido» o «tus contenidos» en estas
+              condiciones, nos referimos a todo lo que añadas -subas, publiques,
+              compartas, transmitas, etc.- a nuestros servicios. Esto incluye
+              textos, enlaces, GIF, emojis, fotos, vídeos, documentos u otros
+              medios. Y si, en el futuro, creamos nuevas formas de añadir
+              contenido a los servicios, también se incluirán.</span
+            ><span class="text-T9" />
+          </p>
+
+          <p class="paragraph-P8">
+            <span class="text-T9"
+              >No tienes ninguna obligación de añadir contenido a los servicios.
+              Si decides hacerlo, es responsabilidad tuya asegurarte de que
+              tienes derecho a ello, de que te asiste el derecho a otorgar las
+              licencias en esta </span
+            ><span class="text-T9"
+              >sección de las condiciones y de que tu contenido cumple con la
+              legislación. No nos hacemos responsables de tu contenido ni del
+              uso que hagan otros de él.</span
+            ><span class="text-T9" />
+          </p>
+
+          <p class="paragraph-P8">
+            <span class="text-T9"
+              >Tu contenido es tuyo, pero, al usar FightersTech, nos otorgas una
+              licencia. Es posible que te amparen ciertos derechos de propiedad
+              intelectual. Estos no nos pertenecen, pero, al usar nuestros
+              servicios, nos otorgas una licencia —lo que constituye una forma
+              de permiso— para hacer las siguientes cosas con tu contenido,
+              siempre de conformidad con los requisitos legales aplicables, con
+              el fin de gestionar, desarrollar y mejorar nuestros
+              servicios:</span
+            ><span class="text-T9" />
+          </p>
+          <ul>
+            <li>
+              <p class="P18" style="margin-left: 0cm">
+                <span
+                  class="ListLabel_20_10"
+                  style="display: block; float: left; min-width: 0.635cm"
+                ></span
+                ><span class="text-T21"
+                  >Utilizar, copiar, almacenar, distribuir y comunicar tu
+                  contenido de manera coherente con el uso que hagas de los
+                  servicios. -Por ejemplo, para que podamos almacenar y mostrar
+                  tu contenido-.</span
+                ><span class="text-T21" /><span class="odfLiEnd" /> 
+              </p>
+            </li>
+            <li>
+              <p class="P18" style="margin-left: 0cm">
+                <span
+                  class="ListLabel_20_10"
+                  style="display: block; float: left; min-width: 0.635cm"
+                ></span
+                ><span class="text-T21"
+                  >Publicar, reproducir en público o exhibir públicamente el
+                  contenido que hayas decidido hacer visible a los demás. -Lo
+                  que significa, por ejemplo, que podemos mostrar tus mensajes
+                  si los publicas en ciertos servidores o recomiendas el
+                  contenido a otros-.</span
+                ><span class="text-T21" /><span class="odfLiEnd" /> 
+              </p>
+            </li>
+            <li>
+              <p class="P18" style="margin-left: 0cm">
+                <span
+                  class="ListLabel_20_10"
+                  style="display: block; float: left; min-width: 0.635cm"
+                ></span
+                ><span class="text-T21"
+                  >Controlar, modificar, traducir y reformatear tu contenido.
+                  -Por ejemplo, para que podamos cambiar el tamaño de una imagen
+                  que publiques con el fin de que quepa en un dispositivo
+                  móvil-.</span
+                ><span class="text-T21" /><span class="odfLiEnd" /> 
+              </p>
+            </li>
+            <li>
+              <p class="P18" style="margin-left: 0cm">
+                <span
+                  class="ListLabel_20_10"
+                  style="display: block; float: left; min-width: 0.635cm"
+                ></span
+                ><span class="text-T21"
+                  >Otorgar una sublicencia de tu contenido para permitir que
+                  nuestros servicios funcionen como deben. -Por ejemplo, para
+                  que podamos guardar tu contenido en nuestros proveedores de
+                  servicios en la nube-.</span
+                ><span class="text-T21" /><span class="odfLiEnd" /> 
+              </p>
+            </li>
+          </ul>
+          <p class="paragraph-P8">
+            <span class="text-T9"
+              >Esta licencia es mundial, no exclusiva -lo que significa que
+              todavía puedes conceder licencias con respecto a tu contenido a
+              otros-, libre de regalías -lo que significa que no hay cargos por
+              esta licencia-, transferible y perpetua.</span
+            ><span class="text-T9" />
+          </p>
+
+          <p class="paragraph-P8">
+            <span class="text-T4"
+              >Nos reservamos el derecho a bloquear, eliminar o borrar de manera
+              permanente tu contenido si incumple estas condiciones, las </span
+            ><a
+              href="https://legal.fighterstech.com/es/conduct/"
+              class="text-Internet_20_link"
+              ><span class="text-Internet_20_link"
+                ><span class="text-T10">Directivas de la Comunidad</span></span
+              ></a
+            ><span class="text-T4">, </span
+            ><a
+              href="https://legal.fighterstech.com/es/"
+              class="text-Internet_20_link"
+              ><span class="text-Internet_20_link"
+                ><span class="text-T10">nuestras demás políticas</span></span
+              ></a
+            ><span class="text-T4"
+              > o cualquier ley o normativa aplicable, o si supone un peligro
+              para FightersTech o afecta de manera negativa a la experiencia o
+              los intereses de otros usuarios de FightersTech.</span
+            >
+          </p>
+
+          <p class="paragraph-P8">
+            <span class="text-T9">Agradecemos los </span
+            ><span class="text-T25">comentarios</span
+            ><span class="text-T9"
+              > sobre nuestros servicios. Al enviarnos tus comentarios, nos
+              otorgas una licencia no exclusiva, perpetua, irrevocable y
+              transferible para utilizar los comentarios e ideas generados a
+              partir de los comentarios sin ninguna restricción, atribución o
+              compensación para ti.</span
+            >
+          </p>
+          <p class="paragraph-P14"> </p>
+          <h4 class="paragraph-P17">
+            <a id="a__IV__ii_Contenido_de_FightersTech"><span /></a
+            ><span class="text-T27">IV. ii Contenido de FightersTech</span
+            ><span class="text-T27" />
+          </h4>
+
+          <p class="paragraph-P3">
+            <span class="text-T3"
+              >Todo el contenido presente en los servicios de FightersTech,
+              incluyendo textos, gráficos, logotipos, íconos, imágenes, clips de
+              audio, descargas digitales, compilaciones de datos y software, es
+              propiedad de FightersTech o de sus proveedores de contenido y está
+              protegido por las leyes de derechos de autor, marcas registradas y
+              otras normativas sobre propiedad intelectual. </span
+            ><span class="text-T19"
+              >Nuestros servicios incluyen contenido que nos pertenece, como los
+              diseños de nuestras aplicaciones y sitios web, nuestras imágenes y
+              diseños artísticos, y el contenido redactado por nosotros. Puedes
+              usar nuestro software tal y como se indica en las presentes
+              condiciones. Sin embargo, solo puedes usar nuestras marcas
+              comerciales -o cualquier otro indicio de marca- y elementos con
+              derechos de autor de acuerdo con lo permitido en nuestras </span
+            ><span class="text-T18">Directivas de la Marca</span
+            ><span class="text-T19"
+              > o con nuestro consentimiento previo por escrito. Conservamos
+              todos los derechos de propiedad intelectual de nuestro contenido.
+            </span>
+          </p>
+
+          <p class="paragraph-P3">
+            <span class="text-T3"
+              >FightersTech le concede una licencia limitada, no exclusiva e
+              intransferible para acceder y utilizar el sitio web y app para su
+              uso personal, no comercial. Esta licencia no incluye la reventa o
+              uso comercial de nuestros servicios, la recopilación y uso de
+              listados de productos, descripciones o precios, cualquier uso
+              derivado de estos servicios o su contenido, cualquier descarga o
+              copia de la información para beneficio de un tercero, o cualquier
+              uso de minería de datos, robots o herramientas similares de
+              recopilación y extracción de datos.</span
+            ><span class="text-T3" />
+          </p>
+
+          <p class="paragraph-P3">
+            <span class="text-T3"
+              >Se establece una restricción de uso total sobre el contenido de
+              FightersTech, usted no puede reproducir, duplicar, copiar, vender,
+              revender, visitar o de otro modo explotar con cualquier propósito
+              comercial cualquier parte de los servicios sin el consentimiento
+              expreso por escrito de FightersTech. Asimismo, no podrá enmarcar
+              ni utilizar técnicas de enmarcado para adjuntar ninguna marca
+              registrada, logotipo u otra información propietaria -incluyendo
+              imágenes, texto, diseño de página o formulario- de FightersTech
+              sin nuestro consentimiento expreso y por escrito.</span
+            ><span class="text-T3" />
+          </p>
+          <h4 class="paragraph-P17">
+            <a id="a__IV__iii__Contenido_de_Terceros_"><span /></a
+            ><span class="text-T27">IV. iii. Contenido de Terceros.</span
+            ><span class="text-T27" />
+          </h4>
+
+          <p class="paragraph-P8">
+            <span class="text-T4"
+              >Contenido de terceros. Además, es posible que nuestros servicios
+              te otorguen acceso al contenido de terceros. No puedes usar este
+              contenido sin el permiso de sus propietarios, salvo en la medida
+              en que te lo permita la ley. El contenido de otros les pertenece a
+              ellos y no tiene por qué representar los puntos de vista de
+              FightersTech. FightersTech no avala los contenidos creados por sus
+              usuarios ni verifica su precisión o su fiabilidad. Trabajamos sin
+              descanso para hacer de FightersTech un lugar seguro, positivo e
+              inclusivo, pero no siempre podemos impedir que te encuentres con
+              contenido que pueda resultarte reprobable u ofensivo. Te
+              comprometes a no hacernos responsables de los perjuicios que pueda
+              causarte dicho contenido. Puedes </span
+            ><span class="text-T10">denunciar</span
+            ><span class="text-T4"
+              > aquellos contenidos que, en tu opinión, incumplan cualquiera de </span
+            ><a
+              href="https://legal.fighterstech.com/es/"
+              class="text-Internet_20_link"
+              ><span class="text-Internet_20_link"
+                ><span class="text-T10">nuestras políticas</span></span
+              ></a
+            ><span class="text-T4">
+              y, por nuestra parte, podemos revisar dichas denuncias y bloquear
+              o retirar el contenido que nos parezca merecedor de ello, pero no
+              estamos obligados a hacerlo.</span
+            >
+          </p>
+
+          <p class="paragraph-P8">
+            <span class="text-T4"
+              >Características y contenidos de terceros. Además, es posible que
+              nuestros servicios te permitan acceder a sitios web,
+              características, aplicaciones u otro contenido de terceros. Te
+              brindamos este acceso solo para facilitarte las cosas y no nos
+              hacemos responsables del contenido ni de los servicios que estén
+              disponibles en dichos sitios web o recursos ni del uso que se
+              dedique dicho contenido o servicios.</span
+            ><span class="text-T4" />
+          </p>
+
+          <p class="paragraph-P4">
+            <span class="text-T29"> </span
+            ><span class="text-T30">Servicios de pago de FightersTech. V</span>
+          </p>
+
+          <p class="paragraph-P8">
+            <span class="text-T9"
+              >No cobramos por el uso de las funciones básicas de nuestros
+              servicios, pero puede que tengas que pagar por otros productos y
+              características. Las </span
+            ><span class="text-T25">Condiciones de los Servicios de pago</span
+            ><span class="text-T9"
+              > de FightersTech, y sus partners, Google, Apple y RevenueCat se
+              aplican también a cualquier compra que realices utilizando los
+              cauces de adquisición compatibles con FightersTech y cabe la
+              posibilidad de que se te pida que aceptes otras condiciones, como
+              nuestras Condiciones de Monetización, antes de comprar o vender
+              algo a través de FightersTech.
+            </span>
+          </p>
+
+          <p class="paragraph-P4">
+            <span class="text-T20"
+              >Del derecho a Rescisión del Usuario. VI. </span
+            ><span class="text-T20" />
+          </p>
+
+          <p class="paragraph-P8">
+            <span class="text-T4"
+              >Tu derecho de rescisión. Puedes dejar de usar los servicios de
+              FightersTech en cualquier momento y por cualquier motivo. Para
+              poner fin a este acuerdo, puedes eliminar tu cuenta de
+              FightersTech a través de la página de ajustes en la aplicación de
+              FightersTech -el icono del engranaje al lado de tu nombre de
+              usuario- y dejar de usar los servicios. Ciertas disposiciones de
+              estas condiciones continuarán vigentes tras la rescisión, tal y
+              como se indica más adelante en la sección «Vigencia».</span
+            ><br /><br /><span class="text-T4"
+              >Deshabilitar tu cuenta limita el procesamiento de tu información
+              personal, tal y como se describe en nuestra </span
+            ><a
+              href="https://legal.fighterstech.com/es/privacy-policy/"
+              class="text-Internet_20_link"
+              ><span class="text-Internet_20_link"
+                ><span class="text-T10">Política de Privacidad</span></span
+              ></a
+            ><span class="text-T4"
+              >. Deshabilitar tu cuenta no rescinde este acuerdo.</span
+            >
+          </p>
+
+          <p class="paragraph-P8">
+            <span class="text-T9"
+              >Derecho de rescisión. De conformidad con la legislación vigente,
+              nos reservamos el derecho a suspender o borrar tu cuenta o tu
+              acceso a algunos de los servicios -o todos ellos-, con o sin
+              previo aviso, según nuestro exclusivo criterio o por las
+              siguientes razones:</span
+            ><span class="text-T9" />
+          </p>
+          <ol>
+            <li>
+              <p class="P19" style="margin-left: 0cm">
+                <span
+                  class="ListLabel_20_55"
+                  style="display: block; float: left; min-width: 0.635cm"
+                ></span
+                ><span class="text-T19"
+                  >Incumples estas condiciones, nuestras </span
+                ><a
+                  href="https://legal.fighterstech.com/es/conduct/"
+                  class="text-Internet_20_link"
+                  ><span class="text-Internet_20_link"
+                    ><span class="text-T18"
+                      >Directivas de la Comunidad</span
+                    ></span
+                  ></a
+                ><span class="text-T19">, </span
+                ><a
+                  href="https://legal.fighterstech.com/es/"
+                  class="text-Internet_20_link"
+                  ><span class="text-Internet_20_link"
+                    ><span class="text-T18"
+                      >nuestras otras políticas</span
+                    ></span
+                  ></a
+                ><span class="text-T19"
+                  > o las condiciones adicionales que se aplican a productos
+                  específicos.</span
+                ><span class="odfLiEnd" /> 
+              </p>
+            </li>
+            <li>
+              <p class="P19" style="margin-left: 0cm">
+                <span
+                  class="ListLabel_20_55"
+                  style="display: block; float: left; min-width: 0.635cm"
+                ></span
+                ><span class="text-T21"
+                  >Estamos obligados a hacerlo para cumplir con un requisito
+                  legal o una orden judicial.</span
+                ><span class="text-T21" /><span class="odfLiEnd" /> 
+              </p>
+            </li>
+            <li>
+              <p class="P19" style="margin-left: 0cm">
+                <span
+                  class="ListLabel_20_55"
+                  style="display: block; float: left; min-width: 0.635cm"
+                ></span
+                ><span class="text-T21"
+                  >Creemos dentro de lo razonable que la cancelación es
+                  necesaria para evitarte daños a ti, a nosotros, a otros
+                  usuarios o a terceros.</span
+                ><span class="text-T21" /><span class="odfLiEnd" /> 
+              </p>
+            </li>
+            <li>
+              <p class="P19" style="margin-left: 0cm">
+                <span
+                  class="ListLabel_20_55"
+                  style="display: block; float: left; min-width: 0.635cm"
+                ></span
+                ><span class="text-T21"
+                  >Tu cuenta ha estado inactiva durante más de dos años.</span
+                ><span class="text-T21" /><span class="odfLiEnd" /> 
+              </p>
+            </li>
+            <li>
+              <p class="P19" style="margin-left: 0cm">
+                <span
+                  class="ListLabel_20_55"
+                  style="display: block; float: left; min-width: 0.635cm"
+                ></span
+                ><span class="text-T21"
+                  >Si el hecho de permitir que tu cuenta siga activa, albergando
+                  tu contenido o dándote acceso a algunos servicios o a todos,
+                  puede constituir un peligro para FightersTech, otros usuarios
+                  o terceros.</span
+                ><span class="text-T21" /><span class="odfLiEnd" /> 
+              </p>
+            </li>
+          </ol>
+          <p class="paragraph-P8">
+            <span class="text-T9"
+              >Sin embargo, te avisaremos de ello con antelación si resulta
+              razonable hacerlo o nos lo exige la ley.</span
+            ><span class="text-T9" />
+          </p>
+
+          <p class="paragraph-P8">
+            <span class="text-T9"
+              >Valoramos la transparencia y nos esforzamos para proporcionarte
+              el contexto en el que tomamos decisiones. Puedes apelar cualquier
+              medida ejecutiva que tomemos de conformidad con estas condiciones
+              u otras políticas, incluidas las eliminaciones de contenido, las
+              bajas o las suspensiones a través de este </span
+            ><span class="text-T25">formulario</span
+            ><span class="text-T9"> o de </span
+            ><span class="text-T25"
+              >las opciones disponibles en la aplicación</span
+            ><span class="text-T9"
+              >. Si resides en el Espacio Económico Europeo, tu apelación debe
+              enviarse en los seis meses posteriores a la decisión en
+              cuestión.</span
+            >
+          </p>
+          <h2 class="paragraph-P7">
+            <a id="a__Limitación_de_Responsabilidad_VII_"><span /></a
+            ><span class="text-T11">Limitación de Responsabilidad  VII.</span
+            ><span class="text-T11" />
+          </h2>
+          <h2 class="paragraph-P7">
+            <a id="a__VII__i__Exención_de_garantías"><span /></a
+            ><span class="text-T31">VII. i. Exención de garantías</span
+            ><span class="text-T31" />
+          </h2>
+
+          <p class="paragraph-P8">
+            <span class="text-T9"
+              >Nos esforzamos para ofrecer servicios excelentes, pero hay
+              ciertos aspectos que no podemos garantizar. EN LA MÁXIMA MEDIDA
+              PERMITIDA POR LA LEY, FIGHTERSTECH, SUS FILIALES Y SUS RESPECTIVOS
+              PROVEEDORES NO OFRECEN GARANTÍA ALGUNA, NI EXPRESA NI IMPLÍCITA,
+              SOBRE LOS SERVICIOS. LOS SERVICIOS SE PRESTAN «TAL CUAL».
+              ASIMISMO, RENUNCIAMOS A CUALQUIER GARANTÍA IMPLÍCITA DE
+              COMERCIABILIDAD, ADECUACIÓN PARA UN FIN PARTICULAR, DISFRUTE
+              PACÍFICO Y NO INFRACCIÓN, Y CUALQUIER GARANTÍA DERIVADA DEL CURSO
+              DE LA NEGOCIACIÓN O DEL USO DE COMERCIO. LAS LEYES DE CIERTAS
+              JURISDICCIONES O ESTADOS NO PERMITEN LIMITACIONES EN LAS GARANTÍAS
+              IMPLÍCITAS. EN LA MEDIDA EN QUE DICHAS GARANTÍAS NO PUEDAN SER
+              RECHAZADAS EN VIRTUD DE LAS LEYES DE TU JURISDICCIÓN, LIMITAMOS LA
+              DURACIÓN Y LOS RECURSOS DE DICHAS GARANTÍAS HASTA EL LÍMITE EN QUE
+              DICHAS LEYES LO PERMITAN.</span
+            ><span class="text-T9" />
+          </p>
+
+          <p class="paragraph-P15">
+            <span class="text-T32">VII. ii I</span
+            ><span class="text-T33">ndemnización</span>
+          </p>
+
+          <p class="paragraph-P8">
+            <span class="text-T4"
+              >Si usas los servicios en nombre de una entidad empresarial o
+              jurídica o a título individual, responderás frente a FightersTech
+              y sus administradores, directores, empleados y agentes ante
+              cualquier reclamación, responsabilidad, daño y coste -incluidos
+              los honorarios legales y contables razonables- relacionados con
+              -a- tu acceso o uso de nuestros servicios, -b- tu contenido o -c-
+              tu incumplimiento de estas condiciones. </span
+            ><span class="text-T10"
+              >Usted acepta indemnizar y exonerar de responsabilidad a
+              FightersTech, sus directores, empleados, agentes y afiliados de
+              cualquier reclamación, demanda, pérdida, daño, coste y gasto,
+              incluidos los </span
+            ><span class="text-T10"
+              >honorarios razonables de abogados, que surjan de su uso de los
+              servicios o de su incumplimiento de estos términos y
+              condiciones</span
+            >
+          </p>
+
+          <p class="paragraph-P4">
+            <span class="text-T20">VII. iii Limitación de responsabilidad</span
+            ><span class="text-T20" />
+          </p>
+
+          <p class="paragraph-P8">
+            <span class="text-T9"
+              >EXCLUIMOS Y LIMITAMOS NUESTRA RESPONSABILIDAD HACIA TI ALLÁ DONDE
+              SEA LEGAL HACERLO. EN AQUELLOS PAÍSES DONDE SEAN ILEGALES LOS
+              SIGUIENTES TIPOS DE EXCLUSIÓN, NOS HAREMOS RESPONSABLES POR LOS
+              DAÑOS Y PERJUICIOS QUE PUEDAS SUFRIR, PERO SOLO EN LA MEDIDA EN
+              QUE DERIVEN DE NUESTRA NEGLIGENCIA, FALTA DE HABILIDAD O</span
+            ><span class="text-Strong_20_Emphasis"
+              ><span class="text-T9"> </span></span
+            ><span class="text-T9"
+              >INCUMPLIMIENTO MATERIAL DEL CONTRATO SUSCRITO CONTIGO. ESTE
+              PÁRRAFO NO AFECTA A AQUELLOS DERECHOS DEL CONSUMIDOR A LOS QUE NO
+              PUEDAS RENUNCIAR O NO SE PUEDAN LIMITAR CON ACUERDOS O
+              CONTRATOS.</span
+            >
+          </p>
+
+          <p class="paragraph-P8">
+            <span class="text-T9"
+              >LA INFORMACIÓN PRESENTADA EN LOS SERVICIOS O A TRAVÉS DE ELLOS SE
+              OFRECE ÚNICAMENTE PARA FINES INFORMATIVOS. NO CONFIRMAMOS LA
+              EXACTITUD, INTEGRIDAD NI UTILIDAD DE LA INFORMACIÓN. CUALQUIER
+              CONFIANZA QUE DEPOSITES EN DICHA INFORMACIÓN SERÁ EXCLUSIVAMENTE
+              POR TU CUENTA Y RIESGO.</span
+            ><span class="text-T9" />
+          </p>
+
+          <p class="paragraph-P8">
+            <span class="text-T9"
+              >EN LOS PAÍSES DONDE SE PERMITEN EXCLUSIONES O LIMITACIONES DE
+              RESPONSABILIDAD, FIGHTERSTECH, SUS FILIALES Y NUESTROS PROVEEDORES
+              IMPLICADOS EN LA CREACIÓN, PRODUCCIÓN O PROVISIÓN DE LOS SERVICIOS
+              NO SERÁN RESPONSABLES, EN LA MÁXIMA MEDIDA PERMITIDA POR LA
+              LEGISLACIÓN APLICABLE, DE CUALESQUIERA DAÑOS INCIDENTALES,
+              ESPECIALES, EJEMPLARES O CONSECUENTES, NI DE DAÑOS POR LUCRO
+              CESANTE, PÉRDIDA DE INGRESOS, PÉRDIDA DE AHORROS, PÉRDIDA DE
+              OPORTUNIDADES DE NEGOCIO, PÉRDIDA DE DATOS O FONDO DE COMERCIO,
+              INTERRUPCIONES DEL SERVICIO, DAÑOS A ORDENADORES O FALLOS DEL
+              SISTEMA, O DEL COSTE DE LOS SERVICIOS DE SUSTITUCIÓN DE CUALQUIER
+              TIPO QUE SE DERIVEN DE ESTAS CONDICIONES O ESTÉN RELACIONADOS CON
+              ELLAS, O DEL USO O INCAPACIDAD DE USO DE LOS SERVICIOS, YA SEA
+              SOBRE LA BASE DE UNA GARANTÍA, CONTRATO, ESTATUTO, AGRAVIO
+              -INCLUIDA LA NEGLIGENCIA-, RESPONSABILIDAD DE PRODUCTO O CUALQUIER
+              OTRA TEORÍA JURÍDICA, Y TANTO SI SE HUBIERA INFORMADO O NO A
+              FIGHTERSTECH O A SUS PROVEEDORES DE LA POSIBILIDAD DE DICHO DAÑO,
+              INCLUSO SI SE DETERMINA QUE UN RECURSO LIMITADO PREVISTO EN ESTOS
+              TÉRMINOS HA FRACASADO EN SU PROPÓSITO ESENCIAL.</span
+            ><span class="text-T9" />
+          </p>
+
+          <p class="paragraph-P8">
+            <span class="text-T9"
+              >MÁS ALLÁ DE LOS TIPOS DE RESPONSABILIDAD QUE NO PODEMOS LIMITAR
+              POR LEY -TAL COMO SE DESCRIBE EN ESTA SECCIÓN-, FIGHTERSTECH
+              LIMITA SU RESPONSABILIDAD A LO QUE SEA MAYOR: -A- LAS CANTIDADES
+              QUE NOS HAYAS PAGADO LOS TRES MESES ANTERIORES A LA PRESENTACIÓN
+              DE TU PRIMERA RECLAMACIÓN O -B- 100 EUROS -O SU EQUIVALENTE EN
+              MONEDA LOCAL-.</span
+            ><span class="text-T9" />
+          </p>
+
+          <p class="paragraph-P8">
+            <span class="text-T9"
+              >FIGHTERSTECH NO SE HACE RESPONSABLE DE LA CONDUCTA NI EL
+              CONTENIDO, YA SEA EN LÍNEA O FUERA DE LÍNEA, DE NINGÚN USUARIO DE
+              NUESTROS SERVICIOS.</span
+            ><span class="text-T9" />
+          </p>
+
+          <p class="paragraph-P8">
+            <span class="text-T9"
+              >LAS EXCLUSIONES Y LIMITACIONES DE DAÑOS ESTABLECIDAS
+              ANTERIORMENTE SON ELEMENTOS FUNDAMENTALES DE LA BASE DEL ACUERDO
+              ENTRE FIGHTERSTECH Y TÚ. LA LIMITACIÓN DE RESPONSABILIDAD DESCRITA
+              ANTERIORMENTE SE APLICARÁ PLENAMENTE A LOS RESIDENTES
+              ESPAÑA.</span
+            ><span class="text-T9" />
+          </p>
+          <p class="paragraph-P14"> </p>
+          <p class="paragraph-P4">
+            <span class="text-T20">VII. iv Cargos por uso de datos</span
+            ><span class="text-T20" />
+          </p>
+
+          <p class="paragraph-P8">
+            <span class="text-T9"
+              >Eres responsable de cualquier gasto móvil que puedas generar por
+              el uso de nuestros servicios. Esto incluye las tarifas de datos y
+              mensajería, tales como SMS, MMS o cualquier otro protocolo o
+              tecnología de </span
+            ><span class="text-T9"
+              >mensajería. Si no tienes claro qué usos pueden tener gastos
+              asociados, pregunta a tu proveedor de servicios móviles antes de
+              usar nuestros servicios.</span
+            ><span class="text-T9" />
+          </p>
+          <p class="paragraph-P14"> </p>
+          <p class="paragraph-P4">
+            <span class="text-T30">Resolución de conflictos  VIII</span
+            ><span class="text-T30" />
+          </p>
+          <p class="paragraph-P20"> </p>
+          <p class="paragraph-P8">
+            <span class="text-Strong_20_Emphasis"
+              ><span class="text-T4">Resolución informal</span></span
+            ><span class="text-T4"
+              >. La mayoría de las disputas se pueden resolver de una manera
+              informal, de modo que, si tienes algún problema con los servicios,
+              te comprometes a ponerte en contacto con nosotros antes de
+              presentar una demanda o solicitar un arbitraje. Tendrás que enviar
+              una notificación por escrito -«notificación por escrito»- a </span
+            ><a
+              href="mailto:legal@fighterstech.com"
+              class="text-Internet_20_link"
+              ><span class="text-Internet_20_link"
+                ><span class="text-T10">legal@fighterstech.com</span></span
+              ></a
+            ><span class="text-T4"
+              > que deberá incluir: -1- tu nombre, -2- la dirección de correo
+              electrónico o el número de teléfono asociados a tu cuenta de
+              FightersTech, -3- una descripción detallada del problema y -4- la
+              solución que propones. Si la disputa no se ha resuelto en el plazo
+              de -60- días tras la recepción de la notificación por escrito,
+              FightersTech y tú os comprometéis a resolverla a través de
+              conversaciones informales o uno de los medios que se indican a
+              continuación. Debes recurrir a este proceso informal de resolución
+              de disputas antes de tomar cualquier medida formal, salvo que lo
+              exima la ley. Los estatutos de limitaciones y las fechas límite
+              para las tasas de presentación del arbitraje u otras fechas límite
+              quedarán pospuestos al recibir la notificación por escrito en </span
+            ><a
+              href="mailto:legal@fighterstech.com"
+              class="text-Internet_20_link"
+              ><span class="text-Internet_20_link"
+                ><span class="text-T10">legal@fighterstech.com</span></span
+              ></a
+            ><span class="text-T4">
+               mientras las partes intentan resolver el conflicto por la vía
+              informal.</span
+            >
+          </p>
+
+          <p class="paragraph-P8">
+            <span class="text-T4"
+              >Si resides en la Unión Europea, también puedes tener derecho a
+              presentar una reclamación ante la </span
+            ><span class="text-T10"
+              >plataforma de resolución de litigios en línea -RLL- de la
+              Comisión Europea</span
+            ><span class="text-T4"
+              > o el organismo de resolución extrajudicial de litigios -REL- de
+              acuerdo con el artículo 21 del Reglamento de Servicios Digitales
+              -DSA-. La RLL permite a los consumidores de la Unión Europea
+              resolver litigios relacionados con las compras en línea de bienes
+              y servicios sin acudir a los tribunales. Ten en cuenta que
+              cualquier comunicación con la RLL o a través del REL sin el envío
+              de una Notificación por escrito a </span
+            ><a
+              href="mailto:legal@fighterstech.com"
+              class="text-Internet_20_link"
+              ><span class="text-Internet_20_link"
+                ><span class="text-T10">legal@fighterstech.com</span></span
+              ></a
+            ><span class="text-T4">
+               no pospondrá los estatutos de limitaciones u otras fechas
+              límite.</span
+            >
+          </p>
+
+          <p class="paragraph-P3">
+            <span class="text-Strong_20_Emphasis"
+              ><span class="text-T21"
+                >Jurisdicción y legislación aplicables</span
+              ></span
+            ><span class="text-T21"
+              >. Tanto estas condiciones como cualquier disputa relacionada con
+              ellas o con nuestros servicios se  </span
+            ><span class="text-T6"
+              >rigen e interpretan de acuerdo con las leyes de España y las
+              normativas de la Unión Europea. Cualquier disputa que surja en
+              relación con el uso de FightersTech o con estos términos será
+              dirimida de acuerdo con la legislación española, con exclusión de
+              cualquier conflicto de leyes que pueda resultar en la aplicación
+              de leyes de otra jurisdicción.</span
+            >
+          </p>
+
+          <p class="paragraph-P8">
+            <span class="text-T9"
+              >Si eres un consumidor residente en la Unión Europea, esta
+              cláusula y estas condiciones en general no afectan a ningún
+              derecho del consumidor obligatorio que puedas tener en virtud de
+              tu legislación local, y todos los litigios que surjan en relación
+              con los servicios o estas condiciones se someterán a la
+              jurisdicción exclusiva del tribunales de Madrid -ESPAÑA- o, si
+              eres un consumidor, a la del tribunal más cercano a tu domicilio
+              si te encuentras en un Estado miembro de la Unión Europea.</span
+            ><span class="text-T9" />
+          </p>
+
+          <p class="paragraph-P8">
+            <span class="text-Strong_20_Emphasis"
+              ><span class="text-T9">Acuerdo de arbitraje.</span></span
+            ><span class="text-T9">
+              SI RESIDES EN ESPAÑA O EN TERRITORIO EUROPEO – Y EN LA MEDIDA QUE
+              LO PERMITA LA LEGISLACIÓN EN AQUELLOS TERRITORIOS RESTANTES-
+              TAMBIÉN ACCEDES A LAS SIGUIENTES DISPOSICIONES OBLIGATORIAS SOBRE
+              ARBITRAJE. LEE DETENIDAMENTE ESTA SECCIÓN. PUEDE QUE AFECTE DE
+              FORMA CONSIDERABLE A TUS DERECHOS LEGALES, INCLUIDO EL DERECHO A
+              PRESENTAR UNA DEMANDA ANTE LOS TRIBUNALES:</span
+            >
+          </p>
+
+          <p class="paragraph-P8">
+            <span class="text-T9"
+              >FightersTech y tú acordáis que la Ley 60/2003 de 23 de Arbitraje
+              de España, o por aquella revisión o normativa en vigor más
+              actualizada, que rige las interpretaciones y la puesta en práctica
+              de estas disposiciones sobre arbitraje. Salvo en las
+              circunstancias que se describen más abajo, y solo después de </span
+            ><span class="text-T9"
+              >que las partes, de buena fe, hayan hecho un intento infructuoso
+              de resolver la disputa por medio del proceso de «resolución
+              informal» -descrito arriba-, FightersTech y tú os comprometéis a
+              resolver cualquier disputa, desacuerdo o reclamación relacionados
+              con estas condiciones o con nuestros servicios por medio de un
+              proceso de arbitraje definitivo y vinculante en Madrid, España.
+               Esto incluye las reclamaciones que deriven de o estén
+              relacionadas con hechos sucedidos antes de la existencia de este
+              acuerdo de arbitraje o cualquier otro compromiso anterior, así
+              como las reclamaciones que puedan producirse tras la rescisión de
+              este acuerdo de arbitraje, de conformidad con las disposiciones
+              sobre notificación y derecho al desistimiento que se recogen más
+              adelante.</span
+            ><span class="text-T9" />
+          </p>
+          <ul>
+            <li>
+              <p class="P21" style="margin-left: 0cm">
+                <span
+                  class="ListLabel_20_64"
+                  style="display: block; float: left; min-width: 0.635cm"
+                ></span
+                ><span class="text-T9">‍</span
+                ><span class="text-Strong_20_Emphasis"
+                  ><span class="text-T9">Costes del arbitraje</span></span
+                ><span class="text-T9"
+                  >. Si es FightersTech la parte que inicia el proceso de
+                  arbitraje, todos los gastos, incluida la tasa de presentación,
+                  correrán a su cargo. Si eres tú el que inicia el proceso
+                  contra FightersTech, te harás cargo de la tasa de presentación
+                  no reembolsable y de todos los gastos, salvo que el árbitro
+                  determine que no puedes pagar, en cuyo caso la totalidad de la
+                  tasa correrá a cargo de FightersTech. En todos los procesos de
+                  arbitraje, salvo que la ley  exija otra cosa, te harás
+                  responsable de todos los demás gastos, incluidos los
+                  honorarios de los abogados y los testigos expertos. </span
+                ><span class="odfLiEnd" /> 
+              </p>
+            </li>
+            <li>
+              <p class="P21" style="margin-left: 0cm">
+                <span
+                  class="ListLabel_20_64"
+                  style="display: block; float: left; min-width: 0.635cm"
+                ></span
+                ><span class="text-Strong_20_Emphasis"
+                  ><span class="text-T9">Propuesta de resolución</span></span
+                ><span class="text-T9"
+                  >. Al menos 14 días antes de la fecha establecida para una
+                  audiencia de arbitraje, cualquiera de las partes puede enviar
+                  a la otra una propuesta de resolución en términos concretos
+                  por escrito. Si la otra parte no acepta la propuesta y
+                  posteriormente no obtiene una resolución más favorable, no
+                  recuperará las costas devengadas tras la oferta y pagará las
+                  de la parte que ofreció la propuesta a partir del momento en
+                  que lo hizo.</span
+                ><span class="odfLiEnd" /> 
+              </p>
+            </li>
+            <li>
+              <p class="P21" style="margin-left: 0cm">
+                <span
+                  class="ListLabel_20_64"
+                  style="display: block; float: left; min-width: 0.635cm"
+                ></span
+                ><span class="text-Strong_20_Emphasis"
+                  ><span class="text-T9">Decisión de arbitraje</span></span
+                ><span class="text-T9"
+                  >. El árbitro emitirá su decisión por escrito, que será
+                  vinculante para FightersTech y para ti, y cualquier tribunal
+                  competente podrá intervenir para imponerla. FightersTech y tú
+                  acordáis que, en este proceso, se permitirán peticiones. Salvo
+                  que se establezca lo contrario en esta sección sobre el
+                  arbitraje, será el árbitro, y no los tribunales ni agencias
+                  federales, estatales o locales, quien tendrá la autoridad
+                  exclusiva para resolver todas las disputas derivadas o acerca
+                  de la interpretación, capacidad de aplicación, posibilidad de
+                  ejecución o conformación de estas condiciones de servicio,
+                  incluida, entre otras, cualquier reclamación que sostenga que
+                  las condiciones de servicio son nulas o carecen de validez,
+                  que ponga en duda la capacidad de utilizar un arbitraje como
+                  vía de resolución para estos casos o que guarde relación con
+                  el pago de los tasas de arbitraje o las costas -lo que incluye
+                  los plazos de dichos pagos y las medidas aplicables en caso de
+                  impago-. El árbitro debe regirse por estas condiciones y puede
+                  conceder el pago de daños y perjuicios, además de
+                  compensaciones de igual forma que un tribunal. Ninguna
+                  decisión o resolución del arbitraje tendrá efectos excluyentes
+                  sobre las disputas o reclamaciones de nadie que no sea
+                  identificado como parte en el proceso de arbitraje.</span
+                ><span class="odfLiEnd" /> 
+              </p>
+            </li>
+            <li>
+              <p class="P22" style="margin-left: 0cm">
+                <span
+                  class="ListLabel_20_64"
+                  style="display: block; float: left; min-width: 0.635cm"
+                ></span
+                ><span class="text-Strong_20_Emphasis"
+                  ><span class="text-T9">Demandas colectivas</span></span
+                ><span class="text-T9"
+                  >. Si, en cualquier momento, un mismo representante legal o
+                  entidad presenta 30 o más demandas de arbitraje contra
+                  FightersTech u otras partes relacionadas -«demanda
+                  colectiva»-, se aplicarán también las siguientes normas:</span
+                ><span class="odfLiEnd" /> 
+              </p>
+            </li>
+          </ul>
+          <p class="paragraph-P23">
+            <span class="text-T9"
+              >Si tu representante legal o tú presentáis una demanda de
+              arbitraje que encaje en la definición de demanda colectiva, te
+              comprometes a aceptar que esta se someta también a los protocolos
+              adicionales que se establecen en esta subsección.</span
+            ><span class="text-T9" />
+          </p>
+
+          <p class="paragraph-P23">
+            <span class="text-T9"
+              >Los tribunales y administradores de arbitraje alientan los
+              procesos de resolución previa cuando existen múltiples disputas
+              con reclamaciones similares contra las mismas o similares partes.
+              FightersTech y tú os comprometéis a pedir al árbitro que acceda a
+              los siguientes procedimientos: asignará de manera aleatoria
+              números secuenciales a cada uno de los demandantes incluidos en
+              una demanda colectiva, después de lo cual, las 10 primeras
+              reclamaciones pasarán a designarse los «casos de prueba iniciales»
+              y entrarán en el proceso de arbitraje propiamente dicho. Las
+              partes acuerdan elegir un árbitro único para todos los casos de
+              prueba iniciales y reunir todos los casos para los procedimientos
+              previos a la audiencia. Salvo que las reclamaciones se resuelvan
+              con antelación o se amplíe el calendario, el árbitro presentará su
+              resolución en el plazo máximo </span
+            ><span class="text-T9"
+              >de 120 días tras la conferencia inicial previa a la audiencia. En
+              el caso de que se resuelvan por anticipado menos de 5 de los casos
+              de prueba iniciales sin que se haya producido una resolución final
+              del árbitro, pues han podido resolverse anticipadamente, se
+              elegirán nuevos casos en grupos de 10 para proceder a la fase de
+              arbitraje hasta que al menos 5 de ellos se hayan resuelto por
+              medio de una decisión final del árbitro. Las decisiones del
+              árbitro relativas a los casos de prueba iniciales se emitirán por
+              escrito y deberán incluir los principios esenciales de facto y de
+              iure sobre los que se fundamentan.</span
+            ><span class="text-T9" />
+          </p>
+
+          <p class="paragraph-P23">
+            <span class="text-T9"
+              >A continuación, se remitirán los casos de prueba iniciales
+              resueltos por la decisión final del árbitro a un mediador, quien
+              tratará de facilitar una resolución de los restantes. Una vez que
+              este emita sus resultados, las partes y él dispondrán de 90 días
+              -el «período de mediación»- para acordar una solución o una
+              metodología sustantiva pare resolver los casos restantes. Si las
+              partes son incapaces de llegar a un acuerdo resolutivo durante el
+              período de mediación, cualquiera de ellas podrá optar por
+              abandonar el proceso de arbitraje y acudir a los tribunales con
+              sus reclamaciones restantes. Deberá enviar una notificación por
+              escrito de esta decisión en el plazo máximo de 60 del cierre del
+              período de mediación. El abandono del proceso de mediación, tal
+              como se describe en este párrafo, no constituye una «renuncia
+              colectiva» en los términos descritos en la sección homónima, más
+              abajo.</span
+            ><span class="text-T9" />
+          </p>
+
+          <p class="paragraph-P23">
+            <span class="text-T9"
+              >En caso de no presentarse la mencionada notificación de abandono,
+              se llevarán a cabo los arbitrajes en el mismo orden que se asignó
+              a las reclamaciones en la demanda colectiva.</span
+            ><span class="text-T9" />
+          </p>
+
+          <p class="paragraph-P23">
+            <span class="text-T9"
+              >Si tu demanda de arbitraje se incluye en la demanda colectiva,
+              cualquier estatuto de limitaciones que le fuera de aplicación se
+              pospondrá hasta que se resuelva o retire la demanda de
+              arbitraje.</span
+            ><span class="text-T9" />
+          </p>
+          <ul>
+            <li>
+              <p class="P21" style="margin-left: 0cm">
+                <span
+                  class="ListLabel_20_64"
+                  style="display: block; float: left; min-width: 0.635cm"
+                ></span
+                ><span class="text-Strong_20_Emphasis"
+                  ><span class="text-T9">Excepciones</span></span
+                ><span class="text-T9"
+                  >. Tanto tú como FightersTech podéis seguir presentando
+                  demandas exclusivamente ante los tribunales de instancias
+                  inferiores del condado de San Francisco, California, y tanto
+                  tú como FightersTech os comprometéis a acatar su jurisdicción.
+                  Serán estos tribunales, y no un árbitro ni la AAA, quienes
+                  tendrán la autoridad exclusiva para resolver las disputas
+                  siempre que estas entren dentro de su jurisdicción. Además,
+                  los conflictos sobre patentes, derechos de autor, derechos
+                  morales, marcas registradas, secretos comerciales y denuncias
+                  de piratería o el uso no autorizado de nuestros servicios no
+                  estarán sujetos a arbitraje. Asimismo, cualquiera de las
+                  partes puede reclamar un fallo declaratorio o una compensación
+                  equitativa ante un tribunal competente para determinar si el
+                  caso ha prescrito o se puede presentar ante un tribunal de
+                  instancia inferior. Esto no equivale a una renuncia al derecho
+                  de participar en un proceso de arbitraje conforme se establece
+                  en estas condiciones, y cualquier arbitraje final relacionado
+                  con demandas cubiertas por este epígrafe quedará en suspenso
+                  -lo mismo que cualquier estatuto de limitaciones relacionado-
+                  hasta que se resuelva este proceso.</span
+                ><span class="odfLiEnd" /> 
+              </p>
+            </li>
+            <li>
+              <p class="P22" style="margin-left: 0cm">
+                <span
+                  class="ListLabel_20_64"
+                  style="display: block; float: left; min-width: 0.635cm"
+                ></span
+                ><span class="text-Strong_20_Emphasis"
+                  ><span class="text-T9"
+                    >Cambios en la resolución de conflictos:</span
+                  ></span
+                ><span class="text-T9"
+                  > FightersTech notificará con 30 días de antelación cualquier
+                  cambio sustancial de esta cláusula. Los cambios entrarán en
+                  vigor al trigésimo día y afectarán a todas las demandas que no
+                  se hayan presentado aún. Si sigues usando el sitio pasado el
+                  trigésimo día, te comprometes a que cualquier reclamación de
+                  la que FightersTech no tenga constancia quede sometida a la
+                  cláusula revisada. Si decides oponerte a los cambios
+                  abandonando el proceso de arbitraje, puedes ejercer tu derecho
+                  a un juicio ante un juez o un jurado en los términos
+                  establecidos por la ley, pero, en ese caso, a las demandas que
+                  no se hayan presentado aún no se les aplicará ningún acuerdo
+                  anterior para arbitrar las disputas con una versión anterior
+                  del acuerdo de arbitraje. Si FightersTech cambia la sección
+                  «Resolución de conflictos» después de la fecha en que
+                  aceptaras por primera vez el acuerdo -o cualquier cambio a
+                  este-, aceptas que el hecho de seguir usando los productos o
+                  servicios de FightersTech 30 días después de dicho cambio
+                  equivale a una aceptación de los cambios. Si no estás de
+                  acuerdo con el cambio, puedes notificarlo tal como se
+                  establece en esta sección.</span
+                ><span class="odfLiEnd" /> 
+              </p>
+            </li>
+          </ul>
+          <h2 class="paragraph-P7">
+            <a id="a__Términos_adicionales_IX_"><span /></a
+            ><span class="text-T11">Términos adicionales IX.</span
+            ><span class="text-T11" />
+          </h2>
+
+          <p class="paragraph-P8">
+            <span class="text-T9"
+              >Tienes determinados derechos que, por ley, no pueden limitarse
+              por estas condiciones y nosotros no pretendemos en absoluto
+              restringir dichos derechos en estas condiciones.</span
+            ><span class="text-T9" />
+          </p>
+
+          <p class="paragraph-P8">
+            <span class="text-Emphasis"
+              ><span class="text-T36">Acuerdo completo</span></span
+            ><span class="text-T4"
+              >. Estas condiciones constituyen la totalidad del acuerdo suscrito
+              entre FightersTech y tú para el uso de nuestros servicios junto
+              con el resto de documentos que se citan en este documento como el </span
+            ><a
+              href="https://legal.fighterstech.com/es/conduct/"
+              class="text-Internet_20_link"
+              ><span class="text-Internet_20_link"
+                ><span class="text-T10"
+                  >código de conducta, las directivas de la comunidad</span
+                ></span
+              ></a
+            ><span class="text-T4">, la </span
+            ><a
+              href="https://legal.fighterstech.com/es/cookies-policy/"
+              class="text-Internet_20_link"
+              ><span class="text-Internet_20_link"
+                ><span class="text-T10">política de cookies</span></span
+              ></a
+            ><span class="text-T4"> y la </span
+            ><a
+              href="https://legal.fighterstech.com/es/privacy-policy/"
+              class="text-Internet_20_link"
+              ><span class="text-Internet_20_link"
+                ><span class="text-T10">política de privacidad</span></span
+              ></a
+            ><span class="text-T4">.</span>
+          </p>
+
+          <p class="paragraph-P8">
+            <span class="text-Emphasis"
+              ><span class="text-T37">Condiciones adicionales</span></span
+            ><span class="text-T9"
+              >. En el caso de que se apliquen condiciones adicionales a
+              nuestros productos o servicios y exista algún conflicto con las
+              presentes condiciones, serán dichas condiciones adicionales las
+              que rijan el uso que hagas del producto o servicio en
+              cuestión.</span
+            >
+          </p>
+
+          <p class="paragraph-P8">
+            <span class="text-Emphasis"
+              ><span class="text-T36">Notificación de errores</span></span
+            ><span class="text-T4"
+              >. Apoyamos la notificación responsable de los problemas de
+              seguridad. Para informar de uno de ellos puedes mandar una
+              notificación a </span
+            ><a
+              href="mailto:support@fighterstech.com"
+              class="text-Internet_20_link"
+              ><span class="text-Internet_20_link"
+                ><span class="text-T10">support@fighterstech.com</span></span
+              ></a
+            ><span class="text-T4"> </span>
+          </p>
+
+          <p class="paragraph-P8">
+            <span class="text-Emphasis"
+              ><span class="text-T37">Control de exportaciones</span></span
+            ><span class="text-T9"
+              >. Te comprometes a cumplir todas las leyes y restricciones
+              aplicables en materia de importación, exportación y reexportación,
+              incluidas, entre otras, las de la Unión Europea y los Estados
+              miembros, las «Export Administration Regulations» -«EAR»- del
+              Departamento de Comercio de Estados Unidos y las sanciones
+              económicas implantadas por la «U.S. Office of Foreign Assets
+              Control» -«OFAC»-, y las «International Traffic in Arms
+              Regulations» -«ITAR»-. En ningún caso utilizarás los servicios
+              para incumplir dichas leyes y normativas. Te comprometes a no
+              hacer uso de nuestros servicios para almacenar ni distribuir
+              contenidos sometidos a controles de exportación, salvo que hayas
+              obtenido todos los permisos para ello. Además, por la presente
+              manifiestas que no figuras en ninguna lista de grupos prohibidos o
+              restringidos por el Gobierno -o sometido a cualquier otra
+              restricción equivalente-, tal y como se especifica en las leyes y
+              normativas anteriores o las leyes de tu país. No puedes descargar
+              ni utilizar nuestros servicios si resides en una región o un país
+              sometidos a embargo por EE. UU. o la UE -incluidos Cuba, Irán,
+              Corea del Norte o la región de Crimea-, salvo que dicho uso esté
+              autorizado por los Estados Unidos u otras autoridades
+              relevantes.</span
+            >
+          </p>
+
+          <p class="paragraph-P3">
+            <span class="text-Emphasis"
+              ><span class="text-T38"
+                >Renuncia, divisibilidad y asignación</span
+              ></span
+            ><span class="text-T21"
+              >. El hecho de que, en caso de incumplimiento de estas condiciones
+              por tu parte, no tomemos medidas de manera inmediata no significa
+              que renunciemos a ninguno de los derechos que nos otorga la ley
+              -como el de hacerlo en el futuro-. </span
+            ><span class="text-T6"
+              >Si alguna disposición de estos Términos y Condiciones se
+              considera inválida, ilegal o inaplicable por cualquier motivo,
+              dicha disposición se considerará divisible del resto de los
+              términos y no afectará la validez y aplicabilidad de las demás
+              disposiciones restantes. </span
+            ><span class="text-T21"
+              >Así si cualquier parte de las condiciones resultara no válida o
+              imposible de ejecutar debido a una decisión de un tribunal o
+              autoridad competente, el resto de ellas no se verán afectadas.
+              Queda prohibido asignar estas condiciones a nadie más sin nuestro
+              consentimiento previo por escrito. Nosotros sí podremos asignar
+              nuestros derechos a cualquiera de nuestros afiliados o
+              subsidiarios, así como a cualquier sucesor en interés de una
+              empresa asociada con nuestros servicios.</span
+            >
+          </p>
+
+          <p class="paragraph-P8">
+            <span class="text-Emphasis"
+              ><span class="text-T37">Vigencia</span></span
+            ><span class="text-T9"
+              >. Todas las disposiciones de estas condiciones que, por su
+              naturaleza, deberían mantenerse vigentes tras la rescisión, lo
+              harán. En la medida en que lo permita la legislación vigente, esto
+              incluye lo siguiente -entre otras cosas-:</span
+            >
+          </p>
+          <ul>
+            <li>
+              <p class="P24" style="margin-left: 0cm">
+                <span
+                  class="ListLabel_20_37"
+                  style="display: block; float: left; min-width: 0.635cm"
+                ></span
+                ><span class="text-T19">Nuestros derechos a </span
+                ><span class="text-T18"
+                  >retener y mostrar determinados datos</span
+                ><span class="text-T19"> – que se explicita en la </span
+                ><a
+                  href="https://legal.fighterstech.com/es/privacy-policy/"
+                  class="text-Internet_20_link"
+                  ><span class="text-Internet_20_link"
+                    ><span class="text-T18">política de privacidad</span></span
+                  ></a
+                ><span class="text-T19">
+                  en la parte de retención de datos e información.</span
+                ><span class="odfLiEnd" /> 
+              </p>
+            </li>
+            <li>
+              <p class="P24" style="margin-left: 0cm">
+                <span
+                  class="ListLabel_20_37"
+                  style="display: block; float: left; min-width: 0.635cm"
+                ></span
+                ><span class="text-T21"
+                  >Cualquier suma que siga pendiente de pago;</span
+                ><span class="text-T21" /><span class="odfLiEnd" /> 
+              </p>
+            </li>
+            <li>
+              <p class="P24" style="margin-left: 0cm">
+                <span
+                  class="ListLabel_20_37"
+                  style="display: block; float: left; min-width: 0.635cm"
+                ></span
+                ><span class="text-T21"
+                  >Cualquier obligación indemnizatoria -de haberla- como las que
+                  se recogen en la sección «Indemnización»;</span
+                ><span class="text-T21" /><span class="odfLiEnd" /> 
+              </p>
+            </li>
+            <li>
+              <p class="P24" style="margin-left: 0cm">
+                <span
+                  class="ListLabel_20_37"
+                  style="display: block; float: left; min-width: 0.635cm"
+                ></span
+                ><span class="text-T21"
+                  >Cualquier exención de garantías como las que se recogen en la
+                  sección «Servicios "TAL CUAL"»;</span
+                ><span class="text-T21" /><span class="odfLiEnd" /> 
+              </p>
+            </li>
+            <li>
+              <p class="P24" style="margin-left: 0cm">
+                <span
+                  class="ListLabel_20_37"
+                  style="display: block; float: left; min-width: 0.635cm"
+                ></span
+                ><span class="text-T21"
+                  >Cualquier limitación de responsabilidad aplicable como las
+                  que se recogen en la sección «Limitación de
+                  responsabilidad»;</span
+                ><span class="text-T21" /><span class="odfLiEnd" /> 
+              </p>
+            </li>
+            <li>
+              <p class="P24" style="margin-left: 0cm">
+                <span
+                  class="ListLabel_20_37"
+                  style="display: block; float: left; min-width: 0.635cm"
+                ></span
+                ><span class="text-T21"
+                  >Cualquier disposición sobre resolución de conflictos,
+                  incluidos los acuerdos de arbitraje, como las que se recogen
+                  en la sección «Resolución de conflictos entre tú y
+                  FightersTech».</span
+                ><span class="text-T21" /><span class="odfLiEnd" /> 
+              </p>
+            </li>
+          </ul>
+          <p class="paragraph-P8">
+            <span class="text-Emphasis"
+              ><span class="text-T37"
+                >Actualización de las condiciones</span
+              ></span
+            ><span class="text-T9"
+              >. Existe la posibilidad de que actualicemos las condiciones para
+              -1- reflejar cambios en nuestros servicios o nuestras operaciones,
+              -2- por razones legales o normativas, -3- para impedir abusos en o
+              de nuestros servicios o -4- para proteger o ayudar mejor a los
+              usuarios de nuestros servicios. Si estos cambios afectan de manera
+              sustancial al uso de FightersTech por tu parte o a los derechos
+              que te otorga la ley, te los notificaremos con una antelación
+              razonable -salvo que se trate de actualizaciones urgentes-. Si
+              continúas usando nuestros servicios una vez que hayan entrado en
+              vigor los cambios, entenderemos que los aceptas. En caso
+              contrario, debes dejar de usarlos.</span
+            >
+          </p>
+
+          <p class="paragraph-P8">
+            <span class="text-Emphasis"
+              ><span class="text-T37">App Store de Apple</span></span
+            ><span class="text-T9"
+              >. Si descargas la aplicación de FightersTech desde el App Store
+              de Apple o la utilizas en un dispositivo iOS, el siguiente párrafo
+              es de aplicación para ti.</span
+            >
+          </p>
+
+          <p class="paragraph-P8">
+            <span class="text-T9"
+              >Estas condiciones te otorgan una licencia intransferible para
+              usar la aplicación de FightersTech en cualquier producto Apple/Mac
+              que puedas tener o controlar según lo permitan las políticas de
+              Apple. Apple no tiene obligación de ofrecer servicios de
+              mantenimiento ni asistencia relacionados con la aplicación de
+              FightersTech. Si la aplicación deja de funcionar en los términos
+              recogidos en cualquier garantía aplicable, puedes notificárselo a
+              Apple, que te reembolsará su precio -si procede-, pero, en la
+              medida en que lo permita la legislación vigente, no tendrá más
+              obligaciones en materia de garantía con respecto a la aplicación
+              de FightersTech. Apple no se hace responsable de ninguna
+              reclamación relacionada con la aplicación de FightersTech o tu
+              posesión y uso de esta que podáis presentar tú o cualquier
+              tercero, incluidas, entre otras: -i- reclamaciones por
+              responsabilidad de producto; -ii- reclamaciones de que la
+              aplicación de FightersTech no cumple con requisitos legales o
+              normativos aplicables; y -iii- reclamaciones relacionadas con los
+              derechos de los consumidores o leyes similares. Apple no se hace
+              responsable de la investigación, la defensa ni la resolución de
+              reclamaciones de terceros de que tu posesión y uso de la
+              aplicación de FightersTech constituye una infracción de sus
+              derechos de propiedad intelectual. Tanto Apple como sus
+              subsidiarias son beneficiarios terceros de estas condiciones y,
+              desde el momento en que las aceptes, Apple tendrá derecho a
+              imponerte su cumplimiento en su condición como tal -y se
+              considerará que ha aceptado dicho derecho-. Por la presente
+              manifiestas que -i- no resides en un país sometido a un embargo
+              por el Gobierno de los EE. UU. o que este haya designado como país
+              promotor del terrorismo; y -ii- no figuras en ninguna lista de
+              grupos prohibidos o restringidos elaborada por el Gobierno de
+              EE. UU. Además, debes cumplir las condiciones aplicables de
+              cualquier tercero al usar la aplicación de FightersTech.</span
+            ><span class="text-T9" />
+          </p>
+
+          <p class="paragraph-P25">
+            <span class="text-T39"
+              >Traducciones aportadas por la comunidad:</span
+            ><span class="text-T4">
+              FightersTech puede ofrecer la aplicación en idiomas adicionales
+              aportados por miembros voluntarios de la comunidad de usuarios
+              ("idiomas comunitarios"). Estas traducciones comunitarias se
+              ofrecen con la intención de ampliar la accesibilidad, pero podrían
+              no estar completas ni verificadas por FightersTech.</span
+            >
+          </p>
+
+          <p class="paragraph-P25">
+            <span class="text-T4"
+              >Los documentos legales y oficiales de FightersTech (incluidos
+              estos Términos y Condiciones y la </span
+            ><a
+              href="https://legal.fighterstech.com/es/privacy-policy/"
+              class="text-Internet_20_link"
+              ><span class="text-Internet_20_link"
+                ><span class="text-T10">Política de Privacidad</span></span
+              ></a
+            ><span class="text-T4"
+              >) están disponibles únicamente en los idiomas oficiales de la
+              aplicación, actualmente español e inglés. En caso de discrepancias
+              entre la traducción comunitaria y los idiomas oficiales,
+              prevalecerán siempre los textos en los idiomas oficiales.</span
+            >
+          </p>
+
+          <p class="paragraph-P8">
+            <span class="text-T4"
+              >Los usuarios interesados en contribuir con traducciones
+              comunitarias pueden contactar con FightersTech mediante el correo
+              electrónico habilitado para ello </span
+            ><a
+              href="mailto:translations@fighterstech.com"
+              class="text-Internet_20_link"
+              ><span class="text-Internet_20_link"
+                ><span class="text-T10"
+                  >translations@fighterstech.com</span
+                ></span
+              ></a
+            ><span class="text-T4">
+              . Dichas colaboraciones se gestionarán de manera voluntaria y no
+              implicarán una relación contractual ni laboral entre FightersTech
+              y el colaborador. FightersTech se reserva el derecho de modificar,
+              aceptar o rechazar libremente cualquier colaboración recibida.
+              FightersTech no asume ninguna responsabilidad por errores o
+              malentendidos derivados de dichas traducciones.</span
+            >
+          </p>
+          <p class="paragraph-P14"> </p>
+          <p class="paragraph-P4">
+            <span class="text-T40">Contacto X.</span><span class="text-T40" />
+          </p>
+
+          <p class="paragraph-P8">
+            <span class="text-T4"
+              >Si tienes cualquier pregunta sobre estas condiciones, escríbenos
+              a </span
+            ><a
+              href="mailto:legal@fighterstech.com"
+              class="text-Internet_20_link"
+              ><span class="text-Internet_20_link"
+                ><span class="text-T10">legal@fighterstech.com</span></span
+              ></a
+            ><span class="text-T10"> </span
+            ><span class="text-T4"
+              >. Es posible que te enviemos comunicaciones electrónicas
+              relacionadas con nuestros servicios. En caso necesario,
+              recabaremos tu consentimiento antes de enviarte mensajes de
+              marketing directo y, si no deseas que lo hagamos, nos encargaremos
+              de que te resulte fácil comunicárnoslo.</span
+            >
+          </p>
+          <p class="paragraph-P26"> </p>
+        </div>
+      </div>
+    </div>
+    <p style="text-align: center; color: #a9b3bc" id="enquiries"></p>
+  </body>
+</html>

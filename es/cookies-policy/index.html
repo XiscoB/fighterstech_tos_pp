@@ -141,6 +141,139 @@
           margin: 0 auto; /* Center the buttons */
         }
       }
+      /* scope all styles to this container */
+      #cookiePolicyDocx table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        empty-cells: show;
+      }
+      #cookiePolicyDocx td,
+      #cookiePolicyDocx th {
+        vertical-align: top;
+        font-size: 12pt;
+      }
+      #cookiePolicyDocx h1,
+      #cookiePolicyDocx h2,
+      #cookiePolicyDocx h3,
+      #cookiePolicyDocx h4,
+      #cookiePolicyDocx h5,
+      #cookiePolicyDocx h6 {
+        clear: both;
+      }
+      #cookiePolicyDocx ol,
+      #cookiePolicyDocx ul {
+        margin: 0;
+        padding: 0;
+      }
+      #cookiePolicyDocx li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      #cookiePolicyDocx span.footnodeNumber {
+        padding-right: 1em;
+      }
+      #cookiePolicyDocx span.annotation_style_by_filter {
+        font-size: 95%;
+        font-family: Arial;
+        background-color: #fff000;
+        margin: 0;
+        border: 0;
+        padding: 0;
+      }
+      #cookiePolicyDocx span.heading_numbering {
+        margin-right: 0.8rem;
+      }
+      #cookiePolicyDocx * {
+        margin: 0;
+      }
+      #cookiePolicyDocx .paragraph-P1 {
+        font-size: 11pt;
+        line-height: 115%;
+        margin-bottom: 0.529cm;
+        margin-top: 0;
+        text-align: center !important;
+        font-family: Calibri;
+      }
+      #cookiePolicyDocx .paragraph-P2 {
+        font-size: 11pt;
+        line-height: 115%;
+        margin-bottom: 0.529cm;
+        text-align: justify !important;
+        font-family: Calibri;
+      }
+      #cookiePolicyDocx .paragraph-P3 {
+        font-size: 11pt;
+        line-height: 115%;
+        margin: 0.265cm 0;
+        text-align: justify !important;
+        font-family: Calibri;
+      }
+      #cookiePolicyDocx .paragraph-P4 {
+        font-size: 11pt;
+        line-height: 115%;
+        margin: 0.265cm 0;
+        text-align: center !important;
+        font-family: Calibri;
+      }
+      #cookiePolicyDocx .paragraph-P5 {
+        font-size: 11pt;
+        line-height: 115%;
+        margin: 0.265cm 0;
+        text-align: justify !important;
+        font-family: Calibri;
+      }
+      #cookiePolicyDocx .paragraph-P6 {
+        font-size: 10pt;
+        line-height: 115%;
+        margin-bottom: 0.353cm;
+        text-align: justify !important;
+        font-family: Calibri;
+      }
+      #cookiePolicyDocx .text-Internet_20_link {
+        color: #ffd700;
+        text-decoration: underline;
+      }
+      #cookiePolicyDocx .text-ListLabel_20_20,
+      #cookiePolicyDocx .text-ListLabel_20_21 {
+        color: #ffd700;
+        font-size: 10pt;
+      }
+      #cookiePolicyDocx .text-T1 {
+        color: #fff;
+        text-decoration: underline;
+      }
+      #cookiePolicyDocx .text-T2 {
+        color: #fff;
+        font-size: 10pt;
+      }
+      #cookiePolicyDocx .text-T3 {
+        font-size: 10pt;
+      }
+      #cookiePolicyDocx .text-T4 {
+        color: #fff;
+        font-size: 10pt;
+        font-weight: bold;
+      }
+      #cookiePolicyDocx .text-T5 {
+        color: #fff;
+      }
+      #cookiePolicyDocx .text-T6 {
+        color: #ffd700;
+        font-size: 10pt;
+      }
+      @media screen and (min-width: 769px) {
+        .docx-container {
+          max-width: 800px; /* limits line-length for readability */
+          margin: 40px auto; /* centers it with vertical breathing room */
+          padding: 24px; /* inner whitespace */
+          border-radius: 8px; /* gentle rounding */
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        .docx-content {
+          overflow-x: auto; /* allow wide tables to scroll */
+        }
+      }
     </style>
     <script>
       function goBack() {
@@ -152,17 +285,17 @@
           htmlStuff: {
             title: "FightersTech - Política de Cookies",
             privacyPolicyVersion: "Versión de la Política de Cookies",
-            privacyPolicyVersionNumber: 0.99,
+            privacyPolicyVersionNumber: "1.0.0",
             lastUpdateText: "Última Actualización",
-            lastUpdatedDate: new Date("2024-08-20"),
+            lastUpdatedDate: new Date("2025-05-14"),
             ifYouHaveAnyEnquiries:
               "Si tienes alguna pregunta o inquietud puedes consultarnos en",
             FIGHTERSTECH_EMAIL_SUPPORT: "legal@fighterstech.com",
             goBackText: "Volver",
-            browserNotSupportingIframePart1:
-              "Este navegador no soporta la visualización de PDFs. Por favor, ",
-            browserNotSupportingIframePart2: "descarga el PDF",
-            browserNotSupportingIframePart3: " para verlo.",
+            // browserNotSupportingIframePart1:
+            //   "Este navegador no soporta la visualización de PDFs. Por favor, ",
+            // browserNotSupportingIframePart2: "descarga el PDF",
+            // browserNotSupportingIframePart3: " para verlo.",
           },
         };
 
@@ -221,13 +354,13 @@
         ).innerHTML = `${languageVars.htmlStuff.ifYouHaveAnyEnquiries}: <a href="mailto:${languageVars.htmlStuff.FIGHTERSTECH_EMAIL_SUPPORT}">${languageVars.htmlStuff.FIGHTERSTECH_EMAIL_SUPPORT}</a>`;
 
         // Add this part to dynamically set the content inside the iframe
-        document.querySelector("iframe").innerHTML = `
+        /*        document.querySelector("iframe").innerHTML = `
     <p>
       ${languageVars.htmlStuff.browserNotSupportingIframePart1}
       <a href="./cookies-policy.pdf">${languageVars.htmlStuff.browserNotSupportingIframePart2}</a>
       ${languageVars.htmlStuff.browserNotSupportingIframePart3}
     </p>
-  `;
+  `;*/
 
         document.querySelector(
           "#goBack"
@@ -296,7 +429,238 @@
     </div>
     <div id="displayData"></div>
     <div style="text-align: center; margin-top: 20px">
-      <iframe src="./cookies-policy.pdf" width="100%" height="600px">
+      <h1 class="paragraph-P1">
+        <a id="a__Política_de_Cookies"><span /></a
+        ><span class="text-T1">Política de Cookies</span
+        ><span class="text-T1" />
+      </h1>
+      <div id="cookiePolicyDocx" class="docx-container">
+        <div class="docx-content">
+          <p class="paragraph-P2">
+            <span class="text-T2"
+              >Podemos recibir información de las cookies (pequeños archivos de
+              texto colocados en tu ordenador o dispositivo y tecnologías
+              similares). Nosotros y nuestros proveedores de servicios externos
+              colocamos cookies propias que te permiten usar los servicios y nos
+              ayudan a analizar y mejorar tu experiencia y los servicios. Puedes
+              controlar las cookies tal como se describe en la sección «Cómo
+              puedes controlar tu privacidad» de la </span
+            ><a
+              href="https://legal.fighterstech.com/es/privacy-policy/"
+              class="text-Internet_20_link"
+              ><span class="text-Internet_20_link"
+                ><span class="text-T3"
+                  >Política de Privacidad de FightersTech</span
+                ></span
+              ></a
+            ><span class="text-T2"
+              >. Los servicios usan los siguientes tipos de cookies:</span
+            >
+          </p>
+          <ul>
+            <li>
+              <p class="P3" style="margin-left: 0cm">
+                <span
+                  class="ListLabel_20_1"
+                  style="display: block; float: left; min-width: 0.635cm"
+                  >➡</span
+                ><span class="text-T4">Cookies estrictamente necesarias</span
+                ><span class="text-T2"
+                  >: son necesarias para que funcionen nuestros servicios y para
+                  que podamos cumplir nuestras obligaciones legales. Si usas
+                  herramientas para desactivarlas, es posible que los servicios
+                  no funcionen como es debido.</span
+                ><span class="odfLiEnd" /> 
+              </p>
+            </li>
+            <li>
+              <p class="P3" style="margin-left: 0cm">
+                <span
+                  class="ListLabel_20_1"
+                  style="display: block; float: left; min-width: 0.635cm"
+                  >➡</span
+                ><span class="text-T4">Cookies funcionales:</span
+                ><span class="text-T2"
+                  > estas cookies nos ayudan a proporcionar funcionalidades
+                  mejoradas en los servicios, como recordar las preferencias de
+                  idioma. Desactivarlas podría afectar a alguna funcionalidad de
+                  los servicios.</span
+                ><span class="odfLiEnd" /> 
+              </p>
+            </li>
+            <li>
+              <p class="P3" style="margin-left: 0cm">
+                <span
+                  class="ListLabel_20_1"
+                  style="display: block; float: left; min-width: 0.635cm"
+                  >➡</span
+                ><span class="text-T4">Cookies de rendimiento:</span
+                ><span class="text-T2"
+                  > estas cookies permiten que nosotros o nuestros proveedores
+                  de análisis externos conozcamos cómo tú y otros usáis y
+                  participáis en los servicios, con el fin de poder entenderlos
+                  y mejorarlos</span
+                ><span class="odfLiEnd" /> 
+              </p>
+            </li>
+          </ul>
+          <p class="paragraph-P4">
+            <span class="text-T5">Gestiona las cookies</span
+            ><span class="text-T5" />
+          </p>
+
+          <p class="paragraph-P2">
+            <span class="text-T2"
+              >Para controlar cómo se recoge y usa la información de las cookies
+              en los servicios, puedes realizar uno o más de los siguientes
+              pasos.</span
+            ><span class="text-T2" />
+          </p>
+          <ul>
+            <li>
+              <p class="P5" style="margin-left: 0cm">
+                <span
+                  class="ListLabel_20_10"
+                  style="display: block; float: left; min-width: 0.635cm"
+                  >➡</span
+                ><span class="text-T2"
+                  >Puedes desactivar y gestionar algunas cookies a través de los
+                  ajustes de tu navegador. Necesitarás gestionar tus ajustes
+                  para cada navegador que uses. Puedes encontrar instrucciones
+                  sobre cómo gestionar las cookies en los navegadores más
+                  utilizados como </span
+                ><a
+                  href="https://support.microsoft.com/en-us/windows/delete-and-manage-cookies-168dab11-0753-043d-7c16-ede5947fc64d#ie=ie-10"
+                  class="text-ListLabel_20_20"
+                  ><span class="text-T6">Internet Explorer</span></a
+                ><span class="text-T2">, </span
+                ><a
+                  href="https://support.mozilla.org/en-US/kb/cookies-information-websites-store-on-your-computer?redirectlocale=en-US&amp;redirectslug=Cookies"
+                  class="text-ListLabel_20_20"
+                  ><span class="text-T6">Firefox</span></a
+                ><span class="text-T2">, </span
+                ><a
+                  href="https://support.google.com/chrome/answer/95647?hl=en&amp;ref_topic=14666"
+                  class="text-ListLabel_20_20"
+                  ><span class="text-T6">Chrome</span></a
+                ><span class="text-T2">, </span
+                ><a
+                  href="https://support.apple.com/en-us/HT201265"
+                  class="text-ListLabel_20_20"
+                  ><span class="text-T6">Safari (iOS)</span></a
+                ><span class="text-T2">, </span
+                ><a
+                  href="https://support.apple.com/guide/safari/manage-cookies-and-website-data-sfri11471/mac"
+                  class="text-ListLabel_20_20"
+                  ><span class="text-T6">Safari (Mac)</span></a
+                ><span class="text-T2"> y </span
+                ><a
+                  href="https://blogs.opera.com/news/2015/08/how-to-manage-cookies-in-opera/"
+                  class="text-ListLabel_20_20"
+                  ><span class="text-T6">Opera</span></a
+                ><span class="text-T2">.</span><span class="odfLiEnd" /> 
+              </p>
+            </li>
+            <li>
+              <p class="P5" style="margin-left: 0cm">
+                <span
+                  class="ListLabel_20_10"
+                  style="display: block; float: left; min-width: 0.635cm"
+                  >➡</span
+                ><span class="text-T2"
+                  >Para desactivar las cookies de análisis, puedes usar los
+                  controles del navegador indicados antes o, en el caso de
+                  determinados proveedores, puedes utilizar mecanismos
+                  específicos para ello, como Google Analytics Opt-Out.</span
+                ><span class="text-T2" /><span class="odfLiEnd" /> 
+              </p>
+            </li>
+            <li>
+              <p class="P5" style="margin-left: 0cm">
+                <span
+                  class="ListLabel_20_10"
+                  style="display: block; float: left; min-width: 0.635cm"
+                  >➡</span
+                ><span class="text-T2"
+                  >Además, es posible que tu dispositivo móvil incluya ajustes
+                  en el navegador para controlar el uso de las cookies la
+                  recopilación y el uso de datos por parte de las
+                  aplicaciones.</span
+                ><span class="text-T2" /><span class="odfLiEnd" /> 
+              </p>
+            </li>
+            <li>
+              <p class="P5" style="margin-left: 0cm">
+                <span
+                  class="ListLabel_20_10"
+                  style="display: block; float: left; min-width: 0.635cm"
+                  >➡</span
+                ><span class="text-T2"
+                  >Los grupos de terceros también te permiten limitar cómo se
+                  utilizan las cookies para fines publicitarios por parte de los
+                  terceros participantes. Puedes obtener más información en
+                  la </span
+                ><a
+                  href="https://optout.networkadvertising.org/"
+                  class="text-ListLabel_20_21"
+                  ><span class="text-T6"
+                    >Network Advertising Initiative</span
+                  ></a
+                ><span class="text-T2">, la </span
+                ><a
+                  href="https://optout.aboutads.info/"
+                  class="text-ListLabel_20_21"
+                  ><span class="text-T6">Digital Advertising Alliance</span></a
+                ><span class="text-T2"> y, para los usuarios en la UE, la </span
+                ><a
+                  href="https://www.youronlinechoices.com/"
+                  class="text-ListLabel_20_21"
+                  ><span class="text-T6"
+                    >Alianza Europea de Publicidad Digital Interactiva</span
+                  ></a
+                ><span class="text-T2">.</span><span class="odfLiEnd" /> 
+              </p>
+            </li>
+            <li>
+              <p class="P5" style="margin-left: 0cm">
+                <span
+                  class="ListLabel_20_10"
+                  style="display: block; float: left; min-width: 0.635cm"
+                  >➡</span
+                ><span class="text-T2"
+                  >Dependiendo del lugar desde el que accedas a nuestros
+                  servicios, es posible que puedas ajustar tus preferencias de
+                  cookies en cualquier momento a través de, en la app Ajustes→
+                  Acerca de→ Legal → Política de Cookies.</span
+                ><span class="text-T2" /><span class="odfLiEnd" /> 
+              </p>
+            </li>
+          </ul>
+          <p class="paragraph-P2">
+            <span class="text-T2"
+              >Si desactivas o eliminas las cookies, puede que algunas partes de
+              los servicios no funcionen correctamente. Podrá recogerse
+              información para recordar tus preferencias de exclusión
+              voluntaria.</span
+            ><span class="text-T2" />
+          </p>
+
+          <p class="paragraph-P2">
+            <span class="text-T2"
+              >Para cualquier duda o consulta, puedes enviarnos un correo
+              electrónico a </span
+            ><a
+              href="mailto:support@fighterstech.com"
+              class="text-Internet_20_link"
+              ><span class="text-Internet_20_link"
+                ><span class="text-T3">support@fighterstech.com</span></span
+              ></a
+            ><span class="text-T2">.</span>
+          </p>
+          <p class="paragraph-P6"> </p>
+        </div>
+      </div>
+      <!-- <iframe src="./cookies-policy.pdf" width="100%" height="600px">
         <p>
           ${languageVars.htmlStuff.browserNotSupportingIframePart1}
           <a href="./cookies-policy.pdf"
@@ -304,7 +668,7 @@
           >
           ${languageVars.htmlStuff.browserNotSupportingIframePart3}
         </p>
-      </iframe>
+      </iframe> -->
     </div>
     <p style="text-align: center; color: #a9b3bc" id="enquiries"></p>
   </body>

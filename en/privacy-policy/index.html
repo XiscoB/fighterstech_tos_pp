@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       http-equiv="Cache-Control"
@@ -22,291 +23,2571 @@
       body {
         font-family: Arial, sans-serif;
         background-color: #00284e;
-        color: #ffffff; /* Changed to white for visibility on dark background */
+        color: #ffffff;
       }
-
       h1 {
         text-align: center;
-        color: #ffffff; /* Changed to white for visibility on dark background */
+        color: #ffffff;
       }
-
       a {
-        color: #ffd700; /* Gold color to stand out on dark background */
-        text-decoration: none; /* Remove underline */
+        color: #ffd700;
+        text-decoration: none;
       }
-
       a:hover {
-        color: #ffffff; /* Change color on hover */
+        color: #ffffff;
       }
-
-      .data-table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 20px;
-      }
-
-      .data-table,
-      .data-table th,
-      .data-table td {
-        border: 1px solid #ddd;
-        padding: 8px;
-        color: #ffffff; /* Changed to white for visibility on dark background */
-      }
-
-      .data-table tbody tr:nth-child(odd) {
-        background-color: rgba(0, 0, 0, 0.5);
-      }
-
-      .data-table th {
-        padding-top: 12px;
-        padding-bottom: 12px;
-        text-align: left;
-        background-color: #073d71;
-        color: #ffffff; /* Changed to white for visibility on dark background */
-      }
-
-      .table-key {
-        font-weight: bold;
-        color: #ffffff; /* Changed to white for visibility on dark background */
-      }
-
-      .table-value {
-        font-style: italic;
-        color: #ffffff; /* Changed to white for visibility on dark background */
-      }
-
       .accordion {
         background-color: rgba(0, 0, 0, 0.5);
         color: #ffffff;
         cursor: pointer;
         padding: 18px;
         width: 100%;
-        border: 1px solid #ffffff; /* Added white border */
+        border: 1px solid #ffffff;
         text-align: left;
         outline: none;
         font-size: 15px;
         transition: 0.4s;
       }
-
       .active,
       .accordion:hover {
-        background-color: #073d71; /* Darkened version of accordion background */
+        background-color: #073d71;
       }
-
       .accordion:after {
         content: "➕";
-        font-size: 17px;
+        font-size: 15;
         color: #777;
         float: right;
         margin-left: 5px;
         font-style: bold;
       }
-
       .active:after {
         content: "➖";
       }
-
       .panel {
         padding: 0 18px;
-        background-color: rgba(0, 0, 0, 0.5); /* Same as accordion background */
+        background-color: rgba(0, 0, 0, 0.5);
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.2s ease-out;
       }
-
       .centered {
         text-align: center;
       }
       .back-button {
-        background-color: #073d71; /* Similar to your accordion active state */
-        color: #ffffff; /* Similar to your text color */
-        border: 1px solid #ffffff; /* Similar to your accordion border */
-        padding: 10px 20px; /* Arbitrary padding for the button */
-        font-size: 15px; /* Similar to your accordion font size */
-        cursor: pointer; /* Cursor will become a hand when hovering over the button */
-        margin: 10px; /* Similar to your previous button margin */
-        transition: 0.4s; /* Similar to your accordion transition */
+        background-color: #073d71;
+        color: #ffffff;
+        border: 1px solid #ffffff;
+        padding: 10px 20px;
+        font-size: 15px;
+        cursor: pointer;
+        margin: 10px;
+        transition: 0.4s;
       }
-
       .back-button:hover {
-        background-color: #00284e; /* Similar to your body background color */
-        color: #ffd700; /* Gold color when hovering, similar to your a:hover color */
+        background-color: #00284e;
+        color: #ffd700;
       }
       @media screen and (max-width: 768px) {
         .accordion,
         .back-button {
-          font-size: 13px; /* Smaller font size */
-          padding: 12px; /* Less padding */
-          width: 100%; /* Full width */
-          margin: 0 auto; /* Center the buttons */
+          font-size: 13;
+          padding: 12px;
+          width: 100%;
+          margin: 0 auto;
+        }
+      }
+
+      html {
+        font-size: 16px;
+      }
+      #privacyPolicyDocx {
+        font-family: Calibri, sans-serif;
+      }
+
+      /* Encabezados generales (si los usas dentro de DOCX) */
+      #privacyPolicyDocx h1 {
+        font-size: 2rem; /* 32px */
+        font-weight: bold;
+        margin: 1.5em 0 0.5em;
+      }
+      #privacyPolicyDocx h2 {
+        font-size: 1.75rem; /* 28px */
+        margin: 1.25em 0 0.5em;
+      }
+      #privacyPolicyDocx h3 {
+        font-size: 1.5rem; /* 24px */
+        margin: 1em 0 0.5em;
+      }
+      #privacyPolicyDocx h4 {
+        font-size: 1.25rem; /* 20px */
+        margin: 1em 0 0.5em;
+      }
+
+      /* Párrafos y listas (texto normal) */
+      #privacyPolicyDocx .paragraph-P2,
+      #privacyPolicyDocx .paragraph-P3,
+      #privacyPolicyDocx p,
+      #privacyPolicyDocx li p {
+        font-size: 1rem; /* 16px */
+        line-height: 1.5;
+        margin: 0.5em 0;
+      }
+
+      /* Título principal del documento dentro de DOCX */
+      #privacyPolicyDocx .paragraph-P1 {
+        font-size: 2rem; /* 32px */
+        font-weight: bold;
+        text-align: center !important;
+        margin: 1em 0;
+      }
+
+      /* Subtítulos internos (por ejemplo secciones dentro de DOCX) */
+      #privacyPolicyDocx .paragraph-P5 {
+        font-size: 1.25rem; /* 20px */
+        font-weight: bold;
+        margin: 1.25em 0 0.5em;
+      }
+
+      /* Notas al pie, advertencias, texto auxiliar */
+      #privacyPolicyDocx .paragraph-P6,
+      #privacyPolicyDocx .paragraph-P7,
+      #privacyPolicyDocx .paragraph-P8 {
+        font-size: 0.875rem; /* 14px */
+        margin: 0.4em 0;
+      }
+
+      /* Texto centrado de apoyo (centrados cortos) */
+      #privacyPolicyDocx .paragraph-P4 {
+        font-size: 0.875rem; /* 14px */
+        text-align: center !important;
+        font-style: italic;
+        margin: 0.5em 0;
+      }
+      /* Tipografía idéntica a la versión en inglés */
+      #privacyPolicyDocx h1 {
+        font-size: 2rem; /* 32px */
+        font-weight: bold;
+        margin: 1.5em 0 0.5em;
+      }
+      #privacyPolicyDocx h2 {
+        font-size: 1.75rem; /* 28px */
+        margin: 1.25em 0 0.5em;
+      }
+      #privacyPolicyDocx h3 {
+        font-size: 1.5rem; /* 24px */
+        margin: 1em 0 0.5em;
+      }
+      #privacyPolicyDocx h4 {
+        font-size: 1.25rem; /* 20px */
+        margin: 1em 0 0.5em;
+      }
+      #privacyPolicyDocx .paragraph-P1,
+      #privacyPolicyDocx .paragraph-P2,
+      #privacyPolicyDocx .paragraph-P3,
+      #privacyPolicyDocx p,
+      #privacyPolicyDocx li p {
+        font-size: 1rem; /* 16px */
+        line-height: 1.5;
+        margin: 0.5em 0;
+      }
+      #privacyPolicyDocx .paragraph-P5 {
+        font-size: 1.25rem; /* 20px */
+        font-weight: bold;
+        margin: 1.25em 0 0.5em;
+      }
+      #privacyPolicyDocx .paragraph-P6,
+      #privacyPolicyDocx .paragraph-P7,
+      #privacyPolicyDocx .paragraph-P8,
+      #privacyPolicyDocx .paragraph-P4 {
+        font-size: 0.875rem; /* 14px */
+        margin: 0.4em 0;
+      }
+      #privacyPolicyDocx .paragraph-P4 {
+        text-align: center !important;
+        font-style: italic;
+      }
+
+      @media screen and (min-width: 769px) {
+        .docx-container {
+          max-width: 800px;
+          margin: 40px auto;
+          padding: 24px;
+          border-radius: 8px;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        .docx-content {
+          overflow-x: auto;
         }
       }
     </style>
+
     <script>
       function goBack() {
-        //window.location.href = "../index.html";
         window.history.back();
       }
-
       document.addEventListener("DOMContentLoaded", function () {
-        var languageVars = {
-          htmlStuff: {
-            title: "FightersTech - Privacy Policy",
-            privacyPolicyVersion: "Privacy Policy Version",
-            privacyPolicyVersionNumber: 0.99,
-            lastUpdateText: "Last Updated",
-            lastUpdatedDate: new Date("2024-08-20"),
-            ifYouHaveAnyEnquiries:
-              "If you have any enquiries, please email us at",
-            FIGHTERSTECH_EMAIL_SUPPORT: "privacy@fighterstech.com",
-            goBackText: "Go back",
-            browserNotSupportingIframePart1:
-              "This browser does not support viewing PDFs. Please ",
-            browserNotSupportingIframePart2: "download the PDF",
-            browserNotSupportingIframePart3: " to view it.",
-          },
+        const vars = {
+          title: "FightersTech - Privacy Policy",
+          versionLabel: "Privacy Policy Version",
+          versionNumber: "1.0.0",
+          lastUpdateLabel: "Last Updated",
+          lastUpdatedDate: new Date("2025-05-14"),
+          goBackText: "Go back",
         };
-
-        var requestProcess = {
-          data: false,
-          // data: {
-          //   "Content One":
-          //     "lore ipsum dolor sit amet consectetur adipiscing elit",
-
-          //   "Content Two":
-          //     "lore ipsum dolor sit amet consectetur adipiscing elit v2",
-          // },
-        };
-
-        var versionTexts = function (data) {
-          return `${languageVars.htmlStuff.privacyPolicyVersion}: ${languageVars.htmlStuff.privacyPolicyVersionNumber}`;
-        };
-
-        var generateTable = function generateTable(data, title) {
-          return `<div >
-                <h2 class="centered">${title}</h2>
-                <p>${data}</p>
-                </div>`;
-        };
-
-        var displayData = function (data) {
-          let html = "";
-          for (const [key, value] of Object.entries(data)) {
-            html += `
-            <button id="${key}Button" class="accordion">${key}</button>
-            <div id="${key}" class="panel">              
-                  ${generateTable(value, key)}
-            </div>`;
-          }
-          return html;
-        };
-
-        // Use the variables in your HTML
+        document.querySelector("h1").textContent = vars.title;
         document.querySelector(
-          "h1"
-        ).textContent = `${languageVars.htmlStuff.title}`;
+          "#versionTexts"
+        ).textContent = `${vars.versionLabel}: ${vars.versionNumber}`;
         document.querySelector("#lastUpdateText").textContent = `${
-          languageVars.htmlStuff.lastUpdateText
-        }: ${new Date(
-          `${languageVars.htmlStuff.lastUpdatedDate}`
-        ).toLocaleDateString()}`;
-
-        document.querySelector("#versionTexts").innerHTML = `${versionTexts(
-          requestProcess.data
-        )}`;
-        document.querySelector("#displayData").innerHTML = `${displayData(
-          requestProcess.data
-        )}`;
-        document.querySelector(
-          "#enquiries"
-        ).innerHTML = `${languageVars.htmlStuff.ifYouHaveAnyEnquiries}: <a href="mailto:${languageVars.htmlStuff.FIGHTERSTECH_EMAIL_SUPPORT}">${languageVars.htmlStuff.FIGHTERSTECH_EMAIL_SUPPORT}</a>`;
-
-        // Add this part to dynamically set the content inside the iframe
-        document.querySelector("iframe").innerHTML = `
-    <p>
-      ${languageVars.htmlStuff.browserNotSupportingIframePart1}
-      <a href="./privacy-policy.pdf">${languageVars.htmlStuff.browserNotSupportingIframePart2}</a>
-      ${languageVars.htmlStuff.browserNotSupportingIframePart3}
-    </p>
-  `;
-
-        document.querySelector(
-          "#goBack"
-        ).textContent = `${languageVars.htmlStuff.goBackText}`;
-        // This section of your script should be moved to the end so that it runs after the accordion elements are generated.
-        // setup accordion
-        var acc = document.getElementsByClassName("accordion");
-        var i;
-
-        for (i = 0; i < acc.length; i++) {
-          acc[i].addEventListener("click", function () {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-              panel.style.maxHeight = null;
-            } else {
-              panel.style.maxHeight = panel.scrollHeight + "px";
-            }
-          });
-        }
-
-        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-          anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-
-            let targetId = this.getAttribute("href").substring(1);
-            let target = document.getElementById(targetId);
-            if (target) {
-              target.click();
-              window.location.hash = targetId;
-            }
-          });
-        });
+          vars.lastUpdateLabel
+        }: ${vars.lastUpdatedDate.toLocaleDateString()}`;
+        document.querySelector("#goBack").textContent = vars.goBackText;
       });
     </script>
   </head>
+
   <body>
     <h1></h1>
     <img
       src="../../fighterstech.png"
       alt="FightersTech Logo"
-      style="width: 100%; max-width: 150px; margin: 0 auto; display: block"
+      style="display: block; margin: 0 auto; max-width: 150px"
     />
-    <!-- add back button-->
-    <button class="back-button" id="goBack" onclick="goBack()"></button>
-    <!-- above, added back button-->
-    <p></p>
+    <button id="goBack" class="back-button" onclick="goBack()"></button>
     <p id="lastUpdateText" class="centered"></p>
-    <div
-      style="
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-      "
-    >
-      <div
-        style="
-          text-align: center;
-          width: 60%;
-          align-items: center;
-          justify-content: center;
-        "
-        id="versionTexts"
-      ></div>
+    <div id="versionTexts" class="centered"></div>
+    <h1>Privacy Policy</h1>
+    <div id="privacyPolicyDocx" class="docx-container">
+      <p class="paragraph-P2">
+        <span class="text-T3"
+          >This Privacy Policy explains how we collect, use, store, protect, and
+          share your personal information within our services. If you reside in
+          the European Economic Area ("EEA") or the United Kingdom, Francisco
+          Bernabé Martínez is the data controller of your personal information
+          collected through the services, as defined in our </span
+        ><a
+          href="https://legal.fighterstech.com/en/terms-and-conditions/"
+          class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T4">Terms and Conditions</span></span
+          ></a
+        ><span class="text-T3"
+          >. For other users, Francisco Bernabé Martínez is the data controller.
+          It is important that you read this policy entirely, but here's a
+          summary to get you started:</span
+        >
+      </p>
+      <ul>
+        <li>
+          <p class="P3" style="margin-left: 0cm">
+            <span
+              class="ListLabel_20_100"
+              style="display: block; float: left; min-width: 0.635cm"
+            ></span
+            ><span class="text-T6">We deeply care about privacy.</span
+            ><span class="text-T7">
+              We are committed to creating spaces where people can hang out and
+              enjoy finding online matches and facilitating meetings between
+              players. Respecting user privacy is a key part of this
+              mission.</span
+            ><span class="odfLiEnd" /> 
+          </p>
+        </li>
+        <li>
+          <p class="P3" style="margin-left: 0cm">
+            <span
+              class="ListLabel_20_100"
+              style="display: block; float: left; min-width: 0.635cm"
+            ></span
+            ><span class="text-T8"
+              >We do not sell your personal information</span
+            ><span class="text-T5"
+              >. Our business is based on subscriptions and other paid products,
+              as well as the insertion of advertisements on the platform, not on
+              selling personal information to third parties. We use third-party
+              applications for advertising monetization as well as for login;
+              specific information collected during website usage, application
+              usage or interactions with advertisements is detailed below.</span
+            ><span class="odfLiEnd" /> 
+          </p>
+        </li>
+        <li>
+          <p class="P3" style="margin-left: 0cm">
+            <span
+              class="ListLabel_20_100"
+              style="display: block; float: left; min-width: 0.635cm"
+            ></span
+            ><span class="text-T6">We limit the information we need</span
+            ><span class="text-T7"
+              >. The necessary information allows us to create accounts, provide
+              and maintain services, and fulfill our commitments to our users
+              and legislation. The rest is optional.</span
+            ><span class="odfLiEnd" /> 
+          </p>
+        </li>
+        <li>
+          <p class="P3" style="margin-left: 0cm">
+            <span
+              class="ListLabel_20_100"
+              style="display: block; float: left; min-width: 0.635cm"
+            ></span
+            ><span class="text-Strong_20_Emphasis"
+              ><span class="text-T7">We deeply care about security.</span></span
+            ><span class="text-T7"
+              > Our specialized Trust and Safety team strives to keep our
+              community safe. We also use certain information to identify
+              violations of our Community Guidelines and prevent harmful
+              content.</span
+            ><span class="odfLiEnd" /> 
+          </p>
+        </li>
+        <li>
+          <p class="P3" style="margin-left: 0cm">
+            <span
+              class="ListLabel_20_100"
+              style="display: block; float: left; min-width: 0.635cm"
+            ></span
+            ><span class="text-Strong_20_Emphasis"
+              ><span class="text-T7">We give you control.</span></span
+            ><span class="text-T7"
+              > We offer you the ability to control your privacy on
+              FightersTech.</span
+            ><span class="odfLiEnd" /> 
+          </p>
+        </li>
+      </ul>
+      <p class="paragraph-P4"> </p>
+      <p class="paragraph-P2">
+        <span class="text-T3"
+          >We created FightersTech aiming to be the best place to find other
+          players online, create new communities, enhance competitive user
+          skills, or simply as a meeting point for new players. FightersTech
+          helps you connect with others, whether you belong to a club, a group
+          of players, or just a bunch of friends.</span
+        ><span class="text-T3" />
+      </p>
+
+      <p class="paragraph-P2">
+        <span class="text-T3"
+          >The term "services" has the same meaning as defined in the </span
+        ><a
+          href="https://legal.fighterstech.com/en/terms-and-conditions/"
+          class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T4">Terms and Conditions</span></span
+          ></a
+        ><span class="text-T3"
+          >. This includes the FightersTech application, accessible via mobile,
+          web, desktop, console, or any electronic device with internet and a
+          web browser. We also have a website, a blog, and a support center, and
+          may collect data via other means, such as surveys, emails, and social
+          networks. If we create other products, our services will include those
+          too.</span
+        >
+      </p>
+
+      <p class="paragraph-P2">
+        <span class="text-T3"
+          >    We may also use content published in larger spaces to develop,
+          improve, and enhance our services, including features designed to help
+          users catch up on conversations or other safety measures to identify
+          harmful content within the services, as well as to promote compliance
+          with the </span
+        ><a
+          href="https://legal.fighterstech.com/en/terms-and-conditions/"
+          class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T4">Terms and Conditions</span></span
+          ></a
+        ><span class="text-T3"> and </span
+        ><a
+          href="https://legal.fighterstech.com/es/conduct/"
+          class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T4">Community Guidelines</span></span
+          ></a
+        ><span class="text-T3"
+          >. These are important aspects for us, and we believe they will help
+          make FightersTech an even better place for our users. We will always
+          strive to make you aware of the type of space you are in — although we
+          have no control over where invitation links are shared or server
+          permissions. You can limit how your data is used, as described in the
+          “How you can control your privacy” section below. You should keep all
+          of this in mind when using our services.</span
+        >
+      </p>
+      <p class="paragraph-P5"> </p>
+      <p class="paragraph-P2">
+        <span class="text-T2"
+          >    We make money from paid subscriptions and advertising content,
+          but not from selling your personal information to third parties —
+          certain applications, such as Google Ads, do collect some information,
+          which we will detail below.</span
+        >
+      </p>
+
+      <p class="paragraph-P2">
+        <span class="text-T9">Information Collected and Use. </span
+        ><span class="text-T9" />
+      </p>
+
+      <p class="paragraph-P2">
+        <span class="text-T2"
+          >We collect certain information when you use FightersTech, including
+          information you provide, automatically collected information, and
+          information from other sources.</span
+        ><span class="text-T2" />
+      </p>
+      <h4 class="paragraph-P6">
+        <a id="a__Information_You_Provide"><span /></a
+        ><span class="text-T2">Information You Provide</span
+        ><span class="text-T2" />
+      </h4>
+      <ul>
+        <li>
+          <p class="P7" style="margin-left: 0cm">
+            <span
+              class="ListLabel_20_109"
+              style="display: block; float: left; min-width: 0.635cm"
+            ></span
+            ><span class="text-T11">Account information</span
+            ><span class="text-T10"
+              >. When you create a FightersTech account, you must also create a
+              username and password, as well as provide us with a way to contact
+              you—such as an email address or a phone number. We will also
+              require your date of birth and, in some cases, may request
+              additional data to verify your age. You may be required to verify
+              your account or provide further information—such as a verified
+              phone number. You will also have the option to add your name or
+              the name you would like to be displayed.</span
+            ><span class="odfLiEnd" /> 
+          </p>
+        </li>
+        <li>
+          <p class="P8" style="margin-left: 0cm">
+            <span
+              class="ListLabel_20_109"
+              style="display: block; float: left; min-width: 0.635cm"
+            ></span
+            ><span class="text-T8">Content you create</span
+            ><span class="text-T7"
+              >. This includes your profile data and the information you provide
+              when creating servers, searching for players, or setting up
+              matches. As a general rule, we do not store server content except
+              as necessary to provide the service. In the future, we may develop
+              features that help users interact through voice and video content,
+              such as creating or sending short recordings. If so, this policy
+              will be updated accordingly and communicated in advance.</span
+            ><span class="odfLiEnd" /> 
+          </p>
+        </li>
+        <li>
+          <p class="P9" style="margin-left: 0cm">
+            <span
+              class="ListLabel_20_109"
+              style="display: block; float: left; min-width: 0.635cm"
+            ></span
+            ><span class="text-T6">Payment information.</span
+            ><span class="text-T7">
+              If you purchase paid services through FightersTech, you may be
+              required to provide a valid payment method and associated billing
+              details, including your full name and billing address. Our payment
+              processors, such as PayPal, Google, Apple, or RevenueCat, receive
+              and process all of this information. Depending on the processor,
+              we may also receive and store some billing data, such as the last
+              four digits of the credit card used in the transaction. If, in the </span
+            ><span class="text-T7"
+              >future, we decide to process payments ourselves, we will receive
+              and handle this information directly.</span
+            ><span class="odfLiEnd" /> 
+          </p>
+        </li>
+        <li>
+          <p class="P7" style="margin-left: 0cm">
+            <span
+              class="ListLabel_20_109"
+              style="display: block; float: left; min-width: 0.635cm"
+            ></span
+            ><span class="text-T6">Information about your actions.</span
+            ><span class="text-T7">
+              We collect information about how you use FightersTech and your
+              activities within the services. This includes information such as
+              the friends you add, the users, bots, and applications you
+              interact with, the games you play on your device, the servers or
+              other communities you join, your roles within servers, the
+              decisions you make regarding content moderation, and other related
+              actions. You can control the extent to which this information is
+              collected, used, and shared, as described in the “How to control
+              your privacy” section below.</span
+            ><span class="odfLiEnd" /> 
+          </p>
+        </li>
+        <li>
+          <p class="P7" style="margin-left: 0cm">
+            <span
+              class="ListLabel_20_109"
+              style="display: block; float: left; min-width: 0.635cm"
+            ></span
+            ><span class="text-Strong_20_Emphasis"
+              ><span class="text-T7"
+                >Information for optional features</span
+              ></span
+            ><span class="text-T7"
+              >. For certain features to function, such as contact
+              synchronization, you may need to provide us with additional
+              data—or grant us access to it. This also includes third-party
+              integrations that you choose to activate and the data you
+              authorize those third parties to share with us. For example, when
+              you link an email account, we may collect data from it to display
+              on your profile or status—if you have chosen that option.</span
+            ><span class="odfLiEnd" /> 
+          </p>
+        </li>
+        <li>
+          <p class="P7" style="margin-left: 0cm">
+            <span
+              class="ListLabel_20_109"
+              style="display: block; float: left; min-width: 0.635cm"
+            ></span
+            ><span class="text-T6">Other information you provide directly</span
+            ><span class="text-T7"
+              >. You may have the option to provide us with additional
+              information when using FightersTech. For example, you can
+              participate in surveys to share your opinions about our services
+              or provide information to the FightersTech support teams.</span
+            ><span class="odfLiEnd" /> 
+          </p>
+        </li>
+      </ul>
+      <h4 class="paragraph-P6">
+        <a id="a__Information_we_collect_automatically"><span /></a
+        ><span class="text-T2">Information we collect automatically</span
+        ><span class="text-T2" />
+      </h4>
+
+      <p class="paragraph-P2">
+        <span class="text-T2"
+          >We also automatically collect information about you when you use
+          FightersTech. This includes:</span
+        ><span class="text-T2" />
+      </p>
+      <ul>
+        <li>
+          <p class="P10" style="margin-left: 0cm">
+            <span
+              class="ListLabel_20_118"
+              style="display: block; float: left; min-width: 0.635cm"
+            ></span
+            ><span class="text-T6">Device information</span
+            ><span class="text-T7"
+              >. We collect information about the device you use to access the
+              services. This includes data such as your IP address, information
+              about your operating system, your browser, and settings of your
+              device’s hardware such as the microphone or camera.</span
+            ><span class="odfLiEnd" /> 
+          </p>
+        </li>
+        <li>
+          <p class="P10" style="margin-left: 0cm">
+            <span
+              class="ListLabel_20_118"
+              style="display: block; float: left; min-width: 0.635cm"
+            ></span
+            ><span class="text-T6"
+              >Information about your use of the applications or websites</span
+            ><span class="text-T7"
+              >. For example, we collect information about logins and other
+              circumstances related to your use of our services—such as the
+              pages, servers, and channels you visit, the activities you
+              participate in, the features you use, and the sections or embedded
+              content you interact with.</span
+            ><span class="odfLiEnd" /> 
+          </p>
+        </li>
+      </ul>
+      <p class="paragraph-P11">
+        <span class="text-T8">Other information we collect automatically.</span
+        ><span class="text-T5">
+          When you perform certain actions on other sites, we may receive
+          information about you. For example, when we advertise FightersTech on
+          third-party platforms and you click on the ad, we may receive
+          information about the ad you saw and on which platform it appeared.
+          Likewise, we may also receive certain information when you click on a
+          promotional link, such as the website you came from.  In addition to
+          the data we collect, certain applications like </span
+        ><span class="text-T8">Google Ads</span
+        ><span class="text-T5">
+          collect demographic information — this includes details such as a
+          user’s age, gender, geographic location, language, and interests — </span
+        ><span class="text-T8">behavioral information</span
+        ><span class="text-T5">
+          — Google Ads may collect data on how users interact with ads, such as
+          which ads were shown, whether they were clicked, and any actions </span
+        ><span class="text-T5">taken after the click — </span
+        ><span class="text-T8">device information</span
+        ><span class="text-T5"
+          >: Google Ads may collect details about the device used to access the
+          ads, such as device type, operating system, IP address, and device
+          location — network information: this may include details about the
+          user’s network, such as their internet service provider and connection
+          speed — cookies and similar technologies — Google Ads uses these
+          technologies to gather information about user behavior and
+          interests.</span
+        >
+      </p>
+
+      <p class="paragraph-P11"><span class="text-T5"> </span></p>
+
+      <p class="paragraph-P11">
+        <span class="text-T7"
+          >Advertiser access to this data is limited and anonymized to protect
+          user privacy. Advertisers generally have access only to aggregated
+          information about groups.</span
+        >
+      </p>
+      <p class="paragraph-P12"> </p>
+      <p class="paragraph-P2">
+        <span class="text-T3"
+          >We may receive information from cookies—small text files placed on
+          your computer or device—and similar technologies. You can review the
+          details about FightersTech’s use of cookies and how you can manage
+          your cookie permissions in our </span
+        ><a
+          href="https://legal.fighterstech.com/en/cookies-policy"
+          class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T4">Cookies Policy</span></span
+          ></a
+        ><span class="text-T3">.</span>
+      </p>
+      <h4 class="paragraph-P6">
+        <a id="a__Information_we_receive_from_other_sources"><span /></a
+        ><span class="text-T2">Information we receive from other sources</span
+        ><span class="text-T2" />
+      </h4>
+
+      <p class="paragraph-P2">
+        <span class="text-T2"
+          >We may receive information about you from other sources, including
+          other users and third parties, and combine that information with what
+          we already have about you. For example, if you interact with our
+          social media account on another platform, we may receive certain
+          information about you, such as your username on that platform.</span
+        ><span class="text-T2" />
+      </p>
+      <h2 class="paragraph-P13">
+        <a id="a__How_we_use_your_information"><span /></a
+        ><span class="text-T2">How we use your information</span>
+      </h2>
+
+      <p class="paragraph-P2">
+        <span class="text-T3"
+          >In accordance with certain data protection laws, such as the GDPR,
+          companies must have a “legal basis”—a valid reason—to process personal
+          information. FightersTech relies on different legal grounds to process
+          your information for the purposes described in this Privacy Policy. We
+          use the information we collect—account information, content you
+          create, payment information, information about your actions,
+          information used to enable optional features, other information you
+          provide directly, device information, information about your use of
+          applications or websites, other information we collect automatically,
+          and information we receive from other sources—for the following
+          purposes and based on those legal grounds. In each case, we explain
+          why we process your data and how we do so for each specific
+          purpose.</span
+        ><span class="text-T3" />
+      </p>
+
+      <p class="paragraph-P2">
+        <span class="text-Strong_20_Emphasis"
+          ><span class="text-T2">To fulfill our contract with you</span></span
+        ><span class="text-T2" />
+      </p>
+      <ul>
+        <li>
+          <p class="P14" style="margin-left: 0cm">
+            <span
+              class="ListLabel_20_127"
+              style="display: block; float: left; min-width: 0.635cm"
+            ></span
+            ><span class="text-T6">To provide you with the services.</span
+            ><span class="text-T7">
+              We use your information to provide you with FightersTech services.
+              For example, when you start a video call, we process your images
+              and audio to make it work. Similarly, we collect and store the
+              messages you send and display them as you intend. We also use the
+              information you provide to create and manage your account and to
+              facilitate purchases. When you enable optional features—such as
+              connecting your FightersTech account </span
+            ><span class="text-T7"
+              >to other platforms—we use the information from those services to
+              enable the functionality—for instance, showing what song you're
+              listening to on another service within the FightersTech app.</span
+            ><span class="odfLiEnd" /> 
+          </p>
+        </li>
+        <li>
+          <p class="P14" style="margin-left: 0cm">
+            <span
+              class="ListLabel_20_127"
+              style="display: block; float: left; min-width: 0.635cm"
+            ></span
+            ><span class="text-T6"
+              >To fulfill our commitments to the FightersTech community.</span
+            ><span class="text-T7">
+              We go to great lengths to make FightersTech a safe, positive, and
+              inclusive place. To that end, we may use your data to monitor
+              users and services that violate the </span
+            ><a
+              href="https://legal.fighterstech.com/en/terms-and-conditions/"
+              class="text-Internet_20_link"
+              ><span class="text-Internet_20_link"
+                ><span class="text-T14">Terms and Conditions</span></span
+              ></a
+            ><span class="text-T7">, </span
+            ><a
+              href="https://legal.fighterstech.com/en/conduct/"
+              class="text-Internet_20_link"
+              ><span class="text-Internet_20_link"
+                ><span class="text-T14">Community Guidelines</span></span
+              ></a
+            ><span class="text-T7">, and </span
+            ><a
+              href="https://legal.fighterstech.com/en/"
+              class="text-Internet_20_link"
+              ><span class="text-Internet_20_link"
+                ><span class="text-T14">other policies</span></span
+              ></a
+            ><span class="text-T7"
+              >, as well as to take appropriate action. This includes responding
+              to user reports, generating content transcripts during
+              investigations, detecting fraud and malware use, and proactively
+              scanning attachments and other content for harmful or illegal
+              activity. We may also use certain information—such as reported
+              content that violates the</span
+            ><a
+              href="https://legal.fighterstech.com/en/terms-and-conditions/"
+              class="text-Internet_20_link"
+              ><span class="text-Internet_20_link"
+                ><span class="text-T14"> Terms and Conditions</span></span
+              ></a
+            ><span class="text-T7"
+              >, as well as other public content like posts, usernames, avatars,
+              banners, user profiles, and server names, icons, and banners—to
+              build automated models and systems that more quickly detect,
+              classify, and take action against prohibited behavior or
+              content.</span
+            ><span class="odfLiEnd" /> 
+          </p>
+        </li>
+        <li>
+          <p class="P14" style="margin-left: 0cm">
+            <span
+              class="ListLabel_20_127"
+              style="display: block; float: left; min-width: 0.635cm"
+            ></span
+            ><span class="text-Strong_20_Emphasis"
+              ><span class="text-T7">To contact you</span></span
+            ><span class="text-T7"
+              >. We use your data to contact you regarding matters related to
+              your account. For example, to verify it or secure it with
+              two-factor authentication. We may also use it to inform you about
+              important changes affecting our policies or products, or to send
+              you information about products you have purchased.</span
+            ><span class="odfLiEnd" /> 
+          </p>
+        </li>
+        <li>
+          <p class="P14" style="margin-left: 0cm">
+            <span
+              class="ListLabel_20_127"
+              style="display: block; float: left; min-width: 0.635cm"
+            ></span
+            ><span class="text-T8">To provide customer support</span
+            ><span class="text-T5"
+              >. We use your information to respond to your questions about our
+              products and services, and to investigate bugs or other
+              issues.</span
+            ><span class="odfLiEnd" /> 
+          </p>
+        </li>
+      </ul>
+      <p class="paragraph-P2">
+        <span class="text-Strong_20_Emphasis"
+          ><span class="text-T2"
+            >For our legitimate business interests</span
+          ></span
+        ><span class="text-T2" />
+      </p>
+      <ul>
+        <li>
+          <p class="P15" style="margin-left: 0cm">
+            <span
+              class="ListLabel_20_136"
+              style="display: block; float: left; min-width: 0.635cm"
+            ></span
+            ><span class="text-Strong_20_Emphasis"
+              ><span class="text-T7">To protect our services.</span></span
+            ><span class="text-T7">
+              We use your information to maintain the security of our services,
+              prevent misuse, and enforce our </span
+            ><a
+              href="https://legal.fighterstech.com/en/terms-and-conditions/"
+              class="text-Internet_20_link"
+              ><span class="text-Internet_20_link"
+                ><span class="text-T14">Terms and Conditions</span></span
+              ></a
+            ><span class="text-T7">
+              and other policies against users who violate them.</span
+            ><span class="odfLiEnd" /> 
+          </p>
+        </li>
+        <li>
+          <p class="P15" style="margin-left: 0cm">
+            <span
+              class="ListLabel_20_136"
+              style="display: block; float: left; min-width: 0.635cm"
+            ></span
+            ><span class="text-Strong_20_Emphasis"
+              ><span class="text-T5"
+                >To report on our company’s performance.</span
+              ></span
+            ><span class="text-T5">
+              We use your information to track key business metrics, produce
+              financial statements, respond to regulatory obligations, and
+              resolve billing issues.</span
+            ><span class="odfLiEnd" /> 
+          </p>
+        </li>
+        <li>
+          <p class="P15" style="margin-left: 0cm">
+            <span
+              class="ListLabel_20_136"
+              style="display: block; float: left; min-width: 0.635cm"
+            ></span
+            ><span class="text-Strong_20_Emphasis"
+              ><span class="text-T7">To personalize the product.</span></span
+            ><span class="text-T7">
+              We use your data to personalize our services. This information is
+              used to tailor your experience on FightersTech, such as the
+              content shown in discovery sections—so you see the most relevant
+              communities, activities, apps, or content first—or features that
+              highlight activity on FightersTech that may interest you. This
+              helps us present FightersTech promotions and features that may be
+              of interest to you, both our own and those of our partners. As
+              outlined in the “How you can control your privacy” section below,
+              you can control the extent to which we use your personal
+              information to provide you with a personalized experience on
+              FightersTech.</span
+            ><span class="odfLiEnd" /> 
+          </p>
+        </li>
+        <li>
+          <p class="P15" style="margin-left: 0cm">
+            <span
+              class="ListLabel_20_136"
+              style="display: block; float: left; min-width: 0.635cm"
+            ></span
+            ><span class="text-Strong_20_Emphasis"
+              ><span class="text-T7">To improve our services.</span></span
+            ><span class="text-T7">
+              We use your data to better understand how users interact with our
+              services and which features or products interest them the most, in
+              order to develop functionalities that make FightersTech a safer
+              and easier platform to use, as well as to understand and improve
+              our services overall. This includes data about how you use our
+              services and how servers are structured. We may also use certain
+              publicly available content to better understand, for example, what
+              topics servers focus on and which content is most engaging for
+              their members. As with other purposes, you can limit how we use
+              your personal information for these purposes.</span
+            ><span class="odfLiEnd" /> 
+          </p>
+        </li>
+        <li>
+          <p class="P15" style="margin-left: 0cm">
+            <span
+              class="ListLabel_20_136"
+              style="display: block; float: left; min-width: 0.635cm"
+            ></span
+            ><span class="text-Strong_20_Emphasis"
+              ><span class="text-T7"
+                >To advertise our services on FightersTech and other platforms.
+              </span></span
+            ><span class="text-Strong_20_Emphasis"
+              ><span class="text-T15"
+                >We are very proud of our product. We may use our services and
+                channels to tell you directly about our paid services and other
+                features. Additionally, we invest resources in advertising
+                FightersTech on other platforms. In these cases, we use certain
+                information to help us distribute our ads, measure the
+                effectiveness of our product advertising, and improve these
+                initiatives going forward.</span
+              ></span
+            ><span class="odfLiEnd" /> 
+          </p>
+        </li>
+        <li>
+          <p class="P15" style="margin-left: 0cm">
+            <span
+              class="ListLabel_20_136"
+              style="display: block; float: left; min-width: 0.635cm"
+            ></span
+            ><span class="text-Strong_20_Emphasis"
+              ><span class="text-T5">To contact you.</span></span
+            ><span class="text-T5">
+              We may use your data to inform you about new products or features
+              we think you might like, to request your feedback about our
+              services, or to inform you about experiments we believe may
+              interest you. You can always choose to opt out of receiving these
+              marketing messages. Where required by law, we will obtain your
+              consent before sending you this type of communication.</span
+            ><span class="odfLiEnd" /> 
+          </p>
+        </li>
+      </ul>
+      <p class="paragraph-P2">
+        <span class="text-Strong_20_Emphasis"
+          ><span class="text-T2"
+            >To comply with our legal obligations</span
+          ></span
+        ><span class="text-T2" />
+      </p>
+
+      <p class="paragraph-P2">
+        <span class="text-T3"
+          >We retain and use your data in connection with potential legal claims
+          when necessary, and for regulatory, statutory, and audit purposes. For
+          example, we store this information if required by law or by a court
+          order or regulatory authority. Additionally, when you exercise any of
+          the rights granted to you by law to access, modify, or delete your
+          personal information, we may request additional data to verify your
+          identity.</span
+        ><span class="text-T17" />
+      </p>
+
+      <p class="paragraph-P2">
+        <span class="text-Strong_20_Emphasis"
+          ><span class="text-T2">With your consent</span></span
+        ><span class="text-T2" />
+      </p>
+
+      <p class="paragraph-P2">
+        <span class="text-T2"
+          >We may also collect and use your personal information with your
+          consent. For example, before sending you marketing communications when
+          required by law. You can withdraw your consent at any time—usually
+          through our own services—but please note that doing so may prevent you
+          from using services or features that require the collection or use of
+          the relevant personal information.</span
+        ><span class="text-T2" />
+      </p>
+
+      <p class="paragraph-P2">
+        <span class="text-T9">How we share your data</span
+        ><span class="text-T9" />
+      </p>
+      <ul>
+        <li>
+          <p class="P16" style="margin-left: 0cm">
+            <span
+              class="ListLabel_20_145"
+              style="display: block; float: left; min-width: 0.635cm"
+            ></span
+            ><span class="text-Strong_20_Emphasis"
+              ><span class="text-T10">When you direct us to.</span></span
+            ><span class="text-Strong_20_Emphasis"
+              ><span class="text-T18">
+                By adding your content to the services, you are asking us to
+                make it available to specific people or communities. Access to a
+                particular space determines who can view the information. In the
+                case of servers, these permissions are set by the owners or
+              </span></span
+            ><span class="text-Strong_20_Emphasis"
+              ><span class="text-T18"
+                >administrators, who control whether access is through
+                invitation links or open to anyone. These permissions, like the
+                size of the server, may change over time. Similarly, if you link
+                your FightersTech account to a third-party service—such as a
+                streaming service or a gaming platform—embed content, interact
+                with third-party content published on FightersTech, or
+                participate in a server with third-party features enabled, such
+                as bots, we may share certain data with that service or with
+                other FightersTech users so they can manage it. Additionally, if
+                you purchase goods or services from other FightersTech users, we
+                may share certain data with them to facilitate the delivery of
+                the goods or performance of the services, and to help them
+                improve their business. We will also share information that you
+                direct us to share or that you authorize us to share.</span
+              ></span
+            ><span class="odfLiEnd" /> 
+          </p>
+        </li>
+        <li>
+          <p class="P16" style="margin-left: 0cm">
+            <span
+              class="ListLabel_20_145"
+              style="display: block; float: left; min-width: 0.635cm"
+            ></span
+            ><span class="text-Strong_20_Emphasis"
+              ><span class="text-T7">With our providers.</span></span
+            ><span class="text-T7">
+              We may share information with service providers who perform
+              specific tasks on our behalf. This includes payment processors
+              such as PayPal, Google, Apple, and RevenueCat, who handle payments
+              for us; cloud service providers such as Google, PostgreSQL, Kafka,
+              AWS, Treblle, Sendgrid, and Railway, who host our data and
+              infrastructure; advertising service providers—including cookie
+              collection—such as Google Ads; and user authentication systems
+              such as Auth0. We may also provide limited information to
+              advertising platforms to help us reach people we believe may be
+              interested in our products and to measure the effectiveness of our
+              ads on their platforms. We do this to attract more users to
+              FightersTech and grow our business, but we only share the
+              information that is strictly necessary for their services. For
+              example, we may let them know that you have installed our app or
+              registered to use FightersTech.</span
+            ><span class="odfLiEnd" /> 
+          </p>
+        </li>
+      </ul>
+      <p class="paragraph-P17">
+        <span class="text-T3"
+          >To provide Push notifications, our app uses Expo, which seamlessly
+          integrates Apple’s Apple Push Notification Service (APNs) and Google’s
+          Firebase Cloud Messaging (FCM). By accepting to receive notifications,
+          the user consents to the sending of a notification token to these
+          services, which is necessary for the notification to reach the
+          appropriate device.</span
+        ><span class="text-T3" />
+      </p>
+
+      <p class="paragraph-P17">
+        <span class="text-T19"
+          >To this end, we provide a brief description of the services used by
+          our providers, along with links to their respective policies and
+          terms.</span
+        ><span class="text-T19" />
+      </p>
+
+      <p class="paragraph-P17">
+        <span class="text-T21">Expo</span
+        ><span class="text-T20"
+          >: Used for building and distributing the application on the Google
+          Play Store (Android) and Apple App Store (iOS). Push notifications are
+          sent via </span
+        ><a
+          href="https://docs.expo.dev/push-notifications/overview/"
+          class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T22">expo-notifications.</span></span
+          ></a
+        >
+      </p>
+
+      <p class="paragraph-P18">
+        <span class="text-T22">- </span
+        ><a href="https://expo.dev/terms" class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T22">Expo Terms of Service</span></span
+          ></a
+        >
+      </p>
+
+      <p class="paragraph-P18">
+        <span class="text-T22">- </span
+        ><a href="https://expo.dev/privacy" class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T22">Expo Privacy Policy</span></span
+          ></a
+        >
+      </p>
+
+      <p class="paragraph-P18">
+        <span class="text-T22">- </span
+        ><a
+          href="https://docs.expo.dev/regulatory-compliance/data-and-privacy-protection/"
+          class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T22"
+              >Data and Privacy Protection (GDPR, HIPAA, Privacy Shield)</span
+            ></span
+          ></a
+        >
+      </p>
+
+      <p class="paragraph-P17">
+        <span class="text-T23">Strapi</span
+        ><span class="text-T24"
+          >: Used as the server technology to manage the application’s data. The
+          “open-source” version is used.</span
+        >
+      </p>
+
+      <p class="paragraph-P17">
+        <span class="text-T22">- </span
+        ><a
+          href="https://github.com/strapi/strapi/blob/master/LICENSE.md"
+          class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T22">MIT License</span></span
+          ></a
+        >
+      </p>
+
+      <p class="paragraph-P17">
+        <span class="text-T22">- </span
+        ><a
+          href="https://docs.strapi.io/dev-docs/guides/gdpr"
+          class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T22">Strapi Privacy Policy</span></span
+          ></a
+        >
+      </p>
+
+      <p class="paragraph-P17">
+        <span class="text-T22">- </span
+        ><a href="https://strapi.io/terms-of-use" class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T22">Strapi Terms of Use</span></span
+          ></a
+        >
+      </p>
+
+      <p class="paragraph-P17">
+        <span class="text-T25">Google Ads</span
+        ><span class="text-T22"
+          >: Used for integrating advertising into the application via Google
+          Ads.</span
+        >
+      </p>
+
+      <p class="paragraph-P17">
+        <span class="text-T22">- </span
+        ><a
+          href="https://support.google.com/adspolicy/answer/54818?hl=es"
+          class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T22">Google Ads Terms</span></span
+          ></a
+        >
+      </p>
+
+      <p class="paragraph-P17">
+        <span class="text-T22">- </span
+        ><a
+          href="https://ads.google.com/intl/es_es/home/privacy/"
+          class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T22">Google Ads Privacy</span></span
+          ></a
+        >
+      </p>
+
+      <p class="paragraph-P17">
+        <span class="text-T22">- </span
+        ><a href="https://policies.google.com/" class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T22">Google Privacy &amp; Terms</span></span
+          ></a
+        >
+      </p>
+
+      <p class="paragraph-P17">
+        <span class="text-T22">- </span
+        ><a
+          href="https://www.google.com/about/company/user-consent-policy/"
+          class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T22">Google Ads Policies</span></span
+          ></a
+        >
+      </p>
+
+      <p class="paragraph-P17">
+        <span class="text-T22">- </span
+        ><a
+          href="https://www.google.com/about/company/user-consent-policy/"
+          class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T22">EU User Consent Policy</span></span
+          ></a
+        >
+      </p>
+
+      <p class="paragraph-P17">
+        <span class="text-T22">- </span
+        ><a
+          href="https://www.google.com/adsense/new/localized-terms"
+          class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T22">Google Ad Sense Terms</span></span
+          ></a
+        >
+      </p>
+
+      <p class="paragraph-P17">
+        <span class="text-T22">- </span
+        ><a
+          href="https://support.google.com/admob/answer/6128543"
+          class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T22">Admob Program policies</span></span
+          ></a
+        >
+      </p>
+
+      <p class="paragraph-P19">
+        <span class="text-T25">SendGrid (Twilio)</span
+        ><span class="text-T22"
+          >: Used for sending emails and certain types of notifications.</span
+        >
+      </p>
+
+      <p class="paragraph-P19">
+        <span class="text-T22">- </span
+        ><a href="http://twilio.com/legal/tos" class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T22"
+              >Twilio/SendGrid Terms of Service</span
+            ></span
+          ></a
+        >
+      </p>
+
+      <p class="paragraph-P19">
+        <span class="text-T22">- </span
+        ><a href="http://twilio.com/legal/privacy" class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T22">Twilio Privacy Policy</span></span
+          ></a
+        >
+      </p>
+
+      <p class="paragraph-P19">
+        <span class="text-T22">- </span
+        ><a
+          href="http://twilio.com/legal/data-protection-addendum"
+          class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T22">Data Processing Addendum (DPA)</span></span
+          ></a
+        >
+      </p>
+
+      <p class="paragraph-P19">
+        <span class="text-T23">Treblle</span
+        ><span class="text-T24"
+          >: Used to monitor the performance of the Strapi API, track requests,
+          and optimize performance.</span
+        >
+      </p>
+
+      <p class="paragraph-P19">
+        <span class="text-T22">- </span
+        ><a
+          href="https://treblle.com/terms-and-conditions"
+          class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T22">Treblle Terms</span></span
+          ></a
+        >
+      </p>
+
+      <p class="paragraph-P19">
+        <span class="text-T22">- </span
+        ><a
+          href="https://treblle.com/privacy-policy"
+          class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T22">Treblle Privacy Policy</span></span
+          ></a
+        >
+      </p>
+
+      <p class="paragraph-P20">
+        <span class="text-T25">Railway</span
+        ><span class="text-T22">: Hosting for the app's server.</span>
+      </p>
+
+      <p class="paragraph-P19">
+        <span class="text-T22">- </span
+        ><a href="https://railway.com/legal/terms" class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T22">Railway Terms of Service</span></span
+          ></a
+        >
+      </p>
+
+      <p class="paragraph-P19">
+        <span class="text-T22">- </span
+        ><a
+          href="https://railway.com/legal/privacy"
+          class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T22">Railway Privacy Policy</span></span
+          ></a
+        >
+      </p>
+
+      <p class="paragraph-P19">
+        <span class="text-T25">AWS (Amazon Web Services)</span
+        ><span class="text-T22">: Used to store part of the app.</span>
+      </p>
+
+      <p class="paragraph-P19">
+        <span class="text-T22">- </span
+        ><a
+          href="https://aws.amazon.com/agreement/"
+          class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T22">AWS Customer Agreement</span></span
+          ></a
+        >
+      </p>
+
+      <p class="paragraph-P19">
+        <span class="text-T22">- </span
+        ><a href="https://aws.amazon.com/privacy/" class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T22">AWS Privacy Notice</span></span
+          ></a
+        >
+      </p>
+
+      <p class="paragraph-P19">
+        <span class="text-T22">- </span
+        ><a
+          href="https://aws.amazon.com/es/service-terms/"
+          class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T22">AWS Terms of Service</span></span
+          ></a
+        >
+      </p>
+
+      <p class="paragraph-P19">
+        <span class="text-T22">- </span
+        ><a
+          href="https://aws.amazon.com/compliance/gdpr-center"
+          class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T22">Data Processing Addendum (DPA)</span></span
+          ></a
+        >
+      </p>
+
+      <p class="paragraph-P19">
+        <span class="text-T22">- </span
+        ><a
+          href="http://aws.amazon.com/compliance"
+          class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T22"
+              >Additional Compliance Information</span
+            ></span
+          ></a
+        >
+      </p>
+
+      <p class="paragraph-P20">
+        <span class="text-T25">Auth0 (Okta)</span
+        ><span class="text-T22"
+          >: User management, registration, and login.</span
+        >
+      </p>
+
+      <p class="paragraph-P19">
+        <span class="text-T22">- </span
+        ><a href="https://auth0.com/es/web-terms" class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T22">Auth0 (Okta) Terms</span></span
+          ></a
+        >
+      </p>
+
+      <p class="paragraph-P21">
+        <span class="text-T22">- </span
+        ><a
+          href="https://auth0.com/docs/secure/data-privacy-and-compliance/gdpr#data-processing-addendum"
+          class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T22">Data Processing Addendum (DPA)</span></span
+          ></a
+        >
+      </p>
+
+      <p class="paragraph-P21">
+        <span class="text-T22">- </span
+        ><a
+          href="https://auth0.com/docs/secure/data-privacy-and-compliance"
+          class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T22"
+              >Auth0 Data Privacy and Compliance</span
+            ></span
+          ></a
+        >
+      </p>
+
+      <p class="paragraph-P22">
+        <span class="text-T23">Confluent.io (Kafka)</span
+        ><span class="text-T24"
+          >: Temporarily stores certain app data in memory. This data is
+          automatically deleted after a few days or if a service issue
+          occurs.</span
+        >
+      </p>
+
+      <p class="paragraph-P21">
+        <span class="text-T22">- </span
+        ><a
+          href="https://www.confluent.io/terms-of-use/"
+          class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T22">Confluent Terms</span></span
+          ></a
+        >
+      </p>
+
+      <p class="paragraph-P21">
+        <span class="text-T22">- </span
+        ><a
+          href="https://www.confluent.io/legal/confluent-privacy-statement/"
+          class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T22">Confluent Privacy Policy</span></span
+          ></a
+        >
+      </p>
+
+      <p class="paragraph-P21">
+        <span class="text-T22">- </span
+        ><a
+          href="https://www.confluent.io/contracts/"
+          class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T22">Data Processing Addendum (DPA)</span></span
+          ></a
+        >
+      </p>
+
+      <p class="paragraph-P21">
+        <span class="text-T23">Start.gg</span
+        ><span class="text-T24"
+          >: We use their API to retrieve data in accordance with their
+          developer terms.</span
+        >
+      </p>
+
+      <p class="paragraph-P21">
+        <span class="text-T22">- </span
+        ><a
+          href="https://www.start.gg/about/apitos"
+          class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T22">Developer Terms</span></span
+          ></a
+        >
+      </p>
+
+      <p class="paragraph-P22">
+        <span class="text-T25">Discord (bot)</span
+        ><span class="text-T22"
+          >: Used to send optional notifications through a Discord bot.</span
+        >
+      </p>
+
+      <p class="paragraph-P21">
+        <span class="text-T22">- </span
+        ><a href="https://discord.com/terms" class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T22">Discord Terms</span></span
+          ></a
+        >
+      </p>
+
+      <p class="paragraph-P21">
+        <span class="text-T22">- </span
+        ><a href="https://discord.com/privacy" class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T22">Discord Privacy Policy</span></span
+          ></a
+        >
+      </p>
+
+      <p class="paragraph-P21">
+        <span class="text-T22">- </span
+        ><a
+          href="https://discord.com/developers/docs/policies-and-agreements/terms-and-conditions"
+          class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T22">Developer Terms of Service</span></span
+          ></a
+        >
+      </p>
+
+      <p class="paragraph-P21">
+        <span class="text-T23">Squarespace: </span
+        ><span class="text-T24"
+          >Where we have purchased the domain fighterstech.com.</span
+        >
+      </p>
+
+      <p class="paragraph-P21">
+        <span class="text-T22">- </span
+        ><a
+          href="https://www.squarespace.com/terms-and-conditions"
+          class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T22">Squarespace Terms</span></span
+          ></a
+        >
+      </p>
+
+      <p class="paragraph-P21">
+        <span class="text-T22">- </span
+        ><a
+          href="https://www.squarespace.com/privacy"
+          class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T22">Squarespace Privacy Policy</span></span
+          ></a
+        >
+      </p>
+
+      <p class="paragraph-P21">
+        <span class="text-T22">- </span
+        ><a
+          href="https://www.squarespace.com/imprint"
+          class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T22">EU Legal</span></span
+          ></a
+        >
+      </p>
+
+      <p class="paragraph-P21">
+        <span class="text-T25">Cloudflare:</span
+        ><span class="text-T22">
+          Used to route the fighterstech.com website as a protective layer
+          against certain attacks.</span
+        >
+      </p>
+
+      <p class="paragraph-P21">
+        <span class="text-T22">- </span
+        ><a
+          href="https://www.cloudflare.com/es-es/terms/"
+          class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T22">Cloudflare Terms</span></span
+          ></a
+        >
+      </p>
+
+      <p class="paragraph-P21">
+        <span class="text-T22">- </span
+        ><a
+          href="https://www.cloudflare.com/es-es/privacypolicy/"
+          class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T22">Cloudflare Privacy Policy</span></span
+          ></a
+        >
+      </p>
+
+      <p class="paragraph-P22">
+        <span class="text-T23">Github Pages:</span
+        ><span class="text-T24">
+          Used to host other FightersTech domains, such as
+          legal.fighterstech.com and promo.fighterstech.com.</span
+        >
+      </p>
+
+      <p class="paragraph-P21">
+        <span class="text-T22">- </span
+        ><a href="http://github.com/site/terms" class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T22">Github Terms</span></span
+          ></a
+        >
+      </p>
+
+      <p class="paragraph-P21">
+        <span class="text-T22">- </span
+        ><a
+          href="https://docs.github.com/es/site-policy/privacy-policies/github-general-privacy-statement"
+          class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T22">GitHub Privacy Policy</span></span
+          ></a
+        >
+      </p>
+
+      <p class="paragraph-P21">
+        <span class="text-T23">RevenueCat: </span
+        ><span class="text-T24"
+          >Used to manage and handle app purchase payments.</span
+        >
+      </p>
+
+      <p class="paragraph-P21">
+        <span class="text-T22">- </span
+        ><a
+          href="https://www.revenuecat.com/terms"
+          class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T22">Terms and Conditions</span></span
+          ></a
+        >
+      </p>
+
+      <p class="paragraph-P21">
+        <span class="text-T22">- </span
+        ><a
+          href="https://www.revenuecat.com/privacy/"
+          class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T22">Privacy Policy</span></span
+          ></a
+        >
+      </p>
+
+      <p class="paragraph-P21">
+        <span class="text-T22">- </span
+        ><a
+          href="https://www.revenuecat.com/gdpr/"
+          class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T22">GDPR</span></span
+          ></a
+        >
+      </p>
+      <p class="paragraph-P23"> </p>
+      <ul>
+        <li>
+          <p class="P16" style="margin-left: 0cm">
+            <span
+              class="ListLabel_20_145"
+              style="display: block; float: left; min-width: 0.635cm"
+            ></span
+            ><span class="text-Strong_20_Emphasis"
+              ><span class="text-T7">To comply with the law.</span></span
+            ><span class="text-T7">
+              We may disclose information that we believe we are required to
+              provide by law—including requests from law enforcement or national
+              security authorities. Whenever permitted and possible, we will
+              notify you in advance before complying with any such request. You
+              can find more information about how we respond to requests from
+              government agencies and law enforcement.</span
+            ><span class="odfLiEnd" /> 
+          </p>
+        </li>
+        <li>
+          <p class="P16" style="margin-left: 0cm">
+            <span
+              class="ListLabel_20_145"
+              style="display: block; float: left; min-width: 0.635cm"
+            ></span
+            ><span class="text-Strong_20_Emphasis"
+              ><span class="text-T5">In case of emergency.</span></span
+            ><span class="text-T5">
+              We may share information if we believe it is necessary to prevent
+              serious personal harm.</span
+            ><span class="odfLiEnd" /> 
+          </p>
+        </li>
+        <li>
+          <p class="P16" style="margin-left: 0cm">
+            <span
+              class="ListLabel_20_145"
+              style="display: block; float: left; min-width: 0.635cm"
+            ></span
+            ><span class="text-Strong_20_Emphasis"
+              ><span class="text-T7"
+                >To enforce our policies and exercise our rights.</span
+              ></span
+            ><span class="text-T7">
+              We may share information if necessary to enforce the </span
+            ><a
+              href="https://legal.fighterstech.com/en/terms-and-conditions/"
+              class="text-Internet_20_link"
+              ><span class="text-Internet_20_link"
+                ><span class="text-T14">Terms and Conditions</span></span
+              ></a
+            ><span class="text-T7">, </span
+            ><a
+              href="https://legal.fighterstech.com/en/conduct/"
+              class="text-Internet_20_link"
+              ><span class="text-Internet_20_link"
+                ><span class="text-T14">Community Guidelines</span></span
+              ></a
+            ><span class="text-T7">, or </span
+            ><a
+              href="https://legal.fighterstech.com/en/"
+              class="text-Internet_20_link"
+              ><span class="text-Internet_20_link"
+                ><span class="text-T14">any of our other policies</span></span
+              ></a
+            ><span class="text-T7"
+              >, or to protect our rights, property, and safety or that of
+              others.</span
+            ><span class="odfLiEnd" /> 
+          </p>
+        </li>
+        <li>
+          <p class="P16" style="margin-left: 0cm">
+            <span
+              class="ListLabel_20_145"
+              style="display: block; float: left; min-width: 0.635cm"
+            ></span
+            ><span class="text-Strong_20_Emphasis"
+              ><span class="text-T5">With our related companies.</span></span
+            ><span class="text-T5">
+              We may share information with our related companies, including
+              parent companies, affiliates, subsidiaries, and others under
+              common ownership and control.</span
+            ><span class="odfLiEnd" /> 
+          </p>
+        </li>
+        <li>
+          <p class="P16" style="margin-left: 0cm">
+            <span
+              class="ListLabel_20_145"
+              style="display: block; float: left; min-width: 0.635cm"
+            ></span
+            ><span class="text-T8"
+              >Sales, acquisitions, or transfer of assets.</span
+            ><span class="text-T5">
+              We may share information in the event that FightersTech is
+              considering or undergoing a merger, acquisition, reorganization,
+              bankruptcy, or a sale, transfer, or change of ownership of the
+              company or any of its assets.</span
+            ><span class="odfLiEnd" /> 
+          </p>
+        </li>
+        <li>
+          <p class="P16" style="margin-left: 0cm">
+            <span
+              class="ListLabel_20_145"
+              style="display: block; float: left; min-width: 0.635cm"
+            ></span
+            ><span class="text-Strong_20_Emphasis"
+              ><span class="text-T5"
+                >Aggregated or anonymized information.</span
+              ></span
+            ><span class="text-T5">
+              We may share aggregated or anonymized data that does not identify
+              you. For example, we may share aggregated statistics about our
+              users to inform our partners or the general public about the
+              performance of our business, features, or promotions.</span
+            ><span class="odfLiEnd" /> 
+          </p>
+        </li>
+      </ul>
+      <p class="paragraph-P24"> </p>
+      <p class="paragraph-P24"> </p>
+      <p class="paragraph-P25">
+        <span class="text-T8">Data retention</span><span class="text-T8" />
+      </p>
+
+      <p class="paragraph-P26">
+        <span class="text-T26"
+          >We retain personal information until we determine that it is no
+          longer needed for the purposes for which it was collected or retained,
+          or if we are no longer legally required to keep it. We retain some
+          data for the duration of your FightersTech account. This includes
+          information about how you use FightersTech, which helps us understand
+          how users interact with our services, what features or products they
+          may want, and how to improve our services. This includes information
+          such as your username, email address, and phone number. Some of this
+          information may be retained for longer periods for specific purposes,
+          as described below. You can delete your account at any time;
+          additionally, if your account remains inactive for two years, we may
+          delete it.</span
+        ><span class="text-T26" />
+      </p>
+      <h2 class="paragraph-P27">
+        <a id="a__Retention_period_for_specific_purposes"><span /></a
+        ><span class="text-T19">Retention period for specific purposes</span
+        ><span class="text-T19" />
+      </h2>
+
+      <p class="paragraph-P26">
+        <span class="text-T26"
+          >Certain business and legal requirements may mean that we need to
+          retain information for specific periods of time, some of which may
+          extend beyond the deletion of your account. For each type of
+          information, we set these data retention periods based on the reason
+          it was collected:</span
+        ><span class="text-T26" />
+      </p>
+      <ul>
+        <li>
+          <p class="P28" style="margin-left: 0.529cm">
+            <span
+              class="ListLabel_20_190"
+              style="display: block; float: left; min-width: 0.635cm"
+            ></span
+            ><span class="text-Strong_20_Emphasis"
+              ><span class="text-T27">Age verification.</span></span
+            ><span class="text-T27">
+              If you send us an identification document to request age
+              verification for your account, we will delete it within 60 days
+              after the age verification request is closed.</span
+            ><span class="odfLiEnd" /> 
+          </p>
+        </li>
+        <li>
+          <p class="P29" style="margin-left: 0.529cm">
+            <span
+              class="ListLabel_20_190"
+              style="display: block; float: left; min-width: 0.635cm"
+            ></span
+            ><span class="text-Strong_20_Emphasis"
+              ><span class="text-T27">Backups</span></span
+            ><span class="text-T27"
+              >. Our database retains stored backups for 30–45 days, after which
+              they are deleted.</span
+            ><span class="odfLiEnd" /> 
+          </p>
+        </li>
+        <li>
+          <p class="P29" style="margin-left: 0.529cm">
+            <span
+              class="ListLabel_20_190"
+              style="display: block; float: left; min-width: 0.635cm"
+            ></span
+            ><span class="text-Strong_20_Emphasis"
+              ><span class="text-T27"
+                >Compliance with our legal obligations.</span
+              ></span
+            ><span class="text-T27">
+              We may need to retain certain information for longer periods than
+              those described, for legal reasons. For example, when you make a
+              purchase on </span
+            ><span class="text-T27"
+              >FightersTech, we are required to retain transaction information
+              for specific periods in accordance with accounting and tax
+              regulations.</span
+            ><span class="odfLiEnd" /> 
+          </p>
+        </li>
+        <li>
+          <p class="P29" style="margin-left: 0.529cm">
+            <span
+              class="ListLabel_20_190"
+              style="display: block; float: left; min-width: 0.635cm"
+            ></span
+            ><span class="text-Strong_20_Emphasis"
+              ><span class="text-T28"
+                >Maintaining our security commitments.</span
+              ></span
+            ><span class="text-T28">
+              We retain certain information—including email addresses and phone
+              numbers—for 48 hours after deletion for trust and safety reasons.
+              If a user has been reported or flagged for acting against the </span
+            ><a
+              href="https://legal.fighterstech.com/en/terms-and-conditions/"
+              class="text-Internet_20_link"
+              ><span class="text-Internet_20_link"
+                ><span class="text-T14">Terms and Conditions</span></span
+              ></a
+            ><span class="text-T28"> or </span
+            ><a
+              href="https://legal.fighterstech.com/en/conduct/"
+              class="text-Internet_20_link"
+              ><span class="text-Internet_20_link"
+                ><span class="text-T14">Community Guidelines</span></span
+              ></a
+            ><span class="text-T28"
+              >, we may retain that information for up to 2 years. This helps us
+              keep FightersTech safer, prevent fraud, and stop bad actors from
+              creating new accounts or continuing to violate our policies in
+              other ways.</span
+            ><span class="odfLiEnd" /> 
+          </p>
+        </li>
+        <li>
+          <p class="P29" style="margin-left: 0.529cm">
+            <span
+              class="ListLabel_20_190"
+              style="display: block; float: left; min-width: 0.635cm"
+            ></span
+            ><span class="text-Strong_20_Emphasis"
+              ><span class="text-T28"
+                >Exercise or defense of legal claims. </span
+              ></span
+            ><span class="text-T28"
+              >When you contact FightersTech directly—for example, through
+              support inquiries or requests to access your information—we retain
+              the related information for 5 years from the closure of your
+              request, in case a dispute arises or it becomes necessary to
+              defend our rights.</span
+            ><span class="odfLiEnd" /> 
+          </p>
+        </li>
+        <li>
+          <p class="P30" style="margin-left: 0.529cm">
+            <span
+              class="ListLabel_20_190"
+              style="display: block; float: left; min-width: 0.635cm"
+            ></span
+            ><span class="text-Strong_20_Emphasis"
+              ><span class="text-T28">Service continuity</span></span
+            ><span class="text-T28"
+              >: If you delete your account, we will continue to retain and
+              display content you shared with other users, although it will no
+              longer be linked to your account. This is to ensure that others
+              can maintain access to content that was shared with them at some
+              point. If you wish to delete specific content, please do so before
+              deleting your account. You can do this by following the
+              instructions in the “Information you can delete directly from the
+              services” section, or contact us at </span
+            ><a
+              href="mailto:privacy@fighterstech.com"
+              class="text-Internet_20_link"
+              ><span class="text-Internet_20_link"
+                ><span class="text-T14">privacy@fighterstech.com</span></span
+              ></a
+            ><span class="text-T28">  if you need assistance.</span
+            ><span class="odfLiEnd" /> 
+          </p>
+        </li>
+      </ul>
+      <p class="paragraph-P31">
+        <span class="text-T4"
+          >When you delete an account, the deletion is executed within a few
+          hours—typically between 1 and 48 hours if everything goes smoothly.
+          Once that period ends, we begin the process of removing identifying
+          data and anonymizing or aggregating the remaining information. This
+          happens quickly—unless the information is subject to a longer
+          retention period as described above—but it may take up to 45 days to
+          remove identifying data from backups. We will retain aggregated and
+          anonymized information, which no longer identifies you and is no
+          longer linked to you as an individual.</span
+        ><span class="text-T4" />
+      </p>
+
+      <p class="paragraph-P26">
+        <span class="text-vcitation"
+          ><span class="text-T4"
+            >As stated in our Privacy Policy, all our users have control over
+            their information and can directly edit or delete their account
+            data, as well as limit the information we process. If you are
+            located in the European Union, the GDPR grants you the following
+            specific rights, which you may exercise directly through the
+            FightersTech app or by contacting us:</span
+          ></span
+        ><span class="text-T4" />
+      </p>
+      <ul>
+        <li>
+          <p class="P32" style="margin-left: 0.529cm">
+            <span
+              class="ListLabel_20_199"
+              style="display: block; float: left; min-width: 0.635cm"
+            ></span
+            ><span class="text-T13">Right to access your personal data.</span
+            ><span class="text-T13" /><span class="odfLiEnd" /> 
+          </p>
+        </li>
+        <li>
+          <p class="P33" style="margin-left: 0.529cm">
+            <span
+              class="ListLabel_20_199"
+              style="display: block; float: left; min-width: 0.635cm"
+            ></span
+            ><span class="text-T13"
+              >Right to rectify your personal data if it is incorrect.</span
+            ><span class="text-T13" /><span class="odfLiEnd" /> 
+          </p>
+        </li>
+        <li>
+          <p class="P33" style="margin-left: 0.529cm">
+            <span
+              class="ListLabel_20_199"
+              style="display: block; float: left; min-width: 0.635cm"
+            ></span
+            ><span class="text-T13">Right to erase your personal data.</span
+            ><span class="text-T13" /><span class="odfLiEnd" /> 
+          </p>
+        </li>
+        <li>
+          <p class="P33" style="margin-left: 0.529cm">
+            <span
+              class="ListLabel_20_199"
+              style="display: block; float: left; min-width: 0.635cm"
+            ></span
+            ><span class="text-T13"
+              >Right to restrict the processing of your personal data.</span
+            ><span class="text-T13" /><span class="odfLiEnd" /> 
+          </p>
+        </li>
+        <li>
+          <p class="P33" style="margin-left: 0.529cm">
+            <span
+              class="ListLabel_20_199"
+              style="display: block; float: left; min-width: 0.635cm"
+            ></span
+            ><span class="text-T13">Right to data portability.</span
+            ><span class="text-T13" /><span class="odfLiEnd" /> 
+          </p>
+        </li>
+        <li>
+          <p class="P34" style="margin-left: 0.529cm">
+            <span
+              class="ListLabel_20_199"
+              style="display: block; float: left; min-width: 0.635cm"
+            ></span
+            ><span class="text-T13"
+              >Right to object to the processing of your personal data.</span
+            ><span class="text-T13" /><span class="odfLiEnd" /> 
+          </p>
+        </li>
+      </ul>
+      <p class="paragraph-P35">
+        <span class="text-T29"
+          >If you have any questions about data retention or our deletion
+          practices, or if you wish to exercise control over your information,
+          please contact us at </span
+        ><a href="mailto:privacy@fighterstech.com" class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T29">privacy@fighterstech.com</span></span
+          ></a
+        ><span class="text-T29"> </span><br />
+      </p>
+
+      <p class="paragraph-P35">
+        <span class="text-T9">How we protect your information</span
+        ><span class="text-T9" />
+      </p>
+      <p class="paragraph-P36"> </p>
+      <p class="paragraph-P37">
+        <span class="text-T14"
+          >We take a number of measures to help protect your information. All
+          information transmitted within our services is encrypted both in
+          transit and at rest. To safeguard user information, we implement
+          various security measures. These include the use of secure
+          connections—HTTPS—for all data transfers, encryption of stored data,
+          and measures to ensure the integrity of our servers. This integrity is
+          maintained through the use of secret variable keys that are not
+          exposed in the application code hosted on the server. </span
+        ><span class="text-T14" />
+      </p>
+      <p class="paragraph-P38"> </p>
+      <p class="paragraph-P37">
+        <span class="text-T8">How you can control your privacy</span
+        ><span class="text-T8" />
+      </p>
+      <p class="paragraph-P39"> </p>
+      <p class="paragraph-P2">
+        <span class="text-T3"
+          >We believe users should be able to customize their experience on
+          FightersTech, including their privacy settings. Since each country’s
+          laws have different requirements, we believe all users should have at
+          least a basic ability to configure this experience, no matter where
+          they live. Here, we explain how you can control how we process your
+          data, how to delete or correct certain data, and how you can request
+          access to it. Additionally, citizens of certain countries may have
+          other rights granted by their local laws. We provide information about
+          all of this in the relevant sections below</span
+        ><span class="text-T3" />
+      </p>
+
+      <p class="paragraph-P2">
+        <span class="text-Strong_20_Emphasis"
+          ><span class="text-T3"
+            >Be aware of the FightersTech spaces you choose to participate
+            in</span
+          ></span
+        ><span class="text-T3" />
+      </p>
+
+      <p class="paragraph-P2">
+        <span class="text-T3"
+          >You can choose which spaces you participate in and what information
+          you add to our services, as well as which messages you send or post,
+          who you interact with—e.g., one or more users, or a potentially
+          unlimited group—what information you include in your profile, and
+          whether you link third-party services to your FightersTech account,
+          among other things. For example, if you share content in certain
+          spaces, such as servers listed in Server Discovery or public
+          invitation links, it will be accessible to everyone.</span
+        ><span class="text-T3" />
+      </p>
+
+      <p class="paragraph-P40">
+        <span class="text-T3"
+          >Information provided by volunteer contributors. When you contact us
+          to collaborate on translating the application via the provided email
+          address, we will use your personal data solely to manage that
+          collaboration, communicate information related to the activity, or
+          resolve questions or issues related to the submitted translations.
+          Your data will not be shared with third parties unless legally
+          required.</span
+        ><span class="text-T3" />
+      </p>
+      <p class="paragraph-P41"> </p>
+      <p class="paragraph-P2">
+        <span class="text-Strong_20_Emphasis"
+          ><span class="text-T2"
+            >Customize your personal FightersTech settings</span
+          ></span
+        ><span class="text-T2" />
+      </p>
+
+      <p class="paragraph-P2">
+        <span class="text-T3"
+          >We offer a variety of settings that allow you to personalize your
+          experience on FightersTech. Some of these are related to specific
+          features—for example, you can customize your username in the app via
+          the User Settings page (the gear-shaped icon).</span
+        ><span class="text-T3" />
+      </p>
+
+      <p class="paragraph-P2">
+        <span class="text-T2"
+          >You can also access other privacy-related settings in the User
+          Settings. For example, you can choose to filter potential explicit
+          content or decide who can add you as a friend, among other options.
+          Here, you can also limit certain types of data processing:</span
+        ><span class="text-T2" />
+      </p>
+      <ul>
+        <li>
+          <p class="P42" style="margin-left: 0cm">
+            <span
+              class="ListLabel_20_154"
+              style="display: block; float: left; min-width: 0.635cm"
+            ></span
+            ><span class="text-Strong_20_Emphasis"
+              ><span class="text-T7"
+                >Limit our ability to use your data to improve our
+                services.</span
+              ></span
+            ><span class="text-T7">
+              OWe offer certain settings that allow you to limit the information
+              we collect to better understand how users use our services or
+              which features or products they may want, and more generally, to
+              improve our business. If you disable these settings, we will stop
+              collecting specific data related to logins and other
+              circumstances, as explained in the settings themselves.</span
+            ><span class="odfLiEnd" /> 
+          </p>
+        </li>
+        <li>
+          <p class="P42" style="margin-left: 0cm">
+            <span
+              class="ListLabel_20_154"
+              style="display: block; float: left; min-width: 0.635cm"
+            ></span
+            ><span class="text-Strong_20_Emphasis"
+              ><span class="text-T5"
+                >Limit our ability to personalize FightersTech for you.</span
+              ></span
+            ><span class="text-T5">
+              There are certain settings that control whether and how we can
+              personalize FightersTech for you. These settings determine whether
+              we can offer you recommendations or content and features within
+              the app. If you disable them, we will stop collecting specific
+              data related to logins and other circumstances, as explained in
+              the settings themselves.</span
+            ><span class="odfLiEnd" /> 
+          </p>
+        </li>
+      </ul>
+      <p class="paragraph-P2">
+        <span class="text-T3"
+          >You can get more details about these and other privacy-related
+          settings by contacting </span
+        ><a href="mailto:privacy@fighterstech.com" class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T4">privacy@fighterstech.com</span></span
+          ></a
+        ><span class="text-T3">
+          . Default settings and their availability may vary depending on
+          various factors, such as your age or location.</span
+        >
+      </p>
+
+      <p class="paragraph-P2">
+        <span class="text-Strong_20_Emphasis"
+          ><span class="text-T2">Suspend or delete your account</span></span
+        ><span class="text-T2" />
+      </p>
+
+      <p class="paragraph-P2">
+        <span class="text-T3"
+          >You can suspend or delete your account from the User Settings menu.
+          If you suspend your account, the processing of new data will be paused
+          for 6 months, but you can reactivate it later without restrictions. If
+          you permanently delete your account, identifying information will be
+          erased, and other data will be anonymized, as explained in our Data
+          Retention Policy. You can learn more about account deletion in this
+          Help Center article and about deactivation in this one.</span
+        ><span class="text-T3" />
+      </p>
+
+      <p class="paragraph-P2">
+        <span class="text-Strong_20_Emphasis"
+          ><span class="text-T2">Manage your content and servers</span></span
+        ><span class="text-T2" />
+      </p>
+
+      <p class="paragraph-P2">
+        <span class="text-T3"
+          >You can edit or delete certain data within the services:</span
+        ><span class="text-T3" />
+      </p>
+      <ul>
+        <li>
+          <p class="P43" style="margin-left: 0cm">
+            <span
+              class="ListLabel_20_163"
+              style="display: block; float: left; min-width: 0.635cm"
+            ></span
+            ><span class="text-T7"
+              >You can edit or delete any message you’ve sent or content you’ve
+              posted if you still have access to the space where it was
+              published.</span
+            ><span class="text-T7" /><span class="odfLiEnd" /> 
+          </p>
+        </li>
+        <li>
+          <p class="P43" style="margin-left: 0cm">
+            <span
+              class="ListLabel_20_163"
+              style="display: block; float: left; min-width: 0.635cm"
+            ></span
+            ><span class="text-T7"
+              >You can edit or delete a FightersTech tournament server if you
+              have the necessary permissions.</span
+            ><span class="text-T7" /><span class="odfLiEnd" /> 
+          </p>
+        </li>
+        <li>
+          <p class="P43" style="margin-left: 0cm">
+            <span
+              class="ListLabel_20_163"
+              style="display: block; float: left; min-width: 0.635cm"
+            ></span
+            ><span class="text-T7"
+              >You can edit or delete a match from a FightersTech server if you
+              have the necessary permissions.</span
+            ><span class="text-T7" /><span class="odfLiEnd" /> 
+          </p>
+        </li>
+      </ul>
+      <p class="paragraph-P2">
+        <span class="text-T3"
+          >FightersTech may retain content for use as described in other
+          sections of this policy and in our Data Retention Policy.
+          Additionally, in certain circumstances, we may be legally required to
+          retain specific data even if you delete it from your account.</span
+        ><span class="text-T3" />
+      </p>
+
+      <p class="paragraph-P2">
+        <span class="text-Strong_20_Emphasis"
+          ><span class="text-T2">Access to your information</span></span
+        ><span class="text-T2" />
+      </p>
+
+      <p class="paragraph-P2">
+        <span class="text-T2"
+          >If you want to know what information we have collected about you, you
+          can request a copy of your data in the section “Settings → About →
+          Legal → ARCO-POL: Request my data.” You will receive your data package
+          within 30 days. The data is provided in commonly used digital formats
+          such as HTML, CSV, JSON, and any other formats you may have used when
+          uploading attachments to the services.</span
+        ><span class="text-T2" />
+      </p>
+      <h2 class="paragraph-P44">
+        <a id="a__International_data_transfers"><span /></a
+        ><span class="text-T2">International data transfers</span
+        ><span class="text-T2" />
+      </h2>
+
+      <p class="paragraph-P2">
+        <span class="text-T3"
+          >We are headquartered in Spain and process and store information on
+          servers located in Spain. We may also store information on servers and
+          equipment in other countries, depending on several factors, including
+          the locations of our users and service providers. These data transfers
+          allow us to provide you with our services. By accessing or using our
+          services, or by providing information to us in any other way, you
+          understand that your information will be processed, transferred, and
+          stored in Spain and other countries, where data protection laws may
+          differ or where you may not have the same rights as under your local
+          legislation.</span
+        ><span class="text-T3" />
+      </p>
+
+      <p class="paragraph-P2">
+        <span class="text-T2"
+          >When we transfer data outside the European Economic Area, we
+          use Standard Contractual Clauses—Module 1 and Module 2—and
+          the adequacy decisions of the European Commission for certain
+          countries, as applicable, or any other legal mechanism or condition
+          provided by law for such data transfers.</span
+        ><span class="text-T2" />
+      </p>
+
+      <p class="paragraph-P2">
+        <span class="text-T3"
+          >If you have complaints or questions about our compliance with the
+          principles of the Data Privacy Framework, please contact us at </span
+        ><a href="mailto:privacy@fighterstech.com" class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T4">privacy@fighterstech.com</span></span
+          ></a
+        ><span class="text-T3">
+          If we do not resolve your complaint, you can submit it at no cost
+          to JAMS. In certain cases specified under the principles of the Data
+          Privacy Framework, you may have the option to seek binding arbitration
+          to resolve the dispute. For more information about the principles of
+          the Data Privacy Framework and to view our certification, please visit
+          the Data Privacy Framework website of the U.S. Department of
+          Commerce.</span
+        >
+      </p>
+      <h2 class="paragraph-P44">
+        <a id="a__Third-party_services"><span /></a
+        ><span class="text-T2">Third-party services</span
+        ><span class="text-T2" />
+      </h2>
+
+      <p class="paragraph-P2">
+        <span class="text-T3"
+          >We allow external developers to create certain features or other
+          services and offer them within the FightersTech services. For example,
+          server administrators can add bots created by third-party developers
+          that provide functions such as content moderation and interactive
+          games. Similarly, you may have access to games or activities created
+          by third parties within the services.</span
+        ><span class="text-T3" />
+      </p>
+
+      <p class="paragraph-P2">
+        <span class="text-T3"
+          >These third-party services must comply with all applicable
+          policies—including, often, our Developer Terms of
+          Service and Developer Policy. Due to these policies, we require
+          developers to have a privacy policy that clearly explains how they
+          handle your information. Review these privacy policies, as they
+          describe what bots and applications may do with your information. We
+          also require certain popular bots to request access to specific data.
+          However, since these services are operated by third parties, we do not
+          control them or the information they collect. It is your choice
+          whether to participate in a server that uses bots and whether to use
+          third-party services in general.</span
+        ><span class="text-T3" />
+      </p>
+      <h2 class="paragraph-P44">
+        <a id="a__Data_Protection_Officer"><span /></a
+        ><span class="text-T2">Data Protection Officer</span
+        ><span class="text-T2" />
+      </h2>
+
+      <p class="paragraph-P2">
+        <span class="text-T3"
+          >You can contact the Data Protection Officer of FightersTech Spain at </span
+        ><a href="mailto:dpo@fighterstech.com" class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T4">dpo@fighterstech.com</span></span
+          ></a
+        ><span class="text-T3"> .</span>
+      </p>
+
+      <p class="paragraph-P2">
+        <span class="text-T9">Information about local privacy laws</span
+        ><span class="text-T9" />
+      </p>
+
+      <p class="paragraph-P2">
+        <span class="text-vcitation"
+          ><span class="text-T3"
+            >Certain local laws, such as the European Union’s General Data
+            Protection Regulation (GDPR), Brazil’s Lei Geral de Proteção de
+            Dados (LGPD), and the California Consumer Privacy Act (CCPA),
+            require services to provide information about the data they collect,
+            how they use it, and the legal basis for processing it.</span
+          ></span
+        ><span class="text-T3" />
+      </p>
+
+      <p class="paragraph-P2">
+        <span class="text-Strong_20_Emphasis"
+          ><span class="text-T3"
+            >‍ Exercising your rights: As described in the section “How you can
+            control your privacy,” all our users have control over their
+            information and can edit or delete it directly from their account,
+            as well as limit the data we process. If you are a resident of
+            certain regions, such as the European Union, you may have additional
+            rights like those listed below, as outlined in the specific
+            breakdown for each state and region. You may exercise these rights
+            directly through the FightersTech app or by contacting us:</span
+          ></span
+        ><span class="text-T3" />
+      </p>
+      <ul>
+        <li>
+          <p class="P45" style="margin-left: 0cm">
+            <span
+              class="ListLabel_20_172"
+              style="display: block; float: left; min-width: 0.635cm"
+            ></span
+            ><span class="text-T5">Right to access your personal data</span
+            ><span class="text-T5" /><span class="odfLiEnd" /> 
+          </p>
+        </li>
+        <li>
+          <p class="P45" style="margin-left: 0cm">
+            <span
+              class="ListLabel_20_172"
+              style="display: block; float: left; min-width: 0.635cm"
+            ></span
+            ><span class="text-T7"
+              >Right to rectify your personal data if it is incorrect</span
+            ><span class="text-T7" /><span class="odfLiEnd" /> 
+          </p>
+        </li>
+        <li>
+          <p class="P45" style="margin-left: 0cm">
+            <span
+              class="ListLabel_20_172"
+              style="display: block; float: left; min-width: 0.635cm"
+            ></span
+            ><span class="text-T5">Right to erase your personal data</span
+            ><span class="text-T5" /><span class="odfLiEnd" /> 
+          </p>
+        </li>
+        <li>
+          <p class="P45" style="margin-left: 0cm">
+            <span
+              class="ListLabel_20_172"
+              style="display: block; float: left; min-width: 0.635cm"
+            ></span
+            ><span class="text-T5"
+              >Right to restrict the processing of your personal data</span
+            ><span class="text-T5" /><span class="odfLiEnd" /> 
+          </p>
+        </li>
+        <li>
+          <p class="P45" style="margin-left: 0cm">
+            <span
+              class="ListLabel_20_172"
+              style="display: block; float: left; min-width: 0.635cm"
+            ></span
+            ><span class="text-T5">Right to data portability</span
+            ><span class="text-T5" /><span class="odfLiEnd" /> 
+          </p>
+        </li>
+        <li>
+          <p class="P45" style="margin-left: 0cm">
+            <span
+              class="ListLabel_20_172"
+              style="display: block; float: left; min-width: 0.635cm"
+            ></span
+            ><span class="text-T5"
+              >Right to object to the processing of your personal data</span
+            ><span class="text-T5" /><span class="odfLiEnd" /> 
+          </p>
+        </li>
+        <li>
+          <p class="P45" style="margin-left: 0cm">
+            <span
+              class="ListLabel_20_172"
+              style="display: block; float: left; min-width: 0.635cm"
+            ></span
+            ><span class="text-T5"
+              >Right to withdraw consent — withdrawal of consent does not affect
+              the lawfulness of processing based on consent given before its
+              withdrawal</span
+            ><span class="text-T5" /><span class="odfLiEnd" /> 
+          </p>
+        </li>
+      </ul>
+      <p class="paragraph-P46">
+        <span class="text-T2"
+          >If you have any questions about these rights or wish to exercise
+          control over your information, please contact us at </span
+        ><a href="mailto:privacy@fighterstech.com" class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T29">privacy@fighterstech.com</span></span
+          ></a
+        ><span class="text-T2"> .</span>
+      </p>
+      <h2 class="paragraph-P44">
+        <a id="a__Changes_to_this_Privacy_Policy"><span /></a
+        ><span class="text-T2">Changes to this Privacy Policy</span
+        ><span class="text-T2" />
+      </h2>
+
+      <p class="paragraph-P2">
+        <span class="text-T3"
+          >We will update this Privacy Policy from time to time. We always
+          indicate the date of the latest changes when they are published and,
+          if the changes are significant, we will provide a clearer notice as
+          required by law—such as by sending an email or displaying a
+          notification in the app, highlighting the changes within the
+          services.</span
+        ><span class="text-T3" />
+      </p>
+      <h2 class="paragraph-P44">
+        <a id="a__Contact_us"><span /></a><span class="text-T2">Contact us</span
+        ><span class="text-T2" />
+      </h2>
+
+      <p class="paragraph-P2">
+        <span class="text-T3"
+          >If you have any questions about this Privacy Policy or how we process
+          your information, email us at </span
+        ><a href="mailto:privacy@fighterstech.com" class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T4">privacy@fighterstech.com</span></span
+          ></a
+        ><span class="text-T3">  — we’ll be happy to help.</span>
+      </p>
+
+      <p class="paragraph-P2">
+        <span class="text-T3"
+          >To contact the Data Protection Officer of FightersTech, send an email
+          to </span
+        ><a href="mailto:dpo@fighterstech.com" class="text-Internet_20_link"
+          ><span class="text-Internet_20_link"
+            ><span class="text-T4">dpo@fighterstech.com</span></span
+          ></a
+        ><span class="text-T3"> </span>
+      </p>
+
+      <p class="paragraph-P2">
+        <span class="text-T2"
+          >You can also reach us by email if you prefer. If you live in the
+          European Economic Area or the United Kingdom, you can write to us
+          at:</span
+        ><span class="text-T2" />
+      </p>
+
+      <p class="paragraph-P2">
+        <span class="text-T33">FightersTech. </span><span class="text-T33" />
+      </p>
+
+      <p class="paragraph-P2">
+        <span class="text-T33">ATTN: Privacy Policy </span
+        ><span class="text-T33" />
+      </p>
+
+      <p class="paragraph-P47">
+        <span class="text-T34"
+          >AVDA AVIACIÓN ESPAÑOLA, 23 BAJO B267 CP:30730 SAN JAVIER
+          (MURCIA)</span
+        ><span class="text-T34" />
+      </p>
     </div>
-    <div id="displayData"></div>
-    <div style="text-align: center; margin-top: 20px">
-      <iframe src="./privacy-policy.pdf" width="100%" height="600px">
-        <p>
-          ${languageVars.htmlStuff.browserNotSupportingIframePart1}
-          <a href="./privacy-policy.pdf"
-            >${languageVars.htmlStuff.browserNotSupportingIframePart2}</a
-          >
-          ${languageVars.htmlStuff.browserNotSupportingIframePart3}
-        </p>
-      </iframe>
-    </div>
-    <p style="text-align: center; color: #a9b3bc" id="enquiries"></p>
   </body>
 </html>

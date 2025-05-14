@@ -1,311 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      http-equiv="Cache-Control"
-      content="no-cache, no-store, must-revalidate"
-    />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="Expires" content="0" />
-    <title>FightersTech Términos de Servicio</title>
-    <meta
-      name="description"
-      content="Lee nuestros Términos de Servicio para conocer las reglas y directrices al usar FightersTech. Esta página explica tus derechos y obligaciones como usuario."
-    />
-    <meta
-      name="keywords"
-      content="FightersTech, Términos de Servicio, acuerdo de usuario, condiciones, términos del servicio"
+    <meta charset="UTF-8" />
+    <title>Redirecting…</title>
+
+    <!-- 1) Instant meta-redirect -->
+    <meta http-equiv="refresh" content="0; url=/en/terms-and-conditions" />
+
+    <!-- SEO-friendly canonical -->
+    <link
+      rel="canonical"
+      href="https://legal.fighterstech.com/es/terms-and-conditions"
     />
 
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #00284e;
-        color: #ffffff; /* Changed to white for visibility on dark background */
-      }
-
-      h1 {
-        text-align: center;
-        color: #ffffff; /* Changed to white for visibility on dark background */
-      }
-
-      a {
-        color: #ffd700; /* Gold color to stand out on dark background */
-        text-decoration: none; /* Remove underline */
-      }
-
-      a:hover {
-        color: #ffffff; /* Change color on hover */
-      }
-
-      .data-table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 20px;
-      }
-
-      .data-table,
-      .data-table th,
-      .data-table td {
-        border: 1px solid #ddd;
-        padding: 8px;
-        color: #ffffff; /* Changed to white for visibility on dark background */
-      }
-
-      .data-table tbody tr:nth-child(odd) {
-        background-color: rgba(0, 0, 0, 0.5);
-      }
-
-      .data-table th {
-        padding-top: 12px;
-        padding-bottom: 12px;
-        text-align: left;
-        background-color: #073d71;
-        color: #ffffff; /* Changed to white for visibility on dark background */
-      }
-
-      .table-key {
-        font-weight: bold;
-        color: #ffffff; /* Changed to white for visibility on dark background */
-      }
-
-      .table-value {
-        font-style: italic;
-        color: #ffffff; /* Changed to white for visibility on dark background */
-      }
-
-      .accordion {
-        background-color: rgba(0, 0, 0, 0.5);
-        color: #ffffff;
-        cursor: pointer;
-        padding: 18px;
-        width: 100%;
-        border: 1px solid #ffffff; /* Added white border */
-        text-align: left;
-        outline: none;
-        font-size: 15px;
-        transition: 0.4s;
-      }
-
-      .active,
-      .accordion:hover {
-        background-color: #073d71; /* Darkened version of accordion background */
-      }
-
-      .accordion:after {
-        content: "➕";
-        font-size: 17px;
-        color: #777;
-        float: right;
-        margin-left: 5px;
-        font-style: bold;
-      }
-
-      .active:after {
-        content: "➖";
-      }
-
-      .panel {
-        padding: 0 18px;
-        background-color: rgba(0, 0, 0, 0.5); /* Same as accordion background */
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.2s ease-out;
-      }
-
-      .centered {
-        text-align: center;
-      }
-      .back-button {
-        background-color: #073d71; /* Similar to your accordion active state */
-        color: #ffffff; /* Similar to your text color */
-        border: 1px solid #ffffff; /* Similar to your accordion border */
-        padding: 10px 20px; /* Arbitrary padding for the button */
-        font-size: 15px; /* Similar to your accordion font size */
-        cursor: pointer; /* Cursor will become a hand when hovering over the button */
-        margin: 10px; /* Similar to your previous button margin */
-        transition: 0.4s; /* Similar to your accordion transition */
-      }
-
-      .back-button:hover {
-        background-color: #00284e; /* Similar to your body background color */
-        color: #ffd700; /* Gold color when hovering, similar to your a:hover color */
-      }
-      @media screen and (max-width: 768px) {
-        .accordion,
-        .back-button {
-          font-size: 13px; /* Smaller font size */
-          padding: 12px; /* Less padding */
-          width: 100%; /* Full width */
-          margin: 0 auto; /* Center the buttons */
-        }
-      }
-    </style>
+    <!-- 2) JavaScript fallback -->
     <script>
-      function goBack() {
-        //window.location.href = "../index.html";
-        window.history.back();
-      }
-      document.addEventListener("DOMContentLoaded", function () {
-        var languageVars = {
-          htmlStuff: {
-            title: "FightersTech - Términos de Servicio",
-            privacyPolicyVersion: "Versión de Términos de Servicio",
-            privacyPolicyVersionNumber: 0.999,
-            lastUpdateText: "Última Actualización",
-            lastUpdatedDate: new Date("2024-12-30"),
-            ifYouHaveAnyEnquiries:
-              "Si tienes alguna pregunta o inquietud puedes consultarnos en",
-            FIGHTERSTECH_EMAIL_SUPPORT: "legal@fighterstech.com",
-            goBackText: "Volver",
-            browserNotSupportingIframePart1:
-              "Este navegador no soporta la visualización de PDFs. Por favor, ",
-            browserNotSupportingIframePart2: "descarga el PDF",
-            browserNotSupportingIframePart3: " para verlo.",
-          },
-        };
-
-        var requestProcess = {
-          // data: {
-          //   "Contenido Uno":
-          //     "lore ipsum dolor sit amet consectetur adipiscing elit",
-
-          //   "Contenido Dos":
-          //     "lore ipsum dolor sit amet consectetur adipiscing elit v2",
-          // },
-          data: false,
-        };
-
-        var versionTexts = function (data) {
-          return `${languageVars.htmlStuff.privacyPolicyVersion}: ${languageVars.htmlStuff.privacyPolicyVersionNumber}`;
-        };
-
-        var generateTable = function generateTable(data, title) {
-          return `<div >
-                <h2 class="centered">${title}</h2>
-                <p>${data}</p>
-                </div>`;
-        };
-
-        var displayData = function (data) {
-          let html = "";
-          for (const [key, value] of Object.entries(data)) {
-            html += `
-            <button id="${key}Button" class="accordion">${key}</button>
-            <div id="${key}" class="panel">              
-                  ${generateTable(value, key)}
-            </div>`;
-          }
-          return html;
-        };
-
-        // Use the variables in your HTML
-        document.querySelector(
-          "h1"
-        ).textContent = `${languageVars.htmlStuff.title}`;
-        document.querySelector("#lastUpdateText").textContent = `${
-          languageVars.htmlStuff.lastUpdateText
-        }: ${new Date(
-          `${languageVars.htmlStuff.lastUpdatedDate}`
-        ).toLocaleDateString()}`;
-
-        document.querySelector("#versionTexts").innerHTML = `${versionTexts(
-          requestProcess.data
-        )}`;
-        document.querySelector("#displayData").innerHTML = `${displayData(
-          requestProcess.data
-        )}`;
-        document.querySelector(
-          "#enquiries"
-        ).innerHTML = `${languageVars.htmlStuff.ifYouHaveAnyEnquiries}: <a href="mailto:${languageVars.htmlStuff.FIGHTERSTECH_EMAIL_SUPPORT}">${languageVars.htmlStuff.FIGHTERSTECH_EMAIL_SUPPORT}</a>`;
-
-        // Add this part to dynamically set the content inside the iframe
-        document.querySelector("iframe").innerHTML = `
-    <p>
-      ${languageVars.htmlStuff.browserNotSupportingIframePart1}
-      <a href="./tos.pdf">${languageVars.htmlStuff.browserNotSupportingIframePart2}</a>
-      ${languageVars.htmlStuff.browserNotSupportingIframePart3}
-    </p>
-  `;
-
-        document.querySelector(
-          "#goBack"
-        ).textContent = `${languageVars.htmlStuff.goBackText}`;
-        // This section of your script should be moved to the end so that it runs after the accordion elements are generated.
-        // setup accordion
-        var acc = document.getElementsByClassName("accordion");
-        var i;
-
-        for (i = 0; i < acc.length; i++) {
-          acc[i].addEventListener("click", function () {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-              panel.style.maxHeight = null;
-            } else {
-              panel.style.maxHeight = panel.scrollHeight + "px";
-            }
-          });
+      (function () {
+        // Normalize path (strip trailing slash)
+        var p = window.location.pathname.replace(/\/$/, "");
+        if (p === "/en/terms-of-service") {
+          // Preserve any query-string or hash if present
+          var newLoc =
+            window.location.protocol +
+            "//" +
+            window.location.host +
+            "/es/terms-and-conditions" +
+            window.location.search +
+            window.location.hash;
+          // replace() so the old URL isn’t stored in history
+          window.location.replace(newLoc);
         }
-
-        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-          anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-
-            let targetId = this.getAttribute("href").substring(1);
-            let target = document.getElementById(targetId);
-            if (target) {
-              target.click();
-              window.location.hash = targetId;
-            }
-          });
-        });
-      });
+      })();
     </script>
   </head>
   <body>
-    <h1></h1>
-    <img
-      src="../../fighterstech.png"
-      alt="FightersTech Logo"
-      style="width: 100%; max-width: 150px; margin: 0 auto; display: block"
-    />
-    <!-- add back button-->
-    <button class="back-button" id="goBack" onclick="goBack()"></button>
-    <!-- above, added back button-->
-    <p></p>
-    <p id="lastUpdateText" class="centered"></p>
-    <div
-      style="
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-      "
-    >
-      <div
-        style="
-          text-align: center;
-          width: 60%;
-          align-items: center;
-          justify-content: center;
-        "
-        id="versionTexts"
-      ></div>
-    </div>
-    <div id="displayData"></div>
-    <div style="text-align: center; margin-top: 20px">
-      <iframe src="./tos.pdf" width="100%" height="600px">
-        <p>
-          ${languageVars.htmlStuff.browserNotSupportingIframePart1}
-          <a href="./tos.pdf"
-            >${languageVars.htmlStuff.browserNotSupportingIframePart2}</a
-          >
-          ${languageVars.htmlStuff.browserNotSupportingIframePart3}
-        </p>
-      </iframe>
-    </div>
-    <p style="text-align: center; color: #a9b3bc" id="enquiries"></p>
+    <p>
+      Redirecting to our
+      <a href="/es/terms-and-conditions">Terms and Conditions</a>…
+    </p>
   </body>
 </html>

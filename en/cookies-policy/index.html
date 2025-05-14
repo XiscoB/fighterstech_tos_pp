@@ -22,22 +22,22 @@
       body {
         font-family: Arial, sans-serif;
         background-color: #00284e;
-        color: #ffffff; /* Changed to white for visibility on dark background */
+        color: #ffffff;
         align-content: center;
       }
 
       h1 {
         text-align: center;
-        color: #ffffff; /* Changed to white for visibility on dark background */
+        color: #ffffff;
       }
 
       a {
-        color: #ffd700; /* Gold color to stand out on dark background */
-        text-decoration: none; /* Remove underline */
+        color: #ffd700;
+        text-decoration: none;
       }
 
       a:hover {
-        color: #ffffff; /* Change color on hover */
+        color: #ffffff;
       }
 
       .data-table {
@@ -51,7 +51,7 @@
       .data-table td {
         border: 1px solid #ddd;
         padding: 8px;
-        color: #ffffff; /* Changed to white for visibility on dark background */
+        color: #ffffff;
       }
 
       .data-table tbody tr:nth-child(odd) {
@@ -63,17 +63,17 @@
         padding-bottom: 12px;
         text-align: left;
         background-color: #073d71;
-        color: #ffffff; /* Changed to white for visibility on dark background */
+        color: #ffffff;
       }
 
       .table-key {
         font-weight: bold;
-        color: #ffffff; /* Changed to white for visibility on dark background */
+        color: #ffffff;
       }
 
       .table-value {
         font-style: italic;
-        color: #ffffff; /* Changed to white for visibility on dark background */
+        color: #ffffff;
       }
 
       .accordion {
@@ -82,7 +82,7 @@
         cursor: pointer;
         padding: 18px;
         width: 100%;
-        border: 1px solid #ffffff; /* Added white border */
+        border: 1px solid #ffffff;
         text-align: left;
         outline: none;
         font-size: 15px;
@@ -91,7 +91,7 @@
 
       .active,
       .accordion:hover {
-        background-color: #073d71; /* Darkened version of accordion background */
+        background-color: #073d71;
       }
 
       .accordion:after {
@@ -109,7 +109,7 @@
 
       .panel {
         padding: 0 18px;
-        background-color: rgba(0, 0, 0, 0.5); /* Same as accordion background */
+        background-color: rgba(0, 0, 0, 0.5);
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.2s ease-out;
@@ -119,151 +119,236 @@
         text-align: center;
       }
       .back-button {
-        background-color: #073d71; /* Similar to your accordion active state */
-        color: #ffffff; /* Similar to your text color */
-        border: 1px solid #ffffff; /* Similar to your accordion border */
-        padding: 10px 20px; /* Arbitrary padding for the button */
-        font-size: 15px; /* Similar to your accordion font size */
-        cursor: pointer; /* Cursor will become a hand when hovering over the button */
-        margin: 10px; /* Similar to your previous button margin */
-        transition: 0.4s; /* Similar to your accordion transition */
+        background-color: #073d71;
+        color: #ffffff;
+        border: 1px solid #ffffff;
+        padding: 10px 20px;
+        font-size: 15px;
+        cursor: pointer;
+        margin: 10px;
+        transition: 0.4s;
       }
 
       .back-button:hover {
-        background-color: #00284e; /* Similar to your body background color */
-        color: #ffd700; /* Gold color when hovering, similar to your a:hover color */
+        background-color: #00284e;
+        color: #ffd700;
       }
       @media screen and (max-width: 768px) {
         .accordion,
         .back-button {
-          font-size: 13px; /* Smaller font size */
-          padding: 12px; /* Less padding */
-          width: 100%; /* Full width */
-          margin: 0 auto; /* Center the buttons */
+          font-size: 13px;
+          padding: 12px;
+          width: 100%;
+          margin: 0 auto;
+        }
+      }
+      /* scope all styles to this container */
+      #cookiePolicyDocx table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        empty-cells: show;
+      }
+      #cookiePolicyDocx td,
+      #cookiePolicyDocx th {
+        vertical-align: top;
+        font-size: 12pt;
+      }
+      #cookiePolicyDocx h1,
+      #cookiePolicyDocx h2,
+      #cookiePolicyDocx h3,
+      #cookiePolicyDocx h4,
+      #cookiePolicyDocx h5,
+      #cookiePolicyDocx h6 {
+        clear: both;
+      }
+      #cookiePolicyDocx ol,
+      #cookiePolicyDocx ul {
+        margin: 0;
+        padding: 0;
+      }
+      #cookiePolicyDocx li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      #cookiePolicyDocx span.footnodeNumber {
+        padding-right: 1em;
+      }
+      #cookiePolicyDocx span.annotation_style_by_filter {
+        font-size: 95%;
+        font-family: Arial;
+        background-color: #fff000;
+        margin: 0;
+        border: 0;
+        padding: 0;
+      }
+      #cookiePolicyDocx span.heading_numbering {
+        margin-right: 0.8rem;
+      }
+      #cookiePolicyDocx * {
+        margin: 0;
+      }
+      #cookiePolicyDocx .paragraph-P1 {
+        font-size: 11pt;
+        line-height: 115%;
+        margin-bottom: 0.529cm;
+        margin-top: 0;
+        text-align: center !important;
+        font-family: Calibri;
+      }
+      #cookiePolicyDocx .paragraph-P2 {
+        font-size: 11pt;
+        line-height: 115%;
+        margin-bottom: 0.529cm;
+        text-align: justify !important;
+        font-family: Calibri;
+      }
+      #cookiePolicyDocx .paragraph-P3 {
+        font-size: 11pt;
+        line-height: 115%;
+        margin: 0.265cm 0;
+        text-align: justify !important;
+        font-family: Calibri;
+      }
+      #cookiePolicyDocx .paragraph-P4 {
+        font-size: 11pt;
+        line-height: 115%;
+        margin: 0.265cm 0;
+        text-align: center !important;
+        font-family: Calibri;
+      }
+      #cookiePolicyDocx .paragraph-P5 {
+        font-size: 11pt;
+        line-height: 115%;
+        margin: 0.265cm 0;
+        text-align: justify !important;
+        font-family: Calibri;
+      }
+      #cookiePolicyDocx .paragraph-P6 {
+        font-size: 10pt;
+        line-height: 115%;
+        margin-bottom: 0.353cm;
+        text-align: justify !important;
+        font-family: Calibri;
+      }
+      #cookiePolicyDocx .text-Internet_20_link {
+        color: #ffd700;
+        text-decoration: underline;
+      }
+      #cookiePolicyDocx .text-ListLabel_20_20,
+      #cookiePolicyDocx .text-ListLabel_20_21 {
+        color: #ffd700;
+        font-size: 10pt;
+      }
+      #cookiePolicyDocx .text-T1 {
+        color: #fff;
+        text-decoration: underline;
+      }
+      #cookiePolicyDocx .text-T2 {
+        color: #fff;
+        font-size: 10pt;
+      }
+      #cookiePolicyDocx .text-T3 {
+        font-size: 10pt;
+      }
+      #cookiePolicyDocx .text-T4 {
+        color: #fff;
+        font-size: 10pt;
+        font-weight: bold;
+      }
+      #cookiePolicyDocx .text-T5 {
+        color: #fff;
+      }
+      #cookiePolicyDocx .text-T6 {
+        color: #ffd700;
+        font-size: 10pt;
+      }
+      @media screen and (min-width: 769px) {
+        .docx-container {
+          max-width: 800px;
+          margin: 40px auto;
+          padding: 24px;
+          border-radius: 8px;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        .docx-content {
+          overflow-x: auto;
         }
       }
     </style>
     <script>
       function goBack() {
-        //lets add a function to go home instead, like ../../index.html
-        //window.location.href = "../index.html";
         window.history.back();
       }
 
       document.addEventListener("DOMContentLoaded", function () {
         var languageVars = {
           htmlStuff: {
-            title: "FightersTech Cookies Policy",
+            title: "FightersTech - Cookies Policy",
             privacyPolicyVersion: "Cookies Policy Version",
-            privacyPolicyVersionNumber: 0.99,
+            privacyPolicyVersionNumber: "1.0.0",
             lastUpdateText: "Last Updated",
-            lastUpdatedDate: new Date("2024-08-20"),
+            lastUpdatedDate: new Date("2025-05-14"),
             ifYouHaveAnyEnquiries:
               "If you have any enquiries, please email us at",
             FIGHTERSTECH_EMAIL_SUPPORT: "legal@fighterstech.com",
             goBackText: "Go back",
-            browserNotSupportingIframePart1:
-              "This browser does not support viewing PDFs. Please ",
-            browserNotSupportingIframePart2: "download the PDF",
-            browserNotSupportingIframePart3: " to view it.",
           },
         };
 
-        var requestProcess = {
-          // data: {
-          //   "Content One":
-          //     "lore ipsum dolor sit amet consectetur adipiscing elit",
-
-          //   "Content Two":
-          //     "lore ipsum dolor sit amet consectetur adipiscing elit v2",
-          // },
-          data: false,
-        };
+        var requestProcess = { data: false };
 
         var versionTexts = function (data) {
           return `${languageVars.htmlStuff.privacyPolicyVersion}: ${languageVars.htmlStuff.privacyPolicyVersionNumber}`;
         };
 
-        var generateTable = function generateTable(data, title) {
-          return `<div >
-                <h2 class="centered">${title}</h2>
-                <p>${data}</p>
-                </div>`;
+        var generateTable = function (data, title) {
+          return `<div><h2 class="centered">${title}</h2><p>${data}</p></div>`;
         };
 
         var displayData = function (data) {
-          let html = "";
-          for (const [key, value] of Object.entries(data)) {
-            html += `
-            <button id="${key}Button" class="accordion">${key}</button>
-            <div id="${key}" class="panel">              
-                  ${generateTable(value, key)}
-            </div>`;
+          var html = "";
+          for (var key in data) {
+            html += `<button id="${key}Button" class="accordion">${key}</button>`;
+            html += `<div id="${key}" class="panel">${generateTable(
+              data[key],
+              key
+            )}</div>`;
           }
           return html;
         };
 
-        // Use the variables in your HTML
         document.querySelector(
           "h1"
         ).textContent = `${languageVars.htmlStuff.title}`;
         document.querySelector("#lastUpdateText").textContent = `${
           languageVars.htmlStuff.lastUpdateText
         }: ${new Date(
-          `${languageVars.htmlStuff.lastUpdatedDate}`
+          languageVars.htmlStuff.lastUpdatedDate
         ).toLocaleDateString()}`;
-
-        document.querySelector("#versionTexts").innerHTML = `${versionTexts(
+        document.querySelector("#versionTexts").innerHTML = versionTexts(
           requestProcess.data
-        )}`;
-        document.querySelector("#displayData").innerHTML = `${displayData(
+        );
+        document.querySelector("#displayData").innerHTML = displayData(
           requestProcess.data
-        )}`;
+        );
         document.querySelector(
           "#enquiries"
         ).innerHTML = `${languageVars.htmlStuff.ifYouHaveAnyEnquiries}: <a href="mailto:${languageVars.htmlStuff.FIGHTERSTECH_EMAIL_SUPPORT}">${languageVars.htmlStuff.FIGHTERSTECH_EMAIL_SUPPORT}</a>`;
-
-        // Add this part to dynamically set the content inside the iframe
-        document.querySelector("iframe").innerHTML = `
-    <p>
-      ${languageVars.htmlStuff.browserNotSupportingIframePart1}
-      <a href="./cookies-policy.pdf">${languageVars.htmlStuff.browserNotSupportingIframePart2}</a>
-      ${languageVars.htmlStuff.browserNotSupportingIframePart3}
-    </p>
-  `;
-
         document.querySelector(
           "#goBack"
         ).textContent = `${languageVars.htmlStuff.goBackText}`;
-        // This section of your script should be moved to the end so that it runs after the accordion elements are generated.
-        // setup accordion
-        var acc = document.getElementsByClassName("accordion");
-        var i;
 
-        for (i = 0; i < acc.length; i++) {
+        var acc = document.getElementsByClassName("accordion");
+        for (var i = 0; i < acc.length; i++) {
           acc[i].addEventListener("click", function () {
             this.classList.toggle("active");
             var panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-              panel.style.maxHeight = null;
-            } else {
-              panel.style.maxHeight = panel.scrollHeight + "px";
-            }
+            panel.style.maxHeight = panel.style.maxHeight
+              ? null
+              : panel.scrollHeight + "px";
           });
         }
-
-        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-          anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-
-            let targetId = this.getAttribute("href").substring(1);
-            let target = document.getElementById(targetId);
-            if (target) {
-              target.click();
-              window.location.hash = targetId;
-            }
-          });
-        });
       });
     </script>
   </head>
@@ -274,9 +359,7 @@
       alt="FightersTech Logo"
       style="width: 100%; max-width: 150px; margin: 0 auto; display: block"
     />
-    <!-- add back button-->
     <button class="back-button" id="goBack" onclick="goBack()"></button>
-    <!-- above, added back button-->
     <p></p>
     <p id="lastUpdateText" class="centered"></p>
     <div
@@ -287,27 +370,194 @@
         width: 100%;
       "
     >
-      <div
-        style="
-          text-align: center;
-          width: 60%;
-          align-items: center;
-          justify-content: center;
-        "
-        id="versionTexts"
-      ></div>
+      <div id="versionTexts" style="text-align: center; width: 60%"></div>
     </div>
     <div id="displayData"></div>
     <div style="text-align: center; margin-top: 20px">
-      <iframe src="./cookies-policy.pdf" width="100%" height="600px">
-        <p>
-          ${languageVars.htmlStuff.browserNotSupportingIframePart1}
-          <a href="./cookies-policy.pdf"
-            >${languageVars.htmlStuff.browserNotSupportingIframePart2}</a
-          >
-          ${languageVars.htmlStuff.browserNotSupportingIframePart3}
-        </p>
-      </iframe>
+      <h1 class="paragraph-P1"><span class="text-T1">COOKIES POLICY</span></h1>
+      <div id="cookiePolicyDocx" class="docx-container">
+        <div class="docx-content">
+          <p class="paragraph-P2">
+            We may receive information from cookies (small text files placed on
+            your computer or device and similar technologies). We and our
+            third-party service providers place our own cookies that allow you
+            to use the services and help us analyze and improve your experience
+            and the services. You can control cookies as described in the “How
+            you can control your privacy” section of the
+            <a
+              href="https://legal.fighterstech.com/en/privacy-policy/"
+              class="text-Internet_20_link"
+              >FightersTech Privacy Policy</a
+            >. The services use the following types of cookies:
+          </p>
+          <ul>
+            <li>
+              <p class="paragraph-P3">
+                <span
+                  class="ListLabel_20_1"
+                  style="display: block; float: left; min-width: 0.635cm"
+                  >➡</span
+                ><span class="text-T4">Strictly necessary cookies</span>: These
+                are necessary for our services to function and for us to meet
+                our legal obligations. If you use tools to disable them, the
+                services may not work properly.
+              </p>
+            </li>
+            <li>
+              <p class="paragraph-P3">
+                <span
+                  class="ListLabel_20_1"
+                  style="display: block; float: left; min-width: 0.635cm"
+                  >➡</span
+                ><span class="text-T4">Functional cookies</span>: These cookies
+                help us provide enhanced features in the services, such as
+                remembering language preferences. Disabling them may affect some
+                service features.
+              </p>
+            </li>
+            <li>
+              <p class="paragraph-P3">
+                <span
+                  class="ListLabel_20_1"
+                  style="display: block; float: left; min-width: 0.635cm"
+                  >➡</span
+                ><span class="text-T4">Performance cookies</span>: These cookies
+                allow us or our external analytics providers to understand how
+                you and others use and engage with the services, in order to
+                improve them.
+              </p>
+            </li>
+          </ul>
+          <p class="paragraph-P4">
+            <span class="text-T7">Manage Cookies</span>
+          </p>
+          <p class="paragraph-P2">
+            To control how cookie information is collected and used in the
+            services, you can take one or more of the following steps:
+          </p>
+          <ul>
+            <li>
+              <p class="paragraph-P5">
+                <span
+                  class="ListLabel_20_10"
+                  style="display: block; float: left; min-width: 0.635cm"
+                  >➡</span
+                >You can disable and manage some cookies through your browser
+                settings. You will need to manage your settings for each browser
+                you use. You can find instructions on how to manage cookies in
+                the most commonly used browsers such as
+                <a
+                  href="https://support.microsoft.com/en-us/windows/delete-and-manage-cookies-168dab11-0753-043d-7c16-ede5947fc64d#ie=ie-10"
+                  class="text-ListLabel_20_20"
+                  >Internet Explorer</a
+                >,
+                <a
+                  href="https://support.mozilla.org/en-US/kb/cookies-information-websites-store-on-your-computer?redirectlocale=en-US&redirectslug=Cookies"
+                  class="text-ListLabel_20_20"
+                  >Firefox</a
+                >,
+                <a
+                  href="https://support.google.com/chrome/answer/95647?hl=en&ref_topic=14666"
+                  class="text-ListLabel_20_20"
+                  >Chrome</a
+                >,
+                <a
+                  href="https://support.apple.com/en-us/HT201265"
+                  class="text-ListLabel_20_20"
+                  >Safari (iOS)</a
+                >,
+                <a
+                  href="https://support.apple.com/guide/safari/manage-cookies-and-website-data-sfri11471/mac"
+                  class="text-ListLabel_20_20"
+                  >Safari (Mac)</a
+                >
+                and
+                <a
+                  href="https://blogs.opera.com/news/2015/08/how-to-manage-cookies-in-opera/"
+                  class="text-ListLabel_20_20"
+                  >Opera</a
+                >.
+              </p>
+            </li>
+            <li>
+              <p class="paragraph-P5">
+                <span
+                  class="ListLabel_20_10"
+                  style="display: block; float: left; min-width: 0.635cm"
+                  >➡</span
+                >To disable analytics cookies, you can use the browser controls
+                mentioned above or, in the case of certain providers, you may
+                use specific mechanisms for that purpose, such as Google
+                Analytics Opt-Out.
+              </p>
+            </li>
+            <li>
+              <p class="paragraph-P5">
+                <span
+                  class="ListLabel_20_10"
+                  style="display: block; float: left; min-width: 0.635cm"
+                  >➡</span
+                >Additionally, your mobile device may include browser settings
+                to control the use of cookies and the collection and use of data
+                by applications.
+              </p>
+            </li>
+            <li>
+              <p class="paragraph-P5">
+                <span
+                  class="ListLabel_20_10"
+                  style="display: block; float: left; min-width: 0.635cm"
+                  >➡</span
+                >Third-party groups also allow you to limit how cookies are used
+                for advertising purposes by participating third parties. You can
+                find more information at the
+                <a
+                  href="https://optout.networkadvertising.org/"
+                  class="text-ListLabel_20_21"
+                  >Network Advertising Initiative</a
+                >, the
+                <a
+                  href="https://optout.aboutads.info/"
+                  class="text-ListLabel_20_21"
+                  >Digital Advertising Alliance</a
+                >
+                and, for users in the EU, the
+                <a
+                  href="https://www.youronlinechoices.com/"
+                  class="text-ListLabel_20_21"
+                  >European Interactive Digital Advertising Alliance</a
+                >.
+              </p>
+            </li>
+            <li>
+              <p class="paragraph-P5">
+                <span
+                  class="ListLabel_20_10"
+                  style="display: block; float: left; min-width: 0.635cm"
+                  >➡</span
+                >Depending on the location from which you access our services,
+                you may be able to adjust your cookie preferences at any time
+                through the app by going to Settings → About → Legal → Cookies
+                Policy.
+              </p>
+            </li>
+          </ul>
+          <p class="paragraph-P2">
+            If you disable or delete cookies, some parts of the services may not
+            function properly. Information may be collected to remember your
+            opt-out preferences.
+          </p>
+          <p class="paragraph-P2">
+            If you have any questions or concerns, you can email us at
+            <a
+              href="mailto:support@fighterstech.com"
+              class="text-Internet_20_link"
+              >support@fighterstech.com</a
+            >
+          </p>
+          <p class="paragraph-P6">&nbsp;</p>
+        </div>
+      </div>
     </div>
     <p style="text-align: center; color: #a9b3bc" id="enquiries"></p>
   </body>

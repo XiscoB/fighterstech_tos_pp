@@ -19,81 +19,39 @@
     />
 
     <style>
+      /* General page styles */
       body {
         font-family: Arial, sans-serif;
         background-color: #00284e;
-        color: #ffffff; /* Changed to white for visibility on dark background */
-        align-content: center;
+        color: #ffffff;
       }
-
       h1 {
         text-align: center;
-        color: #ffffff; /* Changed to white for visibility on dark background */
+        color: #ffffff;
       }
-
       a {
-        color: #ffd700; /* Gold color to stand out on dark background */
-        text-decoration: none; /* Remove underline */
+        color: #ffd700;
+        text-decoration: none;
       }
-
       a:hover {
-        color: #ffffff; /* Change color on hover */
+        color: #ffffff;
       }
-
-      .data-table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 20px;
-      }
-
-      .data-table,
-      .data-table th,
-      .data-table td {
-        border: 1px solid #ddd;
-        padding: 8px;
-        color: #ffffff; /* Changed to white for visibility on dark background */
-      }
-
-      .data-table tbody tr:nth-child(odd) {
-        background-color: rgba(0, 0, 0, 0.5);
-      }
-
-      .data-table th {
-        padding-top: 12px;
-        padding-bottom: 12px;
-        text-align: left;
-        background-color: #073d71;
-        color: #ffffff; /* Changed to white for visibility on dark background */
-      }
-
-      .table-key {
-        font-weight: bold;
-        color: #ffffff; /* Changed to white for visibility on dark background */
-      }
-
-      .table-value {
-        font-style: italic;
-        color: #ffffff; /* Changed to white for visibility on dark background */
-      }
-
       .accordion {
         background-color: rgba(0, 0, 0, 0.5);
         color: #ffffff;
         cursor: pointer;
         padding: 18px;
         width: 100%;
-        border: 1px solid #ffffff; /* Added white border */
+        border: 1px solid #ffffff;
         text-align: left;
         outline: none;
         font-size: 15px;
         transition: 0.4s;
       }
-
       .active,
       .accordion:hover {
-        background-color: #073d71; /* Darkened version of accordion background */
+        background-color: #073d71;
       }
-
       .accordion:after {
         content: "➕";
         font-size: 17px;
@@ -102,51 +60,156 @@
         margin-left: 5px;
         font-style: bold;
       }
-
       .active:after {
         content: "➖";
       }
-
       .panel {
         padding: 0 18px;
-        background-color: rgba(0, 0, 0, 0.5); /* Same as accordion background */
+        background-color: rgba(0, 0, 0, 0.5);
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.2s ease-out;
       }
-
       .centered {
         text-align: center;
       }
       .back-button {
-        background-color: #073d71; /* Similar to your accordion active state */
-        color: #ffffff; /* Similar to your text color */
-        border: 1px solid #ffffff; /* Similar to your accordion border */
-        padding: 10px 20px; /* Arbitrary padding for the button */
-        font-size: 15px; /* Similar to your accordion font size */
-        cursor: pointer; /* Cursor will become a hand when hovering over the button */
-        margin: 10px; /* Similar to your previous button margin */
-        transition: 0.4s; /* Similar to your accordion transition */
+        background-color: #073d71;
+        color: #ffffff;
+        border: 1px solid #ffffff;
+        padding: 10px 20px;
+        font-size: 15px;
+        cursor: pointer;
+        margin: 10px;
+        transition: 0.4s;
       }
-
       .back-button:hover {
-        background-color: #00284e; /* Similar to your body background color */
-        color: #ffd700; /* Gold color when hovering, similar to your a:hover color */
+        background-color: #00284e;
+        color: #ffd700;
       }
       @media screen and (max-width: 768px) {
         .accordion,
         .back-button {
-          font-size: 13px; /* Smaller font size */
-          padding: 12px; /* Less padding */
-          width: 100%; /* Full width */
-          margin: 0 auto; /* Center the buttons */
+          font-size: 13px;
+          padding: 12px;
+          width: 100%;
+          margin: 0 auto;
+        }
+      }
+
+      /* Scoped docx styles */
+      #codeOfConductDocx table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        empty-cells: show;
+      }
+      #codeOfConductDocx td,
+      #codeOfConductDocx th {
+        vertical-align: top;
+        font-size: 12pt;
+      }
+      #codeOfConductDocx h1,
+      #codeOfConductDocx h2,
+      #codeOfConductDocx h3,
+      #codeOfConductDocx h4,
+      #codeOfConductDocx h5,
+      #codeOfConductDocx h6 {
+        clear: both;
+      }
+      #codeOfConductDocx ol,
+      #codeOfConductDocx ul {
+        margin: 0;
+        padding: 0;
+      }
+      #codeOfConductDocx li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      #codeOfConductDocx span.footnodeNumber {
+        padding-right: 1em;
+      }
+      #codeOfConductDocx span.annotation_style_by_filter {
+        font-size: 95%;
+        font-family: Arial;
+        background-color: #fff000;
+        margin: 0;
+        border: 0;
+        padding: 0;
+      }
+      #codeOfConductDocx span.heading_numbering {
+        margin-right: 0.8rem;
+      }
+      #codeOfConductDocx * {
+        margin: 0;
+      }
+      #codeOfConductDocx .paragraph-P1 {
+        font-size: 11pt;
+        line-height: 100%;
+        margin-bottom: 0.353cm;
+        margin-top: 0;
+        text-align: center !important;
+        font-family: Calibri;
+      }
+      #codeOfConductDocx .paragraph-P2 {
+        font-size: 10pt;
+        line-height: 100%;
+        margin-bottom: 0.353cm;
+        margin-top: 0;
+        text-align: justify !important;
+        font-family: Calibri;
+      }
+      #codeOfConductDocx .paragraph-P3 {
+        font-size: 11pt;
+        line-height: 115%;
+        margin-bottom: 0.529cm;
+        margin-top: 0;
+        text-align: justify !important;
+        font-family: Calibri;
+      }
+      #codeOfConductDocx .paragraph-P4 {
+        font-size: 10pt;
+        line-height: 115%;
+        margin-bottom: 0.353cm;
+        margin-top: 0;
+        text-align: justify !important;
+        font-family: Calibri;
+      }
+      #codeOfConductDocx .text-Internet_20_link {
+        color: #ffd700;
+        text-decoration: underline;
+      }
+      #codeOfConductDocx .text-T3 {
+        font-size: 10pt;
+      }
+      #codeOfConductDocx .text-T4 {
+        font-size: 10pt;
+        font-weight: normal;
+      }
+      #codeOfConductDocx .text-T5 {
+        font-size: 10pt;
+        font-weight: bold;
+      }
+      #codeOfConductDocx .text-T6 {
+        font-size: 10pt;
+        font-weight: bold;
+      }
+      @media screen and (min-width: 769px) {
+        .docx-container {
+          max-width: 800px;
+          margin: 40px auto;
+          padding: 24px;
+          border-radius: 8px;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        .docx-content {
+          overflow-x: auto;
         }
       }
     </style>
+
     <script>
       function goBack() {
-        //lets add a function to go home instead, like ../../index.html
-        //window.location.href = "../index.html";
         window.history.back();
       }
 
@@ -156,93 +219,38 @@
             title: "FightersTech Code of Conduct and Community Guidelines",
             privacyPolicyVersion:
               "Code of Conduct and Community Guidelines Version",
-            privacyPolicyVersionNumber: 0.99,
+            privacyPolicyVersionNumber: "1.0.0",
             lastUpdateText: "Last Updated",
-            lastUpdatedDate: new Date("2024-08-20"),
+            lastUpdatedDate: new Date("2025-05-14"),
             ifYouHaveAnyEnquiries:
               "If you have any enquiries, please email us at",
             FIGHTERSTECH_EMAIL_SUPPORT: "legal@fighterstech.com",
             goBackText: "Go back",
-            browserNotSupportingIframePart1:
-              "This browser does not support viewing PDFs. Please ",
-            browserNotSupportingIframePart2: "download the PDF",
-            browserNotSupportingIframePart3: " to view it.",
           },
         };
 
-        var requestProcess = {
-          data: false,
-          // data: {
-          //   "Content One":
-          //     "lore ipsum dolor sit amet consectetur adipiscing elit",
+        // No dynamic data sections for this document
 
-          //   "Content Two":
-          //     "lore ipsum dolor sit amet consectetur adipiscing elit v2",
-          // },
-        };
-
-        var versionTexts = function (data) {
+        function versionTexts() {
           return `${languageVars.htmlStuff.privacyPolicyVersion}: ${languageVars.htmlStuff.privacyPolicyVersionNumber}`;
-        };
+        }
 
-        var generateTable = function generateTable(data, title) {
-          return `<div >
-                <h2 class="centered">${title}</h2>
-                <p>${data}</p>
-                </div>`;
-        };
-
-        var displayData = function (data) {
-          let html = "";
-          for (const [key, value] of Object.entries(data)) {
-            html += `
-            <button id="${key}Button" class="accordion">${key}</button>
-            <div id="${key}" class="panel">              
-                  ${generateTable(value, key)}
-            </div>`;
-          }
-          return html;
-        };
-
-        // Use the variables in your HTML
-        document.querySelector(
-          "h1"
-        ).textContent = `${languageVars.htmlStuff.title}`;
+        document.querySelector("h1").textContent = languageVars.htmlStuff.title;
         document.querySelector("#lastUpdateText").textContent = `${
           languageVars.htmlStuff.lastUpdateText
-        }: ${new Date(
-          `${languageVars.htmlStuff.lastUpdatedDate}`
-        ).toLocaleDateString()}`;
-
-        document.querySelector("#versionTexts").innerHTML = `${versionTexts(
-          requestProcess.data
-        )}`;
-        document.querySelector("#displayData").innerHTML = `${displayData(
-          requestProcess.data
-        )}`;
+        }: ${languageVars.htmlStuff.lastUpdatedDate.toLocaleDateString()}`;
+        document.querySelector("#versionTexts").innerHTML = versionTexts();
         document.querySelector(
           "#enquiries"
-        ).innerHTML = `${languageVars.htmlStuff.ifYouHaveAnyEnquiries}: <a href="mailto:${languageVars.htmlStuff.FIGHTERSTECH_EMAIL_SUPPORT}">${languageVars.htmlStuff.FIGHTERSTECH_EMAIL_SUPPORT}</a>`;
-
-        // Add this part to dynamically set the content inside the iframe
-        document.querySelector("iframe").innerHTML = `
-    <p>
-      ${languageVars.htmlStuff.browserNotSupportingIframePart1}
-      <a href="./code-of-conduct.pdf">${languageVars.htmlStuff.browserNotSupportingIframePart2}</a>
-      ${languageVars.htmlStuff.browserNotSupportingIframePart3}
-    </p>
-  `;
+        ).innerHTML = `${languageVars.htmlStuff.ifYouHaveAnyEnquiries}: <a href=\"mailto:${languageVars.htmlStuff.FIGHTERSTECH_EMAIL_SUPPORT}\">${languageVars.htmlStuff.FIGHTERSTECH_EMAIL_SUPPORT}</a>`;
 
         document.querySelector(
           "#goBack"
         ).textContent = `${languageVars.htmlStuff.goBackText}`;
 
-        // This section of your script should be moved to the end so that it runs after the accordion elements are generated.
-        // setup accordion
+        // Accordion setup
         var acc = document.getElementsByClassName("accordion");
-        var i;
-
-        for (i = 0; i < acc.length; i++) {
+        for (var i = 0; i < acc.length; i++) {
           acc[i].addEventListener("click", function () {
             this.classList.toggle("active");
             var panel = this.nextElementSibling;
@@ -257,9 +265,8 @@
         document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
           anchor.addEventListener("click", function (e) {
             e.preventDefault();
-
-            let targetId = this.getAttribute("href").substring(1);
-            let target = document.getElementById(targetId);
+            var targetId = this.getAttribute("href").substring(1);
+            var target = document.getElementById(targetId);
             if (target) {
               target.click();
               window.location.hash = targetId;
@@ -269,6 +276,7 @@
       });
     </script>
   </head>
+
   <body>
     <h1></h1>
     <img
@@ -276,11 +284,11 @@
       alt="FightersTech Logo"
       style="width: 100%; max-width: 150px; margin: 0 auto; display: block"
     />
-    <!-- add back button-->
     <button class="back-button" id="goBack" onclick="goBack()"></button>
-    <!-- above, added back button-->
+
     <p></p>
     <p id="lastUpdateText" class="centered"></p>
+
     <div
       style="
         display: flex;
@@ -289,28 +297,424 @@
         width: 100%;
       "
     >
-      <div
-        style="
-          text-align: center;
-          width: 60%;
-          align-items: center;
-          justify-content: center;
-        "
-        id="versionTexts"
-      ></div>
+      <div style="text-align: center; width: 60%" id="versionTexts"></div>
     </div>
+
     <div id="displayData"></div>
+
     <div style="text-align: center; margin-top: 20px">
-      <iframe src="./code-of-conduct.pdf" width="100%" height="600px">
-        <p>
-          ${languageVars.htmlStuff.browserNotSupportingIframePart1}
-          <a href="./code-of-conduct.pdf"
-            >${languageVars.htmlStuff.browserNotSupportingIframePart2}</a
-          >
-          ${languageVars.htmlStuff.browserNotSupportingIframePart3}
-        </p>
-      </iframe>
+      <h1 class="paragraph-P1">
+        <a id="a__Code_of_Conduct_and_Community_Guidelines"></a>
+        <span class="text-T5">Code of Conduct and Community Guidelines</span>
+      </h1>
+      <div id="codeOfConductDocx" class="docx-container">
+        <div class="docx-content">
+          <p class="paragraph-P2"> </p>
+          <p class="paragraph-P3">
+            <span class="text-T4"
+              >We created FightersTech with the goal of making it the best place
+              to talk, hang out, and have fun with people online. Our Code of
+              Conduct ensures that everyone can express themselves and find
+              their community—but never at the expense of others.</span
+            ><span class="text-T4" />
+          </p>
+
+          <p class="paragraph-P3">
+            <span class="text-T4"
+              >These guidelines explain what is not allowed on FightersTech.
+              Everyone on FightersTech must follow these rules, which apply to
+              all parts of our platform, including your content, behavior,
+              servers, and applications. If you want to learn about the
+              requirements for developing a bot or other application, refer to
+              the FightersTech Developer Terms of Service and Developer
+              Policy.</span
+            ><span class="text-T4" />
+          </p>
+
+          <p class="paragraph-P3">
+            <span class="text-T4"
+              >If you want to monetize your content, please refer to the
+              additional rules described in the FightersTech Monetization
+              Policy and Monetization Terms.</span
+            ><span class="text-T4" />
+          </p>
+
+          <p class="paragraph-P3">
+            <span class="text-T5"
+              >1. Do not promote, coordinate, or participate in
+              harassment.</span
+            ><span class="text-T4"
+              >  We do not tolerate any form of harassment, including sustained
+              bullying, sexual harassment, ban or suspension evasion, and
+              coordinated server raids intended to harass members.</span
+            >
+          </p>
+
+          <p class="paragraph-P3">
+            <span class="text-T6"
+              >2. Do not threaten to harm individuals or groups of people.</span
+            ><span class="text-T3">
+              This includes both direct and indirect threats, as well as
+              insinuations.</span
+            >
+          </p>
+
+          <p class="paragraph-P3">
+            <span class="text-T6"
+              >3. Do not share or threaten to share someone’s personally
+              identifiable information without their consent. </span
+            ><span class="text-T3"
+              > This includes offering services that enable doxing, such as
+              buying or selling leaked information or aggregating leaked data
+              from others.</span
+            >
+          </p>
+
+          <p class="paragraph-P3">
+            <span class="text-T6"
+              >4. Do not promote hate or engage in conduct that fosters hatred. </span
+            ><span class="text-T7"
+              >This includes using hate symbols, imagery, and statements that
+              deny the history of human atrocities.</span
+            >
+          </p>
+
+          <p class="paragraph-P3">
+            <span class="text-T3"
+              >We consider hate speech to be any form of expression that serves
+              to attack others or promotes hatred or violence against them based
+              on characteristics that are protected.</span
+            ><span class="text-T3" />
+          </p>
+
+          <p class="paragraph-P3">
+            <span class="text-T6"
+              >5. Do not organize, promote, or support violent extremism. </span
+            ><span class="text-T7"
+              >This includes coordinating violent acts and glorifying or
+              promoting violence or those who have carried out acts of violence,
+              as well as promoting conspiracy theories that could incite
+              violence against others.</span
+            >
+          </p>
+
+          <p class="paragraph-P3">
+            <span class="text-T5"
+              >6. Do not request, share, or attempt to distribute content that
+              depicts, promotes, or seeks to normalize child sexual abuse.</span
+            ><span class="text-T4"
+              > Do not publish or engage with content that sexualizes children.
+              This includes real and manipulated media, animated media (such as
+              lolicon), and any other form of digital media creation (including
+              AI-generated media).</span
+            >
+          </p>
+
+          <p class="paragraph-P3">
+            <span class="text-T4"
+              >We report child sexual abuse material and grooming to the
+              appropriate authorities in each country.</span
+            ><span class="text-T4" />
+          </p>
+
+          <p class="paragraph-P3">
+            <span class="text-T6"
+              >7. If you are under 18, do not engage in sexual behavior or any
+              other behavior that could endanger your physical or online
+              safety. </span
+            ><span class="text-T7"
+              >This includes sexual interactions between teenagers, even if
+              consensual, as well as encouraging or coordinating potentially
+              dangerous behavior, such as vigilantism.</span
+            >
+          </p>
+
+          <p class="paragraph-P3">
+            <span class="text-T4"
+              >We want teenagers to be able to express themselves as much as
+              possible on FightersTech, but due to the risks involved in online
+              dating, we will remove spaces that promote or facilitate dating
+              between teenagers.</span
+            ><span class="text-T4" />
+          </p>
+
+          <p class="paragraph-P3">
+            <span class="text-T6"
+              >8. Do not request sexual content or engage in sexual interactions
+              with anyone under the age of 18. We report child sexual abuse
+              material and grooming to the authorities.</span
+            ><span class="text-T6" />
+          </p>
+
+          <p class="paragraph-P3">
+            <span class="text-T5"
+              >9. Do not distribute sexually explicit content to individuals
+              under 18.</span
+            ><span class="text-T8">
+              To interact with adult content on FightersTech, you must be over
+              18 years old.</span
+            >
+          </p>
+
+          <p class="paragraph-P3">
+            <span class="text-T3"
+              >Server owners must apply an age-restriction label to channels
+              where sexually explicit content is shared.</span
+            ><span class="text-T3" />
+          </p>
+
+          <p class="paragraph-P3">
+            <span class="text-T3"
+              >Users are not allowed to post sexually explicit content in spaces
+              that cannot be age-restricted, such as avatars, bios and custom
+              statuses, server banners and icons, invite images, emojis, and
+              stickers.</span
+            ><span class="text-T3" />
+          </p>
+
+          <p class="paragraph-P3">
+            <span class="text-T5"
+              >10. Do not share, distribute, or create sexually explicit or
+              sexual content about other people without their consent. </span
+            ><span class="text-T8"
+              >This includes the non-consensual distribution of intimate media,
+              whether or not it was created with the affected person’s
+              consent.</span
+            >
+          </p>
+
+          <p class="paragraph-P3">
+            <span class="text-T6"
+              >11. Do not share content that glorifies, promotes, or normalizes
+              suicide or other forms of self-harm. </span
+            ><span class="text-T7"
+              >This includes content that encourages others to cut or burn
+              themselves, to starve themselves, or that normalizes eating
+              disorders such as anorexia or bulimia. Acts of self-harm and
+              threats used as a form of coercion or emotional manipulation are
+              also prohibited.</span
+            >
+          </p>
+
+          <p class="paragraph-P3">
+            <span class="text-T6"
+              >12. Do not share real media that depicts graphic violence,
+              excessive gore, or animal abuse—especially with the intent to
+              harass or shock others.</span
+            ><span class="text-T6" />
+          </p>
+
+          <p class="paragraph-P3">
+            <span class="text-T5"
+              >13. Do not send unsolicited mass messages (or spam) or facilitate
+              such activity through the sale of spambots, server raiding tools,
+              account creation tools, token generators, CAPTCHA-solving
+              services, or similar tools.</span
+            ><span class="text-T5" />
+          </p>
+
+          <p class="paragraph-P3">
+            <span class="text-T6">14. Do not use self-bots or user bots.</span
+            ><span class="text-T7"
+              > Every account must be associated with a human, not a bot.</span
+            >
+          </p>
+
+          <p class="paragraph-P3">
+            <span class="text-T6"
+              >15. Do not engage with our service dishonestly. </span
+            ><span class="text-T7"
+              >This includes artificially inflating server memberships,
+              manipulating engagement statistics, or selling artificial
+              interaction services.</span
+            >
+          </p>
+
+          <p class="paragraph-P3">
+            <span class="text-T5"
+              >16. Do not buy or sell FightersTech assets, including accounts,
+              usernames, servers, server permissions, and custom server invite
+              links.</span
+            ><span class="text-T5" />
+          </p>
+
+          <p class="paragraph-P3">
+            <span class="text-T4"
+              >Abuse of FightersTech’s paid features and monetization
+              opportunities is subject to the Paid Services Terms.</span
+            ><span class="text-T4" />
+          </p>
+
+          <p class="paragraph-P3">
+            <span class="text-T5"
+              >17. Do not share false or misleading information (also known as
+              “disinformation”). </span
+            ><span class="text-T8"
+              >Sharing false, deceptive, or potentially harmful content is not
+              allowed on FightersTech. We may remove certain content if we have
+              reasonable grounds to believe its spread could cause harm to
+              individuals or physical infrastructure, obstruct participation in
+              civic processes, or endanger public health.</span
+            >
+          </p>
+
+          <p class="paragraph-P3">
+            <span class="text-T5"
+              >18. Do not misrepresent your identity on FightersTech in a
+              deceptive or harmful way. </span
+            ><span class="text-T8"
+              >This includes creating fake profiles or attempting to impersonate
+              individuals, groups, or organizations.</span
+            >
+          </p>
+
+          <p class="paragraph-P3">
+            <span class="text-T5"
+              >19. Do not evade enforcement actions by FightersTech.</span
+            ><span class="text-T8"
+              > This includes creating new or existing communities or accounts
+              after being removed for violating platform rules.
+            </span>
+          </p>
+
+          <p class="paragraph-P3">
+            <span class="text-T5"
+              >20. Do not engage in activities that could harm or compromise the
+              security of accounts, networks, or systems. </span
+            ><span class="text-T8"
+              >This includes using deceptive tactics to obtain personal data
+              (phishing), using malicious software (malware), or overwhelming
+              services with traffic to render them unusable (denial-of-service
+              attacks).</span
+            >
+          </p>
+
+          <p class="paragraph-P3">
+            <span class="text-T5"
+              >21. Do not use or attempt to use FightersTech to promote,
+              coordinate, or carry out financial scams. </span
+            ><span class="text-T8"
+              >A financial scam is any deliberately deceptive act intended to
+              obtain illegal, unethical, or dishonest income.</span
+            >
+          </p>
+
+          <p class="paragraph-P3">
+            <span class="text-T5"
+              >22. Do not engage in activities that generate profits
+              fraudulently at the expense of others.</span
+            ><span class="text-T8"
+              > This includes actions aimed at participating in, facilitating,
+              or instructing others to commit fraud. We do not allow coordinated
+              actions to defraud companies, manipulate prices, forge or launder
+              money, or the use of tools that enable illegal activities.
+            </span>
+          </p>
+
+          <p class="paragraph-P3">
+            <span class="text-T5"
+              >23. Do not submit false, misleading, or abusive reports or
+              requests to FightersTech’s support teams. </span
+            ><span class="text-T8"
+              >A report or request is considered false or misleading if it
+              contains demonstrably false information intended to manipulate the
+              teams into taking a specific action.</span
+            >
+          </p>
+
+          <p class="paragraph-P3">
+            <span class="text-T6"
+              >24. Do not share content that infringes on someone else’s
+              intellectual property or any other rights. </span
+            ><span class="text-T7"
+              >This includes sharing or selling cheats or hacks for games.</span
+            >
+          </p>
+
+          <p class="paragraph-P3">
+            <span class="text-T5"
+              >25. Do not organize, promote, or participate in the sale or
+              facilitation of the sale of regulated or potentially dangerous
+              goods. </span
+            ><span class="text-T8"
+              >There are laws governing regulated goods that restrict their
+              purchase, sale, exchange, and possession. Dangerous goods pose a
+              reasonable potential for real-world harm and can jeopardize
+              people’s physical safety.</span
+            >
+          </p>
+
+          <p class="paragraph-P3">
+            <span class="text-T5"
+              >26. Do not coordinate or participate in illegal gambling. </span
+            ><span class="text-T8"
+              >Users are responsible for complying with all applicable gambling
+              laws and regulations.</span
+            >
+          </p>
+
+          <p class="paragraph-P3">
+            <span class="text-T5"
+              >27. Do not organize, promote, or participate in any form of
+              illegal activity, such as human trafficking or sexual
+              solicitation.</span
+            ><span class="text-T4"> </span>
+          </p>
+
+          <p class="paragraph-P3">
+            <span class="text-T4"
+              >If you come across any content or activity that violates these
+              Guidelines, our </span
+            ><a
+              href="https://legal.fighterstech.com/en/terms-and-conditions/"
+              class="text-Internet_20_link"
+              ><span class="text-Internet_20_link"
+                ><span class="text-T4">Terms and Conditions</span></span
+              ></a
+            ><span class="text-T4">, or </span
+            ><a
+              href="https://legal.fighterstech.com/en/"
+              class="text-Internet_20_link"
+              ><span class="text-Internet_20_link"
+                ><span class="text-T4">any of our policies</span></span
+              ></a
+            ><span class="text-T4">, report it by sending a message to </span
+            ><a
+              href="mailto:support@fighterstech.com"
+              class="text-Internet_20_link"
+              ><span class="text-Internet_20_link"
+                ><span class="text-T4">support@fighterstech.com</span></span
+              ></a
+            ><span class="text-T4">
+              . However, please note that we strongly discourage vigilantism,
+              and we may take action against such behavior, as it has the
+              potential to harm individuals and interfere with our
+              investigations and our ability to refer reports to law
+              enforcement.</span
+            >
+          </p>
+
+          <p class="paragraph-P3">
+            <span class="text-T4"
+              >These Guidelines will evolve over time, which means we may take
+              action against accounts, servers, or content that violate the
+              spirit of these Guidelines if we encounter a new threat or risk
+              not explicitly covered in the current version.</span
+            ><span class="text-T4" />
+          </p>
+
+          <p class="paragraph-P3">
+            <span class="text-T4"
+              >We will always do our best to inform you whenever we update these
+              Guidelines, but it is your responsibility to act in accordance
+              with their spirit.</span
+            ><span class="text-T4" />
+          </p>
+          <p class="paragraph-P4"> </p>
+        </div>
+      </div>
     </div>
+
     <p style="text-align: center; color: #a9b3bc" id="enquiries"></p>
   </body>
 </html>

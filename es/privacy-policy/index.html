@@ -22,129 +22,161 @@
       body {
         font-family: Arial, sans-serif;
         background-color: #00284e;
-        color: #ffffff; /* Changed to white for visibility on dark background */
+        color: #ffffff;
       }
-
       h1 {
         text-align: center;
-        color: #ffffff; /* Changed to white for visibility on dark background */
+        color: #ffffff;
       }
-
       a {
-        color: #ffd700; /* Gold color to stand out on dark background */
-        text-decoration: none; /* Remove underline */
+        color: #ffd700;
+        text-decoration: none;
       }
-
       a:hover {
-        color: #ffffff; /* Change color on hover */
+        color: #ffffff;
       }
-
-      .data-table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 20px;
-      }
-
-      .data-table,
-      .data-table th,
-      .data-table td {
-        border: 1px solid #ddd;
-        padding: 8px;
-        color: #ffffff; /* Changed to white for visibility on dark background */
-      }
-
-      .data-table tbody tr:nth-child(odd) {
-        background-color: rgba(0, 0, 0, 0.5);
-      }
-
-      .data-table th {
-        padding-top: 12px;
-        padding-bottom: 12px;
-        text-align: left;
-        background-color: #073d71;
-        color: #ffffff; /* Changed to white for visibility on dark background */
-      }
-
-      .table-key {
-        font-weight: bold;
-        color: #ffffff; /* Changed to white for visibility on dark background */
-      }
-
-      .table-value {
-        font-style: italic;
-        color: #ffffff; /* Changed to white for visibility on dark background */
-      }
-
       .accordion {
         background-color: rgba(0, 0, 0, 0.5);
         color: #ffffff;
         cursor: pointer;
         padding: 18px;
         width: 100%;
-        border: 1px solid #ffffff; /* Added white border */
+        border: 1px solid #ffffff;
         text-align: left;
         outline: none;
         font-size: 15px;
         transition: 0.4s;
       }
-
       .active,
       .accordion:hover {
-        background-color: #073d71; /* Darkened version of accordion background */
+        background-color: #073d71;
       }
-
       .accordion:after {
         content: "➕";
-        font-size: 17px;
+        font-size: 15;
         color: #777;
         float: right;
         margin-left: 5px;
         font-style: bold;
       }
-
       .active:after {
         content: "➖";
       }
-
       .panel {
         padding: 0 18px;
-        background-color: rgba(0, 0, 0, 0.5); /* Same as accordion background */
+        background-color: rgba(0, 0, 0, 0.5);
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.2s ease-out;
       }
-
       .centered {
         text-align: center;
       }
       .back-button {
-        background-color: #073d71; /* Similar to your accordion active state */
-        color: #ffffff; /* Similar to your text color */
-        border: 1px solid #ffffff; /* Similar to your accordion border */
-        padding: 10px 20px; /* Arbitrary padding for the button */
-        font-size: 15px; /* Similar to your accordion font size */
-        cursor: pointer; /* Cursor will become a hand when hovering over the button */
-        margin: 10px; /* Similar to your previous button margin */
-        transition: 0.4s; /* Similar to your accordion transition */
+        background-color: #073d71;
+        color: #ffffff;
+        border: 1px solid #ffffff;
+        padding: 10px 20px;
+        font-size: 15px;
+        cursor: pointer;
+        margin: 10px;
+        transition: 0.4s;
       }
-
       .back-button:hover {
-        background-color: #00284e; /* Similar to your body background color */
-        color: #ffd700; /* Gold color when hovering, similar to your a:hover color */
+        background-color: #00284e;
+        color: #ffd700;
       }
       @media screen and (max-width: 768px) {
         .accordion,
         .back-button {
-          font-size: 13px; /* Smaller font size */
-          padding: 12px; /* Less padding */
-          width: 100%; /* Full width */
-          margin: 0 auto; /* Center the buttons */
+          font-size: 13;
+          padding: 12px;
+          width: 100%;
+          margin: 0 auto;
+        }
+      }
+
+      html {
+        font-size: 16px;
+      }
+      #privacyPolicyDocx {
+        font-family: Calibri, sans-serif;
+      }
+
+      /* Encabezados generales (si los usas dentro de DOCX) */
+      #privacyPolicyDocx h1 {
+        font-size: 2rem; /* 32px */
+        font-weight: bold;
+        margin: 1.5em 0 0.5em;
+      }
+      #privacyPolicyDocx h2 {
+        font-size: 1.75rem; /* 28px */
+        margin: 1.25em 0 0.5em;
+      }
+      #privacyPolicyDocx h3 {
+        font-size: 1.5rem; /* 24px */
+        margin: 1em 0 0.5em;
+      }
+      #privacyPolicyDocx h4 {
+        font-size: 1.25rem; /* 20px */
+        margin: 1em 0 0.5em;
+      }
+
+      /* Párrafos y listas (texto normal) */
+      #privacyPolicyDocx .paragraph-P2,
+      #privacyPolicyDocx .paragraph-P3,
+      #privacyPolicyDocx p,
+      #privacyPolicyDocx li p {
+        font-size: 1rem; /* 16px */
+        line-height: 1.5;
+        margin: 0.5em 0;
+      }
+
+      /* Título principal del documento dentro de DOCX */
+      #privacyPolicyDocx .paragraph-P1 {
+        font-size: 2rem; /* 32px */
+        font-weight: bold;
+        text-align: center !important;
+        margin: 1em 0;
+      }
+
+      /* Subtítulos internos (por ejemplo secciones dentro de DOCX) */
+      #privacyPolicyDocx .paragraph-P5 {
+        font-size: 1.25rem; /* 20px */
+        font-weight: bold;
+        margin: 1.25em 0 0.5em;
+      }
+
+      /* Notas al pie, advertencias, texto auxiliar */
+      #privacyPolicyDocx .paragraph-P6,
+      #privacyPolicyDocx .paragraph-P7,
+      #privacyPolicyDocx .paragraph-P8 {
+        font-size: 0.875rem; /* 14px */
+        margin: 0.4em 0;
+      }
+
+      /* Texto centrado de apoyo (centrados cortos) */
+      #privacyPolicyDocx .paragraph-P4 {
+        font-size: 0.875rem; /* 14px */
+        text-align: center !important;
+        font-style: italic;
+        margin: 0.5em 0;
+      }
+      @media screen and (min-width: 769px) {
+        .docx-container {
+          max-width: 800px;
+          margin: 40px auto;
+          padding: 24px;
+          border-radius: 8px;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        .docx-content {
+          overflow-x: auto;
         }
       }
     </style>
     <script>
       function goBack() {
-        //window.location.href = "../index.html";
         window.history.back();
       }
       document.addEventListener("DOMContentLoaded", function () {
@@ -152,115 +184,41 @@
           htmlStuff: {
             title: "FightersTech - Política de Privacidad",
             privacyPolicyVersion: "Versión de Política de Privacidad",
-            privacyPolicyVersionNumber: 0.999,
+            privacyPolicyVersionNumber: "1.0.0",
             lastUpdateText: "Última Actualización",
-            lastUpdatedDate: new Date("2024-12-30"),
+            lastUpdatedDate: new Date("2025-05-14"),
             ifYouHaveAnyEnquiries:
               "Si tienes alguna pregunta o inquietud puedes consultarnos en",
             FIGHTERSTECH_EMAIL_SUPPORT: "privacy@fighterstech.com",
             goBackText: "Volver",
-            browserNotSupportingIframePart1:
-              "Este navegador no soporta la visualización de PDFs. Por favor, ",
-            browserNotSupportingIframePart2: "descarga el PDF",
-            browserNotSupportingIframePart3: " para verlo.",
           },
         };
-
-        var requestProcess = {
-          data: false,
-          //           data: {
-          //   "Contenido Uno":
-          //     "lore ipsum dolor sit amet consectetur adipiscing elit",
-
-          //   "Contenido Dos":
-          //     "lore ipsum dolor sit amet consectetur adipiscing elit v2",
-          // },
-        };
-
-        var versionTexts = function (data) {
-          return `${languageVars.htmlStuff.privacyPolicyVersion}: ${languageVars.htmlStuff.privacyPolicyVersionNumber}`;
-        };
-
-        var generateTable = function generateTable(data, title) {
-          return `<div >
-                <h2 class="centered">${title}</h2>
-                <p>${data}</p>
-                </div>`;
-        };
-
-        var displayData = function (data) {
-          let html = "";
-          for (const [key, value] of Object.entries(data)) {
-            html += `
-            <button id="${key}Button" class="accordion">${key}</button>
-            <div id="${key}" class="panel">              
-                  ${generateTable(value, key)}
-            </div>`;
-          }
-          return html;
-        };
-
-        // Use the variables in your HTML
-        document.querySelector(
-          "h1"
-        ).textContent = `${languageVars.htmlStuff.title}`;
-        document.querySelector("#lastUpdateText").textContent = `${
-          languageVars.htmlStuff.lastUpdateText
-        }: ${new Date(
-          `${languageVars.htmlStuff.lastUpdatedDate}`
-        ).toLocaleDateString()}`;
-
-        document.querySelector("#versionTexts").innerHTML = `${versionTexts(
-          requestProcess.data
-        )}`;
-        document.querySelector("#displayData").innerHTML = `${displayData(
-          requestProcess.data
-        )}`;
-        document.querySelector(
-          "#enquiries"
-        ).innerHTML = `${languageVars.htmlStuff.ifYouHaveAnyEnquiries}: <a href="mailto:${languageVars.htmlStuff.FIGHTERSTECH_EMAIL_SUPPORT}">${languageVars.htmlStuff.FIGHTERSTECH_EMAIL_SUPPORT}</a>`;
-
-        // Add this part to dynamically set the content inside the iframe
-        document.querySelector("iframe").innerHTML = `
-    <p>
-      ${languageVars.htmlStuff.browserNotSupportingIframePart1}
-      <a href="./privacy-policy.pdf">${languageVars.htmlStuff.browserNotSupportingIframePart2}</a>
-      ${languageVars.htmlStuff.browserNotSupportingIframePart3}
-    </p>
-  `;
-
         document.querySelector(
           "#goBack"
         ).textContent = `${languageVars.htmlStuff.goBackText}`;
-        // This section of your script should be moved to the end so that it runs after the accordion elements are generated.
-        // setup accordion
+        document.querySelector("h1").textContent = languageVars.htmlStuff.title;
+        document.querySelector("#lastUpdateText").textContent = `${
+          languageVars.htmlStuff.lastUpdateText
+        }: ${new Date(
+          languageVars.htmlStuff.lastUpdatedDate
+        ).toLocaleDateString()}`;
+        document.querySelector(
+          "#versionTexts"
+        ).innerHTML = `${languageVars.htmlStuff.privacyPolicyVersion}: ${languageVars.htmlStuff.privacyPolicyVersionNumber}`;
+        document.querySelector(
+          "#enquiries"
+        ).innerHTML = `${languageVars.htmlStuff.ifYouHaveAnyEnquiries}: <a href=\"mailto:${languageVars.htmlStuff.FIGHTERSTECH_EMAIL_SUPPORT}\">${languageVars.htmlStuff.FIGHTERSTECH_EMAIL_SUPPORT}</a>`;
+        // accordion setup
         var acc = document.getElementsByClassName("accordion");
-        var i;
-
-        for (i = 0; i < acc.length; i++) {
+        for (var i = 0; i < acc.length; i++) {
           acc[i].addEventListener("click", function () {
             this.classList.toggle("active");
             var panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-              panel.style.maxHeight = null;
-            } else {
-              panel.style.maxHeight = panel.scrollHeight + "px";
-            }
+            panel.style.maxHeight = panel.style.maxHeight
+              ? null
+              : panel.scrollHeight + "px";
           });
         }
-
-        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-          anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-
-            let targetId = this.getAttribute("href").substring(1);
-            let target = document.getElementById(targetId);
-            if (target) {
-              target.click();
-              window.location.hash = targetId;
-            }
-          });
-        });
       });
     </script>
   </head>
@@ -271,40 +229,2652 @@
       alt="FightersTech Logo"
       style="width: 100%; max-width: 150px; margin: 0 auto; display: block"
     />
-    <!-- add back button-->
-    <button class="back-button" id="goBack" onclick="goBack()"></button>
-    <!-- above, added back button-->
-    <p></p>
+    <button class="back-button" id="goBack" onclick="history.back()"></button>
     <p id="lastUpdateText" class="centered"></p>
-    <div
-      style="
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-      "
-    >
-      <div
-        style="
-          text-align: center;
-          width: 60%;
-          align-items: center;
-          justify-content: center;
-        "
-        id="versionTexts"
-      ></div>
+    <div style="display: flex; justify-content: center; width: 100%">
+      <div id="versionTexts" style="text-align: center; width: 60%"></div>
     </div>
     <div id="displayData"></div>
-    <div style="text-align: center; margin-top: 20px">
-      <iframe src="./privacy-policy.pdf" width="100%" height="600px">
-        <p>
-          ${languageVars.htmlStuff.browserNotSupportingIframePart1}
-          <a href="./privacy-policy.pdf"
-            >${languageVars.htmlStuff.browserNotSupportingIframePart2}</a
-          >
-          ${languageVars.htmlStuff.browserNotSupportingIframePart3}
+    <div class="docx-container">
+      <div id="privacyPolicyDocx" class="docx-content">
+        <p class="paragraph-P1">
+          <span class="text-T1">Política de Privacidad</span
+          ><span class="text-T1" />
         </p>
-      </iframe>
+
+        <p class="paragraph-P2">
+          <span class="text-T2"
+            >Esta Política de Privacidad explica cómo recopilamos, usamos,
+            almacenamos, protegemos y compartimos tu información personal en
+            nuestros servicios. Si resides en el Espacio Económico Europeo
+            -«EEE»- o el Reino Unido, Francisco Bernabé Martínez es el
+            «responsable del tratamiento de datos» de tu información personal
+            recopilada a través de los servicios -como se define en </span
+          ><a
+            href="https://legal.fighterstech.com/es/terms-and-conditions/"
+            class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T3"
+                >nuestras condiciones de servicio</span
+              ></span
+            ></a
+          ><span class="text-T2"
+            >. Para los demás usuarios, Francisco Bernabé Martínez, es el
+            responsable del tratamiento de datos. Es importante que leas esta
+            política en su totalidad, pero aquí tienes un resumen para poder
+            empezar:</span
+          >
+        </p>
+        <ul>
+          <li>
+            <p class="P3" style="margin-left: 0cm">
+              <span
+                class="ListLabel_20_154"
+                style="display: block; float: left; min-width: 0.635cm"
+              ></span
+              ><span class="text-Strong_20_Emphasis"
+                ><span class="text-T4"
+                  >Nos preocupamos mucho por la privacidad</span
+                ></span
+              ><span class="text-T4"
+                >. Nos comprometemos a crear espacios donde la gente pueda pasar
+                el rato y divertirse con sus amigos en línea buscando partidas
+                en línea y facilitar el encuentro entre jugadores. Respetar la
+                privacidad del usuario es una parte clave de esa misión.  </span
+              ><span class="odfLiEnd" /> 
+            </p>
+          </li>
+          <li>
+            <p class="P3" style="margin-left: 0cm">
+              <span
+                class="ListLabel_20_154"
+                style="display: block; float: left; min-width: 0.635cm"
+              ></span
+              ><span class="text-Strong_20_Emphasis"
+                ><span class="text-T4"
+                  >No vendemos tu información personal</span
+                ></span
+              ><span class="text-T4"
+                >. Nuestro negocio se basa en las suscripciones y otros
+                productos de pago, así como la inserción de anuncios en la
+                plataforma, no en la venta de información personal a terceros.
+                Hacemos uso de aplicaciones de terceros para la monetización de
+                publicidad como para el inicio de sesión, en adelante se detalla
+                en específico la información recopilada durante el uso de la
+                web, aplicación o la interacción con la publicidad.</span
+              ><span class="odfLiEnd" /> 
+            </p>
+          </li>
+          <li>
+            <p class="P3" style="margin-left: 0cm">
+              <span
+                class="ListLabel_20_154"
+                style="display: block; float: left; min-width: 0.635cm"
+              ></span
+              ><span class="text-Strong_20_Emphasis"
+                ><span class="text-T4"
+                  >Limitamos la información que nos hace falta</span
+                ></span
+              ><span class="text-T4"
+                >. La información necesaria es aquella que nos permite crear las
+                cuentas, prestar y mantener los servicios, y cumplir nuestros
+                compromisos con nuestros usuarios y la legislación. El resto es
+                opcional.</span
+              ><span class="odfLiEnd" /> 
+            </p>
+          </li>
+          <li>
+            <p class="P3" style="margin-left: 0cm">
+              <span
+                class="ListLabel_20_154"
+                style="display: block; float: left; min-width: 0.635cm"
+              ></span
+              ><span class="text-Strong_20_Emphasis"
+                ><span class="text-T4"
+                  >Nos preocupamos profundamente por la seguridad.</span
+                ></span
+              ><span class="text-T4"
+                > Nuestro equipo especializado de Trust and Safety se esfuerza
+                para ayudar a mantener la seguridad de nuestra comunidad.
+                También utilizamos cierta información que nos ayuda a
+                identificar infracciones de nuestras </span
+              ><a
+                href="https://legal.fighterstech.com/es/conduct/"
+                class="text-Internet_20_link"
+                ><span class="text-Internet_20_link"
+                  ><span class="text-T5">Directivas de la Comunidad</span></span
+                ></a
+              ><span class="text-T4">
+                y evitar que se distribuya contenido dañino a través de los
+                servicios.</span
+              ><span class="odfLiEnd" /> 
+            </p>
+          </li>
+          <li>
+            <p class="P3" style="margin-left: 0cm">
+              <span
+                class="ListLabel_20_154"
+                style="display: block; float: left; min-width: 0.635cm"
+              ></span
+              ><span class="text-Strong_20_Emphasis"
+                ><span class="text-T4">Te damos el control.</span></span
+              ><span class="text-T4"
+                > Te ofrecemos la capacidad de controlar tu privacidad en
+                FightersTech.</span
+              ><span class="odfLiEnd" /> 
+            </p>
+          </li>
+        </ul>
+        <p class="paragraph-P4"> </p>
+        <p class="paragraph-P2">
+          <span class="text-T6"
+            >Creamos FightersTech con el objetivo de que fuera el mejor sitio
+            para encontrar otros jugadores en línea, crear nuevas comunidades, y
+            mejorar el nivel de los usuarios a nivel competitivo o simplemente
+            utilizarlo como punto de encuentro para nuevos jugadores.
+            FightersTech te facilita conectar con otras personas, tanto si
+            pertenecéis a un club, como a un grupo de jugadores o simplemente
+            una pandilla de amigos.</span
+          ><span class="text-T6" />
+        </p>
+
+        <p class="paragraph-P2">
+          <span class="text-T2"
+            >El término «servicios» tiene el mismo significado que se define en
+            las</span
+          ><a
+            href="https://legal.fighterstech.com/es/terms-and-conditions/"
+            class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T3"> Condiciones del Servicio</span></span
+            ></a
+          ><span class="text-T2"
+            >. Esto incluye la aplicación de FightersTech, a la que se puede
+            acceder por móvil, web, ordenador de </span
+          ><span class="text-T2"
+            >sobremesa, consola o incluso un aparato electrónico -es decir,
+            cualquier dispositivo que tenga conexión a internet y un navegador
+            web-. También tenemos una página web, un blog y un centro de soporte
+            técnico, y es posible que recopilemos datos por otros medios, como
+            encuestas, correos electrónicos y redes sociales. Si creamos otros
+            productos, nuestros servicios también los incluirán.
+          </span>
+        </p>
+
+        <p class="paragraph-P2">
+          <span class="text-T2"
+            >También cabe la posibilidad de que usemos los contenidos publicados
+            en los espacios más grandes para desarrollar, mejorar y potenciar
+            nuestros servicios, incluidas las características que sirven para
+            ponerse al día en las conversaciones u otras medidas de seguridad
+            para identificar los contenidos dañinos en los servicios, además de
+            para fomentar el cumplimiento de las </span
+          ><a
+            href="https://legal.fighterstech.com/es/terms-and-conditions/"
+            class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T3">Condiciones del Servicio</span></span
+            ></a
+          ><span class="text-T2"> y las </span
+          ><a
+            href="https://legal.fighterstech.com/es/conduct/"
+            class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T3">Directivas de la Comunidad.</span></span
+            ></a
+          ><span class="text-T2">
+            Son aspectos importantes para nosotros y creemos que servirán para
+            que FightersTech sea un sitio aún mejor para nuestros usuarios.
+            Siempre procuraremos que sepas el tipo de espacio en el que te
+            encuentras -aunque no tenemos control sobre los sitios donde se
+            comparten los enlaces de invitación o los permisos de los
+            servidores-. Puedes limitar el uso que se da a tus datos, tal como
+            se describe en la sección «Cómo puedes controlar tu privacidad» de
+            más abajo. Debes tener todo esto en cuenta cuando uses nuestros
+            servicios.</span
+          >
+        </p>
+
+        <p class="paragraph-P2">
+          <span class="text-T6"
+            >Ganamos dinero de las suscripciones de pago y de contenido
+            publicitario, pero no de la venta de tu información personal a
+            terceros – ciertas aplicaciones como Google Ads recopilan cierta
+             información que detallaremos en adelante.</span
+          ><span class="text-T6" />
+        </p>
+
+        <p class="paragraph-P2">
+          <span class="text-T7">Información recopilada y uso. </span
+          ><span class="text-T7" />
+        </p>
+
+        <p class="paragraph-P2">
+          <span class="text-T6"
+            >Recogemos cierta información cuando usas FightersTech. Esto incluye
+            la información que nos proporcionas, la información que recogemos
+            automáticamente y la información que recibimos de otras
+            fuentes.</span
+          ><span class="text-T6" />
+        </p>
+        <h4 class="paragraph-P5">
+          <a id="a__Información_que_nos_proporcionas"><span /></a
+          ><span class="text-T6">Información que nos proporcionas</span
+          ><span class="text-T6" />
+        </h4>
+        <ul>
+          <li>
+            <p class="P6" style="margin-left: 0cm">
+              <span
+                class="ListLabel_20_163"
+                style="display: block; float: left; min-width: 0.635cm"
+              ></span
+              ><span class="text-Strong_20_Emphasis"
+                ><span class="text-T4">Información de cuenta</span></span
+              ><span class="text-T4"
+                >. Cuando creas una cuenta de FightersTech, tienes que generar
+                también un nombre de usuario y una contraseña, además de
+                facilitarnos una forma de contactar contigo -como una dirección
+                de correo electrónico o un número de teléfono-. También
+                necesitaremos tu fecha de nacimiento y, en algunos casos, te
+                solicitaremos otros datos para comprobar tu edad. Es posible que
+                tengas que verificar la cuenta o incluir más información -como
+                un número de teléfono verificado-. También tendrás la opción de
+                añadir tu nombre o el nombre que quieras que se muestre.</span
+              ><span class="odfLiEnd" /> 
+            </p>
+          </li>
+          <li>
+            <p class="P6" style="margin-left: 0cm">
+              <span
+                class="ListLabel_20_163"
+                style="display: block; float: left; min-width: 0.635cm"
+              ></span
+              ><span class="text-Strong_20_Emphasis"
+                ><span class="text-T4">Contenido que creas</span></span
+              ><span class="text-T4"
+                >. Se incluyen los datos de tu perfil y la información que nos
+                facilitas al crear servidores, buscar a jugadores o a la hora de
+                crear partidas. Por lo general, nunca almacenamos el contenido
+                de los servidores salvo para ofrecer el servicio, Puede que en
+                el futuro creemos funciones que ayuden a interactuar a los
+                usuarios mediante contenidos de voz y de vídeo, </span
+              ><span class="text-T4"
+                >como crear o enviar grabaciones cortas. Si bien para ello habrá
+                que modificar la presente normativa, lo que se comunicará con la
+                antelación debida.</span
+              ><span class="odfLiEnd" /> 
+            </p>
+          </li>
+          <li>
+            <p class="P6" style="margin-left: 0cm">
+              <span
+                class="ListLabel_20_163"
+                style="display: block; float: left; min-width: 0.635cm"
+              ></span
+              ><span class="text-Strong_20_Emphasis"
+                ><span class="text-T4">Información de pago</span></span
+              ><span class="text-T4"
+                >. Si compras servicios de pago a través de FightersTech, es
+                posible que tengas que facilitarnos un método de pago válido y
+                los datos de facturación asociados, incluidos tu nombre completo
+                y tu dirección de facturación. Nuestros procesadores de pagos,
+                como PayPal, Google, Apple o RevenueCat reciben y procesan toda
+                esta información. Dependiendo del procesador, también puede que
+                recibamos y almacenemos algunos datos de facturación, como los
+                cuatro últimos números de la tarjeta de crédito asociada a la
+                transacción. Si, en el futuro, decidimos procesar nuestros
+                propios pagos, recibiremos y procesaremos nosotros mismos la
+                información.</span
+              ><span class="odfLiEnd" /> 
+            </p>
+          </li>
+          <li>
+            <p class="P6" style="margin-left: 0cm">
+              <span
+                class="ListLabel_20_163"
+                style="display: block; float: left; min-width: 0.635cm"
+              ></span
+              ><span class="text-Strong_20_Emphasis"
+                ><span class="text-T4"
+                  >Información sobre tus acciones</span
+                ></span
+              ><span class="text-T4"
+                >. Recopilamos información sobre el uso que haces de
+                FightersTech y tus actividades en los servicios. Esto incluye
+                información como los amigos que añades, los usuarios, bots y
+                aplicaciones con los que interactúas, los juegos a los que
+                juegas en el dispositivo, los servidores o demás comunidades a
+                los que te unes, tus roles en los servidores, las decisiones que
+                tomas sobre moderación de contenido y otras acciones
+                relacionadas. Puedes controlar el grado en el que se recopila,
+                usa y difunde esta información, tal como se describe en la
+                sección “Cómo controlar tu privacidad” de más abajo.</span
+              ><span class="odfLiEnd" /> 
+            </p>
+          </li>
+          <li>
+            <p class="P6" style="margin-left: 0cm">
+              <span
+                class="ListLabel_20_163"
+                style="display: block; float: left; min-width: 0.635cm"
+              ></span
+              ><span class="text-Strong_20_Emphasis"
+                ><span class="text-T4"
+                  >Información de características opcionales</span
+                ></span
+              ><span class="text-T4"
+                >. Para que funcionen algunas características, como la
+                sincronización de contactos, es posible que tengas que
+                facilitarnos más datos -u otorgarnos acceso a ellos-. Esto
+                incluye también las integraciones de terceros que decidas
+                activar y los datos que autorices a esos terceros a compartir
+                con nosotros. Así, por ejemplo, cuando vinculas una cuenta de
+                correo es posible que recopilemos datos sobre ella para
+                mostrarla en tu perfil o estado -si has elegido esa
+                opción-.</span
+              ><span class="odfLiEnd" /> 
+            </p>
+          </li>
+          <li>
+            <p class="P6" style="margin-left: 0cm">
+              <span
+                class="ListLabel_20_163"
+                style="display: block; float: left; min-width: 0.635cm"
+              ></span
+              ><span class="text-Strong_20_Emphasis"
+                ><span class="text-T4"
+                  >Otra información que nos facilitas directamente</span
+                ></span
+              ><span class="text-T4"
+                >. Es posible que tengas la opción de facilitarnos información
+                adicional al usar FightersTech. Así, por ejemplo, puedes
+                participar en encuestas en las que podrás contarnos qué opinas
+                de nuestros servicios o facilitar información a los equipos de
+                soporte técnico de FightersTech.</span
+              ><span class="odfLiEnd" /> 
+            </p>
+          </li>
+        </ul>
+        <h4 class="paragraph-P5">
+          <a id="a__Información_que_recogemos_automáticamente"><span /></a
+          ><span class="text-T6">Información que recogemos automáticamente</span
+          ><span class="text-T6" />
+        </h4>
+
+        <p class="paragraph-P2">
+          <span class="text-T6"
+            >También recogemos información de ti de forma automática cuando usas
+            FightersTech. Esto incluye:</span
+          ><span class="text-T6" />
+        </p>
+        <ul>
+          <li>
+            <p class="P7" style="margin-left: 0cm">
+              <span
+                class="ListLabel_20_172"
+                style="display: block; float: left; min-width: 0.635cm"
+              ></span
+              ><span class="text-Strong_20_Emphasis"
+                ><span class="text-T4"
+                  >Información sobre tu dispositivo</span
+                ></span
+              ><span class="text-T4"
+                >. Recopilamos información sobre el dispositivo que usas para
+                acceder a los servicios. Esto incluye datos como tu dirección IP
+                e información sobre tu sistema operativo, tu navegador y los
+                ajustes de terminales de tu dispositivo como el micrófono o la
+                cámara.</span
+              ><span class="odfLiEnd" /> 
+            </p>
+          </li>
+          <li>
+            <p class="P7" style="margin-left: 0cm">
+              <span
+                class="ListLabel_20_172"
+                style="display: block; float: left; min-width: 0.635cm"
+              ></span
+              ><span class="text-Strong_20_Emphasis"
+                ><span class="text-T4"
+                  >Información sobre el uso que haces de las aplicaciones o
+                  sitios web</span
+                ></span
+              ><span class="text-T4"
+                >. Por ejemplo, recopilamos información sobre accesos y otras
+                circunstancias en relación con el uso que haces de nuestros
+                servicios -como las páginas, los servidores y los canales que
+                visitas, las actividades en las que participas, las funciones
+                que utilizas y los apartados o el contenido incrustado con el
+                que interactúas-.</span
+              ><span class="odfLiEnd" /> 
+            </p>
+          </li>
+        </ul>
+        <p class="paragraph-P8">
+          <span class="text-Strong_20_Emphasis"
+            ><span class="text-T4"
+              >Otra información que recogemos automáticamente</span
+            ></span
+          ><span class="text-T4"
+            >. Cuando realices ciertas acciones en otros sitios, puede que
+            recibamos información sobre ti. Por ejemplo, cuando anunciamos
+            FightersTech en plataformas de terceros y haces clic en el anuncio,
+            puede que recibamos la información sobre el anuncio que has visto y
+            en qué plataforma lo has hecho. De igual forma, puede que también
+            recibamos cierta información cuando hagas clic en un enlace
+            promocional, como, por ejemplo, de qué sitio web venías.  Aparte de
+            los datos recogidos, ciertas aplicaciones como Google Ads recopilará
+            información demográfica -</span
+          ><span class="text-T5"
+            >Esto incluye detalles como la edad, el género, la ubicación
+            geográfica, el idioma y los intereses de un usuario- la I</span
+          ><span class="text-T8">nformación de comportamiento</span
+          ><span class="text-T5">
+            -Google Ads puede recopilar información sobre cómo los usuarios
+            interactúan con los anuncios -qué anuncios se mostraron, si se
+            hicieron clic en ellos, y cualquier acción que se haya tomado
+            después del clic-, </span
+          ><span class="text-T8">Información del dispositivo</span
+          ><span class="text-T5"
+            >: Google Ads puede recopilar detalles sobre el dispositivo que se
+            utiliza para acceder a los anuncios, como el tipo de dispositivo, el
+            sistema operativo, la dirección IP y la ubicación del dispositivo,
+             </span
+          ><span class="text-T8">Información de la red</span
+          ><span class="text-T5"
+            >: Esto puede incluir detalles sobre la red del usuario, como el
+            proveedor de servicios de Internet y la velocidad de la conexión-,
+             </span
+          ><span class="text-T8">Cookies y tecnologías similares</span
+          ><span class="text-T5">
+            -Google Ads utiliza estas tecnologías para recopilar información
+            sobre el comportamiento de los usuarios y sus intereses- . El acceso
+            a estos datos por parte de los anunciantes está limitado y
+            anonimizado para proteger la privacidad de los usuarios. Los
+            anunciantes generalmente tienen acceso a información agregada sobre
+            grupos</span
+          >
+        </p>
+        <p class="paragraph-P9"> </p>
+        <p class="paragraph-P2">
+          <span class="text-T2"
+            >Podemos recibir información de las cookies -pequeños archivos de
+            texto colocados en tu ordenador o dispositivo- y tecnologías
+            similares. Puedes consultar los detalles sobre el uso de las cookies
+            de FightersTech y sobre cómo puedes gestionar los permisos de las
+            cookies en nuestra </span
+          ><a
+            href="https://legal.fighterstech.com/es/cookies-policy/"
+            class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T3">Política de Cookies</span></span
+            ></a
+          ><span class="text-T2">.</span>
+        </p>
+        <h4 class="paragraph-P5">
+          <a id="a__Información_que_recibimos_de_otras_fuentes"><span /></a
+          ><span class="text-T6"
+            >Información que recibimos de otras fuentes</span
+          ><span class="text-T6" />
+        </h4>
+
+        <p class="paragraph-P2">
+          <span class="text-T6"
+            >Podemos recibir información sobre ti de otras fuentes, incluidos
+            otros usuarios y terceros, y combinar esa información con la que ya
+            tenemos sobre ti. Por ejemplo, si interactúas con nuestra cuenta de
+            redes sociales en otra plataforma, podemos recibir determinada
+            información sobre ti, como tu nombre de usuario en esa
+            plataforma.</span
+          ><span class="text-T6" />
+        </p>
+        <h2 class="paragraph-P10">
+          <a id="a__Cómo_usamos_tu_información"><span /></a
+          ><span class="text-T9">Cómo usamos tu información</span
+          ><span class="text-T9" />
+        </h2>
+
+        <p class="paragraph-P2">
+          <span class="text-vcitation"
+            ><span class="text-T6"
+              >De acuerdo con determinadas leyes de protección de datos, como
+              el </span
+            ></span
+          ><span class="text-T10">RGPD</span
+          ><span class="text-vcitation"
+            ><span class="text-T6"
+              >, las empresas deben tener una «base jurídica» -un motivo válido-
+              para procesar información personal. FightersTech se basa en
+            </span></span
+          ><span class="text-vcitation"
+            ><span class="text-T6"
+              >diferentes principios legales para procesar tu información con
+              los fines descritos en esta Política de Privacidad. Utilizamos la
+              información que recopilamos - </span
+            ></span
+          ><span class="text-T10">información de cuenta</span
+          ><span class="text-T6">, </span
+          ><span class="text-T10">contenido que creas</span
+          ><span class="text-T6">, </span
+          ><span class="text-T10">información de pago</span
+          ><span class="text-T6">, </span
+          ><span class="text-T10">información sobre tus acciones</span
+          ><span class="text-T6">, </span
+          ><span class="text-T10"
+            >información usada para habilitar características opcionales</span
+          ><span class="text-T6">, </span
+          ><span class="text-T10"
+            >otra información que nos facilitas directamente</span
+          ><span class="text-T6">, </span
+          ><span class="text-T10">información sobre tu dispositivo</span
+          ><span class="text-T6">, </span
+          ><span class="text-T10"
+            >información sobre el uso que haces de las aplicaciones o sitios
+            web</span
+          ><span class="text-T6">, </span
+          ><span class="text-T10"
+            >otra información que recogemos automáticamente</span
+          ><span class="text-T6"> e </span
+          ><span class="text-T10"
+            >información que recibimos de otras fuentes</span
+          ><span class="text-T6"
+            >- por los siguientes motivos y de acuerdo con esas bases jurídicas.
+            En cada uno de esos casos, explicamos por qué procesamos tus datos y
+            cómo los procesamos para cada finalidad.</span
+          >
+        </p>
+
+        <p class="paragraph-P2">
+          <span class="text-Strong_20_Emphasis"
+            ><span class="text-T6"
+              >Para cumplir nuestro contrato contigo</span
+            ></span
+          ><span class="text-T6" />
+        </p>
+        <ul>
+          <li>
+            <p class="P11" style="margin-left: 0cm">
+              <span
+                class="ListLabel_20_181"
+                style="display: block; float: left; min-width: 0.635cm"
+              ></span
+              ><span class="text-Strong_20_Emphasis"
+                ><span class="text-T4"
+                  >Para prestarte los servicios.</span
+                ></span
+              ><span class="text-T4"
+                > Usamos tu información para prestarte los servicios de
+                FightersTech. Por ejemplo, cuando inicias una videollamada,
+                procesamos tus imágenes y audio para que funcione. De manera
+                similar, recogemos y almacenamos los mensajes que envías y los
+                mostramos como tú indicas. También usamos la información que nos
+                proporcionas para crear y gestionar tu cuenta y facilitar las
+                compras. Cuando habilitas funciones opcionales -como conectar tu
+                cuenta de FightersTech a otras plataformas-, usamos la
+                información de esos servicios para habilitar la función -como
+                mostrar qué canción estás escuchando en otro servicio dentro de
+                la aplicación de FightersTech-.</span
+              ><span class="odfLiEnd" /> 
+            </p>
+          </li>
+          <li>
+            <p class="P11" style="margin-left: 0cm">
+              <span
+                class="ListLabel_20_181"
+                style="display: block; float: left; min-width: 0.635cm"
+              ></span
+              ><span class="text-Strong_20_Emphasis"
+                ><span class="text-T4"
+                  >Para cumplir los compromisos que hemos contraído con la
+                  comunidad de FightersTech</span
+                ></span
+              ><span class="text-T4"
+                >. No escatimamos esfuerzos para hacer de FightersTech un lugar
+                seguro, positivo e inclusivo. Con este fin, es posible que
+                usemos tus datos para vigilar a los usuarios y los servicios que
+                incumplan las </span
+              ><span class="text-T5">C</span
+              ><a
+                href="https://legal.fighterstech.com/es/terms-and-conditions/"
+                class="text-Internet_20_link"
+                ><span class="text-Internet_20_link"
+                  ><span class="text-T5">ondiciones del Servicio</span></span
+                ></a
+              ><span class="text-T4">, las </span><span class="text-T5">D</span
+              ><a
+                href="https://legal.fighterstech.com/es/conduct/"
+                class="text-Internet_20_link"
+                ><span class="text-Internet_20_link"
+                  ><span class="text-T5">irectivas de la Comunidad</span></span
+                ></a
+              ><span class="text-T4"> y </span
+              ><a
+                href="https://legal.fighterstech.com/es/"
+                class="text-Internet_20_link"
+                ><span class="text-Internet_20_link"
+                  ><span class="text-T5">otras políticas</span></span
+                ></a
+              ><span class="text-T4"
+                >, así como para tomar medidas. Esto incluye las respuestas a
+                las denuncias de los usuarios, la generación de transcripciones
+                de contenido dentro de nuestras investigaciones, la detección de
+                fraudes y uso de malware, y el escaneo proactivo de archivos
+                adjuntos y demás en busca de actividad dañina e ilegal. También
+                es posible que usemos cierta información, como contenidos
+                denunciados, que incumplan las </span
+              ><span class="text-T5">Condiciones del Servicio</span
+              ><span class="text-T4"
+                > y otros que sean públicos -como publicaciones, nombres de
+                usuario, avatares, carteles, perfiles de usuario y nombres,
+                iconos y carteles de servidores- </span
+              ><span class="text-T5">para crear modelos y sistemas</span
+              ><span class="text-T4"
+                > automatizados que detecten, clasifiquen y tomen medidas con
+                más rapidez contra las conductas o los contenidos
+                prohibidos.</span
+              ><span class="odfLiEnd" /> 
+            </p>
+          </li>
+          <li>
+            <p class="P11" style="margin-left: 0cm">
+              <span
+                class="ListLabel_20_181"
+                style="display: block; float: left; min-width: 0.635cm"
+              ></span
+              ><span class="text-Strong_20_Emphasis"
+                ><span class="text-T4">Para contactar contigo</span></span
+              ><span class="text-T4"
+                >. Usamos tus datos para ponernos en contacto contigo para
+                abordar temas relacionados con tu cuenta. Por ejemplo, para
+                verificarla o asegurarla con una autenticación de dos factores.
+                También es posible que los usemos para informarte sobre cambios
+                importantes que afecten a nuestras políticas o productos o para
+                enviarte información sobre productos que has comprado.</span
+              ><span class="odfLiEnd" /> 
+            </p>
+          </li>
+          <li>
+            <p class="P11" style="margin-left: 0cm">
+              <span
+                class="ListLabel_20_181"
+                style="display: block; float: left; min-width: 0.635cm"
+              ></span
+              ><span class="text-Strong_20_Emphasis"
+                ><span class="text-T4"
+                  >Para prestar el servicio de atención al cliente</span
+                ></span
+              ><span class="text-T4"
+                >. Usamos tu información para responder a tus preguntas acerca
+                de nuestros productos y servicios, y para investigar sobre
+                errores u otros asuntos.</span
+              ><span class="odfLiEnd" /> 
+            </p>
+          </li>
+        </ul>
+        <p class="paragraph-P2">
+          <span class="text-Strong_20_Emphasis"
+            ><span class="text-T6"
+              >Para nuestros intereses empresariales legítimos</span
+            ></span
+          ><span class="text-T6" />
+        </p>
+        <ul>
+          <li>
+            <p class="P12" style="margin-left: 0cm">
+              <span
+                class="ListLabel_20_190"
+                style="display: block; float: left; min-width: 0.635cm"
+              ></span
+              ><span class="text-Strong_20_Emphasis"
+                ><span class="text-T4"
+                  >Para proteger nuestros servicios</span
+                ></span
+              ><span class="text-T4"
+                >. Usamos tu información para mantener la seguridad de nuestros
+                servicios, impedir el uso indebido y hacer cumplir nuestras </span
+              ><a
+                href="https://legal.fighterstech.com/es/terms-and-conditions/"
+                class="text-Internet_20_link"
+                ><span class="text-Internet_20_link"
+                  ><span class="text-T5">Condiciones del Servicio</span></span
+                ></a
+              ><span class="text-T4"> y </span
+              ><a
+                href="https://legal.fighterstech.com/es/"
+                class="text-Internet_20_link"
+                ><span class="text-Internet_20_link"
+                  ><span class="text-T5">otras políticas</span></span
+                ></a
+              ><span class="text-T4"> a los usuarios que las infrinjan.</span
+              ><span class="odfLiEnd" /> 
+            </p>
+          </li>
+          <li>
+            <p class="P12" style="margin-left: 0cm">
+              <span
+                class="ListLabel_20_190"
+                style="display: block; float: left; min-width: 0.635cm"
+              ></span
+              ><span class="text-Strong_20_Emphasis"
+                ><span class="text-T4"
+                  >Para informar sobre el rendimiento de nuestra empresa</span
+                ></span
+              ><span class="text-T4"
+                >. Usamos tu información para hacer un seguimiento de las
+                métricas fundamentales de nuestro negocio, para realizar
+                declaraciones financieras, responder a obligaciones regulatorias
+                y resolver problemas de facturación.</span
+              ><span class="odfLiEnd" /> 
+            </p>
+          </li>
+          <li>
+            <p class="P12" style="margin-left: 0cm">
+              <span
+                class="ListLabel_20_190"
+                style="display: block; float: left; min-width: 0.635cm"
+              ></span
+              ><span class="text-Strong_20_Emphasis"
+                ><span class="text-T4"
+                  >Para personalizar el producto</span
+                ></span
+              ><span class="text-T4"
+                >. Utilizamos tus datos para personalizar nuestros servicios.
+                Esta información se utiliza para personalizar tu experiencia en
+                FightersTech, como el contenido de los apartados de
+                descubrimiento -para que veas las comunidades, actividades,
+                aplicaciones o contenidos más relevantes para ti en primer
+                lugar- o las funciones que destacan actividad en FightersTech
+                que podría interesarte. Esto nos sirve para presentarte las
+                promociones y funciones de FightersTech que pueden interesarte,
+                tanto nuestras como de nuestros socios. Tal como se indica en la
+                sección </span
+              ><span class="text-T5">«Cómo puedes controlar tu privacidad»</span
+              ><span class="text-T4"
+                > de más abajo, puedes controlar hasta dónde usamos tu
+                información personal para ofrecerte una experiencia
+                personalizada en FightersTech.</span
+              ><span class="odfLiEnd" /> 
+            </p>
+          </li>
+          <li>
+            <p class="P12" style="margin-left: 0cm">
+              <span
+                class="ListLabel_20_190"
+                style="display: block; float: left; min-width: 0.635cm"
+              ></span
+              ><span class="text-Strong_20_Emphasis"
+                ><span class="text-T4"
+                  >Para mejorar nuestros servicios</span
+                ></span
+              ><span class="text-T4"
+                >. Utilizamos tus datos para entender mejor cómo interactúan los
+                usuarios con nuestros servicios y qué características o
+                productos son los que más les interesan, para desarrollar
+                funciones que hagan de FightersTech un espacio más seguro y
+                fácil de usar, así como para comprender y mejorar nuestros
+                servicios. Esto incluye datos sobre el uso que haces de nuestros
+                servicios y sobre la estructuración de los servidores. También
+                es posible que usemos ciertos contenidos de dominio público para
+                entender mejor, por ejemplo, qué temas tratan los servidores y
+                qué contenidos interesan más a quienes están en ellos. Como en
+                otros casos, puedes limitar el uso que hacemos de tu información
+                personal con estos fines.</span
+              ><span class="odfLiEnd" /> 
+            </p>
+          </li>
+          <li>
+            <p class="P12" style="margin-left: 0cm">
+              <span
+                class="ListLabel_20_190"
+                style="display: block; float: left; min-width: 0.635cm"
+              ></span
+              ><span class="text-Strong_20_Emphasis"
+                ><span class="text-T4"
+                  >Para hacer publicidad de nuestros servicios en FightersTech y
+                  otras plataformas</span
+                ></span
+              ><span class="text-T4"
+                >. Estamos muy orgullosos de nuestro producto. Es posible que
+                utilicemos nuestros servicios y canales para hablarte
+                directamente de nuestros servicios de pago y otras
+                características. Además, invertimos recursos en publicitar
+                FightersTech en otras plataformas. En estos casos, usamos cierta
+                información para ayudarnos a difundir nuestros anuncios, medir
+                la efectividad de la publicidad de nuestros productos y mejorar
+                estas iniciativas de cara al futuro.</span
+              ><span class="odfLiEnd" /> 
+            </p>
+          </li>
+          <li>
+            <p class="P12" style="margin-left: 0cm">
+              <span
+                class="ListLabel_20_190"
+                style="display: block; float: left; min-width: 0.635cm"
+              ></span
+              ><span class="text-Strong_20_Emphasis"
+                ><span class="text-T4">Para contactar contigo</span></span
+              ><span class="text-T4"
+                >. Es posible que usemos tus datos para informarte sobre nuevos
+                productos o características que creemos que podrían gustarte,
+                para pedirte tu opinión sobre </span
+              ><span class="text-T4"
+                >nuestros servicios o para informarte de experimentos que
+                creemos que podrían interesarte. Siempre puedes elegir
+                voluntariamente no recibir estos mensajes de marketing. Allá
+                donde lo exija la ley, recabaremos tu consentimiento antes de
+                enviarte este tipo de comunicaciones.</span
+              ><span class="odfLiEnd" /> 
+            </p>
+          </li>
+        </ul>
+        <p class="paragraph-P2">
+          <span class="text-Strong_20_Emphasis"
+            ><span class="text-T6"
+              >Para cumplir con nuestras obligaciones legales</span
+            ></span
+          ><span class="text-T6" />
+        </p>
+
+        <p class="paragraph-P2">
+          <span class="text-T6"
+            >Guardamos y utilizamos tus datos en relación con posibles
+            reclamaciones legales cuando sea necesario y con fines
+            reglamentarios, estatutarios y de auditoría. Por ejemplo,
+            almacenamos esta información si así lo establece la ley o nos obliga
+            a ello una orden judicial o de una entidad regulatoria. Además,
+            cuando ejerzas cualquiera de los derechos que te otorga la ley para
+            acceder a, modificar o borrar tu información personal, es posible
+            que te solicitemos más datos con el fin de confirmar tu
+            identidad.</span
+          ><span class="text-T11" />
+        </p>
+
+        <p class="paragraph-P2">
+          <span class="text-Strong_20_Emphasis"
+            ><span class="text-T6">Con tu consentimiento</span></span
+          ><span class="text-T6" />
+        </p>
+
+        <p class="paragraph-P2">
+          <span class="text-T6"
+            >También es posible que recopilemos y usemos tu información personal
+            con tu consentimiento. Por ejemplo, antes de enviarte comunicaciones
+            de marketing cuando así lo exija la ley. Puedes revocar tu
+            consentimiento en cualquier momento -normalmente, a través de
+            nuestros propios servicios-, pero ten en cuenta que cabe la
+            posibilidad de que no puedas usar los servicios o características
+            que requieran la recopilación o el uso de la información personal en
+            cuestión.</span
+          ><span class="text-T6" />
+        </p>
+
+        <p class="paragraph-P2">
+          <span class="text-T7">Cómo compartimos tus datos</span
+          ><span class="text-T7" />
+        </p>
+        <ul>
+          <li>
+            <p class="P13" style="margin-left: 0cm">
+              <span
+                class="ListLabel_20_199"
+                style="display: block; float: left; min-width: 0.635cm"
+              ></span
+              ><span class="text-Strong_20_Emphasis"
+                ><span class="text-T4">Cuando nos lo indiques</span></span
+              ><span class="text-T4"
+                >. Al añadir tu contenido a los servicios, nos pides que lo
+                pongamos a disposición de personas o comunidades determinadas.
+                El acceso a un espacio concreto establece quién puede acceder a
+                la información. En el caso de los servidores, estos permisos los
+                establecen los propietarios o los administradores, que controlan
+                si el acceso es a través de enlaces de invitación o está abierto
+                a cualquiera. Estos permisos, al igual que el tamaño del
+                servidor, pueden cambiar con el tiempo. Del mismo modo, si
+                vinculas tu cuenta de FightersTech a un servicio de un tercero
+                -como un servicio de streaming o una plataforma de juegos-,
+                incrustas contenido, interactúas con contenido de terceros
+                publicado en FightersTech o participas en un servidor con
+                características de terceros activadas, como bots, es posible que
+                facilitemos ciertos datos a ese servicio o a otros usuarios de
+                FightersTech para que puedan gestionarlo. Además, si compras
+                bienes o servicios a otros usuarios de FightersTech, es posible
+                que les compartamos ciertos datos para facilitar la transmisión
+                de los bienes o la prestación de los servicios, y para ayudarles
+                a mejorar su negocio. También facilitaremos la información que
+                nos indiques o que nos autorices a facilitar.</span
+              ><span class="odfLiEnd" /> 
+            </p>
+          </li>
+          <li>
+            <p class="P13" style="margin-left: 0cm">
+              <span
+                class="ListLabel_20_199"
+                style="display: block; float: left; min-width: 0.635cm"
+              ></span
+              ><span class="text-Strong_20_Emphasis"
+                ><span class="text-T4">Con nuestros proveedores</span></span
+              ><span class="text-T4"
+                >. Es posible que facilitemos información a proveedores que
+                llevan a cabo trabajos concretos para nosotros. Esto incluye
+                procesadores de pagos como PayPal, Google o Apple y RevenueCat,
+                que se encargan de procesar pagos en nuestro nombre, </span
+              ><span class="text-T4"
+                >proveedores de servicios en la nube, como Google, PostgreSQL,
+                Kafka, AWS, Treblle, Sendgrid y Railway que albergan nuestros
+                datos e infraestructuras, proveedores de servicios publicitarios
+                –incluyendo recopilación de cookies- como Google Ads, sistemas
+                de autenticación de usuarios como Auth0. También existe la
+                posibilidad de que facilitemos información limitada a
+                plataformas publicitarias para que nos ayuden a llegar a gente a
+                la que creemos que pueden interesar nuestros productos y para
+                medir la eficiencia de nuestros anuncios en sus plataformas.
+                Esto lo hacemos con el fin de conseguir más usuarios en
+                FightersTech e impulsar nuestro negocio, pero solo les
+                facilitamos la información indispensable para sus servicios. Es
+                posible que les informemos de cosas como que has instalado
+                nuestra aplicación o te has registrado para usar
+                FightersTech.</span
+              ><span class="odfLiEnd" /> 
+            </p>
+          </li>
+        </ul>
+        <p class="paragraph-P14">
+          <span class="text-T6"
+            >Para ofrecer notificaciones Push, nuestra aplicación utiliza Expo,
+            el cual integra de forma transparente los servicios de Apple Push
+            Notification Service (APNs) de Apple y Firebase Cloud Messaging
+            (FCM) de Google. Al aceptar recibir notificaciones, el usuario
+            consiente el envío de un token de notificaciones a estos servicios,
+            siendo necesario para que la notificación llegue al dispositivo
+            correspondiente</span
+          ><span class="text-T6" />
+        </p>
+
+        <p class="paragraph-P14">
+          <span class="text-T12"
+            >A tal efecto te facilitamos una breve descripción de los servicios
+            utilizados de nuestros proveedores, así como los enlaces a sus
+            respectivas políticas y términos.</span
+          ><span class="text-T12" />
+        </p>
+
+        <p class="paragraph-P14">
+          <span class="text-T14">Expo</span
+          ><span class="text-T13"
+            >: Se usa para la construcción y distribución de la aplicación en la
+            Play Store de Google (Android) y la App Store de Apple (iOS). Se
+            envían notificaciones push mediante </span
+          ><a
+            href="https://docs.expo.dev/push-notifications/overview/"
+            class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T15">expo-notifications.</span></span
+            ></a
+          >
+        </p>
+
+        <p class="paragraph-P15">
+          <span class="text-T15">- </span
+          ><a href="https://expo.dev/terms" class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T15">Expo Terms of Service</span></span
+            ></a
+          >
+        </p>
+
+        <p class="paragraph-P15">
+          <span class="text-T15">- </span
+          ><a href="https://expo.dev/privacy" class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T15">Expo Privacy Policy</span></span
+            ></a
+          >
+        </p>
+
+        <p class="paragraph-P15">
+          <span class="text-T15">- </span
+          ><a
+            href="https://docs.expo.dev/regulatory-compliance/data-and-privacy-protection/"
+            class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T15"
+                >Data and Privacy Protection (GDPR, HIPAA, Privacy Shield)</span
+              ></span
+            ></a
+          >
+        </p>
+
+        <p class="paragraph-P14">
+          <span class="text-T16">Strapi</span
+          ><span class="text-T15"
+            >: Se usa como tecnología del servidor para gestionar los datos de
+            la aplicación. Se utiliza la versión “open-source”.</span
+          >
+        </p>
+
+        <p class="paragraph-P14">
+          <span class="text-T15">- </span
+          ><a
+            href="https://github.com/strapi/strapi/blob/master/LICENSE.md"
+            class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T15">Licencia MIT</span></span
+            ></a
+          >
+        </p>
+
+        <p class="paragraph-P14">
+          <span class="text-T15">- </span
+          ><a
+            href="https://docs.strapi.io/dev-docs/guides/gdpr"
+            class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T15">Strapi Privacy Policy</span></span
+            ></a
+          >
+        </p>
+
+        <p class="paragraph-P14">
+          <span class="text-T15">- </span
+          ><a
+            href="https://strapi.io/terms-of-use"
+            class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T15">Strapi Terms of Use</span></span
+            ></a
+          >
+        </p>
+
+        <p class="paragraph-P14">
+          <span class="text-T16">Google Ads</span
+          ><span class="text-T15"
+            >: Se usa para la Integración de publicidad en la aplicación a
+            través de Google Ads.</span
+          >
+        </p>
+
+        <p class="paragraph-P14">
+          <span class="text-T15">- </span
+          ><a
+            href="https://support.google.com/adspolicy/answer/54818?hl=es"
+            class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T15">Google Ads Terms</span></span
+            ></a
+          >
+        </p>
+
+        <p class="paragraph-P14">
+          <span class="text-T15">- </span
+          ><a
+            href="https://ads.google.com/intl/es_es/home/privacy/"
+            class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T15">Google Ads Privacy</span></span
+            ></a
+          >
+        </p>
+
+        <p class="paragraph-P14">
+          <span class="text-T15">- </span
+          ><a href="https://policies.google.com/" class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T15">Google Privacy &amp; Terms</span></span
+            ></a
+          >
+        </p>
+
+        <p class="paragraph-P14">
+          <span class="text-T15">- </span
+          ><a
+            href="https://www.google.com/about/company/user-consent-policy/"
+            class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T15">Google Ads Policies</span></span
+            ></a
+          >
+        </p>
+
+        <p class="paragraph-P14">
+          <span class="text-T15">- </span
+          ><a
+            href="https://www.google.com/about/company/user-consent-policy/"
+            class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T15"
+                >Directrices sobre el consentimiento de usuarios de la UE</span
+              ></span
+            ></a
+          >
+        </p>
+
+        <p class="paragraph-P14">
+          <span class="text-T15">- </span
+          ><a
+            href="https://www.google.com/adsense/new/localized-terms"
+            class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T15">Google Ad Sense Terms</span></span
+            ></a
+          >
+        </p>
+
+        <p class="paragraph-P14">
+          <span class="text-T15">- </span
+          ><a
+            href="https://support.google.com/admob/answer/6128543"
+            class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T15">Admob Program policies</span></span
+            ></a
+          >
+        </p>
+
+        <p class="paragraph-P16">
+          <span class="text-T16">SendGrid (Twilio)</span
+          ><span class="text-T15"
+            >: Envío de correos electrónicos y cierto tipo de
+            notificaciones.</span
+          >
+        </p>
+
+        <p class="paragraph-P16">
+          <span class="text-T15">- </span
+          ><a href="http://twilio.com/legal/tos" class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T15"
+                >Twilio/SendGrid Terms of Service</span
+              ></span
+            ></a
+          >
+        </p>
+
+        <p class="paragraph-P16">
+          <span class="text-T15">- </span
+          ><a
+            href="http://twilio.com/legal/privacy"
+            class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T15">Twilio Privacy Policy</span></span
+            ></a
+          >
+        </p>
+
+        <p class="paragraph-P16">
+          <span class="text-T15">- </span
+          ><a
+            href="http://twilio.com/legal/data-protection-addendum"
+            class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T15"
+                >Data Processing Addendum (DPA)</span
+              ></span
+            ></a
+          >
+        </p>
+
+        <p class="paragraph-P16">
+          <span class="text-T16">Treblle</span
+          ><span class="text-T15"
+            >: Monitorización del rendimiento de la API de Strapi. Seguimiento
+            de solicitudes y optimización.</span
+          >
+        </p>
+
+        <p class="paragraph-P16">
+          <span class="text-T15">- </span
+          ><a
+            href="https://treblle.com/terms-and-conditions"
+            class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T15">Treblle Terms</span></span
+            ></a
+          >
+        </p>
+
+        <p class="paragraph-P16">
+          <span class="text-T15">- </span
+          ><a
+            href="https://treblle.com/privacy-policy"
+            class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T15">Treblle Privacy Policy</span></span
+            ></a
+          >
+        </p>
+
+        <p class="paragraph-P16">
+          <span class="text-T16">Railway</span
+          ><span class="text-T15"
+            >: Alojamiento (hosting) del servidor de la app.</span
+          >
+        </p>
+
+        <p class="paragraph-P16">
+          <span class="text-T15">- </span
+          ><a
+            href="https://railway.com/legal/terms"
+            class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T15">Railway Terms of Service</span></span
+            ></a
+          >
+        </p>
+
+        <p class="paragraph-P16">
+          <span class="text-T15">- </span
+          ><a
+            href="https://railway.com/legal/privacy"
+            class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T15">Railway Privacy Policy</span></span
+            ></a
+          >
+        </p>
+
+        <p class="paragraph-P16">
+          <span class="text-T16">AWS (Amazon Web Services)</span
+          ><span class="text-T15"
+            >: Almacenamiento de una parte de la app.</span
+          >
+        </p>
+
+        <p class="paragraph-P16">
+          <span class="text-T15">- </span
+          ><a
+            href="https://aws.amazon.com/agreement/"
+            class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T15">AWS Customer Agreement</span></span
+            ></a
+          >
+        </p>
+
+        <p class="paragraph-P16">
+          <span class="text-T15">- </span
+          ><a
+            href="https://aws.amazon.com/privacy/"
+            class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T15">AWS Privacy Notice</span></span
+            ></a
+          >
+        </p>
+
+        <p class="paragraph-P16">
+          <span class="text-T15">- </span
+          ><a
+            href="https://aws.amazon.com/es/service-terms/"
+            class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T15">AWS Terms of Service</span></span
+            ></a
+          >
+        </p>
+
+        <p class="paragraph-P16">
+          <span class="text-T15">- </span
+          ><a
+            href="https://aws.amazon.com/compliance/gdpr-center"
+            class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T15"
+                >Data Processing Addendum (DPA)</span
+              ></span
+            ></a
+          >
+        </p>
+
+        <p class="paragraph-P16">
+          <span class="text-T15">- </span
+          ><a
+            href="http://aws.amazon.com/compliance"
+            class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T15"
+                >Información Adicional de Cumplimiento</span
+              ></span
+            ></a
+          >
+        </p>
+
+        <p class="paragraph-P16">
+          <span class="text-T16">Auth0 (Okta)</span
+          ><span class="text-T15"
+            >: Manejo de usuarios, registro, e inicio de sesión</span
+          >
+        </p>
+
+        <p class="paragraph-P17">
+          <span class="text-T15">- </span
+          ><a
+            href="https://auth0.com/es/web-terms"
+            class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T15">Auth0 (Okta) Terms</span></span
+            ></a
+          >
+        </p>
+
+        <p class="paragraph-P17">
+          <span class="text-T15">- </span
+          ><a
+            href="https://auth0.com/docs/secure/data-privacy-and-compliance/gdpr#data-processing-addendum"
+            class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T15"
+                >Data Processing Addendum (DPA)</span
+              ></span
+            ></a
+          >
+        </p>
+
+        <p class="paragraph-P17">
+          <span class="text-T15">- </span
+          ><a
+            href="https://auth0.com/docs/secure/data-privacy-and-compliance"
+            class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T15"
+                >Auth0 Data Privacy and Compliance</span
+              ></span
+            ></a
+          >
+        </p>
+
+        <p class="paragraph-P17">
+          <span class="text-T16">Confluent.io (Kafka)</span
+          ><span class="text-T15"
+            >: Almacenamiento temporal en memoria de ciertos datos de la
+            aplicación. Se eliminan automáticamente a los pocos días o ante
+            cualquier problema del servicio.</span
+          >
+        </p>
+
+        <p class="paragraph-P17">
+          <span class="text-T15">- </span
+          ><a
+            href="https://www.confluent.io/terms-of-use/"
+            class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T15">Confluent Terms</span></span
+            ></a
+          >
+        </p>
+
+        <p class="paragraph-P17">
+          <span class="text-T15">- </span
+          ><a
+            href="https://www.confluent.io/legal/confluent-privacy-statement/"
+            class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T15">Confluent Privacy Policy</span></span
+            ></a
+          >
+        </p>
+
+        <p class="paragraph-P17">
+          <span class="text-T15">- </span
+          ><a
+            href="https://www.confluent.io/contracts/"
+            class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T15"
+                >Data Processing Addendum (DPA)</span
+              ></span
+            ></a
+          >
+        </p>
+
+        <p class="paragraph-P17">
+          <span class="text-T16">Start.gg</span
+          ><span class="text-T15"
+            >: Utilizamos su API para obtener datos siguiendo sus términos para
+            desarrolladores.</span
+          >
+        </p>
+
+        <p class="paragraph-P17">
+          <span class="text-T15">- </span
+          ><a
+            href="https://www.start.gg/about/apitos"
+            class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T15">Developer Terms</span></span
+            ></a
+          >
+        </p>
+
+        <p class="paragraph-P17">
+          <span class="text-T16">Discord (bot)</span
+          ><span class="text-T15"
+            >: Envío de notificaciones opcionales a través de un bot de
+            Discord.</span
+          >
+        </p>
+
+        <p class="paragraph-P17">
+          <span class="text-T15">- </span
+          ><a href="https://discord.com/terms" class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T15">Discord Terms</span></span
+            ></a
+          >
+        </p>
+
+        <p class="paragraph-P17">
+          <span class="text-T15">- </span
+          ><a href="https://discord.com/privacy" class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T15">Discord Privacy Policy</span></span
+            ></a
+          >
+        </p>
+
+        <p class="paragraph-P17">
+          <span class="text-T15">- </span
+          ><a
+            href="https://discord.com/developers/docs/policies-and-agreements/terms-and-conditions"
+            class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T15">Developer Terms of Service</span></span
+            ></a
+          >
+        </p>
+
+        <p class="paragraph-P17">
+          <span class="text-T16">Squarespace: </span
+          ><span class="text-T15"
+            >Donde tenemos comprado el dominio de fighterstech.com</span
+          >
+        </p>
+
+        <p class="paragraph-P17">
+          <span class="text-T15">- </span
+          ><a
+            href="https://www.squarespace.com/terms-and-conditions"
+            class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T15">Squarespace Terms</span></span
+            ></a
+          >
+        </p>
+
+        <p class="paragraph-P17">
+          <span class="text-T15">- </span
+          ><a
+            href="https://www.squarespace.com/privacy"
+            class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T15">Squarespace Privacy Policy</span></span
+            ></a
+          >
+        </p>
+
+        <p class="paragraph-P17">
+          <span class="text-T15">- </span
+          ><a
+            href="https://www.squarespace.com/imprint"
+            class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T15">EU Legal</span></span
+            ></a
+          >
+        </p>
+
+        <p class="paragraph-P17">
+          <span class="text-T16">Cloudflare:</span
+          ><span class="text-T15">
+            Se usa para enrutar la webs del dominio fighterstech.com como capa
+            para protegerla de ciertos ataques.</span
+          >
+        </p>
+
+        <p class="paragraph-P17">
+          <span class="text-T15">- </span
+          ><a
+            href="https://www.cloudflare.com/es-es/terms/"
+            class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T15">Cloudflare Terms</span></span
+            ></a
+          >
+        </p>
+
+        <p class="paragraph-P17">
+          <span class="text-T15">- </span
+          ><a
+            href="https://www.cloudflare.com/es-es/privacypolicy/"
+            class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T15">Cloudflare Privacy Policy</span></span
+            ></a
+          >
+        </p>
+
+        <p class="paragraph-P17">
+          <span class="text-T16">Github Pages: </span
+          ><span class="text-T15"
+            >Se usa para alojar otros dominios de fighterstech, como
+            legal.fighterstech.com y promo.fighterstech.com
+          </span>
+        </p>
+
+        <p class="paragraph-P17">
+          <span class="text-T15">- </span
+          ><a href="http://github.com/site/terms" class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T15">Github Terms</span></span
+            ></a
+          >
+        </p>
+
+        <p class="paragraph-P17">
+          <span class="text-T15">- </span
+          ><a
+            href="https://docs.github.com/es/site-policy/privacy-policies/github-general-privacy-statement"
+            class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T15">GitHub Privacy Policy</span></span
+            ></a
+          >
+        </p>
+
+        <p class="paragraph-P17">
+          <span class="text-T16">RevenueCat: </span
+          ><span class="text-T15"
+            >Se usa para gestionar y manejar pagos de las compras de la
+            aplicación.</span
+          >
+        </p>
+
+        <p class="paragraph-P17">
+          <span class="text-T15">- </span
+          ><a
+            href="https://www.revenuecat.com/terms"
+            class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T15">Terms and Conditions</span></span
+            ></a
+          >
+        </p>
+
+        <p class="paragraph-P17">
+          <span class="text-T15">- </span
+          ><a
+            href="https://www.revenuecat.com/privacy/"
+            class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T15">Privacy Policy</span></span
+            ></a
+          >
+        </p>
+
+        <p class="paragraph-P17">
+          <span class="text-T15">- </span
+          ><a
+            href="https://www.revenuecat.com/gdpr/"
+            class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T15">GDPR</span></span
+            ></a
+          >
+        </p>
+        <p class="paragraph-P18"> </p>
+        <ul>
+          <li>
+            <p class="P13" style="margin-left: 0cm">
+              <span
+                class="ListLabel_20_199"
+                style="display: block; float: left; min-width: 0.635cm"
+              ></span
+              ><span class="text-Strong_20_Emphasis"
+                ><span class="text-T4">Para cumplir la ley</span></span
+              ><span class="text-T4"
+                >. Es posible que facilitemos aquella información que
+                consideremos que debemos facilitar por ley -y aquí se incluyen
+                tanto requerimientos de los cuerpos de seguridad como de
+                seguridad nacional-. Siempre que se nos permita y sea posible,
+                antes de dar cumplimiento a cualquier petición en este sentido,
+                te lo notificaremos con antelación. Puedes encontrar más
+                información sobre la forma en que respondemos a las peticiones
+                de las entidades gubernamentales y los cuerpos de
+                seguridad.</span
+              ><span class="odfLiEnd" /> 
+            </p>
+          </li>
+          <li>
+            <p class="P13" style="margin-left: 0cm">
+              <span
+                class="ListLabel_20_199"
+                style="display: block; float: left; min-width: 0.635cm"
+              ></span
+              ><span class="text-Strong_20_Emphasis"
+                ><span class="text-T4">En caso de emergencia</span></span
+              ><span class="text-T4"
+                >. Es posible que compartamos la información si creemos que es
+                necesario para impedir algún perjuicio personal
+                importante.</span
+              ><span class="odfLiEnd" /> 
+            </p>
+          </li>
+          <li>
+            <p class="P13" style="margin-left: 0cm">
+              <span
+                class="ListLabel_20_199"
+                style="display: block; float: left; min-width: 0.635cm"
+              ></span
+              ><span class="text-Strong_20_Emphasis"
+                ><span class="text-T4"
+                  >Para cumplir nuestras políticas y ejercer nuestros
+                  derechos</span
+                ></span
+              ><span class="text-T4"
+                >. Es posible que compartamos la información si es necesario
+                para cumplir las </span
+              ><a
+                href="https://legal.fighterstech.com/es/terms-and-conditions/"
+                class="text-Internet_20_link"
+                ><span class="text-Internet_20_link"
+                  ><span class="text-T5">Condiciones del Servicio</span></span
+                ></a
+              ><span class="text-T4">, </span
+              ><a
+                href="https://legal.fighterstech.com/es/conduct/"
+                class="text-Internet_20_link"
+                ><span class="text-Internet_20_link"
+                  ><span class="text-T5"
+                    >las Directivas de la Comunidad</span
+                  ></span
+                ></a
+              ><span class="text-T4"> o </span
+              ><a
+                href="https://legal.fighterstech.com/es/"
+                class="text-Internet_20_link"
+                ><span class="text-Internet_20_link"
+                  ><span class="text-T5"
+                    >cualquier otra de nuestras políticas</span
+                  ></span
+                ></a
+              ><span class="text-T4"
+                >, o para salvaguardar nuestros derechos, nuestro patrimonio y
+                nuestra seguridad o los de otros.</span
+              ><span class="odfLiEnd" /> 
+            </p>
+          </li>
+          <li>
+            <p class="P13" style="margin-left: 0cm">
+              <span
+                class="ListLabel_20_199"
+                style="display: block; float: left; min-width: 0.635cm"
+              ></span
+              ><span class="text-Strong_20_Emphasis"
+                ><span class="text-T4"
+                  >Con nuestras compañías relacionadas</span
+                ></span
+              ><span class="text-T4">. Podemos facilitar información a </span
+              ><span class="text-T5">nuestras compañías relacionadas</span
+              ><span class="text-T4"
+                >, incluidas empresas matrices, afiliadas, subsidiarias y de
+                otro tipo bajo control y propiedad comunes.</span
+              ><span class="odfLiEnd" /> 
+            </p>
+          </li>
+          <li>
+            <p class="P13" style="margin-left: 0cm">
+              <span
+                class="ListLabel_20_199"
+                style="display: block; float: left; min-width: 0.635cm"
+              ></span
+              ><span class="text-Strong_20_Emphasis"
+                ><span class="text-T4"
+                  >Ventas, adquisiciones o traspaso de activos</span
+                ></span
+              ><span class="text-T4"
+                >. Es posible que compartamos la información en caso de que
+                FightersTech se esté planteando o esté llevando a cabo una
+                fusión, una adquisición, una reorganización, un proceso de
+                bancarrota o una venta, traspaso o cambio de titularidad de la
+                empresa o cualquiera de sus activos.</span
+              ><span class="odfLiEnd" /> 
+            </p>
+          </li>
+          <li>
+            <p class="P13" style="margin-left: 0cm">
+              <span
+                class="ListLabel_20_199"
+                style="display: block; float: left; min-width: 0.635cm"
+              ></span
+              ><span class="text-Strong_20_Emphasis"
+                ><span class="text-T4"
+                  >Información agregada o anonimizada</span
+                ></span
+              ><span class="text-T4"
+                >. Es posible que compartamos datos agregados o anónimos que no
+                permitan identificarte. Por ejemplo, puede que compartamos
+                estadísticas agregadas sobre nuestros usuarios para informar a
+                nuestros socios o al público en general sobre el funcionamiento
+                de nuestro negocio y nuestras funciones o promociones.</span
+              ><span class="odfLiEnd" /> 
+            </p>
+          </li>
+        </ul>
+        <p class="paragraph-P19"> </p>
+        <p class="paragraph-P19"> </p>
+        <p class="paragraph-P20">
+          <span class="text-T17">Retención de datos</span
+          ><span class="text-T17" />
+        </p>
+
+        <p class="paragraph-P21">
+          <span class="text-T6"
+            >Conservamos la información personal hasta que consideramos que ya
+            no se necesita para los fines para los que la recopilamos o
+            retenemos, o si la ley ya no nos obliga a hacerlo. </span
+          ><span class="text-T18"
+            >Conservamos algunos datos durante la vigencia de tu cuenta de
+            FightersTech. Esto incluye información sobre cómo usas FightersTech,
+            lo que nos ayuda a comprender cómo interactúan los usuarios con
+            nuestros servicios, qué funciones o productos pueden desear los
+            usuarios, o cómo mejorar nuestros servicios. Estos incluyen
+            información como tu nombre de usuario, correo electrónico y número
+            de teléfono. Parte de esa información puede conservarse durante
+            periodos más prolongados para fines específicos, como se describe a
+            continuación. Puedes </span
+          ><span class="text-wysiwyg-underline"
+            ><span class="text-T10"
+              >eliminar tu cuenta en cualquier momento</span
+            ></span
+          ><span class="text-T10">; </span
+          ><span class="text-T18"
+            >además, si tu cuenta queda inactiva por dos años, es posible que
+            nosotros la borremos.
+          </span>
+        </p>
+        <h2 class="paragraph-P22">
+          <a id="a__Periodo_de_retención_para_fines_específicos"><span /></a
+          ><span class="text-T19"
+            >Periodo de retención para fines específicos</span
+          ><span class="text-T19" />
+        </h2>
+
+        <p class="paragraph-P21">
+          <span class="text-T18"
+            >Ciertos requisitos comerciales y legales pueden significar que
+            necesitamos conservar información durante periodos de tiempo
+            determinados, algunos de los cuales pueden extenderse más allá de la
+            eliminación de tu cuenta. Para cada tipo de información,
+            establecemos estos periodos de retención de datos en función del
+            motivo de su recopilación:</span
+          ><span class="text-T18" />
+        </p>
+        <ul>
+          <li>
+            <p class="P23" style="margin-left: 0.529cm">
+              <span
+                class="ListLabel_20_244"
+                style="display: block; float: left; min-width: 0.635cm"
+              ></span
+              ><span class="text-Strong_20_Emphasis"
+                ><span class="text-T20">Verificación de edad</span></span
+              ><span class="text-T20"
+                >. Si nos envías un documento de identificación para solicitar
+                la verificación de la edad de tu cuenta, lo eliminaremos durante
+                los 60 días siguientes al cierre de la solicitud de verificación
+                de edad.</span
+              ><span class="odfLiEnd" /> 
+            </p>
+          </li>
+          <li>
+            <p class="P24" style="margin-left: 0.529cm">
+              <span
+                class="ListLabel_20_244"
+                style="display: block; float: left; min-width: 0.635cm"
+              ></span
+              ><span class="text-Strong_20_Emphasis"
+                ><span class="text-T20">Copias de seguridad</span></span
+              ><span class="text-T20"
+                >. Nuestra base de datos mantiene copias de seguridad
+                almacenadas durante 30-45 días, tras los que se eliminan.</span
+              ><span class="odfLiEnd" /> 
+            </p>
+          </li>
+          <li>
+            <p class="P24" style="margin-left: 0.529cm">
+              <span
+                class="ListLabel_20_244"
+                style="display: block; float: left; min-width: 0.635cm"
+              ></span
+              ><span class="text-Strong_20_Emphasis"
+                ><span class="text-T20"
+                  >Cumplimiento de nuestras obligaciones legales</span
+                ></span
+              ><span class="text-T20"
+                >. Es posible que necesitemos retener cierta información durante
+                periodos más largos que los descritos por motivos legales. Por
+                ejemplo, cuando </span
+              ><span class="text-T20"
+                >realizas una compra en FightersTech, es necesario que
+                conservemos la información de la transacción durante periodos
+                concretos según la contabilidad e impuestos. </span
+              ><span class="odfLiEnd" /> 
+            </p>
+          </li>
+          <li>
+            <p class="P24" style="margin-left: 0.529cm">
+              <span
+                class="ListLabel_20_244"
+                style="display: block; float: left; min-width: 0.635cm"
+              ></span
+              ><span class="text-Strong_20_Emphasis"
+                ><span class="text-T20"
+                  >Mantenimiento de nuestros compromisos de seguridad</span
+                ></span
+              ><span class="text-T20"
+                >. Retenemos cierta información -que incluye direcciones de
+                correo y números de teléfono- durante 48 horas después de su
+                eliminación por motivos de confianza y seguridad. Si se ha
+                denunciado o marcado a un usuario por actuar en contra de los </span
+              ><a
+                href="https://legal.fighterstech.com/es/terms-and-conditions/"
+                class="text-Internet_20_link"
+                ><span class="text-Internet_20_link"
+                  ><span class="text-T5">Términos del servicio</span></span
+                ></a
+              ><span class="text-T20"> o </span
+              ><a
+                href="https://legal.fighterstech.com/en/conduct/"
+                class="text-Internet_20_link"
+                ><span class="text-Internet_20_link"
+                  ><span class="text-T5"
+                    >Directrices de la comunidad</span
+                  ></span
+                ></a
+              ><span class="text-T20"
+                >, podríamos retener dicha información hasta 2 años. Esto nos
+                ayuda a mantener FightersTech más seguro, prevenir fraudes y
+                evitar que los malos actores puedan crear nuevas cuentas o
+                seguir actuando en contra de </span
+              ><a
+                href="https://legal.fighterstech.com/es/"
+                class="text-Internet_20_link"
+                ><span class="text-Internet_20_link"
+                  ><span class="text-T5">nuestras políticas</span></span
+                ></a
+              ><span class="text-T20"> de otras formas.</span
+              ><span class="odfLiEnd" /> 
+            </p>
+          </li>
+          <li>
+            <p class="P24" style="margin-left: 0.529cm">
+              <span
+                class="ListLabel_20_244"
+                style="display: block; float: left; min-width: 0.635cm"
+              ></span
+              ><span class="text-Strong_20_Emphasis"
+                ><span class="text-T20"
+                  >Ejercicio o defensa de demandas legales. </span
+                ></span
+              ><span class="text-T20"
+                >Cuando contactas directamente con FightersTech -por ejemplo, a
+                través de consultas de soporte o solicitudes para acceder a tu
+                información-, retenemos la información relacionada durante 5
+                años desde el cierre de tu solicitud, por si existiera una
+                disputa o fuese necesario defender nuestros derechos.</span
+              ><span class="odfLiEnd" /> 
+            </p>
+          </li>
+          <li>
+            <p class="P25" style="margin-left: 0.529cm">
+              <span
+                class="ListLabel_20_244"
+                style="display: block; float: left; min-width: 0.635cm"
+              ></span
+              ><span class="text-Strong_20_Emphasis"
+                ><span class="text-T20">Continuidad del servicio</span></span
+              ><span class="text-T20"
+                >: Si borras tu cuenta, seguiremos manteniendo y mostrando el
+                contenido que compartiste con otros usuarios, aunque este dejará
+                de estar vinculado a tu cuenta. Esto es para asegurar que otros
+                puedan mantener el acceso al contenido que se compartió con
+                ellos en algún momento. Si quieres eliminar algún contenido
+                específico, por favor, hazlo antes de borrar tu cuenta. Podrás
+                hacerlo siguiendo las instrucciones del apartado «Información
+                que puedes eliminar directamente de los servicios» o, si
+                necesitas ayuda, puedes contactar con </span
+              ><a
+                href="mailto:privacy@fighterstech.com"
+                class="text-Internet_20_link"
+                ><span class="text-Internet_20_link"
+                  ><span class="text-T5">privacy@fighterstech.com</span></span
+                ></a
+              ><span class="text-T20"> </span><span class="odfLiEnd" /> 
+            </p>
+          </li>
+        </ul>
+        <p class="paragraph-P21">
+          <span class="text-T21"
+            >Cuando borras una cuenta, tardará unas horas en ejecutarse el
+            borrado entre 1h y 48h si todo va bien. Una vez que vence ese
+            periodo, comenzamos el proceso para eliminar los datos
+            identificativos y anonimizar o agregar el resto de la
+            información.</span
+          ><span class="text-T22">
+            Esto sucede rápidamente -a menos que la información esté sujeta a un
+            periodo de retención más largo como se describe anteriormente-, pero
+            puede tomar hasta 45 días eliminar los datos identificativos de las
+            copias de seguridad. Conservaremos la información agregada y
+            anonimizada, que es la qu</span
+          ><span class="text-T3"
+            >e ya no permite identificarte y tampoco está ya vinculada a ti como
+            individuo.</span
+          >
+        </p>
+
+        <p class="paragraph-P21">
+          <span class="text-T10">Según lo dispuesto en nuestra </span
+          ><span class="text-wysiwyg-underline"
+            ><span class="text-T10">Política de Privacidad</span></span
+          ><span class="text-vcitation"
+            ><span class="text-T10"
+              >, todos nuestros usuarios tienen control sobre su información y
+              pueden editar o eliminar directamente los datos de su cuenta, así
+              como limitar la información que procesamos. Si te encuentras en la
+              Unión Europea, el RGPD te otorga los siguientes derechos
+              específicos, que podrás ejercer a través de la aplicación
+              FightersTech directamente o comunicándote con nosotros:</span
+            ></span
+          >
+        </p>
+        <ul>
+          <li>
+            <p class="P26" style="margin-left: 0.529cm">
+              <span
+                class="ListLabel_20_253"
+                style="display: block; float: left; min-width: 0.635cm"
+              ></span
+              ><span class="text-T5"
+                >Derecho a acceder a tus datos personales.</span
+              ><span class="text-T5" /><span class="odfLiEnd" /> 
+            </p>
+          </li>
+          <li>
+            <p class="P27" style="margin-left: 0.529cm">
+              <span
+                class="ListLabel_20_253"
+                style="display: block; float: left; min-width: 0.635cm"
+              ></span
+              ><span class="text-T5"
+                >Derecho a rectificar tus datos personales, si son
+                incorrectos.</span
+              ><span class="text-T5" /><span class="odfLiEnd" /> 
+            </p>
+          </li>
+          <li>
+            <p class="P27" style="margin-left: 0.529cm">
+              <span
+                class="ListLabel_20_253"
+                style="display: block; float: left; min-width: 0.635cm"
+              ></span
+              ><span class="text-T5"
+                >Derecho a borrar tus datos personales.</span
+              ><span class="text-T5" /><span class="odfLiEnd" /> 
+            </p>
+          </li>
+          <li>
+            <p class="P27" style="margin-left: 0.529cm">
+              <span
+                class="ListLabel_20_253"
+                style="display: block; float: left; min-width: 0.635cm"
+              ></span
+              ><span class="text-T5"
+                >Derecho a limitar el procesamiento de tus datos
+                personales.</span
+              ><span class="text-T5" /><span class="odfLiEnd" /> 
+            </p>
+          </li>
+          <li>
+            <p class="P27" style="margin-left: 0.529cm">
+              <span
+                class="ListLabel_20_253"
+                style="display: block; float: left; min-width: 0.635cm"
+              ></span
+              ><span class="text-T5"
+                >Derecho a la portabilidad de tus datos personales.</span
+              ><span class="text-T5" /><span class="odfLiEnd" /> 
+            </p>
+          </li>
+          <li>
+            <p class="P28" style="margin-left: 0.529cm">
+              <span
+                class="ListLabel_20_253"
+                style="display: block; float: left; min-width: 0.635cm"
+              ></span
+              ><span class="text-T5"
+                >Derecho a oponerse al procesamiento de tus datos
+                personales.</span
+              ><span class="text-T5" /><span class="odfLiEnd" /> 
+            </p>
+          </li>
+        </ul>
+        <p class="paragraph-P29">
+          <span class="text-T3"
+            >Si tienes alguna pregunta sobre la retención de datos o sobre
+            nuestras prácticas de eliminación, o si deseas ejercer control sobre
+            tu información, comunícate con </span
+          ><a
+            href="mailto:privacy@fighterstech.com"
+            class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T3">privacy@fighterstech.com</span></span
+            ></a
+          ><span class="text-T3">.</span>
+        </p>
+
+        <p class="paragraph-P29">
+          <span class="text-T7">Cómo protegemos tu información</span
+          ><span class="text-T7" />
+        </p>
+        <p class="paragraph-P30"> </p>
+        <p class="paragraph-P31">
+          <span class="text-T4"
+            >Tomamos una serie de medidas para ayudar a proteger tu información.
+            Toda la información enviada dentro de nuestros servicios está
+            cifrada tanto cuando está en tránsito como en reposo.  </span
+          ><span class="text-T5"
+            >Para proteger la información de los usuarios, implementamos varias
+            medidas de seguridad. Esto incluye el uso de conexiones seguras
+            -HTTPS- para todas las transferencias de datos, el cifrado de los
+            datos almacenados y medidas para asegurar la integridad de nuestros
+            servidores. </span
+          ><span class="text-T23"
+            >Dicha integridad se asegura a través del uso de claves con
+            variables secretas que no se facilitan en el código de la aplicación
+            alojada en el servidor.
+          </span>
+        </p>
+        <p class="paragraph-P32"> </p>
+        <p class="paragraph-P31">
+          <span class="text-T17">Cómo puedes controlar tu privacidad</span
+          ><span class="text-T17" />
+        </p>
+        <p class="paragraph-P33"> </p>
+        <p class="paragraph-P2">
+          <span class="text-T6"
+            >Creemos que los usuarios deben poder personalizar a su gusto su
+            experiencia en FightersTech, incluida la privacidad. Como las
+            legislaciones de cada país tienen distintos requisitos, consideramos
+            que los usuarios deben tener una mínima capacidad de configurar esta
+            experiencia vivan donde vivan. Aquí te contamos la forma en que
+            puedes controlar cómo procesamos tus datos, cómo borramos o
+            corregimos algunos datos, y cómo puedes solicitar el acceso a los
+            mismos. Además, los ciudadanos de determinados países pueden tener
+            otros derechos que otorgue su legislación. A continuación, te
+            informamos sobre todo esto en las secciones pertinentes.</span
+          ><span class="text-T6" />
+        </p>
+
+        <p class="paragraph-P2">
+          <span class="text-Strong_20_Emphasis"
+            ><span class="text-T6"
+              >Sé consciente de los espacios de FightersTech en los que eliges
+              participar</span
+            ></span
+          ><span class="text-T6" />
+        </p>
+
+        <p class="paragraph-P2">
+          <span class="text-T6"
+            >Puedes elegir en qué espacios participas y qué información añades a
+            nuestros servicios, además de qué mensajes envías o públicas, con
+            quién te relacionas -p. ej., uno o más usuarios, o un grupo
+            potencialmente ilimitado de ellos-, qué información incluyes en tu
+            perfil y si vinculas servicios de terceros a tu cuenta FightersTech,
+            entre otras cosas. Por ejemplo, si compartes contenido en
+            determinados espacios, como los servidores que aparecen en
+            Descubrimiento de servidor o los enlaces de invitación públicos,
+            todo el mundo podrá acceder a él.</span
+          ><span class="text-T6" />
+        </p>
+
+        <p class="paragraph-P34">
+          <span class="text-T6"
+            >Información proporcionada por colaboradores voluntarios. Cuando nos
+            contactas para colaborar en la traducción de la aplicación mediante
+            el correo electrónico proporcionado, usaremos tus datos personales
+            únicamente con la finalidad de gestionar dicha colaboración,
+            comunicarte información </span
+          ><span class="text-T6"
+            >relacionada con esta actividad, o resolver dudas o incidencias
+            relacionadas con las traducciones aportadas. Tus datos no serán
+            compartidos con terceros salvo obligación legal.</span
+          ><span class="text-T6" />
+        </p>
+
+        <p class="paragraph-P2">
+          <span class="text-Strong_20_Emphasis"
+            ><span class="text-T6"
+              >Personaliza tus ajustes personales de FightersTech</span
+            ></span
+          ><span class="text-T6" />
+        </p>
+
+        <p class="paragraph-P2">
+          <span class="text-T6"
+            >Ofrecemos una serie de ajustes que te permiten personalizar tu
+            experiencia en FightersTech. Algunos de ellos tienen que ver con
+            características concretas: por ejemplo, puedes personalizar tu
+            nombre de usuario en la aplicación- en la página de Ajustes de
+            usuario -el icono con forma de engranaje.</span
+          ><span class="text-T6" />
+        </p>
+
+        <p class="paragraph-P2">
+          <span class="text-T6"
+            >También puedes acceder a otros ajustes relacionados con la
+            privacidad en los Ajustes de usuario. Por ejemplo, puedes optar por
+            filtrar posible contenido explícito o decidir quién puede agregarte
+            como amigo, entre otras cosas. Aquí también puedes limitar
+            determinados tipos de procesamiento de tus datos:</span
+          ><span class="text-T6" />
+        </p>
+        <ul>
+          <li>
+            <p class="P35" style="margin-left: 0cm">
+              <span
+                class="ListLabel_20_208"
+                style="display: block; float: left; min-width: 0.635cm"
+              ></span
+              ><span class="text-Strong_20_Emphasis"
+                ><span class="text-T4"
+                  >Limitar nuestra capacidad de usar tus datos para mejorar
+                  nuestros servicios</span
+                ></span
+              ><span class="text-T4"
+                >. Ofrecemos algunos ajustes que te permiten limitar la
+                información que recopilamos para comprender mejor qué uso hacen
+                los usuarios de nuestros servicios o qué características o
+                productos pueden desear y, en general, para mejorar nuestro
+                negocio. Si los desactivas, dejaremos de recopilar determinados
+                datos sobre accesos y otras circunstancias, tal como se explica
+                en los propios ajustes.</span
+              ><span class="odfLiEnd" /> 
+            </p>
+          </li>
+          <li>
+            <p class="P35" style="margin-left: 0cm">
+              <span
+                class="ListLabel_20_208"
+                style="display: block; float: left; min-width: 0.635cm"
+              ></span
+              ><span class="text-Strong_20_Emphasis"
+                ><span class="text-T4"
+                  >Limitar nuestra capacidad de personalizar FightersTech para
+                  ti</span
+                ></span
+              ><span class="text-T4"
+                >. Hay ciertos ajustes que controlan si podemos personalizar
+                FightersTech para ti y cómo hacerlo. Son los que determinan si
+                podemos ofrecerte recomendaciones o contenidos y características
+                dentro de la aplicación. Si los desactivas, dejaremos de
+                recopilar determinados datos sobre accesos y otras
+                circunstancias, tal como se explica en los propios
+                ajustes.</span
+              ><span class="odfLiEnd" /> 
+            </p>
+          </li>
+        </ul>
+        <p class="paragraph-P2">
+          <span class="text-T2"
+            >Puedes consultar más detalles sobre estos y otros ajustes
+            relacionados con la privacidad </span
+          ><span class="text-T3">a través del correo </span
+          ><a
+            href="mailto:privacy@fighterstech.com"
+            class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T3">privacy@fighterstech.com</span></span
+            ></a
+          ><span class="text-T3"> </span
+          ><span class="text-T2"
+            >Los ajustes por defecto y la disponibilidad de los mismos pueden
+            variar dependiendo de diversos factores, como tu </span
+          ><span class="text-T3">edad</span
+          ><span class="text-T2"> o ubicación.</span>
+        </p>
+
+        <p class="paragraph-P2">
+          <span class="text-Strong_20_Emphasis"
+            ><span class="text-T6">Suspender o borrar tu cuenta</span></span
+          ><span class="text-T6" />
+        </p>
+
+        <p class="paragraph-P2">
+          <span class="text-T6"
+            >Puedes suspender o borrar tu cuenta en el menú de Ajustes de
+            usuario. Si suspendes tu cuenta, se detendrá el procesamiento de
+            nuevos datos durante 6 meses, pero podrás reactivarla más adelante
+            sin impedimentos. Si la borras de forma permanente, se eliminará la
+            información que te identifica y, además, se anonimizarán otros
+            datos, tal como se explica en </span
+          ><span class="text-T10">nuestra Política de Retención de Datos</span
+          ><span class="text-T6"
+            >. Puedes informarte sobre el borrado de cuentas en </span
+          ><span class="text-T10">este artículo del Centro de ayuda</span
+          ><span class="text-T6"> y sobre la desactivación en </span
+          ><span class="text-T10">este otro</span><span class="text-T6">.</span>
+        </p>
+
+        <p class="paragraph-P2">
+          <span class="text-Strong_20_Emphasis"
+            ><span class="text-T6"
+              >Gestiona tu contenido y tus servidores</span
+            ></span
+          ><span class="text-T6" />
+        </p>
+
+        <p class="paragraph-P2">
+          <span class="text-T6"
+            >Puedes editar o borrar determinados datos en los servicios:</span
+          ><span class="text-T6" />
+        </p>
+        <ul>
+          <li>
+            <p class="P36" style="margin-left: 0cm">
+              <span
+                class="ListLabel_20_217"
+                style="display: block; float: left; min-width: 0.635cm"
+              ></span
+              ><span class="text-T4"
+                >Puedes editar o eliminar cualquier mensaje que hayas enviado o
+                contenido que hayas publicado si todavía tienes acceso al
+                espacio donde lo publicaste.</span
+              ><span class="text-T4" /><span class="odfLiEnd" /> 
+            </p>
+          </li>
+          <li>
+            <p class="P36" style="margin-left: 0cm">
+              <span
+                class="ListLabel_20_217"
+                style="display: block; float: left; min-width: 0.635cm"
+              ></span
+              ><span class="text-T4"
+                >Puedes editar o eliminar un servidor de torneo de FightersTech
+                si tienes los permisos necesarios para ello.</span
+              ><span class="text-T4" /><span class="odfLiEnd" /> 
+            </p>
+          </li>
+          <li>
+            <p class="P36" style="margin-left: 0cm">
+              <span
+                class="ListLabel_20_217"
+                style="display: block; float: left; min-width: 0.635cm"
+              ></span
+              ><span class="text-T4"
+                >Puedes editar o eliminar una partida de un servidor de
+                FightersTech si tienes los permisos necesarios para ello.</span
+              ><span class="text-T4" /><span class="odfLiEnd" /> 
+            </p>
+          </li>
+        </ul>
+        <p class="paragraph-P2">
+          <span class="text-T6"
+            >FightersTech podrá conservar contenidos para usarlos, tal como se
+            describe en otras secciones de esta política y en </span
+          ><span class="text-T10">nuestra Política de Retención de Datos</span
+          ><span class="text-T6"
+            >. Además, en determinadas circunstancias, es posible que tengamos
+            la obligación legal de conservar determinados datos, aunque borres
+            la información de tu cuenta.</span
+          >
+        </p>
+
+        <p class="paragraph-P2">
+          <span class="text-Strong_20_Emphasis"
+            ><span class="text-T6">Acceso a tu información</span></span
+          ><span class="text-T6" />
+        </p>
+
+        <p class="paragraph-P2">
+          <span class="text-T2"
+            >Si quieres saber qué información hemos recopilado sobre ti, puedes
+            solicitar una copia de tus datos en la sección « Configuración →
+            Acerca de → Legal → ARCO-POL: Solicitar mis datos. ». Recibirás el
+            paquete con tus datos en el plazo de 30 días. Los datos se facilitan
+            en formatos digitales de uso frecuente, como HTML, CSV, JSON y
+            cualquier otro que utilizaras al subir adjuntos a los
+            servicios.</span
+          ><span class="text-T2" />
+        </p>
+        <h2 class="paragraph-P10">
+          <a id="a__Transferencias_de_datos_internacionales"><span /></a
+          ><span class="text-T9">Transferencias de datos internacionales</span
+          ><span class="text-T9" />
+        </h2>
+
+        <p class="paragraph-P2">
+          <span class="text-T6"
+            >Tenemos la sede en España y tratamos y almacenamos información en
+            servidores ubicados en España. También podemos almacenar información
+            en servidores y equipos en otros países en función de varios
+            factores, incluidas las ubicaciones de nuestros usuarios y
+            proveedores de servicios. Estas transferencias de datos nos permiten
+            prestarte nuestros servicios. Al acceder a nuestros servicios o
+            usarlos, o al proporcionarnos información de cualquier otro modo,
+            entiendes que tu información se procesará, transferirá y almacenará
+            en España y otros países, donde pueden aplicarse normas de
+            protección de datos diferentes o es posible que no dispongas de los
+            mismos derechos que tienes según tu legislación local.</span
+          ><span class="text-T6" />
+        </p>
+
+        <p class="paragraph-P2">
+          <span class="text-T6"
+            >Cuando transferimos datos fuera del Espacio Económico Europeo,
+            usamos las </span
+          ><span class="text-T10">cláusulas contractuales modelo</span
+          ><span class="text-T6"> -módulo 1 y módulo 2- y las </span
+          ><span class="text-T10">decisiones de adecuación</span
+          ><span class="text-T6"
+            > de la Comisión Europea sobre determinados países, según proceda, o
+            cualquier otro mecanismo o condición legal que recoja la ley para
+            dicha transferencia de datos.</span
+          >
+        </p>
+
+        <p class="paragraph-P2">
+          <span class="text-T2"
+            >Si tienes quejas o preguntas sobre el cumplimiento por nuestra
+            parte de los principios del Marco de Privacidad de Datos, escríbenos
+            a </span
+          ><a
+            href="mailto:privacy@fighterstech.com"
+            class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T3">privacy@fighterstech.com</span></span
+            ></a
+          ><span class="text-T2">
+            . Si no resolvemos tu queja, puedes remitirla sin coste alguno
+            a </span
+          ><span class="text-T3">JAMS</span
+          ><span class="text-T2"
+            >. En determinados casos que se especifican en los principios del
+            Marco de Privacidad de Datos, existe la posibilidad de que puedas
+            pedir un proceso de arbitraje vinculante para resolver la disputa.
+            Para obtener más información sobre los principios del Marco de
+            Privacidad de Datos y para ver nuestra certificación, visita
+            el </span
+          ><span class="text-T3">sitio del Marco de Privacidad de Datos</span
+          ><span class="text-T2"
+            > del Departamento de Comercio de Estados Unidos.</span
+          >
+        </p>
+        <h2 class="paragraph-P10">
+          <a id="a__Servicios_ofrecidos_por_terceros"><span /></a
+          ><span class="text-T9">Servicios ofrecidos por terceros</span
+          ><span class="text-T9" />
+        </h2>
+
+        <p class="paragraph-P2">
+          <span class="text-T6"
+            >Permitimos que desarrolladores externos creen determinadas
+            funciones u otros servicios y los ofrezcan dentro de los servicios
+            de FightersTech. Por ejemplo, los administradores de servidores
+            pueden añadir bots creados por desarrolladores externos que
+            proporcionan funciones como moderación de contenidos y juegos
+            interactivos. De igual modo, puedes tener acceso a juegos o
+            actividades creados por terceros dentro de los servicios.</span
+          ><span class="text-T6" />
+        </p>
+
+        <p class="paragraph-P2">
+          <span class="text-T6"
+            >Estos servicios de terceros deben seguir todas las políticas que
+            les conciernen -incluidas, con frecuencia, nuestras </span
+          ><span class="text-T10"
+            >Condiciones del Servicio para Desarrolladores</span
+          ><span class="text-T6"> y la </span
+          ><span class="text-T10">Política de Desarrolladores</span
+          ><span class="text-T6"
+            >-. Debido a estas políticas, exigimos que los desarrolladores
+            dispongan de una política de privacidad que deje claro qué hacen con
+            tu información. Revisa estas políticas de privacidad, ya que
+            describen lo que pueden hacer los bots y las aplicaciones con tu
+            información. También requerimos que determinados bots populares
+            soliciten acceso a ciertos datos. No obstante, como estos servicios
+            los gestionan terceros, no tenemos control sobre ellos ni tampoco
+            sobre la información que recopilan. Tú decides si quieres participar
+            en un servidor que utiliza bots y si quieres usar servicios de
+            terceros en general.</span
+          >
+        </p>
+        <h2 class="paragraph-P10">
+          <a id="a__Delegado_de_protección_de_datos"><span /></a
+          ><span class="text-T9">Delegado de protección de datos</span
+          ><span class="text-T9" />
+        </h2>
+
+        <p class="paragraph-P2">
+          <span class="text-T2"
+            >Puedes ponerte en contacto con el delegado de protección de datos
+            de FightersTech Spain en  </span
+          ><a href="mailto:dpo@fighterstech.com" class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T3">dpo@fighterstech.com</span></span
+            ></a
+          ><span class="text-T2"> </span>
+        </p>
+
+        <p class="paragraph-P2">
+          <span class="text-T7"
+            >Información sobre las leyes de privacidad locales</span
+          ><span class="text-T7" />
+        </p>
+
+        <p class="paragraph-P2">
+          <span class="text-vcitation"
+            ><span class="text-T6"
+              >Determinadas leyes locales, tales como el </span
+            ></span
+          ><span class="text-T10"
+            >Reglamento General de Protección de Datos</span
+          ><span class="text-vcitation"><span class="text-T6"> -</span></span
+          ><span class="text-T10">RGPD</span
+          ><span class="text-vcitation"
+            ><span class="text-T6"
+              >- de la Unión Europea, la «Lei Geral de Proteção de Dados -LGPD-»
+              de Brasil y la «California Consumer Privacy Act -CCPA-», exigen a
+              los servicios que proporcionen datos sobre la información que
+              recopilan, cómo la usan y la base jurídica para procesarla.
+            </span></span
+          >
+        </p>
+
+        <p class="paragraph-P2">
+          <span class="text-Strong_20_Emphasis"
+            ><span class="text-T6">‍Ejercicio de tus derechos:</span></span
+          ><span class="text-T6"> tal como se describe en la sección </span
+          ><span class="text-T10">«Cómo puedes controlar tu privacidad»</span
+          ><span class="text-T6"
+            >, todos nuestros usuarios tienen control sobre su información y
+            pueden editarla o borrarla directamente desde su cuenta, así como
+            limitar los datos que procesamos. Si eres residente en determinadas
+            regiones, como la Unión Europea, es posible que te asistan otros
+            derechos como los indicados a continuación, tal como se señala en
+            la </span
+          ><span class="text-T10"
+            >información y el desglose específicos de cada estado y región</span
+          ><span class="text-T6"
+            >. Podrás ejercerlos directamente en la aplicación de FightersTech o
+            poniéndote en contacto con nosotros:</span
+          >
+        </p>
+        <ul>
+          <li>
+            <p class="P37" style="margin-left: 0cm">
+              <span
+                class="ListLabel_20_226"
+                style="display: block; float: left; min-width: 0.635cm"
+              ></span
+              ><span class="text-T4"
+                >Derecho de acceso a tus datos personales</span
+              ><span class="text-T4" /><span class="odfLiEnd" /> 
+            </p>
+          </li>
+          <li>
+            <p class="P37" style="margin-left: 0cm">
+              <span
+                class="ListLabel_20_226"
+                style="display: block; float: left; min-width: 0.635cm"
+              ></span
+              ><span class="text-T4"
+                >Derecho a rectificar tus datos personales si son
+                incorrectos</span
+              ><span class="text-T4" /><span class="odfLiEnd" /> 
+            </p>
+          </li>
+          <li>
+            <p class="P37" style="margin-left: 0cm">
+              <span
+                class="ListLabel_20_226"
+                style="display: block; float: left; min-width: 0.635cm"
+              ></span
+              ><span class="text-T4">Derecho a borrar tus datos personales</span
+              ><span class="text-T4" /><span class="odfLiEnd" /> 
+            </p>
+          </li>
+          <li>
+            <p class="P37" style="margin-left: 0cm">
+              <span
+                class="ListLabel_20_226"
+                style="display: block; float: left; min-width: 0.635cm"
+              ></span
+              ><span class="text-T4"
+                >Derecho a limitar el procesamiento de tus datos
+                personales</span
+              ><span class="text-T4" /><span class="odfLiEnd" /> 
+            </p>
+          </li>
+          <li>
+            <p class="P37" style="margin-left: 0cm">
+              <span
+                class="ListLabel_20_226"
+                style="display: block; float: left; min-width: 0.635cm"
+              ></span
+              ><span class="text-T4"
+                >Derecho a la portabilidad de tus datos personales</span
+              ><span class="text-T4" /><span class="odfLiEnd" /> 
+            </p>
+          </li>
+          <li>
+            <p class="P37" style="margin-left: 0cm">
+              <span
+                class="ListLabel_20_226"
+                style="display: block; float: left; min-width: 0.635cm"
+              ></span
+              ><span class="text-T4"
+                >Derecho a oponerte al procesamiento de tus datos
+                personales</span
+              ><span class="text-T4" /><span class="odfLiEnd" /> 
+            </p>
+          </li>
+          <li>
+            <p class="P37" style="margin-left: 0cm">
+              <span
+                class="ListLabel_20_226"
+                style="display: block; float: left; min-width: 0.635cm"
+              ></span
+              ><span class="text-T4"
+                >Derecho a retirar el consentimiento -la retirada del
+                consentimiento no afecta a la legalidad del procesamiento basado
+                en consentimientos otorgados anteriormente-</span
+              ><span class="text-T4" /><span class="odfLiEnd" /> 
+            </p>
+          </li>
+        </ul>
+        <p class="paragraph-P2">
+          <span class="text-T2"
+            >Si tienes alguna duda sobre estos derechos o deseas ejercer tu
+            control sobre tu información, escríbenos a </span
+          ><a
+            href="mailto:privacy@fighterstech.com"
+            class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T3">privacy@fighterstech.com</span></span
+            ></a
+          ><span class="text-T2"> </span>
+        </p>
+        <h2 class="paragraph-P10">
+          <a id="a__Cambios_en_esta_Política_de_Privacidad"><span /></a
+          ><span class="text-T9">Cambios en esta Política de Privacidad</span
+          ><span class="text-T9" />
+        </h2>
+
+        <p class="paragraph-P2">
+          <span class="text-T6"
+            >Actualizaremos esta Política de Privacidad ocasionalmente. Siempre
+            indicamos la fecha de los últimos cambios cuando se publican y, si
+            los cambios son importantes, proporcionaremos un aviso más claro
+            según lo exija la ley, como, por ejemplo, enviando un correo
+            electrónico o mediante una notificación en la aplicación, destacando
+            los cambios dentro de los servicios.</span
+          ><span class="text-T6" />
+        </p>
+        <h2 class="paragraph-P10">
+          <a id="a__Contáctanos"><span /></a
+          ><span class="text-T9">Contáctanos</span><span class="text-T9" />
+        </h2>
+
+        <p class="paragraph-P2">
+          <span class="text-T2">Escríbenos a </span
+          ><a
+            href="mailto:privacy@fighterstech.com"
+            class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T3">privacy@fighterstech.com</span></span
+            ></a
+          ><span class="text-T2">
+             si tienes cualquier duda sobre esta Política de privacidad o el
+            procesamiento de tu información por nuestra parte. Será un placer
+            ayudarte.</span
+          >
+        </p>
+
+        <p class="paragraph-P2">
+          <span class="text-T2"
+            >Para ponerte en contacto con el delegado de protección de datos de
+            FightersTech, envía un correo electrónico a </span
+          ><a href="mailto:dpo@fighterstech.com" class="text-Internet_20_link"
+            ><span class="text-Internet_20_link"
+              ><span class="text-T3">dpo@fighterstech.com</span></span
+            ></a
+          ><span class="text-T2"> .</span>
+        </p>
+
+        <p class="paragraph-P2">
+          <span class="text-T6"
+            >También puedes ponerte en contacto con nosotros por correo
+            electrónico si lo deseas. Si vives en el Espacio Económico Europeo o
+            en el Reino Unido, puedes escribirnos a:</span
+          ><span class="text-T6" />
+        </p>
+
+        <p class="paragraph-P2">
+          <span class="text-T6">FightersTech. </span><span class="text-T6" />
+        </p>
+
+        <p class="paragraph-P2">
+          <span class="text-T6">ATTN: Privacy Policy </span
+          ><span class="text-T6" />
+        </p>
+
+        <p class="paragraph-P38">
+          <span class="text-T24"
+            >AVDA AVIACIÓN ESPAÑOLA, 23 BAJO B267 CP:30730 SAN JAVIER
+            (MURCIA)</span
+          ><span class="text-T24" />
+        </p>
+      </div>
     </div>
     <p style="text-align: center; color: #a9b3bc" id="enquiries"></p>
   </body>
