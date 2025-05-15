@@ -223,7 +223,13 @@
 
     <script>
       function goBack() {
-        window.history.back();
+        if (window.history.length > 1) {
+          // user has a browser back-stack
+          window.history.back();
+        } else {
+          // no back history → deep‐link into the app
+          window.location.href = "com.xiscoteon.fighterstech://settings";
+        }
       }
       document.addEventListener("DOMContentLoaded", function () {
         const vars = {
