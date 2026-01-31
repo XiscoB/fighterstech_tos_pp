@@ -32,11 +32,514 @@
         }
       })();
     </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --bg-primary: #001a33;
+        --bg-secondary: #00284e;
+        --bg-tertiary: #003366;
+        --bg-card: rgba(0, 51, 102, 0.6);
+        --bg-card-hover: rgba(0, 51, 102, 0.8);
+        --accent-gold: #fcaf01;
+        --accent-gold-hover: #ffd700;
+        --text-primary: #ffffff;
+        --text-secondary: rgba(255, 255, 255, 0.8);
+        --text-muted: rgba(255, 255, 255, 0.6);
+        --border-light: rgba(255, 255, 255, 0.2);
+        --font-display: "Chakra Petch", sans-serif;
+        --font-body: "Inter", sans-serif;
+        --radius-sm: 8px;
+        --radius-md: 12px;
+        --radius-lg: 20px;
+        --transition-fast: 0.2s ease;
+        --transition-medium: 0.3s ease;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        font-family: var(--font-body);
+        background-color: var(--bg-primary);
+        background-image: 
+          radial-gradient(ellipse at top right, rgba(252, 175, 1, 0.1) 0%, transparent 50%),
+          radial-gradient(ellipse at bottom left, rgba(0, 51, 102, 0.5) 0%, transparent 50%);
+        color: var(--text-primary);
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        animation: pageLoad 0.5s ease-out;
+      }
+
+      @keyframes pageLoad {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+
+      .bg-grid {
+        position: fixed;
+        top: 0; left: 0; width: 100%; height: 100%;
+        background-image: 
+          linear-gradient(rgba(252, 175, 1, 0.03) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(252, 175, 1, 0.03) 1px, transparent 1px);
+        background-size: 50px 50px;
+        pointer-events: none;
+        z-index: 0;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 24px;
+        position: relative;
+        z-index: 1;
+      }
+
+      .logo-container {
+        text-align: center;
+        padding: 30px 0 20px;
+      }
+
+      .logo {
+        width: 100%;
+        max-width: 150px;
+        height: auto;
+        filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
+        transition: transform var(--transition-medium);
+      }
+
+      .logo:hover { transform: scale(1.05); }
+
+      .back-button {
+        background-color: var(--bg-tertiary);
+        color: var(--text-primary);
+        border: 1px solid var(--border-light);
+        border-radius: var(--radius-md);
+        padding: 12px 24px;
+        font-family: var(--font-display);
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all var(--transition-medium);
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin: 10px 0;
+      }
+
+      .back-button:hover {
+        background-color: var(--accent-gold);
+        color: var(--bg-primary);
+        border-color: var(--accent-gold);
+        transform: translateX(-4px);
+      }
+
+      .page-title {
+        font-family: var(--font-display);
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+        color: var(--text-primary);
+        margin: 10px 0;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+
+      .version-info {
+        text-align: center;
+        color: var(--text-muted);
+        font-size: 13px;
+        font-family: var(--font-body);
+        margin: 10px 0 30px;
+      }
+
+      .doc-container {
+        max-width: 900px;
+        margin: 20px auto 40px;
+        padding: 30px;
+        background: var(--bg-card);
+        border: 1px solid var(--border-light);
+        border-radius: var(--radius-lg);
+        backdrop-filter: blur(10px);
+      }
+
+      /* Accordion styles for pages that use them */
+      .accordion {
+        background-color: rgba(0, 0, 0, 0.4);
+        color: var(--text-primary);
+        cursor: pointer;
+        padding: 18px 24px;
+        width: 100%;
+        border: 1px solid var(--border-light);
+        border-radius: var(--radius-md);
+        text-align: left;
+        outline: none;
+        font-family: var(--font-display);
+        font-size: 15px;
+        font-weight: 500;
+        transition: all var(--transition-medium);
+        margin-bottom: 12px;
+        backdrop-filter: blur(10px);
+      }
+
+      .accordion:hover {
+        background-color: var(--bg-tertiary);
+        border-color: var(--accent-gold);
+        box-shadow: 0 0 30px rgba(252, 175, 1, 0.2);
+      }
+
+      .accordion.active { border-radius: var(--radius-md) var(--radius-md) 0 0; }
+
+      /* Only add + icon to button accordions (not link accordions on landing page) */
+      button.accordion:after {
+        content: "+";
+        font-size: 20px;
+        color: var(--accent-gold);
+        float: right;
+        font-weight: 300;
+        transition: transform var(--transition-medium);
+      }
+
+      button.accordion.active:after { transform: rotate(45deg); }
+
+      /* Link accordions (navigation) - display as block for stacked layout */
+      a.accordion {
+        display: block;
+        text-decoration: none;
+        margin-bottom: 12px;
+        position: relative;
+      }
+
+      /* Remove inline arrows from accordion text, add via CSS */
+      a.accordion .accordion-text {
+        display: inline-flex;
+        align-items: center;
+      }
+
+      /* Add arrow via CSS pseudo-element instead of inline text */
+      a.accordion:after {
+        content: "→";
+        position: absolute;
+        right: 24px;
+        color: var(--accent-gold);
+        transition: transform var(--transition-medium);
+      }
+
+      a.accordion:hover:after {
+        transform: translateX(4px);
+      }
+
+      /* Section titles on landing pages */
+      .section-title,
+      .lang-section-title {
+        font-family: var(--font-display);
+        font-size: 0.875rem;
+        color: var(--text-muted);
+        text-align: center;
+        margin: 30px 0 15px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+
+      /* Subtitle on root page */
+      .page-subtitle {
+        text-align: center;
+        color: var(--text-muted);
+        font-size: 14px;
+        margin-bottom: 40px;
+      }
+
+      /* Language badge for root page */
+      .lang-badge {
+        font-size: 11px;
+        font-weight: 600;
+        padding: 4px 8px;
+        background: var(--accent-gold);
+        color: var(--bg-primary);
+        border-radius: 4px;
+        text-transform: uppercase;
+        margin-right: 8px;
+      }
+
+      /* Accordion text wrapper */
+      .accordion-text {
+        display: inline-flex;
+        align-items: center;
+      }
+
+      .panel {
+        padding: 0 24px;
+        background-color: rgba(0, 0, 0, 0.3);
+        border: 1px solid var(--border-light);
+        border-top: none;
+        border-radius: 0 0 var(--radius-md) var(--radius-md);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out, padding 0.3s ease;
+        margin-bottom: 12px;
+      }
+
+      .panel.active { padding: 20px 24px; }
+
+      .centered { text-align: center; }
+
+      /* Document content typography - for docx-based content */
+      .doc-content, 
+      [class*="Docx"],
+      #privacyPolicyDocx, #termsDocx, #cookiesDocx, 
+      #conductDocx, #arcoPolDocx, #safetyDocx {
+        font-family: var(--font-body);
+        line-height: 1.7;
+        color: var(--text-secondary);
+      }
+
+      .doc-content h1, .doc-content h2, .doc-content h3, .doc-content h4,
+      [class*="Docx"] h1, [class*="Docx"] h2, [class*="Docx"] h3, [class*="Docx"] h4,
+      #privacyPolicyDocx h1, #privacyPolicyDocx h2, #privacyPolicyDocx h3, #privacyPolicyDocx h4,
+      #termsDocx h1, #termsDocx h2, #termsDocx h3, #termsDocx h4,
+      #cookiesDocx h1, #cookiesDocx h2, #cookiesDocx h3, #cookiesDocx h4,
+      #conductDocx h1, #conductDocx h2, #conductDocx h3, #conductDocx h4,
+      #arcoPolDocx h1, #arcoPolDocx h2, #arcoPolDocx h3, #arcoPolDocx h4,
+      #safetyDocx h1, #safetyDocx h2, #safetyDocx h3, #safetyDocx h4 {
+        font-family: var(--font-display);
+        color: var(--text-primary);
+        margin-top: 1.5em;
+        margin-bottom: 0.5em;
+      }
+
+      .doc-content h2, [class*="Docx"] h2,
+      #privacyPolicyDocx h2, #termsDocx h2, #cookiesDocx h2, 
+      #conductDocx h2, #arcoPolDocx h2, #safetyDocx h2 {
+        font-size: 1.5rem;
+        border-bottom: 1px solid var(--border-light);
+        padding-bottom: 0.3em;
+      }
+
+      .doc-content h3, [class*="Docx"] h3,
+      #privacyPolicyDocx h3, #termsDocx h3, #cookiesDocx h3, 
+      #conductDocx h3, #arcoPolDocx h3, #safetyDocx h3 { font-size: 1.25rem; }
+      
+      .doc-content h4, [class*="Docx"] h4,
+      #privacyPolicyDocx h4, #termsDocx h4, #cookiesDocx h4, 
+      #conductDocx h4, #arcoPolDocx h4, #safetyDocx h4 { font-size: 1.1rem; }
+
+      .doc-content p, [class*="Docx"] p,
+      #privacyPolicyDocx p, #termsDocx p, #cookiesDocx p,
+      #conductDocx p, #arcoPolDocx p, #safetyDocx p {
+        margin-bottom: 1em;
+        font-size: 1rem;
+      }
+
+      /* Document links - DOCX exported content - HIGH SPECIFICITY */
+      #cookiesDocx a, #privacyPolicyDocx a, #termsDocx a,
+      #conductDocx a, #arcoPolDocx a, #safetyDocx a,
+      #cookiesDocx a[class], #privacyPolicyDocx a[class], #termsDocx a[class],
+      #conductDocx a[class], #arcoPolDocx a[class], #safetyDocx a[class],
+      #cookiesDocx a[class*="Internet"], #privacyPolicyDocx a[class*="Internet"],
+      #termsDocx a[class*="Internet"], #conductDocx a[class*="Internet"],
+      #arcoPolDocx a[class*="Internet"], #safetyDocx a[class*="Internet"],
+      .text-Internet_20_link, a.text-Internet_20_link,
+      [class*="Internet_20_link"] {
+        color: var(--accent-gold) !important;
+        text-decoration: none !important;
+        border-bottom: none !important;
+      }
+
+      #cookiesDocx a:hover, #privacyPolicyDocx a:hover, #termsDocx a:hover,
+      #conductDocx a:hover, #arcoPolDocx a:hover, #safetyDocx a:hover,
+      .text-Internet_20_link:hover, a.text-Internet_20_link:hover,
+      [class*="Internet_20_link"]:hover {
+        text-decoration: underline !important;
+        color: var(--accent-gold-hover) !important;
+      }
+
+      /* Fix list bullets - force proper disc bullets */
+      #cookiesDocx ul, #privacyPolicyDocx ul, #termsDocx ul,
+      #conductDocx ul, #arcoPolDocx ul, #safetyDocx ul {
+        list-style-type: disc !important;
+        padding-left: 1.5em !important;
+      }
+
+      #cookiesDocx li, #privacyPolicyDocx li, #termsDocx li,
+      #conductDocx li, #arcoPolDocx li, #safetyDocx li {
+        list-style-type: disc !important;
+        margin-bottom: 0.5em;
+      }
+
+      /* Hide weird DOCX list label elements - AGGRESSIVE */
+      span[class*="ListLabel"],
+      #cookiesDocx span[class*="ListLabel"],
+      #privacyPolicyDocx span[class*="ListLabel"],
+      #termsDocx span[class*="ListLabel"],
+      #conductDocx span[class*="ListLabel"],
+      #arcoPolDocx span[class*="ListLabel"],
+      #safetyDocx span[class*="ListLabel"] {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        width: 0 !important;
+        height: 0 !important;
+        position: absolute !important;
+      }
+
+      /* Force ALL links inside doc containers to be gold - ultra specific */
+      .docx-content a,
+      .docx-content a:link,
+      .docx-content a:visited,
+      .docx-content a:hover,
+      .docx-content a:active,
+      #cookiesDocx a,
+      #cookiesDocx a:link,
+      #cookiesDocx a:visited {
+        color: var(--accent-gold) !important;
+        text-decoration: none !important;
+      }
+
+      #cookiesDocx a:hover,
+      #cookiesDocx a:active {
+        text-decoration: underline !important;
+        color: var(--accent-gold-hover) !important;
+      }
+
+      /* Email links styling - force gold color */
+      a[href^="mailto:"],
+      .page-footer a[href^="mailto:"],
+      .footer-link {
+        color: var(--accent-gold) !important;
+        text-decoration: none !important;
+      }
+
+      a[href^="mailto:"]:hover,
+      .page-footer a[href^="mailto:"]:hover,
+      .footer-link:hover {
+        color: var(--accent-gold-hover) !important;
+        text-decoration: underline !important;
+      }
+
+      .doc-content ul, [class*="Docx"] ul,
+      #privacyPolicyDocx ul, #termsDocx ul, #cookiesDocx ul,
+      #conductDocx ul, #arcoPolDocx ul, #safetyDocx ul {
+        margin-bottom: 1em;
+        padding-left: 1.5em;
+      }
+
+      .doc-content li, [class*="Docx"] li,
+      #privacyPolicyDocx li, #termsDocx li, #cookiesDocx li,
+      #conductDocx li, #arcoPolDocx li, #safetyDocx li { margin-bottom: 0.5em; }
+
+      /* Data table styles */
+      .data-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 14px;
+      }
+
+      .data-table th, .data-table td {
+        border: 1px solid var(--border-light);
+        padding: 12px;
+        text-align: left;
+      }
+
+      .data-table th {
+        background-color: var(--bg-tertiary);
+        font-family: var(--font-display);
+        font-weight: 600;
+        color: var(--accent-gold);
+      }
+
+      .data-table tbody tr:nth-child(odd) { background-color: rgba(0, 0, 0, 0.2); }
+      .data-table tbody tr:hover { background-color: rgba(252, 175, 1, 0.05); }
+
+      /* Page footer */
+      .page-footer {
+        text-align: center;
+        padding: 40px 24px;
+        margin-top: 40px;
+        border-top: 1px solid var(--border-light);
+      }
+
+      .footer-text {
+        color: var(--text-muted);
+        font-size: 14px;
+        margin: 8px 0;
+      }
+
+      .footer-link {
+        color: var(--accent-gold);
+        text-decoration: none;
+        font-family: var(--font-display);
+        font-weight: 500;
+      }
+
+      .footer-link:hover { color: var(--accent-gold-hover); }
+
+      /* Video container for safety pages */
+      .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+        background: var(--bg-card);
+        border-radius: var(--radius-md);
+        margin: 20px 0;
+      }
+
+      .video-container iframe {
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        border-radius: var(--radius-md);
+      }
+
+      /* Legacy selectors for backwards compatibility */
+      h1, h2 { text-align: center; }
+      
+      /* Support for old inline img styles */
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      @media screen and (max-width: 768px) {
+        .page-title { font-size: 1.5rem; }
+        .doc-container { padding: 20px; margin: 15px; }
+        .accordion { font-size: 14px; padding: 16px 20px; width: 100%; }
+        .back-button { width: 100%; justify-content: center; }
+        .logo { max-width: 120px; }
+      }
+    </style>
   </head>
   <body>
+    <div class="bg-grid"></div>
+    <div class="container">
     <p>
       Redirecting to our
       <a href="/en/terms-and-conditions">Terms and Conditions</a>…
     </p>
+    </div>
   </body>
 </html>
