@@ -3,31 +3,34 @@
  * Injects consistent header and footer across all legal pages
  */
 
-(function() {
-  'use strict';
+(function () {
+  "use strict";
 
   // Configuration
   const CONFIG = {
-    logoFile: 'fighterstech.png',
-    mainSiteUrl: 'https://promo.fighterstech.com',
+    logoFile: "fighterstech.png",
+    mainSiteUrl: "https://promo.fighterstech.com",
     socialLinks: {
-      twitter: 'https://twitter.com/fighterstech',
-      instagram: 'https://instagram.com/fighterstech',
-      tiktok: 'https://www.tiktok.com/@fighterstech',
-      bluesky: 'https://bsky.app/profile/fighterstech.bsky.social'
+      twitter: "https://twitter.com/fighterstech",
+      instagram: "https://instagram.com/fighterstech",
+      tiktok: "https://www.tiktok.com/@fighterstech",
+      bluesky: "https://bsky.app/profile/fighterstech.bsky.social",
     },
     emails: {
-      legal: 'legal@fighterstech.com',
-      support: 'support@fighterstech.com'
-    }
+      legal: "legal@fighterstech.com",
+      support: "support@fighterstech.com",
+      dpo: "dpo@fighterstech.com",
+      safety: "safety@fighterstech.com",
+      privacy: "privacy@fighterstech.com",
+    },
   };
 
   // Inject header styles (including logo hover effects)
   function injectHeaderStyles() {
-    if (document.getElementById('ft-header-styles')) return;
-    
-    const styles = document.createElement('style');
-    styles.id = 'ft-header-styles';
+    if (document.getElementById("ft-header-styles")) return;
+
+    const styles = document.createElement("style");
+    styles.id = "ft-header-styles";
     styles.textContent = `
       /* Header Logo Hover Effects */
       .header-logo {
@@ -70,10 +73,10 @@
 
   // Inject modal styles
   function injectModalStyles() {
-    if (document.getElementById('ft-modal-styles')) return;
-    
-    const styles = document.createElement('style');
-    styles.id = 'ft-modal-styles';
+    if (document.getElementById("ft-modal-styles")) return;
+
+    const styles = document.createElement("style");
+    styles.id = "ft-modal-styles";
     styles.textContent = `
       .ft-modal-overlay {
         position: fixed;
@@ -176,23 +179,24 @@
   // Create and show exit confirmation modal
   function showExitModal(targetUrl, lang) {
     injectModalStyles();
-    
+
     const labels = {
-      title: lang === 'es' ? '¿Salir del Portal Legal?' : 'Leave Legal Portal?',
-      message: lang === 'es' 
-        ? 'Estás a punto de salir del portal legal y serás redirigido al sitio principal de FightersTech. ¿Deseas continuar?' 
-        : 'You are about to leave the legal portal and be redirected to the main FightersTech website. Do you wish to continue?',
-      confirm: lang === 'es' ? 'Sí, continuar' : 'Yes, continue',
-      cancel: lang === 'es' ? 'Cancelar' : 'Cancel'
+      title: lang === "es" ? "¿Salir del Portal Legal?" : "Leave Legal Portal?",
+      message:
+        lang === "es"
+          ? "Estás a punto de salir del portal legal y serás redirigido al sitio principal de FightersTech. ¿Deseas continuar?"
+          : "You are about to leave the legal portal and be redirected to the main FightersTech website. Do you wish to continue?",
+      confirm: lang === "es" ? "Sí, continuar" : "Yes, continue",
+      cancel: lang === "es" ? "Cancelar" : "Cancel",
     };
 
     // Remove existing modal if any
-    const existingModal = document.getElementById('ft-exit-modal');
+    const existingModal = document.getElementById("ft-exit-modal");
     if (existingModal) existingModal.remove();
 
-    const modal = document.createElement('div');
-    modal.id = 'ft-exit-modal';
-    modal.className = 'ft-modal-overlay';
+    const modal = document.createElement("div");
+    modal.id = "ft-exit-modal";
+    modal.className = "ft-modal-overlay";
     modal.innerHTML = `
       <div class="ft-modal">
         <div class="ft-modal-icon">🚪</div>
@@ -209,51 +213,53 @@
 
     // Show modal with animation
     requestAnimationFrame(() => {
-      modal.classList.add('active');
+      modal.classList.add("active");
     });
 
     // Handle buttons
-    modal.querySelector('#ft-modal-confirm').addEventListener('click', () => {
+    modal.querySelector("#ft-modal-confirm").addEventListener("click", () => {
       window.location.href = targetUrl;
     });
 
-    modal.querySelector('#ft-modal-cancel').addEventListener('click', () => {
-      modal.classList.remove('active');
+    modal.querySelector("#ft-modal-cancel").addEventListener("click", () => {
+      modal.classList.remove("active");
       setTimeout(() => modal.remove(), 300);
     });
 
     // Close on overlay click
-    modal.addEventListener('click', (e) => {
+    modal.addEventListener("click", (e) => {
       if (e.target === modal) {
-        modal.classList.remove('active');
+        modal.classList.remove("active");
         setTimeout(() => modal.remove(), 300);
       }
     });
 
     // Close on Escape key
     const handleEscape = (e) => {
-      if (e.key === 'Escape') {
-        modal.classList.remove('active');
+      if (e.key === "Escape") {
+        modal.classList.remove("active");
         setTimeout(() => modal.remove(), 300);
-        document.removeEventListener('keydown', handleEscape);
+        document.removeEventListener("keydown", handleEscape);
       }
     };
-    document.addEventListener('keydown', handleEscape);
+    document.addEventListener("keydown", handleEscape);
   }
 
   // Calculate path to root based on the current script location
   // This script is always at: /js/header-footer.js
   function getRootPath() {
     // Find this script's src
-    const scripts = document.querySelectorAll('script[src*="header-footer.js"]');
-    if (scripts.length === 0) return './';
-    
-    const scriptSrc = scripts[0].getAttribute('src');
+    const scripts = document.querySelectorAll(
+      'script[src*="header-footer.js"]',
+    );
+    if (scripts.length === 0) return "./";
+
+    const scriptSrc = scripts[0].getAttribute("src");
     // scriptSrc could be: ./js/header-footer.js or ../js/header-footer.js or ../../js/header-footer.js
-    
+
     // Remove the 'js/header-footer.js' part to get the root path
-    const rootPath = scriptSrc.replace('js/header-footer.js', '');
-    return rootPath || './';
+    const rootPath = scriptSrc.replace("js/header-footer.js", "");
+    return rootPath || "./";
   }
 
   // Get path prefix for logo and other root resources
@@ -264,35 +270,35 @@
   // Get path to root (for links that should go to language-specific landing)
   function getLanguagePrefix() {
     const path = window.location.pathname;
-    const isSpanish = path.includes('/es/');
+    const isSpanish = path.includes("/es/");
     const rootPath = getRootPath();
-    
+
     // If we're at root or language root, use current dir
-    if (rootPath === './') {
-      return isSpanish ? './es/' : './en/';
+    if (rootPath === "./") {
+      return isSpanish ? "./es/" : "./en/";
     }
-    
+
     // For nested pages, add language folder to root path
     if (isSpanish) {
-      return rootPath + 'es/';
+      return rootPath + "es/";
     }
-    return rootPath + 'en/';
+    return rootPath + "en/";
   }
 
   // Detect language
   function getLanguage() {
     const path = window.location.pathname;
-    if (path.includes('/es/')) return 'es';
-    return 'en';
+    if (path.includes("/es/")) return "es";
+    return "en";
   }
 
   // Create header HTML
   function createHeader() {
     const prefix = getPathPrefix();
     const lang = getLanguage();
-    
-    const header = document.createElement('header');
-    header.className = 'site-header';
+
+    const header = document.createElement("header");
+    header.className = "site-header";
     header.innerHTML = `
       <div class="header-inner">
         <a href="${CONFIG.mainSiteUrl}" class="header-logo" id="ft-header-logo">
@@ -300,23 +306,23 @@
           <span class="header-logo-text">FightersTech</span>
         </a>
         <nav class="header-nav">
-          <a href="${CONFIG.mainSiteUrl}" id="ft-back-link">← ${lang === 'es' ? 'Volver al Sitio Principal' : 'Back to Main Site'}</a>
+          <a href="${CONFIG.mainSiteUrl}" id="ft-back-link">← ${lang === "es" ? "Volver al Sitio Principal" : "Back to Main Site"}</a>
         </nav>
       </div>
     `;
-    
+
     // Add click handlers for exit confirmation
-    const logoLink = header.querySelector('#ft-header-logo');
-    const backLink = header.querySelector('#ft-back-link');
-    
+    const logoLink = header.querySelector("#ft-header-logo");
+    const backLink = header.querySelector("#ft-back-link");
+
     const handleExitClick = (e) => {
       e.preventDefault();
       showExitModal(CONFIG.mainSiteUrl, lang);
     };
-    
-    logoLink.addEventListener('click', handleExitClick);
-    backLink.addEventListener('click', handleExitClick);
-    
+
+    logoLink.addEventListener("click", handleExitClick);
+    backLink.addEventListener("click", handleExitClick);
+
     return header;
   }
 
@@ -325,30 +331,35 @@
     const prefix = getPathPrefix();
     const langPrefix = getLanguagePrefix();
     const lang = getLanguage();
-    
+
     const currentYear = new Date().getFullYear();
-    
+
     const labels = {
-      legal: lang === 'es' ? 'Legal' : 'Legal',
-      contact: lang === 'es' ? 'Contacto' : 'Contact',
-      privacy: lang === 'es' ? 'Política de Privacidad' : 'Privacy Policy',
-      terms: lang === 'es' ? 'Términos y Condiciones' : 'Terms of Service',
-      cookies: lang === 'es' ? 'Política de Cookies' : 'Cookie Policy',
-      conduct: lang === 'es' ? 'Código de Conducta' : 'Code of Conduct',
-      rights: lang === 'es' ? 'Todos los derechos reservados.' : 'All rights reserved.'
+      legal: lang === "es" ? "Legal" : "Legal",
+      contact: lang === "es" ? "Contacto" : "Contact",
+      privacy: lang === "es" ? "Política de Privacidad" : "Privacy Policy",
+      terms: lang === "es" ? "Términos y Condiciones" : "Terms of Service",
+      cookies: lang === "es" ? "Política de Cookies" : "Cookie Policy",
+      conduct: lang === "es" ? "Código de Conducta" : "Code of Conduct",
+      rights:
+        lang === "es"
+          ? "Todos los derechos reservados."
+          : "All rights reserved.",
     };
 
-    const footer = document.createElement('footer');
-    footer.className = 'site-footer';
+    const footer = document.createElement("footer");
+    footer.className = "site-footer";
     footer.innerHTML = `
       <div class="container" style="padding-top: 0;">
         <div class="footer-grid">
           <div class="footer-brand">
             <img src="${prefix}${CONFIG.logoFile}" alt="FightersTech Logo">
             <h3>FightersTech</h3>
-            <p>${lang === 'es' 
-              ? 'La plataforma definitiva para la Comunidad de Juegos de Lucha. Entrena, lucha y compite al máximo.' 
-              : 'The ultimate platform for the Fighting Game Community. Train, fight, and compete at your best.'}</p>
+            <p>${
+              lang === "es"
+                ? "La plataforma definitiva para la Comunidad de Juegos de Lucha. Entrena, lucha y compite al máximo."
+                : "The ultimate platform for the Fighting Game Community. Train, fight, and compete at your best."
+            }</p>
             <div class="social-links">
               <a href="${CONFIG.socialLinks.twitter}" class="social-link" target="_blank" rel="noopener" aria-label="Twitter">
                 <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
@@ -378,6 +389,9 @@
             <ul class="footer-links">
               <li><a href="mailto:${CONFIG.emails.legal}">${CONFIG.emails.legal}</a></li>
               <li><a href="mailto:${CONFIG.emails.support}">${CONFIG.emails.support}</a></li>
+              <li><a href="mailto:${CONFIG.emails.privacy}">${CONFIG.emails.privacy}</a></li>
+              <li><a href="mailto:${CONFIG.emails.dpo}">${CONFIG.emails.dpo}</a></li>
+              <li><a href="mailto:${CONFIG.emails.safety}">${CONFIG.emails.safety}</a></li>
             </ul>
           </div>
         </div>
@@ -391,59 +405,61 @@
 
   // Create background grid
   function createBgGrid() {
-    const bgGrid = document.createElement('div');
-    bgGrid.className = 'bg-grid';
+    const bgGrid = document.createElement("div");
+    bgGrid.className = "bg-grid";
     return bgGrid;
   }
 
   // Main initialization
   function init() {
     // Don't run if already initialized
-    if (document.querySelector('.site-header')) return;
+    if (document.querySelector(".site-header")) return;
 
     // Inject header styles (including logo hover effects)
     injectHeaderStyles();
 
     const body = document.body;
-    
+
     // Insert bg-grid at the beginning of body
     body.insertBefore(createBgGrid(), body.firstChild);
-    
+
     // Insert header after bg-grid
     body.insertBefore(createHeader(), body.children[1]);
-    
+
     // Find or create container for content wrapping
-    let container = document.querySelector('.container');
+    let container = document.querySelector(".container");
     if (!container) {
       // Wrap all body content in a container
-      container = document.createElement('div');
-      container.className = 'container';
-      
+      container = document.createElement("div");
+      container.className = "container";
+
       // Move all content except header/footer/bg-grid into container
       const elementsToWrap = [];
       for (let i = 0; i < body.children.length; i++) {
         const el = body.children[i];
-        if (!el.classList.contains('site-header') && 
-            !el.classList.contains('bg-grid') && 
-            !el.classList.contains('site-footer')) {
+        if (
+          !el.classList.contains("site-header") &&
+          !el.classList.contains("bg-grid") &&
+          !el.classList.contains("site-footer")
+        ) {
           elementsToWrap.push(el);
         }
       }
-      
-      elementsToWrap.forEach(el => container.appendChild(el));
+
+      elementsToWrap.forEach((el) => container.appendChild(el));
       body.appendChild(container);
     }
-    
+
     // Insert footer after container
-    const existingFooter = document.querySelector('.site-footer');
+    const existingFooter = document.querySelector(".site-footer");
     if (!existingFooter) {
       body.appendChild(createFooter());
     }
   }
 
   // Run when DOM is ready
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
   } else {
     init();
   }
